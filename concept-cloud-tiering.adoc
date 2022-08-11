@@ -20,7 +20,7 @@ Cloud Tiering 서비스는 _FabricPool_의 기능을 활용합니다. FabricPool
 
 원래 ONTAP 9.8부터 All-SSD 애그리게이트를 포함한 AFF, FAS 및 ONTAP Select 시스템에서 지원되어 HDD로 구성된 애그리게이트 데이터와 고성능 SSD를 함께 계층화할 수 있습니다. 을 참조하십시오 https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html["FabricPool 사용에 대한 고려 사항 및 요구 사항"^] 를 참조하십시오.
 
-Cloud Tiering 라이센스는 FabricPool 미러 구성(MetroCluster 구성 제외)에 있는 클러스터와도 공유할 수 있습니다. FabricPool 구성은 System Manager 또는 ONTAP CLI를 사용하여 수행해야 하지만 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스는 Cloud Tiering을 사용하여 수행합니다."]
+Cloud Tiering 라이센스는 MetroCluster 및 FabricPool Mirror 구성에 있는 클러스터와도 공유할 수 있습니다. FabricPool 구성은 System Manager 또는 ONTAP CLI를 사용하여 설정해야 하지만 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스는 Cloud Tiering을 통해 제공됩니다."]
 
 
 
@@ -30,6 +30,8 @@ Cloud Tiering은 자동화, 모니터링, 보고서 및 공통 관리 인터페�
 
 * 자동화를 통해 사내 ONTAP 클러스터에서 클라우드로 데이터 계층화를 간편하게 설정 및 관리할 수 있습니다
 * 기본 클라우드 공급자 스토리지 클래스/액세스 계층을 선택하거나, 수명 주기 관리를 사용하여 오래된 계층적 데이터를 보다 비용 효율적인 계층으로 이동할 수 있습니다
+* 클러스터의 다른 애그리게이트에 사용할 수 있는 추가 오브젝트 저장소에 대한 접속을 생성할 수 있습니다
+* UI를 사용하여 계층화와 FabricPool 미러링을 위해 오브젝트 저장소를 Aggregate로 끌 수 있습니다
 * 단일 창을 통해 여러 클러스터에서 FabricPool를 독립적으로 관리할 필요가 없습니다
 * 보고서에는 각 클러스터에서 활성 및 비활성 데이터의 양이 표시됩니다
 * 계층화 상태는 문제가 발생할 때 이를 식별하고 해결하는 데 도움이 됩니다
@@ -54,7 +56,7 @@ TIP: Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다
 * NetApp StorageGRID를 참조하십시오
 
 
-Cloud Tiering 라이센스는 데이터를 IBM Cloud Object Storage로 계층화하는 클러스터와 공유할 수도 있습니다. FabricPool 구성은 System Manager 또는 ONTAP CLI를 사용하여 수행해야 하지만 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 구성에 대한 라이센스는 Cloud Tiering을 사용하여 수행합니다."]
+Cloud Tiering 라이센스는 데이터를 IBM Cloud Object Storage로 계층화하는 클러스터와 공유할 수도 있습니다. FabricPool 구성은 System Manager 또는 ONTAP CLI를 사용하여 설정해야 하지만 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["Cloud Tiering을 사용하면 이 구성 유형의 라이센스가 완료됩니다."]
 
 
 NOTE: NAS 볼륨의 데이터를 퍼블릭 클라우드 또는 StorageGRID와 같은 프라이빗 클라우드로 계층화할 수 있습니다. SAN 프로토콜에서 액세스하는 데이터를 계층화할 경우 연결 고려사항으로 인해 프라이빗 클라우드를 사용하는 것이 좋습니다.
@@ -63,7 +65,7 @@ NOTE: NAS 볼륨의 데이터를 퍼블릭 클라우드 또는 StorageGRID와 �
 
 === 오브젝트 스토리지 계층
 
-각 ONTAP 클러스터는 비활성 데이터를 단일 오브젝트 저장소에 계층화합니다. 데이터 계층화를 설정할 때는 스토리지 클래스 또는 액세스 계층과 함께 새 버킷/컨테이너를 추가하거나 기존 버킷/컨테이너를 선택할 수 있습니다.
+ONTAP 클러스터는 비활성 데이터를 단일 오브젝트 저장소 또는 여러 오브젝트 저장소에 계층화할 수 있습니다. 데이터 계층화를 설정할 때는 스토리지 클래스 또는 액세스 계층과 함께 새 버킷/컨테이너를 추가하거나 기존 버킷/컨테이너를 선택할 수 있습니다.
 
 * link:reference-aws-support.html["지원되는 AWS S3 스토리지 클래스에 대해 알아보십시오"]
 * link:reference-azure-support.html["지원되는 Azure Blob 액세스 계층에 대해 자세히 알아보십시오"]
