@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
-keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, tiering, cloud tiering 
-summary: Cloud Tiering의 30일 무료 체험은 첫 번째 클러스터에서 계층화를 설정할 때 시작됩니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 Cloud Manager 구독, NetApp의 BYOL 라이센스 또는 이 둘을 결합하여 Cloud Tiering에 대한 비용을 지불해야 합니다. 
+keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
+summary: Cloud Tiering의 30일 무료 체험은 첫 번째 클러스터에서 계층화를 설정할 때 시작됩니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 또는 연간 Cloud Manager 가입형 모델을 통해 Cloud Tiering에 대한 비용을 지불하거나 NetApp에서 BYOL 라이센스 또는 둘 모두를 조합해야 합니다. 
 ---
 = Cloud Tiering의 라이센스 설정
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Tiering의 30일 무료 체험은 첫 번째 클러스터에서 �
 
 
 [role="lead"]
-Cloud Tiering의 30일 무료 체험은 첫 번째 클러스터에서 계층화를 설정할 때 시작됩니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 Cloud Manager 구독, NetApp의 BYOL 라이센스 또는 이 둘을 결합하여 Cloud Tiering에 대한 비용을 지불해야 합니다.
+Cloud Tiering의 30일 무료 체험은 첫 번째 클러스터에서 계층화를 설정할 때 시작됩니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 또는 연간 Cloud Manager 가입형 모델을 통해 Cloud Tiering에 대한 비용을 지불하거나 NetApp에서 BYOL 라이센스 또는 둘 모두를 조합해야 합니다.
 
 추가 내용을 읽기 전에 몇 가지 참고 사항을 확인하십시오.
 
@@ -87,9 +87,21 @@ video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
 
 
 
+== 연간 계약을 사용합니다
+
+연간 계약을 구매하여 Cloud Tiering에 대한 연간 지불
+
+비활성 데이터를 AWS에 계층화할 때 에서 제공되는 연간 계약을 구독할 수 있습니다 https://aws.amazon.com/marketplace/pp/B086PDWSS8["AWS 마켓플레이스 페이지를 참조하십시오"^]. 1년, 2년 또는 3년 조건으로 제공됩니다.
+
+이 옵션을 사용하려면 마켓플레이스 페이지에서 구독을 설정한 다음 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["가입 정보를 AWS 자격 증명과 연결합니다"^].
+
+Azure 또는 GCP로 계층화할 때는 현재 연간 계약이 지원되지 않습니다.
+
+
+
 == Cloud Tiering BYOL 라이센스 사용
 
-NetApp에서 제공하는 자체 라이센스는 2, 12, 24 또는 36개월 기간을 제공합니다. BYOL * Cloud Tiering * 라이센스는 Cloud Manager 계정의 여러 사내 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. Cloud Tiering 라이센스에 정의된 총 계층화 용량이 * 모든 온프레미스 클러스터 * 간에 공유되므로 초기 라이센스와 갱신을 간편하게 수행할 수 있습니다.
+NetApp에서 제공하는 자체 라이센스는 1년, 2년 또는 3년간 제공됩니다. BYOL * Cloud Tiering * 라이센스는 Cloud Manager 계정의 여러 사내 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. Cloud Tiering 라이센스에 정의된 총 계층화 용량이 * 모든 온프레미스 클러스터 * 간에 공유되므로 초기 라이센스와 갱신을 간편하게 수행할 수 있습니다.
 
 Cloud Tiering 라이센스가 없는 경우 NetApp에 문의하여 라이센스를 구입하십시오.
 
@@ -105,9 +117,9 @@ Cloud Manager의 Digital Wallet 페이지를 사용하여 Cloud Tiering BYOL 라
 
 === 2021년 8월 21일부터 새로운 Cloud Tiering BYOL 라이센싱 제공
 
-클라우드 계층화 서비스를 사용하는 Cloud Manager 내에서 지원되는 계층화 구성을 위해 2021년 8월에 새로운 * Cloud Tiering * 라이센스가 도입되었습니다. Cloud Manager는 현재 Amazon S3, Azure Blob 스토리지, Google Cloud Storage, S3 호환 오브젝트 스토리지, IBM Cloud Object Storage 및 StorageGRID와 같은 클라우드 스토리지에 대한 계층화를 지원합니다.
+클라우드 계층화 서비스를 사용하는 Cloud Manager 내에서 지원되는 계층화 구성을 위해 2021년 8월에 새로운 * Cloud Tiering * 라이센스가 도입되었습니다. Cloud Manager는 현재 Amazon S3, Azure Blob 스토리지, Google Cloud Storage, S3 호환 오브젝트 스토리지 및 StorageGRID와 같은 클라우드 스토리지에 대한 계층화를 지원합니다.
 
-이전에 온프레미스 ONTAP 데이터를 클라우드로 계층화하기 위해 사용되었을 수 있는 * FabricPool * 라이센스는 인터넷에 액세스할 수 없는 사이트("어두운 사이트"라고도 함)에서 ONTAP 배포에 대해서만 유지됩니다. 이러한 유형의 구성을 사용하는 경우 System Manager 또는 ONTAP CLI를 사용하여 각 클러스터에 FabricPool 라이센스를 설치합니다.
+이전에 온프레미스 ONTAP 데이터를 클라우드로 계층화하기 위해 사용한 * FabricPool * 라이센스는 ONTAP 인터넷 액세스("다크 사이트")가 없는 사이트와 IBM 클라우드 오브젝트 스토리지로의 계층화 구성에 대해서만 유지됩니다. 이러한 유형의 구성을 사용하는 경우 System Manager 또는 ONTAP CLI를 사용하여 각 클러스터에 FabricPool 라이센스를 설치합니다.
 
 
 TIP: StorageGRID로 계층화하려면 FabricPool 또는 Cloud Tiering 라이센스가 필요하지 않습니다.
@@ -204,7 +216,7 @@ Cloud Tiering 라이센스가 만료되기 전에 업데이트하여 데이터�
 
 . Cloud Manager에서 라이센스를 자동으로 업데이트할 수 없는 경우 라이센스 파일을 수동으로 업로드해야 합니다.
 +
-.. 가능합니다 <<Obtain your Cloud Tiering license file,NetApp Support 사이트에서 라이센스 파일을 받으십시오>>.
+.. 가능합니다  your Cloud Tiering license file,NetApp Support 사이트에서 라이센스 파일을 받으십시오.
 .. Data Services Licenses_탭의 Digital Wallet 페이지에서 을 클릭합니다 image:screenshot_horizontal_more_button.gif["추가 아이콘"] 업데이트하는 서비스 일련 번호에 대해 * Update License * 를 클릭합니다.
 +
 image:screenshot_services_license_update.png["특정 서비스에 대한 라이센스 업데이트 단추를 선택하는 스크린샷"]
@@ -220,11 +232,10 @@ Cloud Manager에서 라이센스를 업데이트하여 Cloud Tiering 서비스�
 
 == 특수 구성의 클러스터에 Cloud Tiering 라이센스 적용
 
-다음 구성의 ONTAP 클러스터는 Cloud Tiering 라이센스를 사용할 수 있지만 일반 단일 노드 및 HA 구성 ONTAP 클러스터와 다른 방식으로 라이센스가 적용되어야 합니다.
+다음 구성의 ONTAP 클러스터는 Cloud Tiering 라이센스를 사용할 수 있지만 단일 노드 클러스터, HA 구성 클러스터, 계층화 미러 구성의 클러스터, FabricPool 미러를 사용한 MetroCluster 구성과 다른 방식으로 라이센스를 적용해야 합니다.
 
-* Tiering Mirror의 클러스터 구성(2개의 오브젝트 저장소에 연결된 클러스터)
-* FabricPool 미러를 사용한 MetroCluster 구성
 * IBM Cloud Object Storage로 계층화된 클러스터
+* "다크 사이트"에 설치된 클러스터
 
 
 
@@ -246,7 +257,7 @@ Cloud Tiering의 일반 클러스터를 검색할 때 Cloud Tiering 인터페이
 
 NOTE: System Manager 또는 ONTAP CLI에서 "하위" 라이센스에 대한 라이센스 용량 및 만료 날짜가 실제 정보가 아니므로 정보가 동일하지 않을 수 있습니다. 이러한 값은 Cloud Tiering 소프트웨어에서 내부적으로 관리됩니다. 실제 정보는 디지털 지갑에서 추적됩니다.
 
-위에 나열된 3가지 구성의 경우 Cloud Tiering 인터페이스를 사용하지 않고 System Manager 또는 ONTAP CLI를 사용하여 계층화를 구성해야 합니다. 따라서 이러한 경우에는 Cloud Tiering 인터페이스에서 이러한 클러스터에 "하위" 라이센스를 수동으로 푸시해야 합니다.
+위에 나열된 두 가지 구성의 경우 Cloud Tiering 인터페이스를 사용하지 않고 System Manager 또는 ONTAP CLI를 사용하여 계층화를 구성해야 합니다. 따라서 이러한 경우에는 Cloud Tiering 인터페이스에서 이러한 클러스터에 "하위" 라이센스를 수동으로 푸시해야 합니다.
 
 데이터가 계층화 미러 구성을 위해 서로 다른 두 오브젝트 스토리지 위치로 계층화되므로 데이터를 두 위치로 계층화할 수 있는 충분한 용량의 라이센스를 구입해야 합니다.
 

@@ -91,6 +91,8 @@ IAM 사용자는 * S3 Bucket * 페이지에서 선택하거나 생성한 버킷�
 
 두 번째 오브젝트 저장소를 Aggregate에 연결하여 FabricPool 미러를 생성하여 오브젝트 저장소를 복제할 수 있습니다. Aggregate에 이미 연결된 오브젝트 저장소가 하나 있어야 합니다.
 
+MetroCluster 구성을 사용하는 경우 https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["자세한 내용과 요구 사항은 ONTAP 설명서를 참조하십시오"].
+
 .단계
 . 클러스터 대시보드 * 에서 선택한 클러스터에 대해 * 고급 설정 * 을 클릭합니다.
 +
@@ -105,6 +107,8 @@ image:screenshot_tiering_mirror_config.png["두 번째 오브젝트 저장소를
 image:screenshot_tiering_mirror_config_complete.png["Aggregate에 연결된 두 번째 오브젝트 저장소를 보여 주는 스크린샷"]
 
 
+
+미러 상태는 두 개의 오브젝트 저장소가 동기화되는 동안 "동기화 진행 중"으로 표시되며 동기화가 완료되면 "동기화됨"으로 변경됩니다.
 
 
 
@@ -142,6 +146,9 @@ image:screenshot_tiering_mirror_delete.png["Aggregate에 대한 객체 저장소
 
 
 미러 오브젝트 저장소가 애그리게이트에서 제거되고 계층화된 데이터가 더 이상 복제되지 않습니다.
+
+
+NOTE: MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 운영 오브젝트 저장소도 제거할지 묻는 메시지가 표시됩니다. 주 오브젝트 저장소를 애그리게이트에 계속 부착하도록 선택하거나 제거할 수 있습니다.
 
 
 

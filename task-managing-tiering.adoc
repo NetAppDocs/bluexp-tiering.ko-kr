@@ -70,7 +70,7 @@ image:screenshot_tiering_policy_settings.png["구성 가능한 계층화 정책 
 
 
 
-* 참고: * "Tiered Data 검색" 옵션이 표시되면 를 참조하십시오 <<Migrating data from the cloud tier back to the performance tier,클라우드 계층에서 성능 계층으로 데이터 마이그레이션>> 를 참조하십시오.
+* 참고: * "Tiered Data 검색" 옵션이 표시되면 를 참조하십시오  data from the cloud tier back to the performance tier,클라우드 계층에서 성능 계층으로 데이터 마이그레이션 를 참조하십시오.
 
 계층화 정책이 변경되고 새 정책에 따라 데이터가 계층화되기 시작합니다.
 

@@ -18,6 +18,24 @@ Cloud Tiering의 새로운 기능 알아보기
 
 
 
+== 2022년 9월 19일
+
+
+
+=== 계층화 마법사를 사용하면 AWS PrivateLink를 사용하여 S3 스토리지에 안전하게 연결할 수 있습니다
+
+이전 릴리즈에서는 VPC 엔드포인트를 통해 클러스터를 S3 버킷에 연결하는 안전한 방법을 제공하는 데 시간이 많이 소요되었습니다. 이제 의 필수 단계를 수행할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPC 엔드포인트 인터페이스를 사용하여 전용 연결을 위해 시스템을 구성합니다"]그런 다음 네트워킹 페이지의 계층화 설정 마법사 중에 PrivateLink를 선택할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["요구 사항 및 단계를 검토하여 비활성 데이터를 Amazon S3에 계층화합니다"].
+
+
+
+=== Cloud Tiering을 Amazon S3로 끌어서 놓기로 설정합니다
+
+Amazon S3 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우, 내부 ONTAP 작업 환경을 대상으로 끌어서 계층화 설정 마법사를 시작할 수 있습니다.
+
+
+
 == 2022년 8월 3일
 
 
