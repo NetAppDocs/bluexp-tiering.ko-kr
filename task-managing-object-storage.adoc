@@ -89,9 +89,11 @@ IAM 사용자는 * S3 Bucket * 페이지에서 선택하거나 생성한 버킷�
 
 == 미러링을 위해 두 번째 오브젝트 저장소를 Aggregate에 연결합니다
 
-두 번째 오브젝트 저장소를 Aggregate에 연결하여 FabricPool 미러를 생성하여 오브젝트 저장소를 복제할 수 있습니다. Aggregate에 이미 연결된 오브젝트 저장소가 하나 있어야 합니다.
+두 번째 오브젝트 저장소를 Aggregate에 연결하여 FabricPool 미러를 생성하여 데이터를 두 개의 오브젝트 저장소에 동기식으로 계층화할 수 있습니다. Aggregate에 이미 연결된 오브젝트 저장소가 하나 있어야 합니다.
 
-MetroCluster 구성을 사용하는 경우 https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["자세한 내용과 요구 사항은 ONTAP 설명서를 참조하십시오"].
+MetroCluster 구성을 사용하는 경우 다른 가용성 영역에 있거나 여러 가용성 영역에 개체의 복사본을 유지하도록 구성된 오브젝트 저장소를 사용하는 것이 좋습니다. https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["MetroCluster 요구 사항에 대한 자세한 내용은 ONTAP 설명서를 참조하십시오"^].
+
+MetroCluster 구성에서 StorageGRID를 오브젝트 저장소로 사용하는 경우 두 ONTAP 시스템 모두 단일 StorageGRID 시스템에 대한 FabricPool 계층화를 수행할 수 있습니다.
 
 .단계
 . 클러스터 대시보드 * 에서 선택한 클러스터에 대해 * 고급 설정 * 을 클릭합니다.

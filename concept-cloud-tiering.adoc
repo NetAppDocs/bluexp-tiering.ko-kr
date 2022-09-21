@@ -121,7 +121,7 @@ link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-paygo-subscription["�
 
 === 연간 계약
 
-Cloud Tiering은 비활성 데이터를 AWS로 계층화할 경우 연간 계약을 제공합니다. 1년, 2년 또는 3년 조건으로 제공됩니다.
+Cloud Tiering은 비활성 데이터를 Amazon S3에 계층화할 때 연간 계약을 제공합니다. 1년, 2년 또는 3년 조건으로 제공됩니다.
 
 Azure 또는 GCP로 계층화할 때는 현재 연간 계약이 지원되지 않습니다.
 
