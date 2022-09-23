@@ -441,8 +441,6 @@
   <block id="5a7b146826969db8fcec8237bb37ca9e" category="list-text">Connector는 포트 443을 통해 ONTAP 클러스터, 오브젝트 저장소 및 Cloud Tiering 서비스에 아웃바운드 HTTPS 연결을 필요로 합니다.</block>
   <block id="2f3ccf86e44d85ac02e49b28a63a02ba" category="paragraph">자세한 내용은 다음을 참조하십시오.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9에 대한 고지 사항</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="a5e8ac089fe7eb702f683ce020dc2a2a" category="inline-link-macro">Cloud Tiering에 관한 고지 사항</block>
   <block id="3754b5e44654d3dc7bfaa36f213a8795" category="list-text"><block ref="3754b5e44654d3dc7bfaa36f213a8795" category="inline-link-macro-rx"></block></block>
   <block id="636acfcaa9d346397b4061f29f7518bd" category="summary">비활성 데이터를 Google 클라우드 스토리지로 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보</block>
@@ -1220,14 +1218,12 @@
   <block id="08070357c74547d6c374634190ef592e" category="list-text">모든 사용자 데이터(모두): 모든 데이터를 차갑게 분류하고 전체 볼륨을 오브젝트 스토리지로 즉시 이동합니다.</block>
   <block id="718ab8536a948516f06462c22a0f8852" category="list-text"><block ref="cb1be15d6f93cbd0769a2f1805d3c3a2" category="inline-link-macro-rx"></block>.</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">2022년 9월 19일</block>
-  <block id="d6076da95b416ff0d08e3269c4addf0d" category="section-title">계층화 마법사를 사용하면 AWS PrivateLink를 사용하여 S3 스토리지에 안전하게 연결할 수 있습니다</block>
   <block id="905ecf204d0cf0b2ed497e63ae9324d0" category="inline-link">VPC 엔드포인트 인터페이스를 사용하여 전용 연결을 위해 시스템을 구성합니다</block>
   <block id="33e030edd0380c3b2d743ec2f989598c" category="paragraph">이전 릴리즈에서는 VPC 엔드포인트를 통해 클러스터를 S3 버킷에 연결하는 안전한 방법을 제공하는 데 시간이 많이 소요되었습니다. 이제 의 필수 단계를 수행할 수 있습니다<block ref="fb4b1250ed3d38b3a9447c7c732436c8" category="inline-link-rx"></block>그런 다음 네트워킹 페이지의 계층화 설정 마법사 중에 PrivateLink를 선택할 수 있습니다.</block>
   <block id="883959b6b7ad90936b33d524655bc282" category="inline-link">요구 사항 및 단계를 검토하여 비활성 데이터를 Amazon S3에 계층화합니다</block>
   <block id="93d0679385afbe8961d65715ec42ad95" category="paragraph"><block ref="eae517fc6cf18ab5b51a15743d8fba49" category="inline-link-rx"></block>.</block>
   <block id="6a22836d972c44908e791a2300d9312a" category="section-title">Cloud Tiering을 Amazon S3로 끌어서 놓기로 설정합니다</block>
   <block id="84b50dc471c57455cf0359ad021a8c58" category="paragraph">Amazon S3 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우, 내부 ONTAP 작업 환경을 대상으로 끌어서 계층화 설정 마법사를 시작할 수 있습니다.</block>
-  <block id="9c71902c4f1a611c5b631cc69cbd2ada" category="paragraph">미러 상태는 두 개의 오브젝트 저장소가 동기화되는 동안 "동기화 진행 중"으로 표시되며 동기화가 완료되면 "동기화됨"으로 변경됩니다.</block>
   <block id="b57c0deab1a5287b0457bf7ca26a95f4" category="admonition">MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 운영 오브젝트 저장소도 제거할지 묻는 메시지가 표시됩니다. 주 오브젝트 저장소를 애그리게이트에 계속 부착하도록 선택하거나 제거할 수 있습니다.</block>
   <block id="6eecabc0d7fe334dd9e87b08c1b64c93" category="paragraph">Cloud Tiering은 단일 노드 클러스터, HA 구성 클러스터, 계층화 미러 구성의 클러스터, FabricPool Mirror를 사용하는 MetroCluster 구성에 대해 구성할 수 있습니다. Cloud Tiering 라이센스는 모든 클러스터에서 공유됩니다.</block>
   <block id="6341d59e78dc892e44e4255d34dff624" category="paragraph">사용한 만큼만 지불하는 가입형, 연간 가입형, Cloud Tiering 라이센스 또는 여러 클라우드를 함께 사용할 수 있습니다. 라이센스가 없는 경우 첫 번째 클러스터에 대해 30일 무료 평가판을 사용할 수 있습니다.</block>
@@ -1258,9 +1254,16 @@
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">제품 내 채팅을 사용합니다</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">에서 비기술 케이스를 제출하십시오<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
-  <block id="b5d536503b2db5208a418d0aad5a4c6b" category="paragraph">두 번째 오브젝트 저장소를 Aggregate에 연결하여 FabricPool 미러를 생성하여 데이터를 두 개의 오브젝트 저장소에 동기식으로 계층화할 수 있습니다. Aggregate에 이미 연결된 오브젝트 저장소가 하나 있어야 합니다.</block>
   <block id="0da0639ab808878f568f3c4f06c02689" category="inline-link">MetroCluster 요구 사항에 대한 자세한 내용은 ONTAP 설명서를 참조하십시오</block>
-  <block id="6a6c83d33eeffc5742e2d15ff9f1e88d" category="paragraph">MetroCluster 구성을 사용하는 경우 다른 가용성 영역에 있거나 여러 가용성 영역에 개체의 복사본을 유지하도록 구성된 오브젝트 저장소를 사용하는 것이 좋습니다.<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>.</block>
-  <block id="4368a1773cee54401cffba9d96b3ee45" category="paragraph">MetroCluster 구성에서 StorageGRID를 오브젝트 저장소로 사용하는 경우 두 ONTAP 시스템 모두 단일 StorageGRID 시스템에 대한 FabricPool 계층화를 수행할 수 있습니다.</block>
   <block id="a9435afbc015cc1ee7d59ebcb4c910fd" category="paragraph">Cloud Tiering은 비활성 데이터를 Amazon S3에 계층화할 때 연간 계약을 제공합니다. 1년, 2년 또는 3년 조건으로 제공됩니다.</block>
+  <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">계층화 마법사를 사용하면 S3 스토리지로 계층화할 때 AWS PrivateLink를 구성할 수 있습니다</block>
+  <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 계층화 동작을 선택합니다</block>
+  <block id="cd71992689f7bdbde4a7c9f0653f44f3" category="paragraph">MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 운영 오브젝트 저장소도 제거할지 묻는 메시지가 표시됩니다. 주 오브젝트 저장소를 애그리게이트에 계속 부착하도록 선택하거나 제거할 수 있습니다.</block>
+  <block id="c80805cd1b291fd4590a3c0b82caa095" category="inline-link">FabricPool 미러에 대한 자세한 정보</block>
+  <block id="4a6b2da2ae625dffc7d1a103b7579d57" category="paragraph">두 번째 오브젝트 저장소를 Aggregate에 연결하여 FabricPool 미러를 생성하여 데이터를 두 개의 오브젝트 저장소에 동기식으로 계층화할 수 있습니다. Aggregate에 이미 연결된 오브젝트 저장소가 하나 있어야 합니다.<block ref="8af213a751b87119e23e85f52fbc72d6" category="inline-link-rx"></block>.</block>
+  <block id="2dc183e0073f3c1e0402cafe50273750" category="paragraph">MetroCluster 구성을 사용하는 경우 다른 가용성 영역에 있는 퍼블릭 클라우드에서 오브젝트 저장소를 사용하는 것이 좋습니다.<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>.</block>
+  <block id="6b483bd3d7c70c49e8ad823d9d4bbf64" category="paragraph">MetroCluster 구성에서 StorageGRID를 오브젝트 저장소로 사용하는 경우 두 ONTAP 시스템 모두 단일 StorageGRID 시스템으로 FabricPool 계층화를 수행할 수 있습니다. 각 ONTAP 시스템은 데이터를 서로 다른 버킷에 계층화해야 합니다.</block>
+  <block id="64430472f9b760efd0fff8a56c3dfe2d" category="paragraph">미러 상태는 두 개의 오브젝트 저장소가 동기화되는 동안 "동기화 진행 중"으로 표시됩니다. 동기화가 완료되면 상태가 "동기화됨"으로 변경됩니다.</block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link">Cloud Manager에 대한 알림</block>
+  <block id="8f4eecef1c8abf547a153a1486d48ab2" category="list-text"><block ref="8f4eecef1c8abf547a153a1486d48ab2" category="inline-link-rx"></block></block>
 </blocks>
