@@ -39,13 +39,13 @@ NetApp은 특히 제품이 출시된 제3자와의 지원 계약에 동의하지
 
 
 [role="quick-margin-para"]
-Cloud Manager에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해 * Enable * 을 클릭하고, 표시되는 메시지에 따라 데이터를 S3 호환 오브젝트 스토리지에 계층화합니다.
+BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 S3 호환 오브젝트 스토리지에 계층화합니다.
 
 [role="quick-margin-para"]
 클라우드 공급자의 용량제 구독, NetApp Cloud Tiering Bring-Your-Own-License 또는 두 가지를 결합하여 사용한 클라우드 계층화 비용 지불:
 
-* 에서 Cloud Manager PAYGO 오퍼링을 구독하려면 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS 마켓플레이스 를 참조하십시오"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure 마켓플레이스 를 참조하십시오"^], 또는 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP 마켓플레이스"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
-* Cloud Tiering BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매해야 하는 경우 문의하기]를 참조하십시오 link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Cloud Manager Digital Wallet에서 계정에 추가하십시오"].
+* 에서 BlueXP PAYGO 서비스를 구독하려면 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS 마켓플레이스 를 참조하십시오"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure 마켓플레이스 를 참조하십시오"^], 또는 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP 마켓플레이스"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
+* Cloud Tiering BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매해야 하는 경우 문의하기]를 참조하십시오 link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Wallet에서 계정에 추가하십시오"].
 
 
 
@@ -98,7 +98,7 @@ TIP: Cloud Tiering은 FlexVol 볼륨과 FlexGroup 볼륨을 모두 지원합니�
 
 === ONTAP 클러스터 검색
 
-콜드 데이터 계층화를 시작하려면 Cloud Manager Canvas에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
+콜드 데이터 계층화를 시작하기 전에 BlueXP Canvas에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 

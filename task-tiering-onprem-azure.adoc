@@ -31,13 +31,13 @@ summary: 비활성 데이터를 Azure Blob 저장소에 계층화하여 온프�
 
 
 [role="quick-margin-para"]
-Cloud Manager에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해 * Enable * 을 클릭하고, 화면의 지시에 따라 데이터를 Azure Blob 저장소에 계층화합니다.
+BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 화면의 지시에 따라 Azure Blob 저장소에 데이터를 계층화합니다.
 
 [role="quick-margin-para"]
 무료 평가판을 사용 종료한 후에는 사용한 만큼만 지불하는 가입형, ONTAP Cloud Tiering 라이센스 또는 다음 두 가지를 결합하여 Cloud Tiering에 대해 결제하십시오.
 
 * Azure 마켓플레이스에서 구독하려면 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Cloud Manager Marketplace 오퍼링으로 이동합니다"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
-* Cloud Tiering BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매해야 하는 경우 문의하기]를 참조하십시오 link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Cloud Manager Digital Wallet에서 계정에 추가하십시오"].
+* Cloud Tiering BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매해야 하는 경우 문의하기]를 참조하십시오 link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Wallet에서 계정에 추가하십시오"].
 
 
 
@@ -100,7 +100,7 @@ NOTE: Cloud Tiering은 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설�
 
 === ONTAP 클러스터 검색
 
-콜드 데이터의 계층화를 시작하려면 Cloud Manager에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
+콜드 데이터의 계층화를 시작하려면 먼저 BlueXP에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 
@@ -120,9 +120,9 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 === 필요한 커넥터 권한이 있는지 확인합니다
 
-Cloud Manager 버전 3.9.7 이상을 사용하여 Connector를 만든 경우 모두 설정됩니다.
+BlueXP 버전 3.9.7 이상을 사용하여 커넥터를 만든 경우 모든 설정이 가능합니다.
 
-이전 버전의 Cloud Manager를 사용하여 Connector를 만든 경우 2개의 필수 권한을 추가하려면 권한 목록을 편집해야 합니다.
+이전 버전의 BlueXP를 사용하여 Connector를 만든 경우 2개의 필수 권한을 추가하려면 권한 목록을 편집해야 합니다.
 
 [source, json]
 ----

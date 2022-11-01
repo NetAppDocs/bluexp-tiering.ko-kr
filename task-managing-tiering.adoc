@@ -26,7 +26,7 @@ summary: 이제 사내 ONTAP 클러스터에서 데이터 계층화를 설정했
 TIP: 오브젝트 스토리지는 처음에 클러스터에 대한 계층화를 설정할 때 이미 구성되어 있으므로 구성할 필요가 없습니다. ONTAP는 추가 볼륨의 비활성 데이터를 동일한 오브젝트 저장소로 계층화합니다.
 
 .단계
-. Cloud Manager 상단에서 * Tiering * 을 클릭합니다.
+. 왼쪽 탐색 메뉴에서 * 이동성 > 계층화 * 를 선택합니다.
 . 클러스터 대시보드 * 에서 클러스터에 대한 * 기본 계층화 설정 * 을 클릭합니다.
 +
 image:screenshot_tiering_tier_volumes_button.png["클러스터의 계층 볼륨 버튼을 선택하는 방법을 보여 주는 스크린샷"]
@@ -59,7 +59,7 @@ image:screenshot_tiering_policy_settings.png["구성 가능한 계층화 정책 
 볼륨에 대한 계층화 정책을 변경하면 ONTAP에서 콜드 데이터를 오브젝트 스토리지에 계층화하는 방식이 변경됩니다. 이 변경은 정책을 변경하는 순간부터 시작됩니다. 볼륨에 대한 후속 계층화 동작만 변경하며 데이터를 클라우드 계층으로 소급 이동하지는 않습니다.
 
 .단계
-. Cloud Manager 상단에서 * Tiering * 을 클릭합니다.
+. 왼쪽 탐색 메뉴에서 * 이동성 > 계층화 * 를 선택합니다.
 . 클러스터 대시보드 * 에서 클러스터에 대한 * 계층 볼륨 * 을 클릭합니다.
 . 볼륨의 행을 클릭하고 계층화 정책을 선택한 다음 필요에 따라 냉각 일을 조정하고 * 적용 * 을 클릭합니다.
 +
@@ -99,7 +99,7 @@ NOTE: 클라우드에서 전송되는 데이터 양에 따라 클라우드 공�
 
 클라우드에서 이동하는 모든 데이터에 대해 성능 계층에 충분한 공간이 있어야 합니다.
 
-. Cloud Manager 상단에서 * Tiering * 을 클릭합니다.
+. 왼쪽 탐색 메뉴에서 * 이동성 > 계층화 * 를 선택합니다.
 . 클러스터 대시보드 * 에서 클러스터에 대한 * 계층 볼륨 * 을 클릭합니다.
 . 를 클릭합니다 image:screenshot_edit_icon.gif["볼륨 계층화를 위해 표의 각 행 끝에 표시되는 편집 아이콘의 스크린샷"] 볼륨 아이콘을 클릭하고 사용할 검색 옵션을 선택한 다음 * 적용 * 을 클릭합니다.
 +
@@ -153,7 +153,7 @@ image:screenshot_tiering_modify_aggregate.png["계층화 충만 임계값을 수
 클라우드 계층에 있는 데이터의 양과 디스크에 있는 데이터의 양을 확인하려는 경우가 있을 수 있습니다. 또는 클러스터 디스크에서 핫 데이터와 콜드 데이터의 양을 확인할 수도 있습니다. Cloud Tiering은 각 클러스터에 대해 이 정보를 제공합니다.
 
 .단계
-. Cloud Manager 상단에서 * Tiering * 을 클릭합니다.
+. 왼쪽 탐색 메뉴에서 * 이동성 > 계층화 * 를 선택합니다.
 . 클러스터 대시보드 * 에서 클러스터의 메뉴 아이콘을 클릭하고 * 클러스터 정보 * 를 선택합니다.
 . 클러스터에 대한 세부 정보를 검토합니다.
 +
@@ -172,7 +172,7 @@ image:screenshot_tiering_aiq_fabricpool_info.png["Active IQ Digital Advisor의 F
 
 == 운영 상태 수정
 
-장애가 발생할 수 있습니다. 이 경우 Cloud Tiering은 클러스터 대시보드에 "Failed" 운영 상태를 표시합니다. 상태는 ONTAP 시스템 및 Cloud Manager의 상태를 반영합니다.
+장애가 발생할 수 있습니다. 이 경우 Cloud Tiering은 클러스터 대시보드에 "Failed" 운영 상태를 표시합니다. 상태는 ONTAP 시스템과 BlueXP의 상태를 반영합니다.
 
 .단계
 . 작동 상태가 "Failed(실패)"인 모든 클러스터를 식별합니다.
@@ -183,7 +183,7 @@ image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_tiering_healt
 . 문제 해결:
 +
 .. ONTAP 클러스터가 작동 중이고 객체 스토리지 공급자에 대한 인바운드 및 아웃바운드 연결이 있는지 확인합니다.
-.. Cloud Manager가 Cloud Tiering 서비스, 오브젝트 저장소 및 해당 서비스가 검색하는 ONTAP 클러스터에 대한 아웃바운드 연결을 사용하는지 확인합니다.
+.. BlueXP에서 Cloud Tiering 서비스, 오브젝트 저장소 및 해당 서비스가 검색하는 ONTAP 클러스터에 대한 아웃바운드 연결이 있는지 확인합니다.
 
 
 
@@ -192,7 +192,7 @@ image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_tiering_healt
 
 == Cloud Tiering에서 추가 클러스터 검색
 
-검색되지 않은 온프레미스 ONTAP 클러스터를 Tiering_Cluster Dashboard_에서 Cloud Manager에 추가하여 클러스터에 대한 계층화를 설정할 수 있습니다.
+검색되지 않은 온프레미스 ONTAP 클러스터를 계층화_클러스터 대시보드_에서 BlueXP에 추가하여 클러스터에 대한 계층화를 설정할 수 있습니다.
 
 추가 클러스터를 검색할 수 있는 버튼이 Tiering_On-Premise Overview_ 페이지에도 나타납니다.
 
@@ -203,16 +203,16 @@ image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_tiering_healt
 image:screenshot_tiering_show_undiscovered_cluster.png["계층화 대시보드에서 검색되지 않은 클러스터 표시 버튼을 보여 주는 스크린샷"]
 
 +
-NSS 자격 증명을 Cloud Manager에 저장하면 계정의 클러스터가 목록에 표시됩니다.
+NSS 자격 증명이 BlueXP에 저장된 경우 계정의 클러스터가 목록에 표시됩니다.
 
 +
-NSS 자격 증명이 Cloud Manager에 저장되지 않은 경우, 먼저 자격 증명을 추가하라는 메시지가 표시된 후 검색되지 않은 클러스터를 볼 수 있습니다.
+NSS 자격 증명이 BlueXP에 저장되지 않은 경우, 먼저 자격 증명을 추가하라는 메시지가 표시된 후 검색되지 않은 클러스터를 볼 수 있습니다.
 
 . 페이지를 아래로 스크롤하여 클러스터를 찾습니다.
 +
-image:screenshot_tiering_discover_cluster.png["Cloud Manager 및 계층화 대시보드에 추가할 기존 클러스터를 검색하는 방법을 보여 주는 스크린샷"]
+image:screenshot_tiering_discover_cluster.png["BlueXP 및 계층화 대시보드에 추가할 기존 클러스터를 검색하는 방법을 보여 주는 스크린샷"]
 
-. Cloud Manager를 통해 관리할 클러스터의 * 클러스터 검색 * 을 클릭하고 데이터 계층화를 구현합니다.
+. BlueXP를 통해 관리하려는 클러스터에 대해 * 클러스터 검색 * 을 클릭하고 데이터 계층화를 구현합니다.
 . Choose a Location_page * On-Premises ONTAP * 가 미리 선택되어 있으므로 * Continue * 를 클릭합니다.
 . ONTAP 클러스터 세부 정보 _ 페이지에서 admin 사용자 계정의 암호를 입력하고 * 추가 * 를 클릭합니다.
 +
@@ -221,6 +221,6 @@ image:screenshot_tiering_discover_cluster.png["Cloud Manager 및 계층화 대�
 . Details & Credentials_ 페이지에서 클러스터 이름이 작업 환경 이름으로 추가되므로 * Go * 를 클릭합니다.
 
 
-Cloud Manager는 클러스터를 검색하고 클러스터 이름을 작업 환경 이름으로 사용하여 Canvas의 작업 환경에 추가합니다.
+BlueXP는 클러스터를 검색하고 클러스터 이름을 작업 환경 이름으로 사용하여 Canvas의 작업 환경에 추가합니다.
 
 오른쪽 패널에서 이 클러스터에 대한 계층화 서비스 또는 기타 서비스를 활성화할 수 있습니다.

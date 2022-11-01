@@ -32,7 +32,7 @@ summary: 비활성 데이터를 StorageGRID로 계층화하여 온프레미스 O
 
 
 [role="quick-margin-para"]
-Cloud Manager에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해 * Enable * 을 클릭하고, 표시되는 메시지에 따라 데이터를 StorageGRID에 계층화합니다.
+BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 StorageGRID에 계층화합니다.
 
 
 
@@ -63,7 +63,7 @@ NOTE: Connector와 StorageGRID 간의 통신은 오브젝트 스토리지 설정
 --
 지원되는 ONTAP 버전입니다:: ONTAP 9.4 이상
 필수 응용 프로그램 액세스 매개 변수입니다:: 클러스터 관리자 사용자는 "콘솔" 응용 프로그램 액세스 권한이 있어야 합니다. ONTAP 명령 '보안 로그인 표시'를 사용하여 확인할 수 있습니다. "admin" 사용자의 _Application_열에 "console"이 표시되어야 합니다. 필요한 경우 'Security login create' 명령을 사용하여 콘솔 응용 프로그램 액세스를 추가합니다. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["자세한 내용은 "보안 로그인" 명령을 참조하십시오"].
-라이센싱:: Cloud Manager 계정에는 Cloud Tiering 라이센스가 필요하지 않으며 데이터를 StorageGRID로 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.
+라이센싱:: BlueXP 계정에는 클라우드 계층화 라이센스가 필요하지 않으며, 데이터를 StorageGRID에 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.
 클러스터 네트워킹 요구 사항::
 +
 --
@@ -92,7 +92,7 @@ NOTE: Cloud Tiering은 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설�
 
 === ONTAP 클러스터 검색
 
-콜드 데이터 계층화를 시작하려면 Cloud Manager Canvas에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
+콜드 데이터 계층화를 시작하기 전에 BlueXP Canvas에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 
