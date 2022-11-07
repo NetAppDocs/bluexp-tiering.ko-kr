@@ -18,6 +18,16 @@ Cloud Tiering의 새로운 기능 알아보기
 
 
 
+== 2022년 11월 6일
+
+
+
+=== 끌어서 놓기로 Azure Blob, Google Cloud Storage 및 StorageGRID에 Cloud Tiering을 사용할 수 있습니다
+
+Azure Blob, Google Cloud Storage 또는 StorageGRID 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우, 내부 ONTAP 작업 환경을 대상으로 끌어서 계층화 설정 마법사를 시작할 수 있습니다.
+
+
+
 == 2022년 9월 19일
 
 
