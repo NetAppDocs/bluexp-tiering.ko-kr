@@ -85,7 +85,7 @@ NOTE: StorageGRID 또는 S3 호환 스토리지로 계층화된 데이터에 대
 
 데이터를 StorageGRID로 계층화할 경우 비용이 발생하지 않습니다. BYOL 라이센스 또는 PAYGO 등록이 필요하지 않습니다.
 
-https://cloud.netapp.com/cloud-tiering["가격 세부 정보를 봅니다"^].
+https://bluexp.netapp.com/pricing#tiering["가격 세부 정보를 봅니다"^].
 
 
 

@@ -130,7 +130,7 @@ Cloud Tiering은 볼륨의 용량에 영향을 주지 않고 애그리게이트�
 
 === BYOL 용량 제한에 도달하면 어떻게 됩니까?
 
-BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 중지되고 이전의 모든 계층형 데이터에 액세스할 수 있습니다. PAYGO 마켓플레이스에 _Cloud Manager - Deploy & Manage Cloud Data Services_ 가입이 있는 경우, 새로운 콜드 데이터는 계속해서 오브젝트 스토리지로 계층화되어 사용량 기준으로 해당 요금을 지불합니다.
+BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 중지되고 이전의 모든 계층형 데이터에 액세스할 수 있습니다. BlueXP - 클라우드 데이터 서비스 배포 및 관리 _ 에 PAYGO 마켓플레이스를 구독하는 경우 새로운 콜드 데이터는 객체 스토리지로 계속 계층화되어 사용량 기준으로 해당 요금을 지불할 수 있습니다.
 
 
 
@@ -204,7 +204,7 @@ Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Cluster Dashboard�
 
 콜드 데이터의 계층화 위치에 따라 달라짐 자세한 내용은 다음 링크를 참조하십시오.
 
-* link:task-tiering-onprem-aws.html#preparing-your-ontap-clusters["Amazon S3에 데이터 계층화"]
+* link:task-tiering-onprem-aws.html#prepare-your-ontap-cluster["Amazon S3에 데이터 계층화"]
 * link:task-tiering-onprem-azure.html#preparing-your-ontap-clusters["Azure Blob 저장소에 데이터 계층화"]
 * link:task-tiering-onprem-gcp.html#preparing-your-ontap-clusters["데이터를 Google 클라우드 스토리지로 계층화"]
 * link:task-tiering-onprem-storagegrid.html#preparing-your-ontap-clusters["데이터를 StorageGRID에 계층화"]

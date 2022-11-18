@@ -164,9 +164,9 @@ image:screenshot_tiering_cluster_info.png["사용된 총 용량, 클러스터 �
 
 
 
-또한 가능합니다 https://docs.netapp.com/us-en/active-iq/task_monitor_and_tier_inactive_data_with_FabricPool_Advisor.html["Active IQ 디지털 자문업체 에서 클러스터의 계층화 정보 보기"^] 이 NetApp 제품에 대해 잘 아실 것입니다. 왼쪽 탐색 창에서 * FabricPool Advisor * 를 선택하면 됩니다.
+또한 가능합니다 https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Digital Advisor에서 클러스터의 계층화 정보를 봅니다"^] 이 NetApp 제품에 대해 잘 아실 것입니다. 왼쪽 탐색 창에서 * 클라우드 권장사항 * 을 선택하면 됩니다.
 
-image:screenshot_tiering_aiq_fabricpool_info.png["Active IQ Digital Advisor의 FabricPool Advisor를 사용하는 클러스터에 대한 FabricPool 정보를 보여 주는 스크린샷"]
+image:screenshot_tiering_aiq_fabricpool_info.png["디지털 자문업체 의 FabricPool 자문업체 를 사용하여 클러스터에 대한 FabricPool 정보를 보여주는 스크린샷"]
 
 
 
@@ -177,9 +177,9 @@ image:screenshot_tiering_aiq_fabricpool_info.png["Active IQ Digital Advisor의 F
 .단계
 . 작동 상태가 "Failed(실패)"인 모든 클러스터를 식별합니다.
 +
-image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_tiering_health.gif["클러스터에 대한 실패한 계층화 상태를 보여 주는 스크린샷"]
+image:screenshot_tiering_health.gif["클러스터에 대한 실패한 계층화 상태를 보여 주는 스크린샷"]
 
-. 에 마우스를 올려 놓습니다 image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_info_icon.gif["실패 이유를 보여 주는 i 아이콘의 스크린샷"] 아이콘을 클릭하여 실패 원인을 확인합니다.
+. 에 마우스를 올려 놓습니다 image:screenshot_info_icon.gif["실패 이유를 보여 주는 i 아이콘의 스크린샷"] 아이콘을 클릭하여 실패 원인을 확인합니다.
 . 문제 해결:
 +
 .. ONTAP 클러스터가 작동 중이고 객체 스토리지 공급자에 대한 인바운드 및 아웃바운드 연결이 있는지 확인합니다.

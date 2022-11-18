@@ -100,7 +100,7 @@ AFF 및 FAS 시스템의 데이터를 계층화할 뿐만 아니라, 이제 ONTA
 
 === Cloud Tiering BYOL 라이센스는 FabricPool 라이센스를 대체합니다
 
-이제 Cloud Tiering 서비스를 사용하여 Cloud Manager 내에서 지원되는 계층화 구성에 새로운 * Cloud Tiering * 라이센스를 사용할 수 있습니다. 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 부동 라이센스입니다. 이전에 사용했을 수 있는 * FabricPool * 라이센스는 Cloud Manager 내에서 지원되지 않는 구성에만 유지됩니다.
+이제 Cloud Tiering 서비스를 사용하여 BlueXP에서 지원되는 계층화 구성에 새로운 * Cloud Tiering * 라이센스를 사용할 수 있습니다. 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 부동 라이센스입니다. 이전에 사용했을 수 있는 * FabricPool * 라이센스는 BlueXP에서 지원되지 않는 구성에만 유지됩니다.
 
 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["새로운 Cloud Tiering 라이센스에 대해 자세히 알아보십시오"].
 
