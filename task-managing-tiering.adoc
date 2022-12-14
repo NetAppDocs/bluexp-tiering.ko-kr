@@ -50,6 +50,7 @@ image:screenshot_tiering_policy_settings.png["구성 가능한 계층화 정책 
 
 
 
+.결과
 선택한 볼륨의 데이터가 클라우드로 계층화되기 시작합니다.
 
 
@@ -70,8 +71,9 @@ image:screenshot_tiering_policy_settings.png["구성 가능한 계층화 정책 
 
 
 
-* 참고: * "Tiered Data 검색" 옵션이 표시되면 를 참조하십시오  data from the cloud tier back to the performance tier,클라우드 계층에서 성능 계층으로 데이터 마이그레이션 를 참조하십시오.
+* 참고: * "Tiered Data 검색" 옵션이 표시되면 를 참조하십시오 <<클라우드 계층에서 성능 계층으로 데이터 마이그레이션,클라우드 계층에서 성능 계층으로 데이터 마이그레이션>> 를 참조하십시오.
 
+.결과
 계층화 정책이 변경되고 새 정책에 따라 데이터가 계층화되기 시작합니다.
 
 
@@ -97,6 +99,7 @@ image:screenshot_tiering_policy_settings.png["구성 가능한 계층화 정책 
 
 NOTE: 클라우드에서 전송되는 데이터 양에 따라 클라우드 공급자가 비용을 청구할 수 있습니다.
 
+.단계
 클라우드에서 이동하는 모든 데이터에 대해 성능 계층에 충분한 공간이 있어야 합니다.
 
 . 왼쪽 탐색 메뉴에서 * 이동성 > 계층화 * 를 선택합니다.
@@ -107,6 +110,7 @@ image:screenshot_tiering_policy_settings_with_retrieve.png["구성 가능한 계
 
 
 
+.결과
 계층화 정책이 변경되고 계층화된 데이터가 성능 계층으로 다시 마이그레이션되기 시작합니다. 클라우드에 있는 데이터의 양에 따라 전송 프로세스에 시간이 다소 걸릴 수 있습니다.
 
 
@@ -221,6 +225,7 @@ image:screenshot_tiering_discover_cluster.png["BlueXP 및 계층화 대시보드
 . Details & Credentials_ 페이지에서 클러스터 이름이 작업 환경 이름으로 추가되므로 * Go * 를 클릭합니다.
 
 
+.결과
 BlueXP는 클러스터를 검색하고 클러스터 이름을 작업 환경 이름으로 사용하여 Canvas의 작업 환경에 추가합니다.
 
 오른쪽 패널에서 이 클러스터에 대한 계층화 서비스 또는 기타 서비스를 활성화할 수 있습니다.

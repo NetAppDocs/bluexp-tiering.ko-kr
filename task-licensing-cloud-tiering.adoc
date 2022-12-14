@@ -193,6 +193,7 @@ image:screenshot_services_license_add.png["Cloud Tiering BYOL 라이센스를 �
 
 
 
+.결과
 BlueXP는 Cloud Tiering 서비스가 활성화되도록 라이센스를 추가합니다.
 
 
@@ -216,7 +217,7 @@ Cloud Tiering 라이센스가 만료되기 전에 업데이트하여 데이터�
 
 . BlueXP에서 라이센스를 자동으로 업데이트할 수 없는 경우 라이센스 파일을 수동으로 업로드해야 합니다.
 +
-.. 가능합니다  your Cloud Tiering license file,NetApp Support 사이트에서 라이센스 파일을 받으십시오.
+.. 가능합니다 <<Cloud Tiering 라이센스 파일을 받으십시오,NetApp Support 사이트에서 라이센스 파일을 받으십시오>>.
 .. Data Services Licenses_탭의 Digital Wallet 페이지에서 을 클릭합니다 image:screenshot_horizontal_more_button.gif["추가 아이콘"] 업데이트하는 서비스 일련 번호에 대해 * Update License * 를 클릭합니다.
 +
 image:screenshot_services_license_update.png["특정 서비스에 대한 라이센스 업데이트 단추를 선택하는 스크린샷"]
@@ -226,6 +227,7 @@ image:screenshot_services_license_update.png["특정 서비스에 대한 라이�
 
 
 
+.결과
 BlueXP는 Cloud Tiering 서비스를 계속 활성화할 수 있도록 라이센스를 업데이트합니다.
 
 
