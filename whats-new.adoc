@@ -18,6 +18,28 @@ Cloud Tiering의 새로운 기능 알아보기
 
 
 
+== 2022년 12월 6일
+
+
+
+=== 필요한 커넥터 아웃바운드 인터넷 액세스 엔드포인트 변경
+
+Cloud Tiering의 변경으로 인해 Cloud Tiering 작업의 성공을 위해 다음 Connector 엔드포인트를 변경해야 합니다.
+
+[cols="50,50"]
+|===
+| 이전 끝점 | 새 끝점 
+
+
+| https://cloudmanager.cloud.netapp.com 으로 문의하십시오 | https://api.bluexp.netapp.com 으로 문의하십시오 
+
+
+| https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오 | https://*.api.bluexp.netapp.com 으로 문의하십시오 
+|===
+의 전체 끝점 목록을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["설치하고"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google 클라우드"^], 또는 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure를 지원합니다"^] 설명합니다.
+
+
+
 == 2022년 11월 6일
 
 
@@ -91,21 +113,3 @@ Cloud Tiering을 설정할 때 특정 일 수 후에 비활성 데이터가 _Sta
 === Cloud Tiering은 ONTAP Select 시스템에서 완벽하게 검증되었습니다
 
 AFF 및 FAS 시스템의 데이터를 계층화할 뿐만 아니라, 이제 ONTAP Select 시스템의 비활성 데이터를 클라우드 스토리지로 계층화할 수 있습니다.
-
-
-
-== 2021년 9월 2일
-
-
-
-=== Cloud Tiering BYOL 라이센스는 FabricPool 라이센스를 대체합니다
-
-이제 Cloud Tiering 서비스를 사용하여 BlueXP에서 지원되는 계층화 구성에 새로운 * Cloud Tiering * 라이센스를 사용할 수 있습니다. 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 부동 라이센스입니다. 이전에 사용했을 수 있는 * FabricPool * 라이센스는 BlueXP에서 지원되지 않는 구성에만 유지됩니다.
-
-https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["새로운 Cloud Tiering 라이센스에 대해 자세히 알아보십시오"].
-
-
-
-=== 사내 ONTAP 클러스터에서 S3 호환 오브젝트 스토리지로 비활성 데이터 계층화
-
-이제 S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 스토리지 서비스에 비활성 데이터를 계층화할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-s3-compat.html["데이터를 S3 호환 오브젝트 스토리지에 계층화하는 방법을 알아보십시오"].
