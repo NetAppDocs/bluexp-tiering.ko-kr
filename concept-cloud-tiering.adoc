@@ -52,8 +52,8 @@ TIP: Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다
 * Amazon S3
 * Microsoft Azure Blob
 * Google 클라우드 스토리지
-* S3 호환 오브젝트 스토리지
 * NetApp StorageGRID를 참조하십시오
+* S3 호환 오브젝트 스토리지
 
 
 Cloud Tiering 라이센스는 데이터를 IBM Cloud Object Storage로 계층화하는 클러스터와 공유할 수도 있습니다. FabricPool 구성은 System Manager 또는 ONTAP CLI를 사용하여 설정해야 하지만 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["Cloud Tiering을 사용하면 이 구성 유형의 라이센스가 완료됩니다."]
