@@ -160,9 +160,9 @@ ONTAP 클러스터에서 VNET로의 ExpressRoute 또는 VPN 연결이 있고 커
 
 계층화를 설정할 때는 사용할 리소스 그룹과 리소스 그룹에 속한 스토리지 계정 및 Azure 컨테이너를 식별해야 합니다. 스토리지 계정을 사용하면 Cloud Tiering에서 데이터 계층화에 사용되는 Blob 컨테이너를 인증하고 액세스할 수 있습니다.
 
-Cloud Tiering은 General Purpose v2 및 Premium Block Blob 유형의 스토리지 계정만 지원합니다.
+Cloud Tiering은 Connector를 통해 액세스할 수 있는 모든 지역의 모든 스토리지 계정에 계층화를 지원합니다.
 
-Blob 컨테이너는 에 있어야 합니다 link:reference-azure-support.html#supported-azure-regions["Cloud Tiering을 지원하는 지역"].
+Cloud Tiering은 General Purpose v2 및 Premium Block Blob 유형의 스토리지 계정만 지원합니다.
 
 
 NOTE: 특정 일 수 이후에 계층형 데이터가 전환될 저비용 액세스 계층을 사용하도록 Cloud Tiering을 구성하려면 Azure 계정에 컨테이너를 설정할 때 수명 주기 규칙을 선택하지 않아야 합니다. Cloud Tiering은 라이프사이클 전환을 관리합니다.
