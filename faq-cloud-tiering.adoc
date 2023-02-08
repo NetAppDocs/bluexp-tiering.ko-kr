@@ -62,7 +62,7 @@ Cloud Tiering은 빠른 데이터 증가에 따른 당면 과제를 해결하므
 
 === FabricPool와 클라우드 계층화의 차이점은 무엇입니까?
 
-FabricPool는 ONTAP의 계층화 기술로, ONTAP CLI 및 System Manager를 통해 자가 관리되거나 클라우드 계층화를 통해 서비스형 관리될 수 있습니다. Cloud Tiering은 ONTAP와 클라우드 모두에서 고급 자동화 프로세스를 통해 FabricPool를 관리 서비스로 전환함으로써 하이브리드 및 멀티 클라우드 구축 전반에서 향상된 가시성과 계층화 제어 기능을 제공합니다.
+FabricPool는 ONTAP 계층화 기술로, ONTAP CLI 및 System Manager를 통해 셀프 관리가 가능하며, Cloud Tiering을 통해 서비스형 관리도 가능합니다. Cloud Tiering은 ONTAP와 클라우드 모두에서 고급 자동화 프로세스를 통해 FabricPool를 관리 서비스로 전환함으로써 하이브리드 및 멀티 클라우드 구축 전반에서 향상된 가시성과 계층화 제어 기능을 제공합니다.
 
 
 
@@ -88,7 +88,7 @@ FabricPool는 ONTAP의 계층화 기술로, ONTAP CLI 및 System Manager를 통�
 
 === Cloud Tiering은 볼륨 용량에 어떤 영향을 미칩니까?
 
-Cloud Tiering은 볼륨의 용량에 영향을 주지 않고 애그리게이트의 성능 계층 사용에 영향을 줍니다.
+Cloud Tiering은 볼륨 용량에 영향을 주지 않고 애그리게이트의 성능 계층 사용에 영향을 줍니다.
 
 
 
@@ -394,7 +394,7 @@ link:concept-cloud-tiering.html#volume-tiering-policies["계층화 정책에 대
 
 === 어느 시점에서 데이터가 콜드 데이터라고 간주됩니까?
 
-데이터 계층화는 블록 레벨에서 수행되기 때문에 데이터 블록은 특정 기간 동안 액세스하지 않은 후 냉각된 것으로 간주됩니다. 이러한 데이터 블록은 계층화 정책의 최소 냉각 기간 속성에 의해 정의됩니다. 해당 범위는 ONTAP 9.7 이전 버전에서 2-63일 또는 ONTAP 9.8부터 2-183일입니다.
+데이터 계층화는 블록 레벨에서 수행되므로, 데이터 블록이 특정 기간 동안 액세스하지 않은 후에는 콜드 블록으로 간주되고, 계층화 정책의 최소 냉각 일 속성에 의해 정의됩니다. 해당 범위는 ONTAP 9.7 이전 버전에서 2-63일 또는 ONTAP 9.8부터 2-183일입니다.
 
 
 

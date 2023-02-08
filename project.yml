@@ -8,7 +8,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
-  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,fr-fr,de-de
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,fr-fr
 sidebar:
   entries:
   - title: Cloud Tiering 문서
@@ -108,15 +108,15 @@ homepage:
   - title: 블로그 커뮤니티
     links:
     - title: NetApp 커뮤니티
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: BlueXP 블로그
-      url: https://cloud.netapp.com/blog
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: Cloud Tiering 블로그
+      url: https://bluexp.netapp.com/blog/topic/cloud-tiering
     - title: 클라우드 웨비나
-      url: https://cloud.netapp.com/events
+      url: https://bluexp.netapp.com/events
   - title: 기타 리소스
     links:
     - title: BlueXP 활용 사례
-      url: https://cloud.netapp.com/cloud-tiering
+      url: https://bluexp.netapp.com/cloud-tiering
 product-family:
   name: BlueXP
   repo: cloud-manager-family

@@ -52,8 +52,6 @@
   <block id="04e0208908b4c6086bf83c95b22aff8b" category="inline-link">온프레미스 작업 환경</block>
   <block id="5b47faa45c60368d15dfdd5dfe93817e" category="list-text"><block ref="05e67941b6656a354bb250fa5965cbfe" category="inline-link-rx"></block>.</block>
   <block id="1595204d9df7479eb1cce9861446c4a3" category="list-text">필요한 S3 권한이 있는 IAM 사용자를 위한 AWS 액세스 키입니다.</block>
-  <block id="bf873eef8ea9c1247876739a70ed365a" category="list-text">온프레미스 클러스터를 선택합니다.</block>
-  <block id="6700c45eabe136b9fc9be1be1c2604d7" category="list-text">계층화 서비스에 대해 * 활성화 * 를 클릭합니다.</block>
   <block id="b2a8895a08251e3a0ba8598464e85f4a" category="inline-image-macro">온-프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 나타나는 활성화 옵션을 보여 주는 스크린샷</block>
   <block id="b7507ffc73507c1071aa3369e64f9b02" category="paragraph"><block ref="b7507ffc73507c1071aa3369e64f9b02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9dcb4338cde0614db53499ea9fe7fe74" category="paragraph">온프레미스 커넥터를 사용하는 경우 생성할 기존 S3 버킷 또는 새 S3 버킷에 대한 액세스를 제공하는 AWS 계정 ID를 입력해야 합니다.</block>
@@ -71,8 +69,6 @@
   <block id="3da4793f70832a1f06de77ca02441aed" category="paragraph">올바른 IPspace를 선택하면 클라우드 계층화를 통해 ONTAP에서 클라우드 공급자의 오브젝트 스토리지로의 연결을 설정할 수 있습니다.</block>
   <block id="97c6279c799edb5b91946106e4bd7ead" category="list-text">Tier Volumes_ 페이지에서 계층화를 구성할 볼륨을 선택하고 계층화 정책 페이지를 시작합니다.</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-image-macro"></block>
-  <block id="a2c3063bd8f8a037bda26950fc2fa130" category="list-text">모든 볼륨을 선택하려면 제목 행(<block ref="2b1190f90c2c717d2aa70aabd2fc4c36" category="inline-image-macro-rx" type="image"></block>)를 클릭하고 * 볼륨 구성 * 을 클릭합니다.</block>
-  <block id="7ede142e047a9c43e3ec4a50352f53b4" category="list-text">여러 볼륨을 선택하려면 각 볼륨에 대한 확인란을 선택합니다(<block ref="f3b0afa317fb06ade03449dd632d08e0" category="inline-image-macro-rx" type="image"></block>)를 클릭하고 * 볼륨 구성 * 을 클릭합니다.</block>
   <block id="27d7b10352920ea311d933853a157434" category="inline-image-macro">연필 아이콘을 편집합니다</block>
   <block id="df5e176205e9c59d302111a246c6358e" category="list-text">단일 볼륨을 선택하려면 행(또는)을 클릭합니다 <block ref="8e860c5cca0144ac9d126d75205476b6" category="inline-image-macro-rx" type="image"></block> 아이콘)을 클릭합니다.</block>
   <block id="8042a9373e3ae1f8fbfa77b3faf46f7d" category="list-text">Tiering Policy_대화 상자에서 계층화 정책을 선택하고 선택한 볼륨의 냉각 날짜를 필요에 따라 조정한 다음 * Apply * 를 클릭합니다.</block>
@@ -144,7 +140,6 @@
   <block id="aa972ed8d4cd18a54d3bfc872e508a63" category="section-title">첫 번째 클러스터에서 S3 호환 오브젝트 스토리지로 비활성 데이터 계층화</block>
   <block id="13b81562751bbcb9ff3beecfc691d73d" category="list-text">S3 호환 오브젝트 스토리지 서버의 FQDN과 HTTPS 통신에 사용될 포트.</block>
   <block id="d4087a3156960fb7d03ac9037d76ef8e" category="list-text">필요한 S3 권한이 있는 액세스 키 및 비밀 키.</block>
-  <block id="8d43d9cd74de6ffefa944510fdac9def" category="list-text">오른쪽 패널에서 계층화 서비스에 대해 * Enable * 을 클릭합니다.</block>
   <block id="6676b3f6fd0aacd6a191518bb81aa206" category="inline-image-macro">온-프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 표시되는 계층화 옵션을 보여 주는 스크린샷</block>
   <block id="00daa784b7dee12cb2819fac0ab07fda" category="paragraph"><block ref="00daa784b7dee12cb2819fac0ab07fda" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c681fc1169309fdbbc2003946bcf5c4c" category="list-text">* 서버 *: S3 호환 오브젝트 스토리지 서버의 FQDN, ONTAP이 서버와 HTTPS 통신에 사용해야 하는 포트, 필요한 S3 권한이 있는 계정의 액세스 키 및 암호 키를 입력합니다.</block>
@@ -165,7 +160,6 @@
   <block id="03d597b22bd9d9fb770e928472c5c22a" category="list-text">ONTAP 클러스터는 포트 443을 통해 Azure Blob 스토리지에 대한 HTTPS 연결을 시작합니다.</block>
   <block id="bbdf6f541b4707ac092673fa798cd221" category="paragraph">ExpressRoute는 더 우수한 성능과 더 낮은 데이터 전송 비용을 제공하지만 ONTAP 클러스터와 Azure Blob 스토리지 간에는 필요하지 않습니다. 그러나 이것이 권장 모범 사례입니다.</block>
   <block id="1530d1823861aa989d35b92ad0b2fd9e" category="list-text">Azure VNET 또는 구내에 상주할 수 있는 Connector에서 인바운드 연결이 필요합니다.</block>
-  <block id="b7f76e21e320bc5e90f575d84c38f775" category="paragraph">데이터를 클라우드에 계층화하려면 Connector가 필요합니다. Azure Blob 저장소에 데이터를 계층화할 때 Azure VNET 또는 온프레미스에 있는 Connector를 사용할 수 있습니다. 새 커넥터를 만들거나 현재 선택한 커넥터가 Azure 또는 온프레미스에 있는지 확인해야 합니다.</block>
   <block id="b1e389999fc3500ff74c433071c6f3d0" category="section-title">필요한 커넥터 권한이 있는지 확인합니다</block>
   <block id="8d553e78e79ca1abdf2ffdd1714a7698" category="paragraph">커넥터에 필요한 네트워크 연결이 있는지 확인합니다. 커넥터는 온프레미스 또는 Azure에 설치할 수 있습니다.</block>
   <block id="bb1241e3a37748e608dbbde25c75ea25" category="list-text">포트 443을 통해 Azure Blob 저장소에 HTTPS로 연결합니다</block>
@@ -177,9 +171,6 @@
   <block id="30c0faff624015e8c8016427ebe986eb" category="admonition">특정 일 수 이후에 계층형 데이터가 전환될 저비용 액세스 계층을 사용하도록 Cloud Tiering을 구성하려면 Azure 계정에 컨테이너를 설정할 때 수명 주기 규칙을 선택하지 않아야 합니다. Cloud Tiering은 라이프사이클 전환을 관리합니다.</block>
   <block id="0cff75f8a1ea859d852b43f30a5a65c5" category="section-title">첫 번째 클러스터에서 Azure Blob 스토리지로 비활성 데이터 계층화</block>
   <block id="eeee7c2206f30d34992557feb0d7900f" category="paragraph">Azure 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터의 계층화를 시작합니다.</block>
-  <block id="3ee477979f5c167102e6a5ac24838ded" category="list-text">* 리소스 그룹 *: 기존 컨테이너가 관리되는 리소스 그룹 또는 계층화된 데이터에 대한 새 컨테이너를 만들려는 위치를 선택하고 * 계속 * 을 클릭합니다.</block>
-  <block id="942f0e4fa69f4641e5d7a36f624bfc71" category="list-text">* Azure Container *: 저장소 계정에 새 Blob 컨테이너를 추가하거나 기존 컨테이너를 선택하고 * Continue * 를 클릭합니다.</block>
-  <block id="7c5961bc8d85d1e030c4394a4df65272" category="paragraph">이 단계에서 나타나는 스토리지 계정 및 컨테이너는 이전 단계에서 선택한 리소스 그룹에 속합니다.</block>
   <block id="9933a95d80335a087c29022e3e618660" category="list-text">* 액세스 계층 수명 주기 *: Cloud Tiering은 계층화된 데이터의 수명 주기 전환을 관리합니다. 데이터는 _Hot_class에서 시작되지만 특정 일 수 후에 _Cool_class로 데이터를 이동하는 규칙을 만들 수 있습니다.</block>
   <block id="f9ec0a0e3f7751a980419c9235987d65" category="paragraph">계층화된 데이터를 이동할 액세스 계층과 데이터를 이동할 일 수를 선택하고 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 오브젝트 저장소에서 45일 후에 계층형 데이터가 _Hot_class에서 _Cool_class로 이동되었음을 보여 줍니다.</block>
   <block id="a6de011c08144280abbea085810f3465" category="inline-link-macro">지원되는 액세스 계층 을 참조하십시오</block>
@@ -187,7 +178,6 @@
   <block id="68a83a6344da48ff48b7dfe970c4f766" category="inline-image-macro">특정 일 수 후에 데이터가 이동되는 다른 액세스 계층을 선택하는 방법을 보여 주는 스크린샷</block>
   <block id="76ebfce4c2c67a5c80f5e3389cadd984" category="paragraph"><block ref="76ebfce4c2c67a5c80f5e3389cadd984" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d2f15cc1f6b52e91b3fa0f67c5683cc7" category="paragraph">수명 주기 규칙은 선택한 저장소 계정의 모든 BLOB 컨테이너에 적용됩니다.</block>
-  <block id="b9c2da820a39ae715e453dbc44b9065a" category="paragraph"><block ref="b3f320eea54b95003707e5e870c0dfaf" category="inline-xref-macro-rx"></block> 수명 주기 관리 기능을 위한 것입니다.</block>
   <block id="ade7907875a5b3e50997036947f13251" category="paragraph">클러스터의 볼륨에서 Azure Blob 개체 스토리지로 데이터 계층화를 설정했습니다.</block>
   <block id="339e18b687c59777d2931b47d72cb440" category="summary">이제 사내 ONTAP 클러스터에서 데이터 계층화를 설정했으므로 추가 볼륨의 데이터를 계층화하고, 볼륨의 계층화 정책을 변경하고, 추가 클러스터를 검색할 수 있습니다.</block>
   <block id="93772529b8117fc8010ab6872129a19c" category="section-title">추가 볼륨의 데이터 계층화</block>
@@ -411,7 +401,6 @@
   <block id="442a5b2cd4109c0203483d91fc544ccf" category="list-text"><block ref="cbd838ab5a582921645cc152129d502d" category="inline-link-rx"></block>.</block>
   <block id="037f057bec36e168c4cbef4fb3d7baef" category="inline-link">GCP 스토리지 설정</block>
   <block id="53b7d7a30f51832e17a6116b67b1ed1b" category="list-text">로 이동합니다<block ref="68a5b209ce3843ce6d342e4d1299b53b" category="inline-link-rx"></block> 서비스 계정에 대한 액세스 키를 생성합니다.</block>
-  <block id="b1ca97074a9a438ddbe4b7a8de533728" category="list-text">프로젝트를 선택하고 * 상호 운용성 * 을 클릭합니다. 아직 수행하지 않았다면 * 상호 운용성 액세스 사용 * 을 클릭하십시오.</block>
   <block id="2888f76ffbc5da2864448f44f9438096" category="list-text">서비스 계정의 액세스 키 * 에서 * 서비스 계정의 키 생성 * 을 클릭하고 방금 생성한 서비스 계정을 선택한 다음 * 키 생성 * 을 클릭합니다.</block>
   <block id="630337f9212a0c34ec9f5d53517b1325" category="paragraph">Cloud Tiering을 설정할 때 나중에 키를 입력해야 합니다.</block>
   <block id="b409d90e9c9774952be98ddeac919772" category="section-title">첫 번째 클러스터에서 Google Cloud 스토리지로 비활성 데이터 계층화</block>
@@ -441,7 +430,6 @@
   <block id="aab422acb3d2334a6deca0e1495745c2" category="section-title">남아메리카</block>
   <block id="4b75686c0a14158ec6b99e93fbf1828b" category="doc">Cloud Tiering의 라이센스 설정</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">추가 내용을 읽기 전에 몇 가지 참고 사항을 확인하십시오.</block>
-  <block id="e206957e9be19dce9acce268f36b6b4d" category="list-text">데이터를 StorageGRID로 계층화할 경우 비용이 발생하지 않으므로 BYOL 라이센스 또는 PAYGO 등록이 필요하지 않습니다. 이 계층화된 데이터는 라이센스에 구입한 용량에 포함되지 않습니다.</block>
   <block id="d42e6c6c0bd600babc489630de73058f" category="inline-link-macro">Cloud Tiering의 라이센스 기능에 대해 자세히 알아보십시오</block>
   <block id="6cba13359069adfeb75d96e433421999" category="paragraph"><block ref="4e584f79910f9a3a7129b23d958f91fd" category="inline-link-macro-rx"></block>.</block>
   <block id="2c747bf611c932e034372048fa569c80" category="section-title">Cloud Tiering PAYGO 구독 사용</block>
@@ -592,13 +580,11 @@
   <block id="51ae64fb3620d7b88a6fc20148f0e2d7" category="sidebar">지원되는 Amazon S3 스토리지 클래스 및 지역</block>
   <block id="483b947377ff3a8f0bfe2df65d4f5292" category="sidebar">지원되는 Azure 액세스 계층 및 지역</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식 및 지원</block>
-  <block id="5fef629b836b60819e0c0ce49cd2b9d7" category="sidebar">새로운 기능</block>
   <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">사내 ONTAP 데이터를 클라우드에 계층화</block>
   <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Azure Blob에 계층화</block>
   <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Google Cloud로 계층화합니다</block>
   <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">일반 S3로 계층화</block>
   <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">계층화 설정을 관리합니다</block>
-  <block id="2379913388089eb3bb86ea09ddd47c5c" category="sidebar">볼륨의 계층화 정책을 변경합니다</block>
   <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">클러스터의 계층화 정보를 검토합니다</block>
   <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">추가 볼륨의 데이터를 계층화합니다</block>
   <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">클라우드에서 성능 계층으로 데이터 이동</block>
@@ -695,9 +681,7 @@
   <block id="5e7895e85d2a8ce94a95b1e2d63c9a62" category="section-title">Cloud Tiering을 사용하면 클라우드 계층에서 스토리지 효율성을 유지할 수 있습니까?</block>
   <block id="ae3e415a4fc13a56be5e1868c9aa2a6e" category="paragraph">예. 데이터를 클라우드 계층으로 이동할 때 압축, 중복제거, 컴팩션과 같은 ONTAP 볼륨 레벨 스토리지 효율성이 유지됩니다.</block>
   <block id="fe862e8407cd35832c11efb6a90397ff" category="section-title">FabricPool와 클라우드 계층화의 차이점은 무엇입니까?</block>
-  <block id="7f7e71c666ac6e3a63bc3a7132680d3e" category="paragraph">FabricPool는 ONTAP의 계층화 기술로, ONTAP CLI 및 System Manager를 통해 자가 관리되거나 클라우드 계층화를 통해 서비스형 관리될 수 있습니다. Cloud Tiering은 ONTAP와 클라우드 모두에서 고급 자동화 프로세스를 통해 FabricPool를 관리 서비스로 전환함으로써 하이브리드 및 멀티 클라우드 구축 전반에서 향상된 가시성과 계층화 제어 기능을 제공합니다.</block>
   <block id="0dcf524393e05cee3deb3f046b007d6a" category="section-title">데이터를 클라우드로 계층화해서 재해 복구 또는 백업/아카이브에 사용할 수 있습니까?</block>
-  <block id="11a0d2337d67ae21839695ee035fc0a0" category="paragraph">아니요 볼륨의 메타데이터는 성능 계층에서 계층화되지 않으므로 오브젝트 스토리지에 저장된 데이터에 직접 액세스할 수 없습니다.</block>
   <block id="ede19369ca5aebd79f174cfded223842" category="paragraph">하지만 Cloud Tiering을 사용하면 보조 시스템 및 SnapMirror 대상 볼륨(DP 볼륨)에서 이를 사용하여 모든 데이터를 계층화하여(메타데이터 제외) 데이터 센터의 설치 공간과 TCO를 줄임으로써 비용 효율적인 백업 및 DR을 실현할 수 있습니다.</block>
   <block id="889a2ba97a353c789347d312f006b7c8" category="section-title">Cloud Tiering이 볼륨 또는 애그리게이트 레벨에 적용됩니까?</block>
   <block id="20ff712f2c649ea611970e47fc3bb71d" category="paragraph">볼륨 레벨에서 Cloud Tiering은 계층화 정책을 각 볼륨과 연결하여 사용합니다. 콜드 데이터 식별은 블록 수준에서 수행됩니다.</block>
@@ -732,7 +716,6 @@
   <block id="c7fe1da619ea4dc60271978fef1e44fe" category="inline-link">Blob 가격 책정 차단</block>
   <block id="f0597479b6555c19f89fc843f1c8d98c" category="inline-link">클라우드 스토리지 가격</block>
   <block id="80fb8aa8c4c5c3477d1c619e25dee21c" category="paragraph">예. 확인합니다<block ref="134b76f780a567f977f9c0667960c527" category="inline-link-rx"></block>,<block ref="42cfb61355c94594363648e2439176bf" category="inline-link-rx"></block>, 및<block ref="fb963a69fe55ff45676c36ad0b99dda1" category="inline-link-rx"></block> 데이터 읽기/검색으로 인해 발생한 추가 가격입니다.</block>
-  <block id="03a5e5708e2ca1e0ed97c088a2f866a3" category="section-title">Cloud Tiering을 설정하기 전에 볼륨의 절약 효과를 예측하고 콜드 데이터 보고서를 받으려면 어떻게 해야 합니까?</block>
   <block id="360f208f0200dcfe1f02d2beac7d1a99" category="section-title">Cloud Tiering에서 지원하는 ONTAP 버전은 무엇입니까?</block>
   <block id="d221b871da22439c86adc694691b8ac6" category="paragraph">Cloud Tiering은 ONTAP 버전 9.2 이상을 지원합니다.</block>
   <block id="a876ec112f46ac7e9d03cc5e9d61ab8f" category="section-title">FAS 시스템에서 HDD만 사용하여 데이터를 계층화할 수 있습니까?</block>
@@ -765,9 +748,6 @@
   <block id="4eb0e04ff79ba8e58d2cc578b23ac20a" category="paragraph">ONTAP 9.6부터 대상 애그리게이트는 소스 애그리게이트와 동일한 클라우드 계층을 사용하는 경우, 콜드 데이터는 로컬 계층으로 다시 이동하지 않습니다.</block>
   <block id="594e5f8f87d3f9aee64730282f1d9d11" category="inline-link-macro">데이터를 성능 계층으로 다시 이동하는 방법을 알아보십시오</block>
   <block id="5b9fbe75fbcd16763752424288950fad" category="section-title">기존 AFF/FAS 컨트롤러를 새로운 컨트롤러로 교체할 때 계층형 데이터를 다시 온프레미스로 마이그레이션할 수 있습니까?</block>
-  <block id="954ab271743046342c8c477272ccf1e2" category="paragraph">아니요 "헤드 스왑" 절차를 수행하는 동안 변경된 것은 애그리게이트의 소유입니다. 이 경우 데이터를 이동하지 않고 새 컨트롤러로 변경됩니다.</block>
-  <block id="be06043e635d6e3bb909d73510b44e3d" category="section-title">클라우드 공급자의 콘솔 또는 오브젝트 스토리지 탐색기를 사용하여 데이터를 버킷으로 계층화할 수 있습니까? ONTAP 없이 오브젝트 스토리지에 저장된 데이터를 직접 사용할 수 있습니까?</block>
-  <block id="d430f061b4da1d93d76a477eed713ad9" category="paragraph">아니요 클라우드로 구축 및 계층화된 오브젝트에는 단일 파일이 아니라 여러 파일에서 최대 1,024개의 4KB 블록이 포함됩니다. 볼륨의 메타데이터는 항상 로컬 계층에 유지됩니다.</block>
   <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">커넥터란 무엇입니까?</block>
   <block id="d2eea5ad2ae07890452da2aec5cffc98" category="section-title">Connector를 온-프레미스에 배포할 수 있습니까?</block>
   <block id="b0ccf0f3fa1a27a2fbab1c35ebf8e0f5" category="inline-link">Connector를 설치 방법에 대해 알아보십시오</block>
@@ -782,7 +762,6 @@
   <block id="2719cad5460eb9108696993a4c233dc2" category="inline-link-macro">계층화 정책에 대해 자세히 알아보십시오</block>
   <block id="5ef61948a073dbcdfdb7d93caa1067ac" category="paragraph"><block ref="b9368c1c43c24f87d7a3626332a607af" category="inline-link-macro-rx"></block>.</block>
   <block id="d0252572656bbedd8e24eed72a5822ea" category="section-title">어느 시점에서 데이터가 콜드 데이터라고 간주됩니까?</block>
-  <block id="106e953d8d4bea7ebaea7ab2455cf23d" category="paragraph">데이터 계층화는 블록 레벨에서 수행되기 때문에 데이터 블록은 특정 기간 동안 액세스하지 않은 후 냉각된 것으로 간주됩니다. 이러한 데이터 블록은 계층화 정책의 최소 냉각 기간 속성에 의해 정의됩니다. 해당 범위는 ONTAP 9.7 이전 버전에서 2-63일 또는 ONTAP 9.8부터 2-183일입니다.</block>
   <block id="aa3f449e50a7b69fa0c38b77d2315143" category="section-title">데이터를 클라우드 계층으로 계층화되기 전의 기본 냉각 기간은 얼마입니까?</block>
   <block id="e72bc0c8a17dadf8e8ad885b9700456f" category="paragraph">콜드 스냅샷 정책의 기본 냉각 기간은 2일이고, 콜드 사용자 데이터 및 스냅샷의 기본 냉각 기간은 31일입니다. cooling-days 매개 변수는 모든 계층화 정책에 적용할 수 없습니다.</block>
   <block id="4c8d66eef4460316cfa98d7ddb65f407" category="section-title">전체 백업을 수행할 때 오브젝트 스토리지에서 모든 계층화된 데이터를 검색합니까?</block>
@@ -829,7 +808,6 @@
   <block id="049da913e478d360bf3fba0732f3ffe7" category="inline-link-macro">S3 호환 오브젝트 스토리지의 경우 S3 권한이 필요합니다</block>
   <block id="de865f0ebc8f66fc8e1331d7e2a7f1d4" category="list-text"><block ref="2efc8cc4b2027ed3eb0bfad94737c839" category="inline-link-macro-rx"></block>.</block>
   <block id="6ace93b12d62dd3912b132e79298337d" category="section-title">Cloud Tiering은 볼륨 용량에 어떤 영향을 미칩니까?</block>
-  <block id="9edbed19ba22406e2515654036d6d7af" category="paragraph">Cloud Tiering은 볼륨의 용량에 영향을 주지 않고 애그리게이트의 성능 계층 사용에 영향을 줍니다.</block>
   <block id="bd661fa541ade4c845ce21fee80a6364" category="section-title">Cloud Tiering은 라이프사이클 관리 정책의 사용을 지원합니까?</block>
   <block id="ab432a40ce280c4620566a0570350625" category="paragraph">예. Cloud Tiering은 특정 일 수가 지나면 기본 스토리지 클래스/액세스 계층에서 보다 비용 효율적인 계층으로 데이터를 전환할 수 있도록 라이프사이클 관리를 설정할 수 있습니다. 라이프사이클 규칙은 Amazon S3 및 Google Cloud 스토리지에 대해 선택한 버킷의 모든 오브젝트 및 Azure Blob에 대해 선택한 스토리지 계정의 모든 컨테이너에 적용됩니다.</block>
   <block id="864bccaf8b856c65bcec49d71eaad8e6" category="section-title">계층화된 데이터를 다시 성능 계층으로 가져오려면 어떻게 해야 합니까?</block>
@@ -1181,10 +1159,7 @@
   <block id="44e77e3f6f32777fdda0f302f6eeb384" category="list-text">Cloud Tiering BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매해야 하는 경우 문의하기]를 참조하십시오 <block ref="6e5253c1105cb457fb1e1040cb387b28" category="inline-link-macro-rx"></block>.</block>
   <block id="fb033ea193d99adc8d3553114c5fe47d" category="list-text">Cloud Tiering이 계층화할 수 있는 총 볼륨 수가 ONTAP 시스템의 볼륨 수보다 적을 수 있습니다. 이는 볼륨을 일부 애그리게이트로 계층화할 수 없기 때문입니다. 에 대한 ONTAP 설명서를 참조하십시오<block ref="bc16a784cd65f4901578ebb3b70f2118" category="inline-link-rx"></block>.</block>
   <block id="115976a072e6ce2f2ab2d16440a6eced" category="paragraph">콜드 데이터 계층화를 시작하기 전에 BlueXP Canvas에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.</block>
-  <block id="dbb7149740d936c40081fce28d4ee35c" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 화면의 지시에 따라 Azure Blob 저장소에 데이터를 계층화합니다.</block>
   <block id="6f7498318061ab9585a9a930576417e9" category="paragraph">콜드 데이터의 계층화를 시작하려면 먼저 BlueXP에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.</block>
-  <block id="c591cadfaae2c0910945f6c26e696561" category="paragraph">BlueXP 버전 3.9.7 이상을 사용하여 커넥터를 만든 경우 모든 설정이 가능합니다.</block>
-  <block id="df8fa8381504770cbc85054471165786" category="paragraph">이전 버전의 BlueXP를 사용하여 Connector를 만든 경우 2개의 필수 권한을 추가하려면 권한 목록을 편집해야 합니다.</block>
   <block id="62b4885d3e4f3aa3a6da101753a59fd4" category="paragraph">견적을 받으려면 ONTAP 클러스터를 BlueXP에 추가하고 계층화 탭에 있는 Cloud Tiering Clusters 대시보드를 통해 검사하기만 하면 됩니다. IDR(Inactive Data Reporting)이 비활성화되어 있거나 충분한 기간 동안 아직 활성화되지 않은 경우 Cloud Tiering은 예상 절감액을 계산하기 위해 산업 상수 70%를 사용합니다. IDR 데이터가 제공되면 Cloud Tiering은 절감 효과를 정확한 수치로 업데이트합니다.</block>
   <block id="f0e21f59ae2ac8831058af2eeb6352ab" category="inline-link">BlueXP의 작업 환경에서 Cloud Volumes ONTAP에 대한 계층화를 설정합니다</block>
   <block id="61d4aa7877925f71314d23b9f09b7393" category="paragraph">Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Cluster Dashboard에서 하이브리드 클라우드 인프라에서 데이터 계층화를 완전히 파악할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다.<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>.</block>
@@ -1214,7 +1189,6 @@
   <block id="beed46ff9b8cb197e70173271551eb15" category="paragraph">BlueXP는 Cloud Tiering 서비스가 활성화되도록 라이센스를 추가합니다.</block>
   <block id="2a1a6ce6532bc43b546f90932dcc9018" category="list-text">BlueXP의 오른쪽 하단에 있는 채팅 아이콘을 클릭하여 특정 일련 번호에 대한 Cloud Tiering 라이센스의 기간 연장 또는 추가 용량을 요청합니다.</block>
   <block id="8061535eb5e8bab52c4a8a0fdc119d14" category="paragraph">라이센스 비용을 지불하고 NetApp Support 사이트에 등록한 후 BlueXP는 디지털 지갑의 라이센스를 자동으로 업데이트하고 데이터 서비스 라이센스 페이지에 변경 내용이 5-10분 내에 반영됩니다.</block>
-  <block id="214cacc5f23c512f4926b241fbfd1544" category="list-text">BlueXP에서 라이센스를 자동으로 업데이트할 수 없는 경우 라이센스 파일을 수동으로 업로드해야 합니다.</block>
   <block id="7abaea97100d61cae59d8ff3e63c7ecd" category="paragraph">BlueXP는 Cloud Tiering 서비스를 계속 활성화할 수 있도록 라이센스를 업데이트합니다.</block>
   <block id="2e6fc7efa287b2fe3ed8bb7cf5c6500f" category="list-text">BlueXP의 경우 <block ref="fe2e5134b9c10f1de1aa1ca1472fd7e2" category="inline-link-macro-rx"></block>.</block>
   <block id="8816958eed360786a943983e0bd031fd" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해 * 활성화 * 를 클릭하고, 표시되는 메시지에 따라 데이터를 Google Cloud Storage에 계층화합니다.</block>
@@ -1226,7 +1200,6 @@
   <block id="955a264d46a1f0536f93bcb5a3e454f1" category="list-text">BlueXP에서 온프레미스 클러스터를 검색할 수 있습니다.</block>
   <block id="92d46e494e7ad2aeddc2f61967fd1763" category="list-text">BlueXP는 객체 스토리지 공급자를 사용하도록 ONTAP를 구성하고 클러스터에서 활성 및 비활성 데이터의 양을 검색합니다.</block>
   <block id="d2c482346f4646ff22b0d802d84f0468" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 StorageGRID에 계층화합니다.</block>
-  <block id="64f5a141e95a85b5c7adc328cad6065b" category="list-text">BlueXP 계정에는 클라우드 계층화 라이센스가 필요하지 않으며, 데이터를 StorageGRID에 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.</block>
   <block id="1fdc9d2d6f254f32143c31bdb680c25a" category="paragraph">BlueXP에서 ONTAP 클러스터를 검색하고, 클러스터가 최소 요구 사항을 충족하는지 확인하고, 클러스터가 AWS S3에 연결될 수 있도록 네트워크 설정을 사용자 지정합니다.</block>
   <block id="ffe46224318100d3f7bec7eca2ef7e3f" category="paragraph">BlueXP 커넥터는 BlueXP 기능을 위한 주요 소프트웨어입니다. 비활성 ONTAP 데이터를 계층화하려면 커넥터가 필요합니다.</block>
   <block id="44ead0e70e856f32d3afe2f909f3fbe2" category="section-title">BlueXP에서 ONTAP 클러스터를 검색합니다</block>
@@ -1236,7 +1209,6 @@
   <block id="53580765f208bf3a21b9b94ab077bfb1" category="list-text">VPC S3 엔드포인트에서 인증서를 가져옵니다. 당신은 이렇게 합니다<block ref="baa295d957d2e86c0ec7224e7ed425da" category="inline-link-rx"></block> 다음 명령을 실행합니다. 엔드포인트의 DNS 이름을 입력할 때 "*"를 대체하여 "bucket"을 앞에 추가합니다.</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP에 대한 고지 사항</block>
   <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXP 활용 사례</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
   <block id="39cff02cd4c2bfac12f446d78e59e3ca" category="paragraph">Azure Blob 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우 클러스터를 Azure Blob 작업 환경으로 끌어서 설치 마법사를 시작할 수 있습니다.</block>
@@ -1253,7 +1225,6 @@
   <block id="8888d46d611948a30ba2c08d3adb6945" category="list-text">Azure 마켓플레이스에서 구독하려면<block ref="c7c84f194b790bd1614b3007104e1172" category="inline-link-rx"></block>를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.</block>
   <block id="a857c8adb9c1cde4acd264143a3e3ad1" category="paragraph">BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 중지되고 이전의 모든 계층형 데이터에 액세스할 수 있습니다. BlueXP - 클라우드 데이터 서비스 배포 및 관리 _ 에 PAYGO 마켓플레이스를 구독하는 경우 새로운 콜드 데이터는 객체 스토리지로 계속 계층화되어 사용량 기준으로 해당 요금을 지불할 수 있습니다.</block>
   <block id="91a68e06c0ddb0dde07439f8f6bd8af6" category="list-text"><block ref="91a68e06c0ddb0dde07439f8f6bd8af6" category="inline-link-macro-rx"></block></block>
-  <block id="01bd12cba613f42e9ff6400f639a48dc" category="list-text">클라우드 공급자의 마켓플레이스에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템에서도 클라우드 계층화가 자동으로 구독됩니다. Cloud Tiering * Licensing * 탭에서 활성 서브스크립션을 확인할 수 있습니다. 다시 가입하지 않아도 됩니다.</block>
   <block id="a4106436d00150633e4b615291f0b5c4" category="list-text">GCP 마켓플레이스를 구독하려면<block ref="7e960c467ff9bbcd90615ea936733251" category="inline-link-rx"></block>를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.</block>
   <block id="bd25c3527b85ace964c6837242630a19" category="paragraph"><block ref="316080080631334cc8b0ad0316a8ebff" category="inline-link-rx"></block>.</block>
   <block id="be161e727970da45fa68901ea907f28e" category="list-text">AWS Marketplace에서 구독하려면<block ref="39d4482f47ca47b562b106b1d8bbeae0" category="inline-link-rx"></block>를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.</block>
@@ -1292,7 +1263,6 @@
   <block id="b5aec059d3f0c191720983ba1eb05690" category="list-text">구독하면 무료 평가판이 종료된 후에도 서비스가 중단되지 않습니다.</block>
   <block id="121bc0fb41d07ce979966173203acae0" category="paragraph">평가판이 종료되면 계층별 데이터 양에 따라 매시간 비용이 청구됩니다.</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022년 12월 6일</block>
-  <block id="73358bf2a9d2d2c32dbbab5b76681d7f" category="section-title">필요한 커넥터 아웃바운드 인터넷 액세스 엔드포인트 변경</block>
   <block id="c433416a8f427b90caab6f6eed1f6323" category="paragraph">Cloud Tiering의 변경으로 인해 Cloud Tiering 작업의 성공을 위해 다음 Connector 엔드포인트를 변경해야 합니다.</block>
   <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">이전 끝점</block>
   <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">새 끝점</block>
@@ -1314,4 +1284,41 @@
   <block id="79385e330c7175cb5887cc8f4befaed8" category="inline-image-macro">볼륨을 계층화하기 위해 테이블의 각 행 끝에 표시되는 편집 아이콘입니다</block>
   <block id="58d8ea9b13cad2e6453367ec5718e38a" category="list-text">를 클릭합니다 <block ref="53af160daf8754f7e9dcd6d07cc514b7" category="inline-image-macro-rx" type="image"></block> 볼륨 아이콘을 클릭하고 사용할 검색 옵션을 선택한 다음 * 적용 * 을 클릭합니다.</block>
   <block id="b151844c81732b344718260aa69943af" category="list-text">정보 "i" 아이콘 위로 마우스를 가져가면 오류 원인이 표시됩니다.</block>
+  <block id="b2b5aa0c45edd9f1055e515a5bfde8eb" category="list-text">사내 ONTAP 작업 환경을 선택합니다.</block>
+  <block id="57c0e1741966187a33a00eea2622a5ec" category="list-text">오른쪽 패널에서 계층화 서비스에 대해 * 활성화 * 를 클릭합니다.</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">클라우드 공급자 솔루션 지원</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXP에 통합한 다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Google Cloud용 Cloud Volumes Service</block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="67e8236f9873d4ba827069cbe6f40bcb" category="list-text">BlueXP 계정에는 Cloud Tiering 라이센스가 필요하지 않으며, 데이터를 StorageGRID에 계층화할 때는 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.</block>
+  <block id="6b97c869d129075dc99119cc6c266fd4" category="paragraph">BlueXP에서 사내 ONTAP 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 화면의 지시에 따라 데이터를 Azure Blob 저장소에 계층화합니다.</block>
+  <block id="8d69c6a87500bfb8cb04a6182b6d844b" category="paragraph">데이터를 클라우드에 계층화하려면 Connector가 필요합니다. Azure Blob 저장소에 데이터를 계층화할 때 Azure VNET 또는 사내에서 Connector를 사용할 수 있습니다. 새 커넥터를 만들거나 현재 선택한 커넥터가 Azure 또는 온프레미스에 있는지 확인해야 합니다.</block>
+  <block id="5354529f47c862f65799910961248e94" category="inline-link">사용자 지정 역할 권한이 필요합니다</block>
+  <block id="83a989bd64e0e5885e1dec6274ea42ed" category="inline-link">Cloud Tiering에 필요한 특정 권한</block>
+  <block id="01a5c8408150004575ed5198397b888a" category="paragraph">BlueXP 버전 3.9.25 이상을 사용하여 커넥터를 만든 경우 모두 설정됩니다. Connector가 Azure 네트워크 내의 리소스 및 프로세스를 관리하는 데 필요한 권한을 제공하는 사용자 지정 역할은 기본적으로 설정됩니다. 를 참조하십시오<block ref="2e92f9b7c581d4f70c6be4a7886872e3" category="inline-link-rx"></block> 및<block ref="11be4b468aa0767f9d6625c9158df171" category="inline-link-rx"></block>.</block>
+  <block id="93319d1fbdd154c5602c392140110702" category="paragraph">이전 버전의 BlueXP를 사용하여 Connector를 만든 경우 Azure 계정에 대한 권한 목록을 편집하여 누락된 권한을 추가해야 합니다.</block>
+  <block id="5fef57bc0c1b18c77c5be5c6d63bd96d" category="list-text">* 리소스 그룹 *: 기존 컨테이너가 관리되는 리소스 그룹 또는 계층화된 데이터에 대한 새 컨테이너를 만들려는 위치를 선택하고 * 계속 * 을 클릭합니다.</block>
+  <block id="973273fb1ef1a057d43299c67a2fa0c2" category="list-text">* Azure Container *: 라디오 버튼을 선택하여 저장소 계정에 새 Blob 컨테이너를 추가하거나 기존 컨테이너를 사용합니다. 그런 다음 저장소 계정을 선택하고 기존 컨테이너를 선택하거나 새 컨테이너의 이름을 입력합니다. 그런 다음 * 계속 * 을 클릭합니다.</block>
+  <block id="19a7b69e14b99b6d561b88afc3f34695" category="paragraph">이 단계에서 나타나는 스토리지 계정 및 컨테이너는 이전 단계에서 선택한 리소스 그룹에 속합니다.</block>
+  <block id="1b9cd9f1d110a19c8b1050fa1e561e7b" category="list-text">프로젝트를 선택하고 * 상호 운용성 * 을 클릭합니다. 아직 수행하지 않았다면 * 상호 운용성 액세스 사용 * 을 클릭하십시오.</block>
+  <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">커넥터 아웃바운드 인터넷 액세스 엔드포인트 변경</block>
+  <block id="0c1c6a391ae1d68d3507d3080a25b274" category="paragraph">FabricPool는 ONTAP 계층화 기술로, ONTAP CLI 및 System Manager를 통해 셀프 관리가 가능하며, Cloud Tiering을 통해 서비스형 관리도 가능합니다. Cloud Tiering은 ONTAP와 클라우드 모두에서 고급 자동화 프로세스를 통해 FabricPool를 관리 서비스로 전환함으로써 하이브리드 및 멀티 클라우드 구축 전반에서 향상된 가시성과 계층화 제어 기능을 제공합니다.</block>
+  <block id="09c40a36a20188e380186d68dab9075a" category="paragraph">아니요 볼륨의 메타데이터는 성능 계층에서 계층화되지 않으므로 오브젝트 스토리지에 저장된 데이터에 직접 액세스할 수 없습니다.</block>
+  <block id="3986f01092f147c9d6cdec6e2d56ae9e" category="paragraph">Cloud Tiering은 볼륨 용량에 영향을 주지 않고 애그리게이트의 성능 계층 사용에 영향을 줍니다.</block>
+  <block id="de8fae09cd33447b4a5792798abb8a9b" category="section-title">Cloud Tiering을 설정하기 전에 볼륨의 절약 효과를 예측하고 콜드 데이터 보고서를 받으려면 어떻게 해야 합니까?</block>
+  <block id="97649bd4040c0307cd57ff763d551780" category="paragraph">아니요 "헤드 스왑" 절차를 수행하는 동안 변경된 것은 애그리게이트의 소유입니다. 이 경우 데이터를 이동하지 않고 새 컨트롤러로 변경됩니다.</block>
+  <block id="32524986634cdd65eea18c94ba7aa138" category="section-title">클라우드 공급자의 콘솔 또는 오브젝트 스토리지 탐색기를 사용하여 데이터를 버킷으로 계층화할 수 있습니까? ONTAP 없이 오브젝트 스토리지에 저장된 데이터를 직접 사용할 수 있습니까?</block>
+  <block id="05278fe4264fa7714f2deb1dc83a1f0f" category="paragraph">아니요 클라우드로 구축 및 계층화된 오브젝트에는 단일 파일이 아니라 여러 파일에서 최대 1,024개의 4KB 블록이 포함됩니다. 볼륨의 메타데이터는 항상 로컬 계층에 유지됩니다.</block>
+  <block id="d8de974cae25c190e1656a12aae05ac0" category="paragraph">데이터 계층화는 블록 레벨에서 수행되므로, 데이터 블록이 특정 기간 동안 액세스하지 않은 후에는 콜드 블록으로 간주되고, 계층화 정책의 최소 냉각 일 속성에 의해 정의됩니다. 해당 범위는 ONTAP 9.7 이전 버전에서 2-63일 또는 ONTAP 9.8부터 2-183일입니다.</block>
+  <block id="997ad1f279c3ec4615df50788475bd1b" category="paragraph">Cloud Tiering의 30일 무료 체험은 첫 번째 클러스터에서 계층화를 설정할 때 시작됩니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 또는 연간 구독을 통해 Cloud Tiering에 대한 비용을 지불하거나 NetApp의 BYOL 라이센스 또는 둘 다 결합하여 비용을 지불해야 합니다.</block>
+  <block id="c50ed19c37a3a0b4ff682e979d40e06a" category="list-text">클라우드 공급자의 마켓플레이스에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템에서도 클라우드 계층화가 자동으로 구독됩니다. Cloud Tiering * Licensing * 탭에서 활성 서브스크립션을 확인할 수 있습니다. 다시 가입하지 않아도 됩니다.</block>
+  <block id="538632f98286e11da7898a8dd8c5940a" category="list-text">데이터를 StorageGRID로 계층화할 경우 비용이 발생하지 않으므로 BYOL 라이센스 또는 PAYGO 등록이 필요하지 않습니다. 이러한 계층형 데이터는 라이센스에서 구입한 용량에 포함되지 않습니다.</block>
+  <block id="822f69d2e49d7da6f8c764e0680f2f75" category="list-text">BlueXP에서 라이센스를 자동으로 업데이트할 수 없는 경우 라이센스 파일을 수동으로 업로드해야 합니다.</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">새로운 기능</block>
+  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">볼륨의 계층화 정책을 변경합니다</block>
+  <block id="e7719a97642051ee358e5d15cf1ab284" category="sidebar">Cloud Tiering 블로그</block>
 </blocks>
