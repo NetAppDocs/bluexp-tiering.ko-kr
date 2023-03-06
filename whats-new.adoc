@@ -18,6 +18,16 @@ Cloud Tiering의 새로운 기능 알아보기
 
 
 
+== 2023년 3월 5일
+
+
+
+=== 이제 볼륨에 대한 계층화 보고서를 생성할 수 있습니다
+
+계층 볼륨 페이지에서 보고서를 다운로드할 수 있으므로 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. Cloud Tiering은 필요한 경우 회사 내 다른 사람에게 검토 및 보낼 수 있는 .csv 파일을 생성합니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["계층화 보고서를 다운로드하는 방법을 확인하십시오"].
+
+
+
 == 2022년 12월 6일
 
 
