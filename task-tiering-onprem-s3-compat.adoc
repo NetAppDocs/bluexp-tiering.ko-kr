@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering-onprem-s3-compat.html 
-keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, s3, tier to s3, fabricpool s3 
+keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, s3, tier to s3, minio 
 summary: 'S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 스토리지 서비스에 비활성 데이터를 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보하십시오.' 
 ---
 = 사내 ONTAP 클러스터에서 S3 오브젝트 스토리지로 데이터 계층화
@@ -15,6 +15,8 @@ summary: 'S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 �
 
 [role="lead"]
 S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 스토리지 서비스에 비활성 데이터를 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보합니다.
+
+현재 MinIO 객체 스토리지가 검증되었습니다.
 
 [CAUTION]
 ====
