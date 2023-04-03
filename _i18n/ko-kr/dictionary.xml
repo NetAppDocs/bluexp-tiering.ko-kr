@@ -229,15 +229,9 @@
   <block id="97052eb243c56bbc0d990eff54f746c9" category="list-text">문제 해결:</block>
   <block id="073279dcfecd605313d456f15c7a1b78" category="list-text">ONTAP 클러스터가 작동 중이고 객체 스토리지 공급자에 대한 인바운드 및 아웃바운드 연결이 있는지 확인합니다.</block>
   <block id="66009842ccd3b5b27255c54219dcb209" category="section-title">Cloud Tiering에서 추가 클러스터 검색</block>
-  <block id="247d31f04619e7f1f03d685e8e2b2816" category="paragraph">추가 클러스터를 검색할 수 있는 버튼이 Tiering_On-Premise Overview_ 페이지에도 나타납니다.</block>
-  <block id="b57da0b2e8132c4d5a84d9f088fe75f2" category="list-text">검색되지 않은 클러스터를 보려면 * 검색되지 않은 클러스터 표시 * 를 클릭합니다.</block>
   <block id="68344976fe86b89a3fba62990a12e25a" category="inline-image-macro">계층화 대시보드에서 검색되지 않은 클러스터 표시 버튼을 보여 주는 스크린샷</block>
   <block id="ba7ed4fd521be5b57e051242d4d614a3" category="paragraph"><block ref="ba7ed4fd521be5b57e051242d4d614a3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ead41bd8c5b56fc59ca4fb2fef9d0b5b" category="list-text">페이지를 아래로 스크롤하여 클러스터를 찾습니다.</block>
-  <block id="13b9e6e3af52ca38ce11c3fd268b0306" category="list-text">Choose a Location_page * On-Premises ONTAP * 가 미리 선택되어 있으므로 * Continue * 를 클릭합니다.</block>
-  <block id="663909252cbf804332d40198bd07c3e1" category="list-text">ONTAP 클러스터 세부 정보 _ 페이지에서 admin 사용자 계정의 암호를 입력하고 * 추가 * 를 클릭합니다.</block>
   <block id="062f0087b4466a679466c422dc664f93" category="paragraph">클러스터 관리 IP 주소는 NSS 계정의 정보에 따라 채워집니다.</block>
-  <block id="dd7d25d7e52a6b920a44c09b9d6001c2" category="list-text">Details &amp; Credentials_ 페이지에서 클러스터 이름이 작업 환경 이름으로 추가되므로 * Go * 를 클릭합니다.</block>
   <block id="65f5911f922c92104ab33c2cd05d4a45" category="paragraph">오른쪽 패널에서 이 클러스터에 대한 계층화 서비스 또는 기타 서비스를 활성화할 수 있습니다.</block>
   <block id="6b5920220b135ba1ff95cfb5b149f138" category="summary">NetApp의 Cloud Tiering 서비스는 비활성 데이터를 사내 ONTAP 클러스터에서 오브젝트 스토리지로 자동으로 계층화하여 데이터 센터를 클라우드로 확장합니다. 따라서 애플리케이션 계층을 변경하지 않고 클러스터에서 귀중한 공간을 확보하여 더 많은 워크로드를 사용할 수 있습니다. Cloud Tiering을 사용하면 데이터 센터의 비용을 절감하고 자본 지출 모델에서 운영 비용 모델로 전환할 수 있습니다.</block>
   <block id="36afa058c74d288178950c27927bdb38" category="doc">Cloud Tiering에 대해 알아보십시오</block>
@@ -321,9 +315,7 @@
   <block id="37d501cda5d294291fc5d75cd244ac7c" category="paragraph">클라우드 성능 테스트를 실행하여 데이터 계층화를 설정하기 전과 후에 ONTAP 클러스터에서 오브젝트 저장소로 네트워크 지연 시간 및 처리량 성능을 측정합니다. 또한 이 테스트에서는 발생한 모든 오류를 식별합니다.</block>
   <block id="05550ef95410219ee8109be8d00e9f62" category="paragraph">다음은 샘플 성능 결과입니다.</block>
   <block id="f171b53c2ca59613ced7d9a5a942a255" category="inline-image-macro">클라우드 성능 테스트의 클러스터 성능 결과 스크린샷</block>
-  <block id="0076173f0ac8d073b8ab32c9a088997b" category="paragraph"><block ref="0076173f0ac8d073b8ab32c9a088997b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8d7c169a466dfccc11fd70e4d5d9307c" category="paragraph">클러스터가 CPU 활용률이 50% 미만인 경우 이 점검을 실행하는 것이 가장 좋습니다.</block>
-  <block id="c1d7cf1a6e1782b986990f5c14c566d8" category="list-text">클러스터 대시보드 * 에서 클러스터의 메뉴 아이콘을 클릭하고 * 클라우드 성능 테스트 * 를 선택합니다.</block>
   <block id="07ae28f7f79fff3c0b0b0cf1056fc2c1" category="list-text">세부 정보를 검토하고 * Continue * 를 클릭합니다.</block>
   <block id="bfdee4fb60271a04ea7de7300cf2719f" category="list-text">프롬프트에 따라 필요한 정보를 제공합니다.</block>
   <block id="82377b23824c7bd3e4d61004b79007e2" category="paragraph">제공해야 하는 정보는 클러스터에서 계층화를 설정할 때와 동일합니다.</block>
@@ -435,14 +427,11 @@
   <block id="bf842c9a2352dda7ee452c6389dda8b8" category="paragraph">클라우드 공급자 마켓플레이스의 용량제 구독을 통해 Cloud Volumes ONTAP 시스템과 Cloud Tiering과 같은 다양한 클라우드 데이터 서비스 사용에 대한 라이센스를 받을 수 있습니다.</block>
   <block id="a70c9916d691b1eb3e72bf59caa27ce2" category="section-title">AWS Marketplace에서 구독</block>
   <block id="df5f272e4f3bf41f36db01caae48f251" category="paragraph">AWS Marketplace에서 Cloud Tiering을 구독하여 ONTAP 클러스터에서 AWS S3로 데이터 계층화를 위한 용량제 구독 설정</block>
-  <block id="22ebad5f828c1874ce79ac764661bead" category="list-text">AWS Marketplace에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.</block>
   <block id="03909f0465e674709c33e446a2657166" category="paragraph">다음 비디오는 프로세스를 보여 줍니다.</block>
   <block id="8feab303f9a851219461fc3a5bccb103" category="section-title">Azure 마켓플레이스에서 구독</block>
   <block id="852bc4eb9abdefdd230a032e3bb1c3f3" category="paragraph">Azure Marketplace에서 Cloud Tiering을 구독하여 ONTAP 클러스터에서 Azure Blob 스토리지까지 데이터 계층화에 대한 용량제 구독 설정</block>
-  <block id="3a1616493ce57887d77b3b14ad9e2110" category="list-text">Azure Marketplace에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.</block>
   <block id="d96cb6abed792dbbfc1aebbc934cb55d" category="section-title">GCP Marketplace에서 구독</block>
   <block id="0d51ae895f10dab0e96402b5dca83cae" category="paragraph">GCP Marketplace에서 Cloud Tiering을 구독하여 ONTAP 클러스터에서 Google Cloud 스토리지까지 데이터 계층화를 위한 용량제 구독을 설정하십시오.</block>
-  <block id="c86cd292411d2b20ff6afbb02e35888f" category="list-text">GCP Marketplace에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.</block>
   <block id="8b09b5b1748988787957d62eb22076ff" category="section-title">Cloud Tiering BYOL 라이센스 사용</block>
   <block id="32d21336f5ff01b8e920d65646fad172" category="paragraph">Cloud Tiering 라이센스가 없는 경우 NetApp에 문의하여 라이센스를 구입하십시오.</block>
   <block id="7bd914491d17c534e3612cd97579060e" category="list-text">mailto:ng-cloud-tiering@netapp.com?subject=Licensing [라이센스 구매를 위해 이메일 보내기].</block>
@@ -470,7 +459,6 @@
   <block id="56273f3344c87fabbf5196fba9816fff" category="inline-image-macro">테넌트 ID를 입력한 다음 제출을 클릭하여 라이센스 파일을 다운로드할 수 있는 라이센스 가져오기 대화 상자가 표시된 스크린샷</block>
   <block id="212f5a95c637538f9375d966345ca9f7" category="paragraph"><block ref="212f5a95c637538f9375d966345ca9f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="39578a52b476e59b429794b57bcf40bf" category="section-title">Cloud Tiering BYOL 라이센스를 계정에 추가</block>
-  <block id="14e73879f741aacd67e792f34954460d" category="list-text">모든 서비스 &gt; 디지털 지갑 &gt; 데이터 서비스 라이센스 * 를 클릭합니다.</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">라이선스 추가 * 를 클릭합니다.</block>
   <block id="c1b2dc0798d3960e25b8a12c751f53ec" category="list-text">Add License_대화 상자에서 라이센스 정보를 입력하고 * Add License * 를 클릭합니다.</block>
   <block id="80b8da08efcb9500667b0fc290bbe1f6" category="list-text">계층화 라이선스 일련 번호가 있고 NSS 계정을 알고 있는 경우 * 일련 번호 입력 * 옵션을 선택하고 해당 정보를 입력합니다.</block>
@@ -494,17 +482,10 @@
   <block id="41e921305ae1b027e5d364af4a2a9df2" category="list-text">Update License_page에서 라이센스 파일을 업로드하고 * Update License * 를 클릭합니다.</block>
   <block id="373efc67a3356a3a76e08792361de915" category="summary">Cloud Tiering은 각 사내 클러스터에서 데이터 계층화의 통합된 뷰를 제공합니다. 이 개요는 작업 환경을 명확하게 보여 주는 것으로 적절한 조치를 취할 수 있도록 해 줍니다.</block>
   <block id="8fa2690e71ce0c54acb839630146cadd" category="doc">클러스터에서 데이터 계층화에 대한 개요를 확인하십시오</block>
-  <block id="09410de8c94e9f68daa9372cf505d92c" category="inline-image-macro">온프레미스 개요 페이지의 스크린샷.</block>
-  <block id="1acad320817dead1b4a28a1e3c74348e" category="paragraph"><block ref="1acad320817dead1b4a28a1e3c74348e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e5814d733d11a3760eeb41c5a83a80f" category="list-text">활성 클러스터</block>
   <block id="ca7efa87a2dfa1e448ef01cfdaa54489" category="list-text">데이터를 클라우드로 현재 계층화하고 있는 클러스터의 수, 데이터를 클라우드로 계층화하지 않는 클러스터, 데이터 계층화를 지원하지 않는 클러스터의 수</block>
-  <block id="b70528883a2d1dce278c3b16e0f8c608" category="list-text">데이터 개요</block>
   <block id="5198ebed4bb19dd4a54ec09aefa9b18a" category="list-text">클라우드로 계층화된 데이터의 양과 클러스터에서 핫 데이터와 콜드 데이터의 양</block>
-  <block id="e62d375b65b0b0b9302910add5b2a6a8" category="list-text">총 절감액</block>
-  <block id="d52c7ea8dc8cdf88c124364840a3cc8e" category="list-text">데이터를 클라우드로 계층화하여 절약한 비용과 더 많은 데이터를 클라우드에 계층화하여 절감할 수 있는 비용의 양을 확인하십시오.</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="list-text">정책</block>
   <block id="4be1b347cffb3177e749a7dea6f54978" category="list-text">각 계층화 정책이 볼륨에 적용된 횟수</block>
-  <block id="ccc1516741f5a9218383ec432abb8237" category="list-text">마켓플레이스 구독</block>
   <block id="28c123c8cd56ba4e4b9a732aa779fbc1" category="list-text">각 마켓플레이스 가입 유형과 연결된 클러스터의 수 및 구독 상태에 대한 표시.</block>
   <block id="b13cf55f0ce2b751f69001054e37fd7b" category="summary">Cloud Tiering은 여러 S3 스토리지 클래스와 대부분의 영역을 지원합니다.</block>
   <block id="ddc0d211eedc82ce253724f39188a145" category="doc">지원되는 S3 스토리지 클래스 및 지역</block>
@@ -652,7 +633,6 @@
   <block id="cd545dee97443a0461021080f3101dc7" category="inline-link-macro">디지털 지갑에 라이센스를 추가합니다</block>
   <block id="2ef78cf4a1d7bf5f762483337e16bb3b" category="inline-link-macro">새로운 클러스터를 만나보세요</block>
   <block id="8ba93d5fbdf24a09ecf1780c63d1122d" category="list-text">클라우드 계층화, <block ref="7e9f01463f0c1bdc0791002bcf190788" category="inline-link-macro-rx"></block>.</block>
-  <block id="2577e5e77f7a58d0996e4f2dd6bcb05e" category="list-text">클러스터 대시보드에서 를 클릭합니다 <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> 클러스터에 대해 * 라이선스 배포 * 를 선택합니다.</block>
   <block id="b84ead730259e42d0aaa3247f1351b36" category="inline-image-macro">ONTAP 클러스터에 계층화 라이센스를 구축하는 방법을 보여 주는 스크린샷</block>
   <block id="54cfdff2d2e56824adbc46c622ea54b0" category="paragraph"><block ref="54cfdff2d2e56824adbc46c622ea54b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6cde62acc90805ee457b7dc44915c98" category="list-text">Deploy License_대화상자에서 * deploy * 를 클릭합니다.</block>
@@ -818,7 +798,6 @@
   <block id="f726aa46a58bd5c9a7004e61db828305" category="doc">데이터 계층화에 사용되는 오브젝트 스토리지 관리</block>
   <block id="a9e06a6a9bb74f973d60c123bdaee97e" category="section-title">클러스터에 구성된 오브젝트 저장소를 보는 중입니다</block>
   <block id="673a98b059fd9fc3e7f4f5593eead74f" category="paragraph">클러스터에 구성된 모든 오브젝트 저장소와 이러한 객체가 연결된 집계를 볼 수 있습니다. Cloud Tiering은 각 클러스터에 대해 이 정보를 제공합니다.</block>
-  <block id="244f511b6aa78e3769d757df179046e9" category="list-text">클러스터 대시보드 * 에서 클러스터의 메뉴 아이콘을 클릭하고 * 오브젝트 저장소 정보 * 를 선택합니다.</block>
   <block id="bd15f32248e0ea21c4361f1a3e4f0f52" category="list-text">오브젝트 저장소에 대한 세부 정보를 검토합니다.</block>
   <block id="4f4c4da15333fa3fcf08d1af94c834e9" category="paragraph">이 예에서는 클러스터의 다른 애그리게이트에 연결된 Amazon S3 및 Azure Blob 오브젝트 저장소를 모두 보여 줍니다.</block>
   <block id="6e806ac83f13dbac246cf70ff9474376" category="inline-image-macro">사용된 총 용량, 오브젝트 저장소에 연결된 애그리게이트, 오브젝트 저장소 이름 및 추가 정보를 자세히 설명하는 오브젝트 스토리지 정보를 보여 주는 스크린샷</block>
@@ -837,10 +816,8 @@
   <block id="e79b2c28f4130226c9f1d6cb9f0ffd0c" category="paragraph">오브젝트 저장소가 생성됩니다.</block>
   <block id="e8ae815adf3f63d474c9e166a024d614" category="paragraph">이제 오브젝트 저장소를 클러스터의 Aggregate에 연결할 수 있습니다.</block>
   <block id="070570d4e2b0f26858aa948de0ba63dd" category="section-title">미러링을 위해 두 번째 오브젝트 저장소를 Aggregate에 연결합니다</block>
-  <block id="9db0a2a7df2f469f7377ef9995abad54" category="list-text">클러스터 대시보드 * 에서 선택한 클러스터에 대해 * 고급 설정 * 을 클릭합니다.</block>
   <block id="7f68d3e217be20821af2e99c59a95cae" category="inline-image-macro">클러스터의 고급 설정 버튼을 보여 주는 스크린샷</block>
   <block id="e098fabd5ac5fda426e3f4e5268635d7" category="paragraph"><block ref="e098fabd5ac5fda426e3f4e5268635d7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="23382689bb5023b2975968f57d098105" category="list-text">고급 설정 페이지에서 사용할 개체 저장소를 미러 개체 저장소의 위치로 끕니다.</block>
   <block id="cfdb62329a930b2b3b98eb375e5d6d67" category="inline-image-macro">두 번째 오브젝트 저장소를 Aggregate로 끌어서 계층화 미러를 생성하는 방법을 보여 주는 스크린샷</block>
   <block id="f8c6499529de613e9e81f51b940a3b19" category="paragraph"><block ref="f8c6499529de613e9e81f51b940a3b19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1b038258ee1bc3da9cd34060708650eb" category="list-text">개체 저장 연결 대화 상자에서 * 연결 * 을 클릭하면 두 번째 개체 저장소가 Aggregate에 연결됩니다.</block>
@@ -848,13 +825,11 @@
   <block id="2aea151d90073296398b532c9c993bd2" category="paragraph"><block ref="2aea151d90073296398b532c9c993bd2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fd0703c96fc59c2fc9e81a8bb3b80f95" category="section-title">운영 오브젝트 저장소와 미러 오브젝트 저장소 교환</block>
   <block id="184c9c9e72046fd5626f2bafc662975d" category="paragraph">Aggregate에 대해 기본 및 미러 오브젝트 저장소를 스왑할 수 있습니다. 객체 저장소 미러는 운영 미러가 되고 원래 운영 미러는 미러가 됩니다.</block>
-  <block id="ebfa7c7e62c629e534a590d9c5bd48ac" category="list-text">고급 설정 페이지에서 애그리게이트의 메뉴 아이콘을 클릭하고 * 전환 대상 * 을 선택합니다.</block>
   <block id="d457321a8411fb5d95c9c393eefbf2d4" category="inline-image-macro">Aggregate의 대상 바꾸기 옵션을 보여 주는 스크린샷</block>
   <block id="10c5a319854025c7e7ac42dff3b41fe6" category="paragraph"><block ref="10c5a319854025c7e7ac42dff3b41fe6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="361fe7b307c10539051d5b3dd457ac55" category="list-text">대화 상자에서 작업을 승인하면 운영 객체 및 미러 객체 저장소가 스왑됩니다.</block>
   <block id="03853b071c5a398f92f626b681bde928" category="section-title">Aggregate에서 미러 오브젝트 저장소 제거</block>
   <block id="b80dfa8635588311c7e70ae0593a8de5" category="paragraph">더 이상 추가 오브젝트 저장소로 복제할 필요가 없는 경우 FabricPool 미러를 제거할 수 있습니다.</block>
-  <block id="85c797dc141e0eb32826e3caf502008c" category="list-text">고급 설정 페이지에서 집계 메뉴 아이콘을 클릭하고 * 개체 저장 취소 * 를 선택합니다.</block>
   <block id="cbf2fbc65a5867c683bd7467af7632ee" category="inline-image-macro">Aggregate에 대한 객체 저장소 미러 해제 옵션을 보여 주는 스크린샷</block>
   <block id="f5865f631fc268c7116eb4f0ac0c2a87" category="paragraph"><block ref="f5865f631fc268c7116eb4f0ac0c2a87" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90a0f73c4b59ec2f9c0c4f90da8df3cc" category="paragraph">미러 오브젝트 저장소가 애그리게이트에서 제거되고 계층화된 데이터가 더 이상 복제되지 않습니다.</block>
@@ -890,18 +865,12 @@
   <block id="8d2a23c3bb3453bcfb2eb9da839497da" category="inline-link">Cloud Tiering을 사용하면 이 구성 유형의 라이센스가 완료됩니다.</block>
   <block id="e00f45236ca3126b5f0413b24c74bafe" category="paragraph">Cloud Tiering 라이센스는 데이터를 IBM Cloud Object Storage로 계층화하는 클러스터와 공유할 수도 있습니다. FabricPool 구성은 System Manager 또는 ONTAP CLI를 사용하여 설정해야 하지만<block ref="59b899f44b0eb5c2c23c146be071655a" category="inline-link-rx"></block></block>
   <block id="98652169e15d6be3f041f6831e813ed4" category="paragraph">ONTAP 클러스터는 비활성 데이터를 단일 오브젝트 저장소 또는 여러 오브젝트 저장소에 계층화할 수 있습니다. 데이터 계층화를 설정할 때는 스토리지 클래스 또는 액세스 계층과 함께 새 버킷/컨테이너를 추가하거나 기존 버킷/컨테이너를 선택할 수 있습니다.</block>
-  <block id="4d529b2a518859d54f6f21833197c05d" category="paragraph">계층화 &gt; 온프레미스 개요 * 를 클릭하기만 하면 됩니다. Cloud Tiering은 환경에 대해 다음과 같은 세부 정보를 제공합니다.</block>
   <block id="9ff3a02daa8f937f9e2ca9eeb3bd0560" category="list-text">* 공급자 선택 *: * S3 호환 * 을 선택하고 * 계속 * 을 클릭합니다.</block>
-  <block id="53b6ec02126a4029ea743a4f2910bafa" category="list-text">클러스터 대시보드 * 에서 클러스터에 대한 * 기본 계층화 설정 * 을 클릭합니다.</block>
   <block id="a737e977d6d99228eb4f4979ab856291" category="paragraph"><block ref="a737e977d6d99228eb4f4979ab856291" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f6cfe20592aaee333eb4effea00a83b6" category="list-text">클러스터 대시보드 * 에서 클러스터에 대한 * 계층 볼륨 * 을 클릭합니다.</block>
-  <block id="9bfca8fb5771e5278530e3aec5c99564" category="list-text">고급 설정 페이지에서 집계 메뉴 아이콘을 클릭하고 * 집계 수정 * 을 선택합니다.</block>
   <block id="d6a719a9a003494c0346adab9809d5f2" category="inline-image-macro">Aggregate 수정 옵션을 보여 주는 스크린샷</block>
   <block id="a0cb518c6e52bb73ee65ce79d6912e32" category="paragraph"><block ref="a0cb518c6e52bb73ee65ce79d6912e32" category="inline-image-macro-rx" type="image"></block></block>
   <block id="37d627356844b359763aa1dbb8695283" category="list-text">표시되는 대화 상자에서 fullness 임계값을 수정하고 비활성 데이터 보고를 활성화 또는 비활성화할지 여부를 선택합니다.</block>
   <block id="b2531ab74e4b89a1d4fe9224355475de" category="paragraph"><block ref="b2531ab74e4b89a1d4fe9224355475de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="af1942cfab65b0eda25631cd4c8329bf" category="list-text">클러스터 대시보드 * 에서 클러스터의 메뉴 아이콘을 클릭하고 * 클러스터 정보 * 를 선택합니다.</block>
-  <block id="9f4ac40c5be04fc728d437f7b6d0e536" category="list-text">Cloud Tiering에서 * Clusters 대시보드 * 탭을 클릭합니다.</block>
   <block id="bda2a863882afc8f61b71a756b1ea690" category="inline-link">Azure에서 커넥터 배포</block>
   <block id="1dacca07d9ba20ab896874ca3c68ea8d" category="list-text"><block ref="1dacca07d9ba20ab896874ca3c68ea8d" category="inline-link-rx"></block></block>
   <block id="462a06b2a85bbbf735ba8fa3fc4dd871" category="list-text">* 공급자 선택 *: * Microsoft Azure * 를 선택하고 * 계속 * 을 클릭합니다.</block>
@@ -1137,12 +1106,10 @@
   <block id="d7945c5e359d6ac7ea9f91926a2538da" category="list-text">왼쪽 탐색 메뉴에서 * 이동성 &gt; 계층화 * 를 선택합니다.</block>
   <block id="ad8c34b90b1b627d896428db9d76abbf" category="paragraph">장애가 발생할 수 있습니다. 이 경우 Cloud Tiering은 클러스터 대시보드에 "Failed" 운영 상태를 표시합니다. 상태는 ONTAP 시스템과 BlueXP의 상태를 반영합니다.</block>
   <block id="dbb60a2477e4a79b7b61c01b39a67a22" category="list-text">BlueXP에서 Cloud Tiering 서비스, 오브젝트 저장소 및 해당 서비스가 검색하는 ONTAP 클러스터에 대한 아웃바운드 연결이 있는지 확인합니다.</block>
-  <block id="f1ee4da4d06b79566714d877d17746a6" category="paragraph">검색되지 않은 온프레미스 ONTAP 클러스터를 계층화_클러스터 대시보드_에서 BlueXP에 추가하여 클러스터에 대한 계층화를 설정할 수 있습니다.</block>
   <block id="77c2f2a395526537d532a604d4148171" category="paragraph">NSS 자격 증명이 BlueXP에 저장된 경우 계정의 클러스터가 목록에 표시됩니다.</block>
   <block id="05d09a490352dd1a62f556737b4e126c" category="paragraph">NSS 자격 증명이 BlueXP에 저장되지 않은 경우, 먼저 자격 증명을 추가하라는 메시지가 표시된 후 검색되지 않은 클러스터를 볼 수 있습니다.</block>
   <block id="8a29c3a17e5abf29dce483e1e0e0c869" category="inline-image-macro">BlueXP 및 계층화 대시보드에 추가할 기존 클러스터를 검색하는 방법을 보여 주는 스크린샷</block>
   <block id="5382926e2e616f4c5f70b30bbc0a12d3" category="paragraph"><block ref="5382926e2e616f4c5f70b30bbc0a12d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d5c1e697c8b22502370d8a4d89241230" category="list-text">BlueXP를 통해 관리하려는 클러스터에 대해 * 클러스터 검색 * 을 클릭하고 데이터 계층화를 구현합니다.</block>
   <block id="46922e6b0c07daba7c3d3a262105baa4" category="paragraph">BlueXP는 클러스터를 검색하고 클러스터 이름을 작업 환경 이름으로 사용하여 Canvas의 작업 환경에 추가합니다.</block>
   <block id="985b7d4c5c97b3b1b7b1d93298dbfbe8" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 S3 호환 오브젝트 스토리지에 계층화합니다.</block>
   <block id="aa8039f331e46144ebc93c818d6c073d" category="list-text">에서 BlueXP PAYGO 서비스를 구독하려면<block ref="d668c832ccb70eb717d6736e1082df78" category="inline-link-rx"></block>,<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>, 또는<block ref="92655de6fae7d07ed3897ce19d51b88d" category="inline-link-rx"></block>를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.</block>
@@ -1157,16 +1124,12 @@
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">다음 질문은 BlueXP 커넥터와 관련이 있습니다.</block>
   <block id="367329787d30f75b30521f88dfa0d7c1" category="paragraph">Connector는 클라우드 계정 또는 온프레미스 컴퓨팅 인스턴스에서 실행되는 소프트웨어로, BlueXP에서 클라우드 리소스를 안전하게 관리할 수 있도록 지원합니다. Cloud Tiering 서비스를 사용하려면 Connector를 구축해야 합니다.</block>
   <block id="b3ac7359e28ad36cfcfef7d4cff76670" category="list-text">Azure의 경우 BlueXP에 제공해야 하는 권한 이외에 추가 권한이 필요하지 않습니다.</block>
-  <block id="c729029c71a16ede9005a43bf89a6174" category="summary">Cloud Tiering의 30일 무료 체험은 첫 번째 클러스터에서 계층화를 설정할 때 시작됩니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 또는 연간 구독을 통해 Cloud Tiering에 대한 비용을 지불하거나 NetApp의 BYOL 라이센스 또는 이 둘을 결합하여 비용을 지불해야 합니다.</block>
-  <block id="1612cb846aef0cf7c32d67e2e37dac9f" category="list-text">BYOL Cloud Tiering 라이센스는 BlueXP 계정의 여러 사내 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. 이는 각 클러스터에 대해 _FabricPool_라이센스를 구입한 과거와 다릅니다.</block>
-  <block id="01af7160175380d80805730009c1a541" category="list-text">BlueXP에서 * 이동성 &gt; 계층화 &gt; 라이센스 * 를 클릭합니다.</block>
   <block id="f1b10f6f612755bd0b4bd43376cb6834" category="list-text">에서 구독하십시오<block ref="d668c832ccb70eb717d6736e1082df78" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
   <block id="0c664d98088fac0e3d869a21cac0c6c4" category="list-text">에서 구독하십시오<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
   <block id="e4db414e6112e54da73cbeaaacf47826" category="list-text">에서 구독하십시오<block ref="92655de6fae7d07ed3897ce19d51b88d" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
   <block id="e8f7f5b880c6195dc3e51b413120ca98" category="paragraph">NetApp에서 제공하는 자체 라이센스는 1년, 2년 또는 3년간 제공됩니다. BYOL * Cloud Tiering * 라이센스는 BlueXP 계정의 여러 사내 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. Cloud Tiering 라이센스에 정의된 총 계층화 용량이 * 모든 온프레미스 클러스터 * 간에 공유되므로 초기 라이센스와 갱신을 간편하게 수행할 수 있습니다.</block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">라이센스를 요청하려면 BlueXP 오른쪽 하단의 채팅 아이콘을 클릭하십시오.</block>
   <block id="67723246c92a96be8e4186d119291c28" category="paragraph">BlueXP의 Digital Wallet 페이지를 사용하여 Cloud Tiering BYOL 라이센스를 관리합니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.</block>
-  <block id="d6bdd6528f876c8f9fd69af8dc6bc0a7" category="paragraph">새로운 * Cloud Tiering * 라이센스는 Cloud Tiering 서비스를 사용하여 BlueXP에서 지원되는 계층화 구성을 위해 2021년 8월에 도입되었습니다. 현재 BlueXP는 Amazon S3, Azure Blob 스토리지, Google 클라우드 스토리지, S3 호환 오브젝트 스토리지 및 StorageGRID와 같은 클라우드 스토리지에 대한 계층화를 지원합니다.</block>
   <block id="d1d50097366a11a94bfed0659512b727" category="list-text">BlueXP에서 지원되는 구성을 사용하는 경우 FabricPool 라이센스가 Cloud Tiering 라이센스로 변환되고 디지털 지갑에 표시됩니다. 이러한 초기 라이센스가 만료되면 Cloud Tiering 라이센스를 업데이트해야 합니다.</block>
   <block id="e031d1891af14066db39ea9bc5a67edb" category="list-text">BlueXP에서 지원되지 않는 구성을 사용하는 경우 FabricPool 라이센스를 계속 사용할 수 있습니다.<block ref="f4b8492105dcaca906c2ce90b9ccab9e" category="inline-link-rx"></block>.</block>
   <block id="6cfdec23b6ef5dae92d4fd2e80a8b71b" category="cell">디지털 지갑의 BlueXP에 등록되어 있습니다.</block>
@@ -1306,7 +1269,6 @@
   <block id="05278fe4264fa7714f2deb1dc83a1f0f" category="paragraph">아니요 클라우드로 구축 및 계층화된 오브젝트에는 단일 파일이 아니라 여러 파일에서 최대 1,024개의 4KB 블록이 포함됩니다. 볼륨의 메타데이터는 항상 로컬 계층에 유지됩니다.</block>
   <block id="d8de974cae25c190e1656a12aae05ac0" category="paragraph">데이터 계층화는 블록 레벨에서 수행되므로, 데이터 블록이 특정 기간 동안 액세스하지 않은 후에는 콜드 블록으로 간주되고, 계층화 정책의 최소 냉각 일 속성에 의해 정의됩니다. 해당 범위는 ONTAP 9.7 이전 버전에서 2-63일 또는 ONTAP 9.8부터 2-183일입니다.</block>
   <block id="997ad1f279c3ec4615df50788475bd1b" category="paragraph">Cloud Tiering의 30일 무료 체험은 첫 번째 클러스터에서 계층화를 설정할 때 시작됩니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 또는 연간 구독을 통해 Cloud Tiering에 대한 비용을 지불하거나 NetApp의 BYOL 라이센스 또는 둘 다 결합하여 비용을 지불해야 합니다.</block>
-  <block id="c50ed19c37a3a0b4ff682e979d40e06a" category="list-text">클라우드 공급자의 마켓플레이스에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템에서도 클라우드 계층화가 자동으로 구독됩니다. Cloud Tiering * Licensing * 탭에서 활성 서브스크립션을 확인할 수 있습니다. 다시 가입하지 않아도 됩니다.</block>
   <block id="538632f98286e11da7898a8dd8c5940a" category="list-text">데이터를 StorageGRID로 계층화할 경우 비용이 발생하지 않으므로 BYOL 라이센스 또는 PAYGO 등록이 필요하지 않습니다. 이러한 계층형 데이터는 라이센스에서 구입한 용량에 포함되지 않습니다.</block>
   <block id="822f69d2e49d7da6f8c764e0680f2f75" category="list-text">BlueXP에서 라이센스를 자동으로 업데이트할 수 없는 경우 라이센스 파일을 수동으로 업로드해야 합니다.</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">새로운 기능</block>
@@ -1352,7 +1314,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 세 개의 점이 있는 아이콘</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">를 클릭하여 기존 케이스를 관리합니다 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">* 사례 노트 업데이트 *: 문제에 대한 추가 세부 정보를 제공합니다.</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">* 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -1368,4 +1329,46 @@
   <block id="0748730b16e2af0499abfb4f8fbcd91a" category="section-title">MinIO와 같은 다른 S3 호환 오브젝트 스토리지 서비스를 Cloud Tiering과 함께 사용할 수 있습니까?</block>
   <block id="5f25ca5749124089f38921fb40d73668" category="paragraph">Cloud Tiering은 소스 볼륨의 스토리지 효율성을 유지하므로 ONTAP 효율성 이후에(중복제거 및 압축이 적용된 후 더 적은 양의 데이터) 계층형 데이터에 대한 클라우드 공급자 오브젝트 스토리지 비용을 지불해야 합니다.</block>
   <block id="ad54fbabce5f384433a02d947362a539" category="paragraph">현재 MinIO 객체 스토리지가 검증되었습니다.</block>
+  <block id="5f1025b90c4f0c635572eda715d87a10" category="paragraph">계층화 &gt; 온프레미스 대시보드 * 를 클릭하기만 하면 됩니다. Cloud Tiering은 환경에 대해 다음과 같은 세부 정보를 제공합니다.</block>
+  <block id="75ae3190ee97d211e630e0c0f1b5ddeb" category="inline-image-macro">온프레미스 대시보드 페이지의 스크린샷.</block>
+  <block id="59b117edc0d3d63aaf2729e082c38261" category="paragraph"><block ref="59b117edc0d3d63aaf2729e082c38261" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7a7553c4b7ed244f088a49d323385c57" category="list-text">검색된 클러스터</block>
+  <block id="82de8cfbf4bbb2c6acea13e93599b85d" category="list-text">데이터 개요</block>
+  <block id="8ee0131ead01994f7bd95933f4e9a923" category="list-text">계층화 개요</block>
+  <block id="4e03a2d38322e40af6a6e79c953fef0e" category="list-text">현재 계층화된 데이터의 양과 잠재적으로 계층화할 수 있는 데이터의 양</block>
+  <block id="f9600e20b044515122327f9895faca66" category="list-text">마켓플레이스 구독</block>
+  <block id="36c8c017c31e43cab58a5f2513c46696" category="list-text">클러스터 * 페이지에서 클러스터에 대한 * 기본 계층화 설정 * 을 클릭합니다.</block>
+  <block id="310e5a0853c673dc4faabacaee25d4fc" category="list-text">클러스터 * 페이지에서 선택한 클러스터에 대한 * 고급 설정 * 을 클릭합니다.</block>
+  <block id="4b25601db98fc4ec4887d38db18f833e" category="list-text">고급 설정 페이지에서 집계 메뉴 아이콘을 클릭하고 * 집계 수정 * 을 선택합니다.</block>
+  <block id="14cbdefab43f51a65021d80ce80980c0" category="list-text">클러스터 * 페이지에서 클러스터의 메뉴 아이콘을 클릭하고 * 클러스터 정보 * 를 선택합니다.</block>
+  <block id="bff5f986b8f0d22acffc0010e8d56dde" category="paragraph">검색되지 않은 온프레미스 ONTAP 클러스터를 계층화_클러스터_페이지에서 BlueXP에 추가하여 클러스터에 대한 계층화를 설정할 수 있습니다.</block>
+  <block id="36b6d559a801013af8e2d0cd8f190efe" category="paragraph">추가 클러스터를 검색할 수 있는 버튼이 Tiering_On-Premise Dashboard_페이지에도 나타납니다.</block>
+  <block id="9b1a75be486d93c4df9e13eef4128dc2" category="list-text">Cloud Tiering에서 * Clusters * 탭을 클릭합니다.</block>
+  <block id="f202e1cf2a8a770d553e2f87c2b11801" category="list-text">검색되지 않은 클러스터를 보려면 * 검색되지 않은 클러스터 표시 * 를 클릭합니다.</block>
+  <block id="e643ccb2870b9bbfdbc24bc87d300f4d" category="list-text">BlueXP를 통해 관리하려는 클러스터에 대해 * 클러스터 추가 * 를 클릭하고 데이터 계층화를 구현합니다.</block>
+  <block id="25a16ca1880cc1d4f1ff63f91034c468" category="list-text">Cluster Details_페이지에서 admin 사용자 계정의 암호를 입력하고 * Discover * 를 클릭합니다.</block>
+  <block id="78663d9137e3cc2c3049532938b4c70f" category="list-text">Details &amp; Credentials_ 페이지에서 클러스터 이름이 작업 환경 이름으로 추가되므로 * Go * 를 클릭합니다.</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023년 4월 3일</block>
+  <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">라이센스 탭이 제거되었습니다</block>
+  <block id="d4a0c23b533adffe42d63c23035edd5c" category="paragraph">Licensing 탭이 Cloud Tiering 인터페이스에서 제거되었습니다. PAYGO(pay-as-you-go) 서브스크립션에 대한 모든 라이센스는 이제 Cloud Tiering on-premise 대시보드에서 액세스할 수 있습니다. 또한 이 페이지에서 Digital Wallet으로 연결되는 링크를 통해 Cloud Tiering BYOL(Bring-Your-Own-License) 방식으로 모든 Cloud Tiering을 확인 및 관리할 수 있습니다.</block>
+  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">계층화 탭의 이름이 바뀌었으며 내용이 업데이트되었습니다</block>
+  <block id="10d9a166ad36cdda1e0585914ac18d5f" category="paragraph">"클러스터 대시보드" 탭의 이름이 "클러스터"로 바뀌고 "온프레미스 개요" 탭의 이름이 "온프레미스 대시보드"로 바뀌었습니다. 이러한 페이지에는 추가 계층화 구성으로 스토리지 공간을 최적화할 수 있는지 평가하는 데 도움이 되는 몇 가지 정보가 추가되었습니다.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.</block>
+  <block id="f8011f6560ae9c67fe47dfaf64d311be" category="paragraph"><block ref="f8011f6560ae9c67fe47dfaf64d311be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3e35b4d71fa62eacb0a5bb388fcaaefc" category="list-text">클러스터 * 페이지에서 클러스터의 메뉴 아이콘을 클릭하고 * 클라우드 성능 테스트 * 를 선택합니다.</block>
+  <block id="7bd2b7eee5b0e3ccc0cee448e5f16af6" category="list-text">클러스터 * 페이지에서 클러스터의 메뉴 아이콘을 클릭하고 * 오브젝트 저장소 정보 * 를 선택합니다.</block>
+  <block id="d6bf3a1568674e80c2c2ee91b89321aa" category="list-text">고급 설정 페이지에서 사용할 개체 저장소를 미러 개체 저장소의 위치로 끕니다.</block>
+  <block id="cd11e47501303547dfe86752a503190f" category="list-text">고급 설정 페이지에서 애그리게이트의 메뉴 아이콘을 클릭하고 * 전환 대상 * 을 선택합니다.</block>
+  <block id="3147fedbcc0be3024be497b0c4a9a86e" category="list-text">고급 설정 페이지에서 집계 메뉴 아이콘을 클릭하고 * 개체 저장소 미러 해제 * 를 선택합니다.</block>
+  <block id="512d20b1222e443735ce4d4233102c8b" category="list-text">클라우드 공급자의 마켓플레이스에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템용 클라우드 계층화도 자동으로 구독됩니다. Cloud Tiering * 사내 대시보드 * 탭에 활성 서브스크립션이 표시됩니다. 다시 가입하지 않아도 됩니다.</block>
+  <block id="199835e9739f64711df8c553667c0873" category="list-text">BYOL Cloud Tiering 라이센스는 BlueXP 계정의 여러 사내 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. 이는 각 클러스터에 대해 _FabricPool_라이센스를 구입한 과거와 다릅니다(그리고 훨씬 더 쉬움).</block>
+  <block id="c6cfe277ff95e8b00e4a3526eb00d9de" category="list-text">BlueXP에서 * 이동성 &gt; 계층화 &gt; 온프레미스 대시보드 * 를 클릭합니다.</block>
+  <block id="b1fac0d88d99bf87572b3a3dbde5021c" category="list-text">Marketplace subscriptions_section에서 Amazon Web Services 아래의 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.</block>
+  <block id="25fa54aa1e74279c5dd0574c255c9395" category="list-text">Marketplace Subscriptions_ 섹션의 Microsoft Azure에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.</block>
+  <block id="1aeaa2e92434fc1c27cf37cfd23e8592" category="list-text">Marketplace Subscriptions_ 섹션의 Google Cloud에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.</block>
+  <block id="35bfd546b4a554afcc648a0c8807406b" category="paragraph">새로운 * Cloud Tiering * 라이센스는 Cloud Tiering 서비스를 사용하여 BlueXP에서 지원되는 계층화 구성을 위해 2021년 8월에 도입되었습니다. 현재 BlueXP는 Amazon S3, Azure Blob 스토리지, Google Cloud Storage, NetApp StorageGRID 및 S3 호환 오브젝트 스토리지로의 계층화를 지원합니다.</block>
+  <block id="5ed5be6c0303be48aaede9dd17a25f11" category="list-text">Governance &gt; Digital Wallet &gt; Data Services Licenses * 를 클릭합니다.</block>
+  <block id="f16cf9a738fef68b5c516203192da03b" category="list-text">클러스터 페이지에서 을 클릭합니다 <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> 클러스터에 대해 * 라이선스 배포 * 를 선택합니다.</block>
 </blocks>
