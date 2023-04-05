@@ -118,6 +118,8 @@ Cloud Tiering은 볼륨 용량에 영향을 주지 않고 애그리게이트의 
 * 연간(BYOL)의 경우 기간 기반 가입형: GB당 $0.033/월 기준
 
 
+https://bluexp.netapp.com/pricing["가격 세부 정보를 참조하십시오"].
+
 콜드 데이터를 NetApp StorageGRID 시스템(프라이빗 클라우드)에 계층화할 경우 비용이 들지 않습니다.
 
 
@@ -130,7 +132,9 @@ Cloud Tiering은 볼륨 용량에 영향을 주지 않고 애그리게이트의 
 
 === BYOL 용량 제한에 도달하면 어떻게 됩니까?
 
-BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 중지되고 이전의 모든 계층형 데이터에 액세스할 수 있습니다. BlueXP - 클라우드 데이터 서비스 배포 및 관리 _ 에 PAYGO 마켓플레이스를 구독하는 경우 새로운 콜드 데이터는 객체 스토리지로 계속 계층화되어 사용량 기준으로 해당 요금을 지불할 수 있습니다.
+BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 중지됩니다. 이전에 계층화된 모든 데이터에 계속 액세스할 수 있습니다. 즉, 이 데이터를 검색하고 사용할 수 있습니다. 검색할 경우 데이터가 클라우드에서 성능 계층으로 다시 이동됩니다.
+
+그러나 _BlueXP - 클라우드 데이터 서비스 배포 및 관리 _ 에 PAYGO 마켓플레이스가 가입되어 있는 경우 새로운 콜드 데이터는 객체 스토리지로 계속 계층화되어 사용량 기준으로 해당 요금을 지불할 수 있습니다.
 
 
 
@@ -196,7 +200,7 @@ Cloud Tiering은 ONTAP 버전 9.2 이상을 지원합니다.
 
 === Cloud Volumes ONTAP는 어떻습니까?
 
-Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Cluster Dashboard에서 하이브리드 클라우드 인프라에서 데이터 계층화를 완전히 파악할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP에 대한 계층화를 설정합니다"^].
+Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Clusters 페이지에서 하이브리드 클라우드 인프라에서 데이터 계층화에 대한 전체 뷰를 확인할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP에 대한 계층화를 설정합니다"^].
 
 
 

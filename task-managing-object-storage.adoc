@@ -141,7 +141,7 @@ image:screenshot_tiering_mirror_swap.png["Aggregate의 대상 바꾸기 옵션�
 +
 image:screenshot_tiering_advanced_setup_button.png["클러스터의 고급 설정 버튼을 보여 주는 스크린샷"]
 
-. 고급 설정 페이지에서 집계 메뉴 아이콘을 클릭하고 * 개체 저장소 미러 해제 * 를 선택합니다.
+. 고급 설정 페이지에서 집계 메뉴 아이콘을 클릭하고 * 개체 저장 취소 * 를 선택합니다.
 +
 image:screenshot_tiering_mirror_delete.png["Aggregate에 대한 객체 저장소 미러 해제 옵션을 보여 주는 스크린샷"]
 

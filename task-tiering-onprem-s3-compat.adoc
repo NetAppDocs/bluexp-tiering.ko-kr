@@ -139,7 +139,7 @@ S3 자격 증명:: S3 호환 오브젝트 스토리지로 계층화를 설정할
 데이터를 클라우드에 계층화하려면 Connector가 필요합니다. 데이터를 S3 호환 오브젝트 스토리지로 계층화할 경우 Connector를 사내에서 사용할 수 있어야 합니다. 새 커넥터를 설치하거나 현재 선택한 커넥터가 내부에 있는지 확인해야 합니다.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Linux 호스트에 커넥터 배포"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Linux 호스트에 커넥터 설치"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["커넥터 간 전환"^]
 
 
