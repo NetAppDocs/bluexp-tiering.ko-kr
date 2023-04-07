@@ -110,8 +110,7 @@ AWS VPC 또는 사내에 Connector가 이미 구축되어 있는 경우 모두 �
 
 * 커넥터가 설치된 네트워크에서 다음 연결을 사용할 수 있는지 확인합니다.
 +
-** Cloud Tiering 서비스에 대한 포트 443(HTTPS)을 통한 아웃바운드 인터넷 연결
-** 포트 443을 통해 S3 오브젝트 스토리지에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["끝점 목록을 참조하십시오"^])
+** 포트 443을 통해 Cloud Tiering 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
 ** 포트 443을 통해 ONTAP 클러스터 관리 LIF에 HTTPS로 연결합니다
 
 

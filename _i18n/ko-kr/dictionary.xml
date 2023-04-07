@@ -38,7 +38,6 @@
   <block id="a8e8e48001e032c3b5939047d15db5a2" category="section-title">커넥터를 위한 네트워킹 준비</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
   <block id="aadbd6cd1f8b4e9deafea8f1d6c8333c" category="list-text">커넥터가 설치된 네트워크에서 다음 연결을 사용할 수 있는지 확인합니다.</block>
-  <block id="841f7e7eb4c540f0ef284f9a0806448c" category="list-text">포트 443(HTTPS)을 통해 Cloud Tiering 서비스에 대한 아웃바운드 인터넷 연결</block>
   <block id="699a71169310a3553bddb7e36ecb8a5c" category="list-text">포트 443을 통해 ONTAP 클러스터 관리 LIF에 HTTPS로 연결합니다</block>
   <block id="1fa74ff5a0547c12a6e2f2b89c3c8d6e" category="paragraph">새 클러스터에 데이터 계층화를 설정할 때 S3 버킷을 생성하거나 Connector가 설정된 AWS 계정에서 기존 S3 버킷을 선택하라는 메시지가 표시됩니다. AWS 계정에는 Cloud Tiering에 입력할 수 있는 권한과 액세스 키가 있어야 합니다. ONTAP 클러스터는 액세스 키를 사용하여 S3의 내외부로 데이터를 계층화합니다.</block>
   <block id="41e85822b15d5899d14062cd9df9aded" category="inline-link-macro">Cloud Tiering을 지원하는 지역</block>
@@ -105,7 +104,6 @@
   <block id="aa4788e27cdbd61e4d722970587d99c5" category="list-text">오브젝트 저장소 버킷에서 StorageGRID 오브젝트 버전 관리를 사용하도록 설정하면 안 됩니다.</block>
   <block id="1c3c05f52f226acac800b43e5ce83b67" category="paragraph">데이터를 클라우드에 계층화하려면 Connector가 필요합니다. 데이터를 StorageGRID에 계층화할 때 Connector를 사내에서 사용할 수 있어야 합니다. 새 커넥터를 설치하거나 현재 선택한 커넥터가 내부에 있는지 확인해야 합니다.</block>
   <block id="7b16b8b258668ab05a1e5d83e084b477" category="paragraph">커넥터에 필요한 네트워크 연결이 있는지 확인합니다.</block>
-  <block id="a3049b761ff526799f3b1881932b1c8c" category="list-text">포트 443을 통해 StorageGRID에 HTTPS로 연결합니다</block>
   <block id="de9570886e9849852133b61caefd03b2" category="section-title">첫 번째 클러스터에서 StorageGRID로 비활성 데이터 계층화</block>
   <block id="a71f0f53c9824602e78a79bc5fa52d43" category="paragraph">환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터의 계층화를 시작합니다.</block>
   <block id="1b8a3756b590cb811f9726f247097028" category="list-text">필요한 S3 권한이 있는 AWS 액세스 키</block>
@@ -162,7 +160,6 @@
   <block id="1530d1823861aa989d35b92ad0b2fd9e" category="list-text">Azure VNET 또는 구내에 상주할 수 있는 Connector에서 인바운드 연결이 필요합니다.</block>
   <block id="b1e389999fc3500ff74c433071c6f3d0" category="section-title">필요한 커넥터 권한이 있는지 확인합니다</block>
   <block id="8d553e78e79ca1abdf2ffdd1714a7698" category="paragraph">커넥터에 필요한 네트워크 연결이 있는지 확인합니다. 커넥터는 온프레미스 또는 Azure에 설치할 수 있습니다.</block>
-  <block id="bb1241e3a37748e608dbbde25c75ea25" category="list-text">포트 443을 통해 Azure Blob 저장소에 HTTPS로 연결합니다</block>
   <block id="400985d5d8ad47af48b13e9fe604a6fe" category="list-text">필요한 경우 Azure 스토리지에 VNET 서비스 끝점을 설정합니다.</block>
   <block id="0eb60239b46482f7f72a4986fa40c73a" category="paragraph">ONTAP 클러스터에서 VNET로의 ExpressRoute 또는 VPN 연결이 있고 커넥터와 Blob 스토리지 간의 통신을 가상 프라이빗 네트워크에 유지하고자 하는 경우 Azure 스토리지에 VNET 서비스 엔드포인트를 사용하는 것이 좋습니다.</block>
   <block id="256fb1d2776e7f3b364ce4414a65b2cd" category="section-title">Azure Blob 저장소 준비 중</block>
@@ -378,7 +375,6 @@
   <block id="c3fb869301bdf0050425864a1c816fd8" category="admonition">Cloud Tiering은 FlexGroup 볼륨을 지원합니다. 설치 프로그램은 다른 볼륨과 동일하게 작동합니다.</block>
   <block id="6f8de70a130cd2e986950accf1528a82" category="paragraph">데이터를 클라우드에 계층화하려면 Connector가 필요합니다. 데이터를 Google 클라우드 스토리지로 계층화할 때 Google Cloud Platform VPC에서 Connector를 사용할 수 있어야 합니다. 새 커넥터를 만들거나 현재 선택한 커넥터가 GCP에 있는지 확인해야 합니다.</block>
   <block id="499449d439c0676b8921b5ff6e0ca806" category="list-text">커넥터가 설치된 VPC에서 다음 연결을 사용할 수 있는지 확인합니다.</block>
-  <block id="d83f012d1d2a88fdb1e7cb28d94b081d" category="list-text">포트 443을 통해 Google Cloud Storage에 HTTPS로 연결합니다</block>
   <block id="bad85e9654b782928f6763c3008e8dd4" category="list-text">선택 사항: 커넥터를 배포할 서브넷에서 개인 Google 액세스를 활성화합니다.</block>
   <block id="b092138563f7b68473c3bf2a6a23a434" category="inline-link">개인 Google 액세스</block>
   <block id="f4daaef45bd7d11ebf3a4c8dc607eaa4" category="paragraph"><block ref="d1ea0c6b3f95b3376607c57ca3a4265e" category="inline-link-rx"></block> ONTAP 클러스터에서 VPC로 직접 연결하고 커넥터 및 Google 클라우드 스토리지 간의 통신을 가상 프라이빗 네트워크에 유지하고자 하는 경우 이 기능을 사용하는 것이 좋습니다. Private Google Access는 내부(전용) IP 주소(외부 IP 주소 없음)만 있는 VM 인스턴스와 작동합니다.</block>
@@ -605,7 +601,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">기술 자료</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">문서화</block>
@@ -911,9 +906,7 @@
   <block id="ea97cc2428a460eae122a94c68a8b16a" category="section-title">커넥터를 준비합니다</block>
   <block id="cc8fa83637def0ab4b26b2c73eaf58b1" category="paragraph">AWS VPC 또는 사내에 Connector가 이미 구축되어 있는 경우 모두 설정됩니다. 그렇지 않은 경우, 두 위치 중 하나에서 커넥터를 생성하여 ONTAP 데이터를 AWS S3 스토리지로 계층화해야 합니다. 다른 클라우드 공급자에 배포된 Connector는 사용할 수 없습니다.</block>
   <block id="929d25665bc92d22cf4a79265248dd36" category="section-title">커넥터 네트워킹 요구 사항</block>
-  <block id="572373ae1e78fa8826ac1a5468d0b8c1" category="list-text">Cloud Tiering 서비스에 대한 포트 443(HTTPS)을 통한 아웃바운드 인터넷 연결</block>
   <block id="2e379f93711508ab69eec06837dd271c" category="inline-link">끝점 목록을 참조하십시오</block>
-  <block id="070ae2b938526f98049114b311cf4a90" category="list-text">포트 443을 통해 S3 오브젝트 스토리지에 HTTPS로 연결합니다 <block ref="2b717f51e9f0e108fc936d861142f7b4" category="inline-link-rx"></block>)</block>
   <block id="76e709935c290dea4c7b1c0de4918211" category="inline-link">커넥터에 S3 버킷을 관리할 수 있는 권한이 있는지 확인합니다</block>
   <block id="4e96d68b20a8c2caa7ac1a77b15169c3" category="list-text"><block ref="4e96d68b20a8c2caa7ac1a77b15169c3" category="inline-link-rx"></block></block>
   <block id="db41e7a8de9567fec002e93320c428ad" category="inline-xref">VPC 엔드포인트 인터페이스를 설정하는 방법을 확인하십시오.</block>
@@ -1370,4 +1363,10 @@
   <block id="2b36f8b3b2cccdc6807233a79e1b8d1d" category="paragraph">BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 중지됩니다. 이전에 계층화된 모든 데이터에 계속 액세스할 수 있습니다. 즉, 이 데이터를 검색하고 사용할 수 있습니다. 검색할 경우 데이터가 클라우드에서 성능 계층으로 다시 이동됩니다.</block>
   <block id="91c0c3f0911cf0aa7791e2815ecf2507" category="paragraph">그러나 _BlueXP - 클라우드 데이터 서비스 배포 및 관리 _ 에 PAYGO 마켓플레이스가 가입되어 있는 경우 새로운 콜드 데이터는 객체 스토리지로 계속 계층화되어 사용량 기준으로 해당 요금을 지불할 수 있습니다.</block>
   <block id="9c7d287d0ce7d0d1654a49d75c7314f0" category="paragraph">Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Clusters 페이지에서 하이브리드 클라우드 인프라에서 데이터 계층화에 대한 전체 뷰를 확인할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다.<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>.</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="827819483dd4d9a78711b6afa4da92ab" category="list-text">포트 443을 통해 Cloud Tiering 서비스 및 Google Cloud Storage에 HTTPS로 연결합니다 <block ref="d9defc1077847b67f008853c06990134" category="inline-link-rx"></block>)</block>
+  <block id="7ec3e00e427ce2f28dc1338f2397328b" category="list-text">포트 443을 통해 Cloud Tiering 서비스에 HTTPS로 연결합니다 <block ref="4a7a4f89081133703af86b4e7832dbdb" category="inline-link-rx"></block>)</block>
+  <block id="5bfe7676a3f4e4197bf9f895c6b2fcb4" category="list-text">StorageGRID 시스템에 대한 포트 443을 통한 HTTPS 연결</block>
+  <block id="0d2084a4e3ff91eb61a6e20f85d92399" category="list-text">포트 443을 통해 Cloud Tiering 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 <block ref="e55fc914b3d027a7a2463283008a8fbf" category="inline-link-rx"></block>)</block>
+  <block id="bd0e0977c46457979423f05da93b43de" category="list-text">포트 443을 통해 Cloud Tiering 서비스 및 Azure Blob 개체 스토리지에 HTTPS로 연결합니다 <block ref="5bf1914e1013b2901a1aed42fbd7a1ac" category="inline-link-rx"></block>)</block>
 </blocks>

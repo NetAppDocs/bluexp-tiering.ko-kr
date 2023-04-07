@@ -152,7 +152,7 @@ S3 자격 증명:: S3 호환 오브젝트 스토리지로 계층화를 설정할
 .단계
 . 커넥터가 설치된 네트워크에서 다음 연결을 사용할 수 있는지 확인합니다.
 +
-** 포트 443(HTTPS)을 통해 Cloud Tiering 서비스에 대한 아웃바운드 인터넷 연결
+** 포트 443을 통해 Cloud Tiering 서비스에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
 ** 포트 443을 통해 S3 호환 오브젝트 스토리지에 HTTPS 연결
 ** 포트 443을 통해 ONTAP 클러스터 관리 LIF에 HTTPS로 연결합니다
 
