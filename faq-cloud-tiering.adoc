@@ -362,7 +362,7 @@ Connector는 클라우드 계정 또는 온프레미스 컴퓨팅 인스턴스�
 
 === Connector를 온-프레미스에 배포할 수 있습니까?
 
-예. Connector 소프트웨어는 다운로드한 후 네트워크의 Linux 호스트에 수동으로 설치할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Connector를 설치 방법에 대해 알아보십시오"].
+예. Connector 소프트웨어는 다운로드한 후 네트워크의 Linux 호스트에 수동으로 설치할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Connector를 설치 방법에 대해 알아보십시오"].
 
 
 

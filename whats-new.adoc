@@ -62,7 +62,7 @@ Cloud Tiering의 변경으로 인해 Cloud Tiering 작업의 성공을 위해 �
 
 | https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오 | https://*.api.bluexp.netapp.com 으로 문의하십시오 
 |===
-의 전체 끝점 목록을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["설치하고"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google 클라우드"^], 또는 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure를 지원합니다"^] 설명합니다.
+의 전체 끝점 목록을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["설치하고"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google 클라우드"^], 또는 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure를 지원합니다"^] 설명합니다.
 
 
 

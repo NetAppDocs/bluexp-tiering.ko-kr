@@ -719,7 +719,6 @@
   <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">커넥터란 무엇입니까?</block>
   <block id="d2eea5ad2ae07890452da2aec5cffc98" category="section-title">Connector를 온-프레미스에 배포할 수 있습니까?</block>
   <block id="b0ccf0f3fa1a27a2fbab1c35ebf8e0f5" category="inline-link">Connector를 설치 방법에 대해 알아보십시오</block>
-  <block id="de7433c1562faa5f9b2ee55c74f16fa2" category="paragraph">예. Connector 소프트웨어는 다운로드한 후 네트워크의 Linux 호스트에 수동으로 설치할 수 있습니다.<block ref="5cffbbed8cdfbd25b645e94434fee757" category="inline-link-rx"></block>.</block>
   <block id="eef7b8a2b79a5ecae955422af0ab3b72" category="section-title">Cloud Tiering을 사용하기 전에 클라우드 서비스 공급자 계정이 필요합니까?</block>
   <block id="71b5e4019a71131db2052326884d8bbe" category="paragraph">예. 사용할 오브젝트 스토리지를 정의하려면 먼저 계정이 있어야 합니다. VPC 또는 VNET에서 클라우드에서 Connector를 설정할 때도 클라우드 스토리지 공급자 계정이 필요합니다.</block>
   <block id="8ca6e099f9e16583824ee8e6a5727c40" category="section-title">커넥터에 장애가 발생할 경우 어떤 영향이 있습니까?</block>
@@ -847,7 +846,6 @@
   <block id="6dfc91892c8d766a3db42ec08d3c133e" category="paragraph"><block ref="6dfc91892c8d766a3db42ec08d3c133e" category="inline-link-rx"></block></block>
   <block id="7c14243eb88d8593d5e3377a174647d2" category="paragraph"><block ref="7c14243eb88d8593d5e3377a174647d2" category="inline-link-rx"></block></block>
   <block id="da67ca84863fc0110febe22c08877274" category="inline-link">GCP에서 커넥터 배포</block>
-  <block id="3b8a5aa33e51c71b8f37ac5972ac20d7" category="list-text"><block ref="3b8a5aa33e51c71b8f37ac5972ac20d7" category="inline-link-rx"></block></block>
   <block id="a42fb1ba03bcfed59842ef0ade58297a" category="list-text">* 공급자 선택 *: * Google Cloud * 를 선택하고 * 계속 * 을 클릭합니다.</block>
   <block id="207355fa06161fe61fe18f75db4c59d5" category="paragraph"><block ref="207355fa06161fe61fe18f75db4c59d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af35d8c52cd337b400dfea1bfe174a1d" category="list-text">* 공급자 선택 *: * StorageGRID * 를 선택하고 * 계속 * 을 클릭합니다.</block>
@@ -1203,7 +1201,6 @@
   <block id="e1095ff19466581c5274f67123c95036" category="cell">https://api.bluexp.netapp.com 으로 문의하십시오</block>
   <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오</block>
   <block id="37ba276f010f4ea07f1196b487811443" category="cell">https://*.api.bluexp.netapp.com 으로 문의하십시오</block>
-  <block id="0e40b9cba041560c9517bc49757da3c7" category="paragraph">의 전체 끝점 목록을 참조하십시오<block ref="4c9e3e17ba20f553394e5bc78e402946" category="inline-link-rx"></block>,<block ref="cd3c6f623ccf3e34f9d46b28c47f2a3d" category="inline-link-rx"></block>, 또는<block ref="80755100f97c37f8aa8e3d999b0a43d9" category="inline-link-rx"></block> 설명합니다.</block>
   <block id="c1b8b8c1767ffef37beebd6dca294a19" category="paragraph">온프레미스 커넥터를 사용하는 경우 리소스 그룹에 대한 액세스를 제공하는 Azure 구독을 입력해야 합니다.</block>
   <block id="838b026c40657f60dbef105628a74c67" category="paragraph">NetApp은 특히 제품이 출시된 제3자와의 지원 계약에 동의하지 않은 타사 오브젝트 저장소 서비스에서 발생하는 문제에 대해 어떠한 책임도 지지 않습니다. NetApp은 관련된 모든 손상에 대해 책임을 지지 않으며 해당 타사 제품에 대한 지원을 제공해야 한다는 점을 인정하고 이에 동의합니다.</block>
   <block id="cde18ab8c63e317f54bbc67366c538fb" category="list-text">ONTAP 9.8 이상을 실행하는 온프레미스 ONTAP 클러스터의 소스 및 사용자 지정 포트를 통해 대상 S3 호환 오브젝트 스토리지로의 연결<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>.</block>
@@ -1369,4 +1366,7 @@
   <block id="5bfe7676a3f4e4197bf9f895c6b2fcb4" category="list-text">StorageGRID 시스템에 대한 포트 443을 통한 HTTPS 연결</block>
   <block id="0d2084a4e3ff91eb61a6e20f85d92399" category="list-text">포트 443을 통해 Cloud Tiering 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 <block ref="e55fc914b3d027a7a2463283008a8fbf" category="inline-link-rx"></block>)</block>
   <block id="bd0e0977c46457979423f05da93b43de" category="list-text">포트 443을 통해 Cloud Tiering 서비스 및 Azure Blob 개체 스토리지에 HTTPS로 연결합니다 <block ref="5bf1914e1013b2901a1aed42fbd7a1ac" category="inline-link-rx"></block>)</block>
+  <block id="f8fffd3ee443f29d36b65a0e66a5f03a" category="paragraph">예. Connector 소프트웨어는 다운로드한 후 네트워크의 Linux 호스트에 수동으로 설치할 수 있습니다.<block ref="1b7ddd38e792a03a4b15132910b94d8c" category="inline-link-rx"></block>.</block>
+  <block id="99d3ed1cc58df8ac52e23dd69320374b" category="list-text"><block ref="99d3ed1cc58df8ac52e23dd69320374b" category="inline-link-rx"></block></block>
+  <block id="c395006d6063b66336be768382280c9e" category="paragraph">의 전체 끝점 목록을 참조하십시오<block ref="684a3f4234dd7d8f8b7d90e00da95138" category="inline-link-rx"></block>,<block ref="fd66fc554da543d0f7f94dcde36b2a2f" category="inline-link-rx"></block>, 또는<block ref="2484264a704a749bc992bec76f43f13d" category="inline-link-rx"></block> 설명합니다.</block>
 </blocks>
