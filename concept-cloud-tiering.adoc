@@ -22,6 +22,8 @@ BlueXP(이전의 Cloud Manager)의 Cloud Tiering 서비스는 _FabricPool_의 �
 
 Cloud Tiering은 단일 노드 클러스터, HA 구성 클러스터, 계층화 미러 구성의 클러스터, FabricPool Mirror를 사용하는 MetroCluster 구성에 대해 구성할 수 있습니다. Cloud Tiering 라이센스는 모든 클러스터에서 공유됩니다.
 
+https://bluexp.netapp.com/cloud-tiering-service-tco["Cloud Tiering TCO 계산기를 사용하여 얼마나 절감할 수 있는지 알아보십시오"^].
+
 
 
 == 피처
@@ -38,10 +40,10 @@ Cloud Tiering은 자동화, 모니터링, 보고서 및 공통 관리 인터페�
 * Cloud Volumes ONTAP 시스템이 있는 경우 클러스터 페이지에서 하이브리드 클라우드 인프라의 데이터 계층화에 대한 전체 보기를 얻을 수 있습니다
 
 
-Cloud Tiering이 제공하는 가치에 대해 자세히 알아보려면 https://cloud.netapp.com/cloud-tiering["BlueXP 웹 사이트에서 Cloud Tiering 페이지를 참조하십시오"^].
+Cloud Tiering이 제공하는 가치에 대해 자세히 알아보려면 https://bluexp.netapp.com/cloud-tiering["BlueXP 웹 사이트에서 Cloud Tiering 페이지를 참조하십시오"^].
 
 
-TIP: Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP에 대한 계층화를 설정합니다"^].
+TIP: Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다"^].
 
 
 

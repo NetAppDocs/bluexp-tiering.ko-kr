@@ -164,7 +164,7 @@ BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 �
 
 === Cloud Tiering을 설정하기 전에 볼륨의 절약 효과를 예측하고 콜드 데이터 보고서를 받으려면 어떻게 해야 합니까?
 
-견적을 받으려면 ONTAP 클러스터를 BlueXP에 추가하고 계층화 탭에 있는 Cloud Tiering Clusters 대시보드를 통해 검사하기만 하면 됩니다. IDR(Inactive Data Reporting)이 비활성화되어 있거나 충분한 기간 동안 아직 활성화되지 않은 경우 Cloud Tiering은 예상 절감액을 계산하기 위해 산업 상수 70%를 사용합니다. IDR 데이터가 제공되면 Cloud Tiering은 절감 효과를 정확한 수치로 업데이트합니다.
+견적을 받으려면 ONTAP 클러스터를 BlueXP에 추가하고 클라우드 계층화 클러스터 페이지를 통해 검사하기만 하면 됩니다. 클러스터에 대한 잠재적인 계층화 절감 비용 계산 * 을 클릭하여 을 시작합니다 https://bluexp.netapp.com/cloud-tiering-service-tco["Cloud Tiering TCO 계산기"^] 얼마나 많은 비용을 절감할 수 있는지 알아보십시오.
 
 
 
@@ -200,7 +200,7 @@ Cloud Tiering은 ONTAP 버전 9.2 이상을 지원합니다.
 
 === Cloud Volumes ONTAP는 어떻습니까?
 
-Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Clusters 페이지에서 하이브리드 클라우드 인프라에서 데이터 계층화에 대한 전체 뷰를 확인할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP에 대한 계층화를 설정합니다"^].
+Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Clusters 페이지에서 하이브리드 클라우드 인프라에서 데이터 계층화에 대한 전체 뷰를 확인할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다"^].
 
 
 

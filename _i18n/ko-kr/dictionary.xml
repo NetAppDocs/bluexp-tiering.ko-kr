@@ -1097,8 +1097,6 @@
   <block id="fb033ea193d99adc8d3553114c5fe47d" category="list-text">Cloud Tiering이 계층화할 수 있는 총 볼륨 수가 ONTAP 시스템의 볼륨 수보다 적을 수 있습니다. 이는 볼륨을 일부 애그리게이트로 계층화할 수 없기 때문입니다. 에 대한 ONTAP 설명서를 참조하십시오<block ref="bc16a784cd65f4901578ebb3b70f2118" category="inline-link-rx"></block>.</block>
   <block id="115976a072e6ce2f2ab2d16440a6eced" category="paragraph">콜드 데이터 계층화를 시작하기 전에 BlueXP Canvas에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.</block>
   <block id="6f7498318061ab9585a9a930576417e9" category="paragraph">콜드 데이터의 계층화를 시작하려면 먼저 BlueXP에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.</block>
-  <block id="62b4885d3e4f3aa3a6da101753a59fd4" category="paragraph">견적을 받으려면 ONTAP 클러스터를 BlueXP에 추가하고 계층화 탭에 있는 Cloud Tiering Clusters 대시보드를 통해 검사하기만 하면 됩니다. IDR(Inactive Data Reporting)이 비활성화되어 있거나 충분한 기간 동안 아직 활성화되지 않은 경우 Cloud Tiering은 예상 절감액을 계산하기 위해 산업 상수 70%를 사용합니다. IDR 데이터가 제공되면 Cloud Tiering은 절감 효과를 정확한 수치로 업데이트합니다.</block>
-  <block id="f0e21f59ae2ac8831058af2eeb6352ab" category="inline-link">BlueXP의 작업 환경에서 Cloud Volumes ONTAP에 대한 계층화를 설정합니다</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">다음 질문은 BlueXP 커넥터와 관련이 있습니다.</block>
   <block id="367329787d30f75b30521f88dfa0d7c1" category="paragraph">Connector는 클라우드 계정 또는 온프레미스 컴퓨팅 인스턴스에서 실행되는 소프트웨어로, BlueXP에서 클라우드 리소스를 안전하게 관리할 수 있도록 지원합니다. Cloud Tiering 서비스를 사용하려면 Connector를 구축해야 합니다.</block>
   <block id="b3ac7359e28ad36cfcfef7d4cff76670" category="list-text">Azure의 경우 BlueXP에 제공해야 하는 권한 이외에 추가 권한이 필요하지 않습니다.</block>
@@ -1126,9 +1124,6 @@
   <block id="8816958eed360786a943983e0bd031fd" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해 * 활성화 * 를 클릭하고, 표시되는 메시지에 따라 데이터를 Google Cloud Storage에 계층화합니다.</block>
   <block id="0f41d5111907904b1b8d390c2c27b6fc" category="paragraph">BlueXP(이전의 Cloud Manager)의 Cloud Tiering 서비스는 _FabricPool_의 기능을 활용합니다. FabricPool는 데이터를 저비용 오브젝트 스토리지로 자동 계층화하는 NetApp Data Fabric 기술입니다. 활성(핫) 데이터는 로컬 계층(사내 ONTAP 애그리게이트)에 남아 있고 비활성(콜드) 데이터는 클라우드 계층으로 이동되며 ONTAP 데이터 효율성은 그대로 유지됩니다.</block>
   <block id="e8395f15de9e60e2f10e3d0598808276" category="inline-link">BlueXP 웹 사이트에서 Cloud Tiering 페이지를 참조하십시오</block>
-  <block id="643db1b55251062b39af68b66b294d99" category="paragraph">Cloud Tiering이 제공하는 가치에 대해 자세히 알아보려면<block ref="a183fd414a6868970d08a7f98447aa3e" category="inline-link-rx"></block>.</block>
-  <block id="6ba24c7d2cccc768e3092f47f5af4915" category="admonition">Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다.<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>.</block>
-  <block id="9342584e61c9312677349e1f9c840d56" category="paragraph">Cloud Tiering 라이센스를 구입한 후에는 BlueXP의 Digital Wallet을 사용하여 라이센스를 추가해야 합니다. <block ref="14bb9fa35d1b0028e213cd470536d52e" category="inline-link-macro-rx"></block>.</block>
   <block id="955a264d46a1f0536f93bcb5a3e454f1" category="list-text">BlueXP에서 온프레미스 클러스터를 검색할 수 있습니다.</block>
   <block id="92d46e494e7ad2aeddc2f61967fd1763" category="list-text">BlueXP는 객체 스토리지 공급자를 사용하도록 ONTAP를 구성하고 클러스터에서 활성 및 비활성 데이터의 양을 검색합니다.</block>
   <block id="d2c482346f4646ff22b0d802d84f0468" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 StorageGRID에 계층화합니다.</block>
@@ -1359,7 +1354,6 @@
   <block id="874323801a4fa98c0f05aaa80c3c1d82" category="paragraph"><block ref="f7ce611d89d41a39c0cd111c48bbba76" category="inline-link-rx"></block>.</block>
   <block id="2b36f8b3b2cccdc6807233a79e1b8d1d" category="paragraph">BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 중지됩니다. 이전에 계층화된 모든 데이터에 계속 액세스할 수 있습니다. 즉, 이 데이터를 검색하고 사용할 수 있습니다. 검색할 경우 데이터가 클라우드에서 성능 계층으로 다시 이동됩니다.</block>
   <block id="91c0c3f0911cf0aa7791e2815ecf2507" category="paragraph">그러나 _BlueXP - 클라우드 데이터 서비스 배포 및 관리 _ 에 PAYGO 마켓플레이스가 가입되어 있는 경우 새로운 콜드 데이터는 객체 스토리지로 계속 계층화되어 사용량 기준으로 해당 요금을 지불할 수 있습니다.</block>
-  <block id="9c7d287d0ce7d0d1654a49d75c7314f0" category="paragraph">Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Clusters 페이지에서 하이브리드 클라우드 인프라에서 데이터 계층화에 대한 전체 뷰를 확인할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다.<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>.</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="827819483dd4d9a78711b6afa4da92ab" category="list-text">포트 443을 통해 Cloud Tiering 서비스 및 Google Cloud Storage에 HTTPS로 연결합니다 <block ref="d9defc1077847b67f008853c06990134" category="inline-link-rx"></block>)</block>
   <block id="7ec3e00e427ce2f28dc1338f2397328b" category="list-text">포트 443을 통해 Cloud Tiering 서비스에 HTTPS로 연결합니다 <block ref="4a7a4f89081133703af86b4e7832dbdb" category="inline-link-rx"></block>)</block>
@@ -1369,4 +1363,13 @@
   <block id="f8fffd3ee443f29d36b65a0e66a5f03a" category="paragraph">예. Connector 소프트웨어는 다운로드한 후 네트워크의 Linux 호스트에 수동으로 설치할 수 있습니다.<block ref="1b7ddd38e792a03a4b15132910b94d8c" category="inline-link-rx"></block>.</block>
   <block id="99d3ed1cc58df8ac52e23dd69320374b" category="list-text"><block ref="99d3ed1cc58df8ac52e23dd69320374b" category="inline-link-rx"></block></block>
   <block id="c395006d6063b66336be768382280c9e" category="paragraph">의 전체 끝점 목록을 참조하십시오<block ref="684a3f4234dd7d8f8b7d90e00da95138" category="inline-link-rx"></block>,<block ref="fd66fc554da543d0f7f94dcde36b2a2f" category="inline-link-rx"></block>, 또는<block ref="2484264a704a749bc992bec76f43f13d" category="inline-link-rx"></block> 설명합니다.</block>
+  <block id="5a9e33885fce7948860e5a957a6fb29f" category="inline-link">Cloud Tiering TCO 계산기를 사용하여 얼마나 절감할 수 있는지 알아보십시오</block>
+  <block id="a6f0f70c7a597fb210e8ae036288a1c7" category="paragraph"><block ref="61f3ae130fd6497c4c039b23b58d1478" category="inline-link-rx"></block>.</block>
+  <block id="4a97347622bcc4ff17d08f47dbd6058e" category="paragraph">Cloud Tiering이 제공하는 가치에 대해 자세히 알아보려면<block ref="6d561328137aaacc2dac117ec87092f5" category="inline-link-rx"></block>.</block>
+  <block id="90d333fba347612ff8ecc43a29a3eed9" category="inline-link">BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다</block>
+  <block id="5e4db263e473f9cd49f73bc884701b27" category="admonition">Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다.<block ref="d841e2ca06a23a295269523a8cf3293d" category="inline-link-rx"></block>.</block>
+  <block id="ff036adb1c47937772e87468ec99c6ff" category="paragraph">Cloud Tiering 라이센스를 구입한 후에는 BlueXP의 Digital Wallet을 사용하여 라이센스를 추가해야 합니다. <block ref="14bb9fa35d1b0028e213cd470536d52e" category="inline-link-macro-rx"></block>.</block>
+  <block id="dfe334fbbb64c2a1ad464bafa6253a79" category="inline-link">Cloud Tiering TCO 계산기</block>
+  <block id="e1041666338a1691b7104a6d8a48d67e" category="paragraph">견적을 받으려면 ONTAP 클러스터를 BlueXP에 추가하고 클라우드 계층화 클러스터 페이지를 통해 검사하기만 하면 됩니다. 클러스터에 대한 잠재적인 계층화 절감 비용 계산 * 을 클릭하여 을 시작합니다<block ref="aacb9a70fb6d33ff9c71983d26ca8a9f" category="inline-link-rx"></block> 얼마나 많은 비용을 절감할 수 있는지 알아보십시오.</block>
+  <block id="532cc143d94eb1465c9c79a1dfcd49a1" category="paragraph">Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Clusters 페이지에서 하이브리드 클라우드 인프라에서 데이터 계층화에 대한 전체 뷰를 확인할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다.<block ref="d841e2ca06a23a295269523a8cf3293d" category="inline-link-rx"></block>.</block>
 </blocks>
