@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, tiering' 
-summary: Cloud Tiering의 새로운 기능 알아보기 
+summary: BlueXP 계층화의 새로운 기능에 대해 알아보십시오. 
 ---
-= Cloud Tiering의 새로운 기능
+= BlueXP 계층화의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Cloud Tiering의 새로운 기능 알아보기
 
 
 [role="lead"]
-Cloud Tiering의 새로운 기능 알아보기
+BlueXP 계층화의 새로운 기능에 대해 알아보십시오.
 
 
 
@@ -24,7 +24,7 @@ Cloud Tiering의 새로운 기능 알아보기
 
 === 라이센스 탭이 제거되었습니다
 
-Licensing 탭이 Cloud Tiering 인터페이스에서 제거되었습니다. PAYGO(pay-as-you-go) 서브스크립션에 대한 모든 라이센스는 이제 Cloud Tiering on-premise 대시보드에서 액세스할 수 있습니다. 또한 이 페이지에서 Digital Wallet으로 연결되는 링크를 통해 Cloud Tiering BYOL(Bring-Your-Own-License) 방식으로 모든 Cloud Tiering을 확인 및 관리할 수 있습니다.
+BlueXP 계층화 인터페이스에서 라이센스 탭이 제거되었습니다. PAYGO(pay-as-you-go) 서브스크립션에 대한 모든 라이센스는 이제 BlueXP 계층화 온-프레미스 대시보드에서 액세스할 수 있습니다. 또한 이 페이지에서 Digital Wallet으로 연결되는 링크가 있어 BlueXP 계층화를 통해 BYOL(Bring-Your-Own-License)을 확인하고 관리할 수 있습니다.
 
 
 
@@ -40,7 +40,7 @@ Licensing 탭이 Cloud Tiering 인터페이스에서 제거되었습니다. PAYG
 
 === 이제 볼륨에 대한 계층화 보고서를 생성할 수 있습니다
 
-계층 볼륨 페이지에서 보고서를 다운로드할 수 있으므로 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. Cloud Tiering은 필요한 경우 회사 내 다른 사람에게 검토 및 보낼 수 있는 .csv 파일을 생성합니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["계층화 보고서를 다운로드하는 방법을 확인하십시오"].
+계층 볼륨 페이지에서 보고서를 다운로드할 수 있으므로 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. BlueXP 계층화는 .csv 파일을 생성하여 필요에 따라 회사의 다른 사람에게 검토 및 전송할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["계층화 보고서를 다운로드하는 방법을 확인하십시오"].
 
 
 
@@ -50,7 +50,7 @@ Licensing 탭이 Cloud Tiering 인터페이스에서 제거되었습니다. PAYG
 
 === 커넥터 아웃바운드 인터넷 액세스 엔드포인트 변경
 
-Cloud Tiering의 변경으로 인해 Cloud Tiering 작업의 성공을 위해 다음 Connector 엔드포인트를 변경해야 합니다.
+BlueXP 계층화가 변경되었기 때문에 BlueXP 계층화 작업을 성공적으로 수행하려면 다음 Connector 엔드포인트를 변경해야 합니다.
 
 [cols="50,50"]
 |===
@@ -70,7 +70,7 @@ Cloud Tiering의 변경으로 인해 Cloud Tiering 작업의 성공을 위해 �
 
 
 
-=== 끌어서 놓기로 Azure Blob, Google Cloud Storage 및 StorageGRID에 Cloud Tiering을 사용할 수 있습니다
+=== 끌어서 놓기를 통해 Azure Blob, Google Cloud Storage 및 StorageGRID에 BlueXP 계층화를 사용할 수 있습니다
 
 Azure Blob, Google Cloud Storage 또는 StorageGRID 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우, 내부 ONTAP 작업 환경을 대상으로 끌어서 계층화 설정 마법사를 시작할 수 있습니다.
 
@@ -88,7 +88,7 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html
 
 
 
-=== Cloud Tiering을 Amazon S3로 끌어서 놓기로 설정합니다
+=== Amazon S3에 BlueXP 계층화를 활성화하려면 끌어다 놓으십시오
 
 Amazon S3 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우, 내부 ONTAP 작업 환경을 대상으로 끌어서 계층화 설정 마법사를 시작할 수 있습니다.
 
@@ -112,7 +112,7 @@ Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이�
 
 === MetroCluster 구성에 대한 Cloud Tiering 라이센스 지원
 
-이제 MetroCluster 구성에 있는 클러스터와 Cloud Tiering 라이센스를 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
+이제 MetroCluster 구성에 있는 클러스터와 Cloud Tiering 라이센스를 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
 
 
 
@@ -122,7 +122,7 @@ Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이�
 
 === Cloud Tiering 라이센스는 추가 클러스터 구성을 지원합니다
 
-이제 Cloud Tiering 라이센스는 MetroCluster 구성이 아닌 Tiering Mirror 구성 클러스터와 IBM Cloud Object Storage로 계층화되는 클러스터와 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
+이제 Cloud Tiering 라이센스는 MetroCluster 구성이 아닌 Tiering Mirror 구성 클러스터와 IBM Cloud Object Storage로 계층화되는 클러스터와 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
 
 
 

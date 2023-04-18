@@ -80,7 +80,7 @@ image:screenshot_tiering_policy_settings.png["구성 가능한 계층화 정책 
 
 == 볼륨에 대한 계층화 보고서를 다운로드합니다
 
-계층 볼륨 페이지의 보고서를 다운로드하여 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. 을 클릭하기만 하면 됩니다 image:button_download.png["다운로드"] 단추를 클릭합니다. Cloud Tiering은 .csv 파일을 생성하여 필요에 따라 다른 그룹에 검토 및 전송할 수 있습니다. CSV 파일에는 최대 10,000개의 데이터 행이 포함됩니다.
+계층 볼륨 페이지의 보고서를 다운로드하여 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. 을 클릭하기만 하면 됩니다 image:button_download.png["다운로드"] 단추를 클릭합니다. BlueXP 계층화는 .csv 파일을 생성하여 필요에 따라 다른 그룹에 검토 및 전송할 수 있습니다. CSV 파일에는 최대 10,000개의 데이터 행이 포함됩니다.
 
 image:screenshot_tiering_report_download.png["모든 볼륨의 계층화 상태를 나열하는 CSV 파일을 생성하는 방법을 보여 주는 스크린샷"]
 
@@ -162,7 +162,7 @@ image:screenshot_tiering_modify_aggregate.png["계층화 충만 임계값을 수
 
 == 클러스터의 계층화 정보 검토
 
-클라우드 계층에 있는 데이터의 양과 디스크에 있는 데이터의 양을 확인하려는 경우가 있을 수 있습니다. 또는 클러스터 디스크에서 핫 데이터와 콜드 데이터의 양을 확인할 수도 있습니다. Cloud Tiering은 각 클러스터에 대해 이 정보를 제공합니다.
+클라우드 계층에 있는 데이터의 양과 디스크에 있는 데이터의 양을 확인하려는 경우가 있을 수 있습니다. 또는 클러스터 디스크에서 핫 데이터와 콜드 데이터의 양을 확인할 수도 있습니다. BlueXP 계층화는 각 클러스터에 대해 이 정보를 제공합니다.
 
 .단계
 . 왼쪽 탐색 메뉴에서 * 이동성 > 계층화 * 를 선택합니다.
@@ -184,7 +184,7 @@ image:screenshot_tiering_aiq_fabricpool_info.png["디지털 자문업체 의 Fab
 
 == 운영 상태 수정
 
-장애가 발생할 수 있습니다. 이 경우 Cloud Tiering은 클러스터 대시보드에 "Failed" 운영 상태를 표시합니다. 상태는 ONTAP 시스템과 BlueXP의 상태를 반영합니다.
+장애가 발생할 수 있습니다. 그러면 BlueXP 계층화는 클러스터 대시보드에 "Failed" 운영 상태를 표시합니다. 상태는 ONTAP 시스템과 BlueXP의 상태를 반영합니다.
 
 .단계
 . 작동 상태가 "Failed(실패)"인 모든 클러스터를 식별합니다.
@@ -192,21 +192,21 @@ image:screenshot_tiering_aiq_fabricpool_info.png["디지털 자문업체 의 Fab
 . 문제 해결:
 +
 .. ONTAP 클러스터가 작동 중이고 객체 스토리지 공급자에 대한 인바운드 및 아웃바운드 연결이 있는지 확인합니다.
-.. BlueXP에서 Cloud Tiering 서비스, 오브젝트 저장소 및 해당 서비스가 검색하는 ONTAP 클러스터에 대한 아웃바운드 연결이 있는지 확인합니다.
+.. BlueXP의 BlueXP 계층화 서비스, 개체 저장소 및 검색된 ONTAP 클러스터에 대한 아웃바운드 연결이 있는지 확인합니다.
 
 
 
 
 
 
-== Cloud Tiering에서 추가 클러스터 검색
+== BlueXP 계층화에서 추가 클러스터 검색
 
 검색되지 않은 온프레미스 ONTAP 클러스터를 계층화_클러스터_페이지에서 BlueXP에 추가하여 클러스터에 대한 계층화를 설정할 수 있습니다.
 
 추가 클러스터를 검색할 수 있는 버튼이 Tiering_On-Premise Dashboard_페이지에도 나타납니다.
 
 .단계
-. Cloud Tiering에서 * Clusters * 탭을 클릭합니다.
+. BlueXP 계층화에서 * 클러스터 * 탭을 클릭합니다.
 . 검색되지 않은 클러스터를 보려면 * 검색되지 않은 클러스터 표시 * 를 클릭합니다.
 +
 image:screenshot_tiering_show_undiscovered_cluster.png["계층화 대시보드에서 검색되지 않은 클러스터 표시 버튼을 보여 주는 스크린샷"]

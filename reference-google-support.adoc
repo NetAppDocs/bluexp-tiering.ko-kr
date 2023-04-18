@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-google-support.html 
 keywords: google, gcp, regions, google regions, gcp regions, storage class, standard, nearline, coldline, archive 
-summary: Cloud Tiering은 여러 Google Cloud 스토리지 클래스와 대부분의 영역을 지원합니다. 
+summary: BlueXP 계층화는 여러 Google Cloud 스토리지 클래스와 대부분의 지역을 지원합니다. 
 ---
 = 지원되는 Google Cloud 스토리지 클래스 및 지역
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: Cloud Tiering은 여러 Google Cloud 스토리지 클래스와 대부�
 
 
 [role="lead"]
-Cloud Tiering은 여러 Google Cloud 스토리지 클래스와 대부분의 영역을 지원합니다.
+BlueXP 계층화는 여러 Google Cloud 스토리지 클래스와 대부분의 지역을 지원합니다.
 
 
 
 == 지원되는 GCP 스토리지 클래스입니다
 
-데이터 계층화를 GCP로 설정할 경우 Cloud Tiering은 비활성 데이터에 _Standard_storage 클래스를 자동으로 사용합니다. Cloud Tiering은 수명주기 규칙을 적용하여 특정 일 수가 지나면 데이터가 _Standard_Storage 클래스에서 다른 스토리지 클래스로 전환됩니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.
+데이터 계층화를 GCP로 설정하면 BlueXP 계층화는 비활성 데이터에 _Standard_storage 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.
 
 * 니어라인
 * 콜드라인
@@ -29,7 +29,7 @@ Cloud Tiering은 여러 Google Cloud 스토리지 클래스와 대부분의 영�
 
 다른 스토리지 클래스를 선택하지 않으면 데이터가 _Standard_storage 클래스에 남아 있고 규칙이 적용되지 않습니다.
 
-Cloud Tiering 라이프사이클 규칙을 구성할 때는 Google 계정에서 버킷을 설정할 때 라이프사이클 규칙을 구성하지 않아야 합니다.
+BlueXP 계층화 라이프사이클 규칙을 구성할 때 Google 계정에 버킷을 설정할 때 라이프사이클 규칙을 구성하지 않아야 합니다.
 
 https://cloud.google.com/storage/docs/storage-classes["Google Cloud Storage 클래스에 대해 알아보십시오"^].
 
@@ -37,7 +37,7 @@ https://cloud.google.com/storage/docs/storage-classes["Google Cloud Storage 클�
 
 == 지원되는 Google Cloud 지역
 
-Cloud Tiering은 다음 영역을 지원합니다.
+BlueXP 계층화는 다음 영역을 지원합니다.
 
 
 

@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Tiering
+  name: BlueXP tiering
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,13 +11,13 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: Cloud Tiering 문서
+  - title: BlueXP 계층화 문서
     url: "/index.html"
   - title: 릴리스 정보
     url: "/whats-new.html"
   - title: 시작하십시오
     entries:
-    - title: Cloud Tiering에 대해 알아보십시오
+    - title: BlueXP 계층화에 대해 알아보십시오
       url: "/concept-cloud-tiering.html"
     - title: 사내 데이터를 클라우드로 계층화합니다
       entries:
@@ -35,7 +35,7 @@ sidebar:
       url: "/task-licensing-cloud-tiering.html"
     - title: FAQ 를 참조하십시오
       url: "/faq-cloud-tiering.html"
-  - title: Cloud Tiering을 사용하십시오
+  - title: BlueXP 계층화를 사용합니다
     entries:
     - title: 데이터 계층화 관리
       url: "/task-managing-tiering.html"
@@ -65,7 +65,7 @@ homepage:
   tiles:
   - title: 시작하십시오
     links:
-    - title: Cloud Tiering에 대해 알아보십시오
+    - title: BlueXP 계층화에 대해 알아보십시오
       url: concept-cloud-tiering.html
     - title: 새로운 기능
       url: whats-new.html
@@ -109,7 +109,7 @@ homepage:
     links:
     - title: NetApp 커뮤니티
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: Cloud Tiering 블로그
+    - title: BlueXP 계층화 블로그 를 참조하십시오
       url: https://bluexp.netapp.com/blog/topic/cloud-tiering
     - title: 클라우드 웨비나
       url: https://bluexp.netapp.com/events

@@ -4,7 +4,7 @@ permalink: faq-cloud-tiering.html
 keywords: faq, questions, requirements, service connector, object store, object storage, aws, azure, bucket, cluster, aggregate, s3, storage class, standard, inactive data reporting, auto, volume tiering policy, policy, tiering policy, snapshot, cold, inactive, infrequent 
 summary: 이 FAQ는 질문에 대한 간단한 답변을 찾는 경우에 도움이 될 수 있습니다. 
 ---
-= Cloud Tiering 기술 FAQ
+= BlueXP 계층화 기술 FAQ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,15 +18,15 @@ summary: 이 FAQ는 질문에 대한 간단한 답변을 찾는 경우에 도움
 
 
 
-== Cloud Tiering 서비스
+== BlueXP 계층화 서비스
 
-다음 FAQ는 Cloud Tiering의 작동 방식과 관련이 있습니다.
+다음 FAQ는 BlueXP 계층화의 작동 방식과 관련이 있습니다.
 
 
 
-=== Cloud Tiering 서비스를 사용하면 어떤 이점이 있습니까?
+=== BlueXP 계층화 서비스를 사용하면 어떤 이점이 있습니까?
 
-Cloud Tiering은 빠른 데이터 증가에 따른 당면 과제를 해결하므로 다음과 같은 이점이 있습니다.
+BlueXP 계층화는 빠른 데이터 증가에 따른 당면 과제를 해결함으로써 다음과 같은 이점을 제공합니다.
 
 * 데이터 센터를 클라우드로 손쉽게 확장하므로 최대 50배 더 많은 공간을 확보할 수 있습니다
 * 스토리지 최적화를 통해 평균 70%의 스토리지 비용이 절감됩니다
@@ -54,15 +54,15 @@ Cloud Tiering은 빠른 데이터 증가에 따른 당면 과제를 해결하므
 
 
 
-=== Cloud Tiering을 사용하면 클라우드 계층에서 스토리지 효율성을 유지할 수 있습니까?
+=== BlueXP 계층화를 통해 클라우드 계층에서 스토리지 효율성을 유지할 수 있습니까?
 
 예. 데이터를 클라우드 계층으로 이동할 때 압축, 중복제거, 컴팩션과 같은 ONTAP 볼륨 레벨 스토리지 효율성이 유지됩니다.
 
 
 
-=== FabricPool와 클라우드 계층화의 차이점은 무엇입니까?
+=== FabricPool와 BlueXP 계층화의 차이점은 무엇입니까?
 
-FabricPool는 ONTAP 계층화 기술로, ONTAP CLI 및 System Manager를 통해 셀프 관리가 가능하며, Cloud Tiering을 통해 서비스형 관리도 가능합니다. Cloud Tiering은 ONTAP와 클라우드 모두에서 고급 자동화 프로세스를 통해 FabricPool를 관리 서비스로 전환함으로써 하이브리드 및 멀티 클라우드 구축 전반에서 향상된 가시성과 계층화 제어 기능을 제공합니다.
+FabricPool는 ONTAP CLI 및 System Manager를 통해 자체 관리하거나 BlueXP 계층화를 통해 서비스로 관리할 수 있는 ONTAP 계층화 기술입니다. BlueXP 계층화는 ONTAP와 클라우드 모두에서 고급 자동화 프로세스를 통해 FabricPool를 관리 서비스로 전환함으로써 하이브리드 및 멀티 클라우드 구축 전반에 걸친 계층화에 대한 뛰어난 가시성과 제어 기능을 제공합니다.
 
 
 
@@ -70,31 +70,31 @@ FabricPool는 ONTAP 계층화 기술로, ONTAP CLI 및 System Manager를 통해 
 
 아니요 볼륨의 메타데이터는 성능 계층에서 계층화되지 않으므로 오브젝트 스토리지에 저장된 데이터에 직접 액세스할 수 없습니다.
 
-하지만 Cloud Tiering을 사용하면 보조 시스템 및 SnapMirror 대상 볼륨(DP 볼륨)에서 이를 사용하여 모든 데이터를 계층화하여(메타데이터 제외) 데이터 센터의 설치 공간과 TCO를 줄임으로써 비용 효율적인 백업 및 DR을 실현할 수 있습니다.
+그러나 BlueXP 계층화를 사용하면 보조 시스템 및 SnapMirror 대상 볼륨(DP 볼륨)에서 이를 활성화하여 모든 데이터를 계층화함으로써(메타데이터 제외) 데이터 센터의 설치 공간과 TCO를 줄임으로써 비용 효율적인 백업 및 DR을 달성할 수 있습니다.
 
 
 
-=== Cloud Tiering이 볼륨 또는 애그리게이트 레벨에 적용됩니까?
+=== 볼륨 또는 애그리게이트 레벨에서 BlueXP 계층화가 적용됩니까?
 
-볼륨 레벨에서 Cloud Tiering은 계층화 정책을 각 볼륨과 연결하여 사용합니다. 콜드 데이터 식별은 블록 수준에서 수행됩니다.
+볼륨 레벨에서 BlueXP 계층화는 계층화 정책을 각 볼륨과 연결하여 사용할 수 있습니다. 콜드 데이터 식별은 블록 수준에서 수행됩니다.
 
 
 
-=== Cloud Tiering은 어떤 블록을 클라우드에 계층화할지 어떻게 결정합니까?
+=== BlueXP 계층화는 클라우드에 계층화할 블록을 어떻게 결정합니까?
 
 볼륨과 연관된 계층화 정책은 계층화와 시기를 제어하는 메커니즘입니다. 이 정책은 데이터 블록 유형(스냅샷, 사용자 데이터 또는 둘 다) 및 냉각 기간을 정의합니다. 을 참조하십시오 link:concept-cloud-tiering.html#volume-tiering-policies["볼륨 계층화 정책"] 를 참조하십시오.
 
 
 
-=== Cloud Tiering은 볼륨 용량에 어떤 영향을 미칩니까?
+=== BlueXP 계층화는 볼륨 용량에 어떤 영향을 미칩니까?
 
-Cloud Tiering은 볼륨 용량에 영향을 주지 않고 애그리게이트의 성능 계층 사용에 영향을 줍니다.
+BlueXP 계층화는 볼륨의 용량에는 영향을 주지 않고 집합적 성능 계층 사용에는 영향을 미치지 않습니다.
 
 
 
-=== Cloud Tiering은 비활성 데이터 보고를 지원합니까?
+=== BlueXP 계층화는 비활성 데이터 보고를 활성화합니까?
 
-예. Cloud Tiering은 각 애그리게이트에 IDR(Inactive Data Reporting)을 활성화합니다. 이 설정을 통해 저비용 오브젝트 스토리지로 계층화할 수 있는 비활성 데이터의 양을 파악할 수 있습니다.
+예. BlueXP 계층화는 각 집계에서 IDR(Inactive Data Reporting)을 활성화합니다. 이 설정을 통해 저비용 오브젝트 스토리지로 계층화할 수 있는 비활성 데이터의 양을 파악할 수 있습니다.
 
 
 
@@ -106,11 +106,11 @@ Cloud Tiering은 볼륨 용량에 영향을 주지 않고 애그리게이트의 
 
 == 추가 수익 실적을
 
-다음 FAQ는 Cloud Tiering의 사용 라이센스 및 비용과 관련이 있습니다.
+다음 FAQ는 BlueXP 계층화 사용과 관련된 라이센스 및 비용과 관련이 있습니다.
 
 
 
-=== Cloud Tiering의 비용은 얼마입니까?
+=== BlueXP 계층화 비용은 어느 정도입니까?
 
 콜드 데이터를 퍼블릭 클라우드에 계층화할 경우:
 
@@ -126,7 +126,7 @@ https://bluexp.netapp.com/pricing["가격 세부 정보를 참조하십시오"].
 
 === 동일한 ONTAP 클러스터에 BYOL 및 PAYGO 라이센스를 모두 사용할 수 있습니까?
 
-예. Cloud Tiering을 사용하면 BYOL 라이센스, PAYGO 구독 또는 이 둘을 결합하여 사용할 수 있습니다.
+예. BlueXP 계층화를 통해 BYOL 라이센스, PAYGO 구독 또는 두 가지 조합을 사용할 수 있습니다.
 
 
 
@@ -138,7 +138,7 @@ BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 �
 
 
 
-=== Cloud Tiering 라이센스에는 클라우드 공급자의 이그레스 비용이 포함되어 있습니까?
+=== BlueXP 계층화 라이센스에는 클라우드 제공업체의 이그레스 비용이 포함되어 있습니까?
 
 아니요, 그렇지 않습니다.
 
@@ -150,7 +150,7 @@ BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 �
 
 
 
-=== 클라우드 요금은 어떻게 예측합니까? Cloud Tiering의 "가상" 모드가 있습니까?
+=== 클라우드 요금은 어떻게 예측합니까? BlueXP 계층화를 위한 "가상" 모드가 있습니까?
 
 클라우드 공급자가 데이터 호스팅에 얼마나 많은 비용을 청구할지 예측하는 가장 좋은 방법은 계산기를 사용하는 것입니다. https://calculator.aws/#/["설치하고"], https://azure.microsoft.com/en-us/pricing/calculator/["Azure를 지원합니다"] 및 https://cloud.google.com/products/calculator["Google 클라우드"].
 
@@ -162,9 +162,9 @@ BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 �
 
 
 
-=== Cloud Tiering을 설정하기 전에 볼륨의 절약 효과를 예측하고 콜드 데이터 보고서를 받으려면 어떻게 해야 합니까?
+=== BlueXP 계층화를 활성화하기 전에 볼륨의 절약 효과를 예측하고 콜드 데이터 보고서를 받으려면 어떻게 해야 합니까?
 
-견적을 받으려면 ONTAP 클러스터를 BlueXP에 추가하고 클라우드 계층화 클러스터 페이지를 통해 검사하기만 하면 됩니다. 클러스터에 대한 잠재적인 계층화 절감 비용 계산 * 을 클릭하여 을 시작합니다 https://bluexp.netapp.com/cloud-tiering-service-tco["Cloud Tiering TCO 계산기"^] 얼마나 많은 비용을 절감할 수 있는지 알아보십시오.
+추정치를 얻으려면 ONTAP 클러스터를 BlueXP에 추가하고 BlueXP 계층화 클러스터 페이지를 통해 검사하기만 하면 됩니다. 클러스터에 대한 잠재적인 계층화 절감 비용 계산 * 을 클릭하여 을 시작합니다 https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP 계층화 TCO 계산기"^] 얼마나 많은 비용을 절감할 수 있는지 알아보십시오.
 
 
 
@@ -174,15 +174,15 @@ BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 �
 
 
 
-=== Cloud Tiering에서 지원하는 ONTAP 버전은 무엇입니까?
+=== BlueXP 계층화는 어떤 ONTAP 버전을 지원합니까?
 
-Cloud Tiering은 ONTAP 버전 9.2 이상을 지원합니다.
+BlueXP 계층화는 ONTAP 버전 9.2 이상을 지원합니다.
 
 
 
 === 어떤 유형의 ONTAP 시스템이 지원됩니까?
 
-클라우드 계층화는 단일 노드 및 고가용성 AFF, FAS, ONTAP Select 클러스터에서 지원됩니다. FabricPool 미러 구성 및 MetroCluster 구성의 클러스터도 지원됩니다.
+BlueXP 계층화는 단일 노드 및 고가용성 AFF, FAS 및 ONTAP Select 클러스터에서 지원됩니다. FabricPool 미러 구성 및 MetroCluster 구성의 클러스터도 지원됩니다.
 
 
 
@@ -194,13 +194,13 @@ Cloud Tiering은 ONTAP 버전 9.2 이상을 지원합니다.
 
 === HDD가 있는 FAS 노드가 있는 클러스터에 연결된 AFF의 데이터를 계층화할 수 있습니까?
 
-예. Cloud Tiering은 모든 애그리게이트에서 호스팅되는 볼륨을 계층화하도록 구성할 수 있습니다. 데이터 계층화 구성은 사용되는 컨트롤러의 유형과 클러스터가 이기종 클러스터인지 여부와 관련이 없습니다.
+예. BlueXP 계층화는 모든 집계에서 호스팅되는 볼륨을 계층화하도록 구성할 수 있습니다. 데이터 계층화 구성은 사용되는 컨트롤러의 유형과 클러스터가 이기종 클러스터인지 여부와 관련이 없습니다.
 
 
 
 === Cloud Volumes ONTAP는 어떻습니까?
 
-Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Clusters 페이지에서 하이브리드 클라우드 인프라에서 데이터 계층화에 대한 전체 뷰를 확인할 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 Cloud Tiering에서 읽기 전용입니다. Cloud Tiering에서 Cloud Volumes ONTAP의 데이터 계층화를 설정할 수 없습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다"^].
+Cloud Volumes ONTAP 시스템이 있는 경우 BlueXP 계층화 클러스터 페이지에서 하이브리드 클라우드 인프라의 데이터 계층화에 대한 전체 보기를 얻을 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다. BlueXP 계층화에서 Cloud Volumes ONTAP에 데이터 계층화를 설정할 수 없습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다"^].
 
 
 
@@ -225,7 +225,7 @@ Cloud Volumes ONTAP 시스템이 있는 경우 Cloud Tiering Clusters 페이지�
 
 === 어떤 오브젝트 스토리지 공급자가 지원됩니까?
 
-Cloud Tiering은 다음 오브젝트 스토리지 공급자를 지원합니다.
+BlueXP 계층화는 다음과 같은 오브젝트 스토리지 공급자를 지원합니다.
 
 * Amazon S3
 * Microsoft Azure Blob
@@ -254,17 +254,17 @@ Cloud Tiering은 다음 오브젝트 스토리지 공급자를 지원합니다.
 
 === 지원되는 S3 스토리지 클래스는 무엇입니까?
 
-Cloud Tiering은 _Standard_,_Standard - Infrequent Access_, _One Zone - Infrequent Access_, _Intelligent Tiering_ 및 _Glacier Instant Retrieval_storage 클래스에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 link:reference-aws-support.html["지원되는 S3 스토리지 클래스"] 를 참조하십시오.
+BlueXP 계층화는 _Standard_,_Standard - Infrequent Access_, _One Zone - Infrequent Access_, _Intelligent Tiering_ 및 _Glacier Instant Retrieval_storage 클래스에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 link:reference-aws-support.html["지원되는 S3 스토리지 클래스"] 를 참조하십시오.
 
 
 
-=== Cloud Tiering에서 Amazon S3 Glacier Flexible 및 S3 Glacier Deep Archive를 지원하지 않는 이유는 무엇입니까?
+=== Amazon S3 Glacier Flexible 및 S3 Glacier Deep Archive가 BlueXP 계층화로 지원되지 않는 이유는 무엇입니까?
 
-Amazon S3 Glacier Flexible 및 S3 Glacier Deep Archive가 지원되지 않는 주된 이유는 Cloud Tiering이 고성능 계층화 솔루션으로 설계되었기 때문에 데이터를 지속적으로 사용하고 신속하게 검색할 수 있어야 합니다. S3 Glacier Flexible 및 S3 Glacier Deep Archive를 사용하여 데이터 검색을 몇 분에서 48시간 이내에 수행할 수 있습니다.
+Amazon S3 Glacier Flexible 및 S3 Glacier Deep Archive가 지원되지 않는 주된 이유는 BlueXP 계층화가 고성능 계층화 솔루션으로 설계되었기 때문에 데이터를 지속적으로 사용하고 신속하게 검색할 수 있어야 하기 때문입니다. S3 Glacier Flexible 및 S3 Glacier Deep Archive를 사용하여 데이터 검색을 몇 분에서 48시간 이내에 수행할 수 있습니다.
 
 
 
-=== MinIO와 같은 다른 S3 호환 오브젝트 스토리지 서비스를 Cloud Tiering과 함께 사용할 수 있습니까?
+=== BlueXP 계층화와 함께 MinIO와 같은 다른 S3 호환 오브젝트 스토리지 서비스를 사용할 수 있습니까?
 
 예. ONTAP 9.8 이상을 사용하는 클러스터에서는 계층화 UI를 통해 S3 호환 오브젝트 스토리지를 구성할 수 있습니다. link:task-tiering-onprem-s3-compat.html["자세한 내용은 여기 를 참조하십시오"].
 
@@ -272,23 +272,23 @@ Amazon S3 Glacier Flexible 및 S3 Glacier Deep Archive가 지원되지 않는 �
 
 === 어떤 Azure Blob 액세스 계층이 지원됩니까?
 
-Cloud Tiering은 비활성 데이터에 대한 _Hot_or_Cool_access 계층으로 데이터 계층화를 지원합니다. 을 참조하십시오 link:reference-azure-support.html["지원되는 Azure Blob 액세스 계층"] 를 참조하십시오.
+BlueXP 계층화는 비활성 데이터에 대한 _hot_or_cool_access 계층에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 link:reference-azure-support.html["지원되는 Azure Blob 액세스 계층"] 를 참조하십시오.
 
 
 
 === Google Cloud Storage에서 지원되는 스토리지 클래스는 무엇입니까?
 
-Cloud Tiering은 _Standard_, _Nearline_, _Coldline_ 및 _Archive_ 스토리지 클래스에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 link:reference-google-support.html["지원되는 Google Cloud 스토리지 클래스"] 를 참조하십시오.
+BlueXP 계층화는 _Standard_, _Nearline_, _Coldline_ 및 _Archive_ 스토리지 클래스에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 link:reference-google-support.html["지원되는 Google Cloud 스토리지 클래스"] 를 참조하십시오.
 
 
 
-=== Cloud Tiering은 라이프사이클 관리 정책의 사용을 지원합니까?
+=== BlueXP 계층화는 수명 주기 관리 정책의 사용을 지원합니까?
 
-예. Cloud Tiering은 특정 일 수가 지나면 기본 스토리지 클래스/액세스 계층에서 보다 비용 효율적인 계층으로 데이터를 전환할 수 있도록 라이프사이클 관리를 설정할 수 있습니다. 라이프사이클 규칙은 Amazon S3 및 Google Cloud 스토리지에 대해 선택한 버킷의 모든 오브젝트 및 Azure Blob에 대해 선택한 스토리지 계정의 모든 컨테이너에 적용됩니다.
+예. 수명 주기 관리를 활성화하여 BlueXP 계층화가 특정 기간 동안 기본 스토리지 클래스/액세스 계층에서 보다 비용 효율적인 계층으로 데이터를 전환할 수 있습니다. 라이프사이클 규칙은 Amazon S3 및 Google Cloud 스토리지에 대해 선택한 버킷의 모든 오브젝트 및 Azure Blob에 대해 선택한 스토리지 계정의 모든 컨테이너에 적용됩니다.
 
 
 
-=== Cloud Tiering은 전체 클러스터에 대해 하나의 오브젝트 저장소를 사용합니까, 아니면 애그리게이트당 하나를 사용합니까?
+=== BlueXP 계층화는 전체 클러스터에 대해 하나의 오브젝트 저장소를 사용합니까, 아니면 집합당 하나의 오브젝트 저장소를 사용합니까?
 
 일반적인 구성의 경우 전체 클러스터에 대해 하나의 오브젝트 저장소가 있습니다. 2022년 8월부터 * 고급 설정 * 페이지를 사용하여 클러스터의 추가 오브젝트 저장소를 추가한 다음, 다른 애그리게이트에 서로 다른 오브젝트 저장소를 연결하거나, 미러링을 위해 오브젝트 저장소 2개를 애그리게이트에 연결할 수 있습니다.
 
@@ -346,7 +346,7 @@ Write Back(다시 쓰기)은 일반적으로 읽기에 대해 수행되며 계�
 
 === 커넥터란 무엇입니까?
 
-Connector는 클라우드 계정 또는 온프레미스 컴퓨팅 인스턴스에서 실행되는 소프트웨어로, BlueXP에서 클라우드 리소스를 안전하게 관리할 수 있도록 지원합니다. Cloud Tiering 서비스를 사용하려면 Connector를 구축해야 합니다.
+Connector는 클라우드 계정 또는 온프레미스 컴퓨팅 인스턴스에서 실행되는 소프트웨어로, BlueXP에서 클라우드 리소스를 안전하게 관리할 수 있도록 지원합니다. BlueXP 계층화 서비스를 사용하려면 Connector를 배포해야 합니다.
 
 
 
@@ -366,7 +366,7 @@ Connector는 클라우드 계정 또는 온프레미스 컴퓨팅 인스턴스�
 
 
 
-=== Cloud Tiering을 사용하기 전에 클라우드 서비스 공급자 계정이 필요합니까?
+=== BlueXP 계층화를 사용하기 전에 클라우드 서비스 제공업체의 계정이 필요합니까?
 
 예. 사용할 오브젝트 스토리지를 정의하려면 먼저 계정이 있어야 합니다. VPC 또는 VNET에서 클라우드에서 Connector를 설정할 때도 클라우드 스토리지 공급자 계정이 필요합니다.
 
@@ -463,7 +463,7 @@ link:concept-cloud-tiering.html#volume-tiering-policies["계층화 정책에 대
 ONTAP는 오브젝트 스토리지 간에 데이터를 읽고 씁니다. 오브젝트 스토리지는 한 번도 시작되고, 응답 하기만 합니다.
 
 * StorageGRID의 경우 ONTAP 클러스터는 사용자가 지정한 포트를 통해 StorageGRID에 HTTPS 연결을 시작합니다(계층화 설정 중에 포트 구성 가능).
-* Connector는 포트 443을 통해 ONTAP 클러스터, 오브젝트 저장소 및 Cloud Tiering 서비스에 아웃바운드 HTTPS 연결을 필요로 합니다.
+* 커넥터는 포트 443을 통해 ONTAP 클러스터, 오브젝트 저장소 및 BlueXP 계층화 서비스에 아웃바운드 HTTPS 연결이 필요합니다.
 
 
 자세한 내용은 다음을 참조하십시오.
@@ -479,7 +479,7 @@ ONTAP는 오브젝트 스토리지 간에 데이터를 읽고 씁니다. 오브�
 
 === 클라우드에 저장된 콜드 데이터를 관리하기 위해 모니터링 및 보고를 위해 사용할 수 있는 툴은 무엇입니까?
 
-Cloud Tiering 이외의 경우 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] 및 https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 디지털 자문업체"^] 모니터링 및 보고에 사용할 수 있습니다.
+BlueXP 계층화 이외의 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] 및 https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 디지털 자문업체"^] 모니터링 및 보고에 사용할 수 있습니다.
 
 
 
@@ -497,7 +497,7 @@ Cloud Tiering 이외의 경우 https://docs.netapp.com/us-en/active-iq-unified-m
 
 === 사용자가 계층화된 데이터에 액세스하려고 할 때 지연이 발생합니까?
 
-예. 지연 시간은 접속에 따라 달라지므로 클라우드 계층은 로컬 계층과 동일한 지연 시간을 제공할 수 없습니다. 오브젝트 저장소의 지연 시간 및 처리량을 추정하기 위해 Cloud Tiering은 오브젝트 저장소가 연결된 후 계층화가 설정되기 전에 사용할 수 있는 ONTAP 오브젝트 저장소 프로파일러를 기반으로 하는 클라우드 성능 테스트 를 제공합니다.
+예. 지연 시간은 접속에 따라 달라지므로 클라우드 계층은 로컬 계층과 동일한 지연 시간을 제공할 수 없습니다. 오브젝트 저장소의 지연 시간과 처리량을 추정하기 위해 BlueXP 계층화는 오브젝트 저장소가 연결된 후 계층화가 설정되기 전에 사용할 수 있는 클라우드 성능 테스트(ONTAP 오브젝트 저장소 프로파일러를 기반으로 함)를 제공합니다.
 
 
 

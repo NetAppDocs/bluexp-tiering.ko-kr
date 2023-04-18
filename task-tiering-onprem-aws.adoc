@@ -50,7 +50,7 @@ Connector에 대한 권한을 설정하여 S3 버킷을 생성하고 관리합�
 [role="quick-margin-para"]
 <<S3 권한 설정,Connector 및 온프레미스 클러스터에 대한 권한을 설정하는 방법을 확인하십시오.>>
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] 시스템에서 Cloud Tiering을 설정합니다
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] 시스템에서 BlueXP 계층화를 활성화합니다
 [role="quick-margin-para"]
 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 Amazon S3에 계층화합니다.
 
@@ -59,11 +59,11 @@ Connector에 대한 권한을 설정하여 S3 버킷을 생성하고 관리합�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6개"] 라이센스를 설정합니다
 [role="quick-margin-para"]
-무료 평가판을 사용 종료한 후에는 사용한 만큼만 지불하는 가입형, ONTAP Cloud Tiering 라이센스 또는 다음 두 가지를 결합하여 Cloud Tiering에 대해 결제하십시오.
+무료 평가판 사용 기간이 끝나면 선불 종량제 구독, ONTAP BlueXP 계층화 라이센스 또는 다음 두 가지 BYOL 조합을 통한 BlueXP 계층화 비용 지불:
 
 [role="quick-margin-list"]
 * AWS Marketplace에서 구독하려면 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["BlueXP Marketplace 오퍼링으로 이동합니다"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
-* Cloud Tiering BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매해야 하는 경우 문의하기]를 참조하십시오 link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Wallet에서 계정에 추가하십시오"].
+* BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Wallet에서 계정에 추가하십시오"].
 
 
 
@@ -78,11 +78,11 @@ Connector에 대한 권한을 설정하여 S3 버킷을 생성하고 관리합�
 
 다음 다이어그램에서는 * public connection * 메서드와 구성 요소 간에 준비해야 하는 연결을 보여 줍니다. 사내에 설치한 Connector나 AWS VPC에 구축한 Connector를 사용할 수 있습니다.
 
-image:diagram_cloud_tiering_aws_public.png["Cloud Tiering이 공개 연결을 통해 클러스터의 볼륨 및 비활성 데이터가 있는 AWS S3 스토리지와 통신하는 방법을 보여주는 다이어그램입니다."]
+image:diagram_cloud_tiering_aws_public.png["BlueXP 계층화가 공용 연결을 통해 클러스터의 볼륨 및 비활성 데이터가 있는 AWS S3 스토리지와 통신하는 방법을 보여주는 다이어그램입니다."]
 
 다음 다이어그램에서는 * private connection * 메서드와 구성 요소 간에 준비해야 하는 연결을 보여 줍니다. 사내에 설치한 Connector나 AWS VPC에 구축한 Connector를 사용할 수 있습니다.
 
-image:diagram_cloud_tiering_aws_private.png["Cloud Tiering이 프라이빗 연결을 통해 클러스터의 볼륨 및 비활성 데이터가 있는 AWS S3 스토리지와 통신하는 방법을 보여주는 다이어그램입니다."]
+image:diagram_cloud_tiering_aws_private.png["BlueXP 계층화가 클러스터의 볼륨 및 비활성 데이터가 있는 AWS S3 스토리지와의 비공개 연결을 통해 통신하는 방법을 보여주는 다이어그램입니다."]
 
 
 NOTE: Connector와 S3 간의 통신은 오브젝트 스토리지 설정만을 위한 것입니다.
@@ -110,7 +110,7 @@ AWS VPC 또는 사내에 Connector가 이미 구축되어 있는 경우 모두 �
 
 * 커넥터가 설치된 네트워크에서 다음 연결을 사용할 수 있는지 확인합니다.
 +
-** 포트 443을 통해 Cloud Tiering 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
+** 포트 443을 통해 BlueXP 계층화 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
 ** 포트 443을 통해 ONTAP 클러스터 관리 LIF에 HTTPS로 연결합니다
 
 
@@ -144,11 +144,11 @@ AWS VPC 또는 사내에 Connector가 이미 구축되어 있는 경우 모두 �
 
 
 --
-지원되는 볼륨 및 애그리게이트:: Cloud Tiering이 계층화할 수 있는 총 볼륨 수가 ONTAP 시스템의 볼륨 수보다 적을 수 있습니다. 이는 볼륨을 일부 애그리게이트로 계층화할 수 없기 때문입니다. 에 대한 ONTAP 설명서를 참조하십시오 https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool에서 지원하지 않는 기능 또는 기능입니다"^].
+지원되는 볼륨 및 애그리게이트:: BlueXP 계층화가 계층화할 수 있는 총 볼륨 수는 ONTAP 시스템의 볼륨 수보다 적을 수 있습니다. 이는 볼륨을 일부 애그리게이트로 계층화할 수 없기 때문입니다. 에 대한 ONTAP 설명서를 참조하십시오 https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool에서 지원하지 않는 기능 또는 기능입니다"^].
 
 
 
-NOTE: Cloud Tiering은 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설치 프로그램은 다른 볼륨과 동일하게 작동합니다.
+NOTE: BlueXP 계층화는 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설치 프로그램은 다른 볼륨과 동일하게 작동합니다.
 
 필수 응용 프로그램 액세스 매개 변수입니다:: 클러스터 관리자 사용자는 "콘솔" 응용 프로그램 액세스 권한이 있어야 합니다. ONTAP 명령 '보안 로그인 표시'를 사용하여 확인할 수 있습니다. "admin" 사용자의 _Application_열에 "console"이 표시되어야 합니다. 필요한 경우 'Security login create' 명령을 사용하여 콘솔 응용 프로그램 액세스를 추가합니다. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["자세한 내용은 "보안 로그인" 명령을 참조하십시오"].
 
@@ -159,7 +159,7 @@ NOTE: Cloud Tiering은 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설�
 
 * 클러스터는 Connector에서 클러스터 관리 LIF로 인바운드 HTTPS 연결을 필요로 합니다.
 +
-클러스터와 Cloud Tiering 서비스를 연결할 필요가 없습니다.
+클러스터와 BlueXP 계층화 서비스를 연결할 필요가 없습니다.
 
 * 계층화할 볼륨을 호스팅하는 각 ONTAP 노드에 인터클러스터 LIF가 필요합니다. 이러한 인터클러스터 LIF는 오브젝트 저장소에 액세스할 수 있어야 합니다.
 +
@@ -167,7 +167,7 @@ NOTE: Cloud Tiering은 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설�
 
 * 인터클러스터 LIF는 ONTAP가 오브젝트 스토리지에 연결하는 데 사용해야 하는 _IPspace_와 연결되어야 합니다. https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspace에 대해 자세히 알아보십시오"^].
 +
-Cloud Tiering을 설정하면 사용할 IPspace를 묻는 메시지가 표시됩니다. 이러한 LIF와 연결되는 IPspace를 선택해야 합니다. 이는 여러분이 생성한 "기본" IPspace 또는 사용자 지정 IPspace가 될 수 있습니다.
+BlueXP 계층화를 설정할 때 사용할 IPspace를 묻는 메시지가 표시됩니다. 이러한 LIF와 연결되는 IPspace를 선택해야 합니다. 이는 여러분이 생성한 "기본" IPspace 또는 사용자 지정 IPspace가 될 수 있습니다.
 
 +
 사용 중인 IPspace가 "기본값"과 다른 경우 오브젝트 스토리지에 액세스하려면 정적 라우트를 생성해야 할 수 있습니다.
@@ -191,12 +191,12 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 == AWS 환경을 준비하십시오
 
-새 클러스터에 데이터 계층화를 설정할 때 S3 버킷을 생성하거나 Connector가 설정된 AWS 계정에서 기존 S3 버킷을 선택하라는 메시지가 표시됩니다. AWS 계정에는 Cloud Tiering에 입력할 수 있는 권한과 액세스 키가 있어야 합니다. ONTAP 클러스터는 액세스 키를 사용하여 S3의 내외부로 데이터를 계층화합니다.
+새 클러스터에 데이터 계층화를 설정할 때 S3 버킷을 생성하거나 Connector가 설정된 AWS 계정에서 기존 S3 버킷을 선택하라는 메시지가 표시됩니다. AWS 계정에는 BlueXP 계층화에 입력할 수 있는 권한 및 액세스 키가 있어야 합니다. ONTAP 클러스터는 액세스 키를 사용하여 S3의 내외부로 데이터를 계층화합니다.
 
-S3 버킷은 에 있어야 합니다 link:reference-aws-support.html#supported-aws-regions["Cloud Tiering을 지원하는 지역"].
+S3 버킷은 에 있어야 합니다 link:reference-aws-support.html#supported-aws-regions["BlueXP 계층화를 지원하는 지역"].
 
 
-NOTE: 특정 일 수가 지나면 계층형 데이터가 로 전환되는 저렴한 스토리지 클래스를 사용하도록 Cloud Tiering을 구성하려면 AWS 계정에 버킷을 설정할 때 라이프사이클 규칙을 선택하지 않아야 합니다. Cloud Tiering은 라이프사이클 전환을 관리합니다.
+NOTE: 특정 기간 동안 계층형 데이터가 로 전환되는 저렴한 스토리지 클래스를 사용하도록 BlueXP 계층화를 구성할 계획이라면 AWS 계정에서 버킷을 설정할 때 수명 주기 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 수명 주기 전환을 관리합니다.
 
 
 
@@ -226,7 +226,7 @@ NOTE: 특정 일 수가 지나면 계층형 데이터가 로 전환되는 저렴
 
 . 액세스 키를 만들거나 찾습니다.
 +
-Cloud Tiering은 액세스 키를 ONTAP 클러스터에 전달합니다. 자격 증명이 Cloud Tiering 서비스에 저장되지 않습니다.
+BlueXP 계층화는 액세스 키를 ONTAP 클러스터에 전달합니다. 자격 증명은 BlueXP 계층화 서비스에 저장되지 않습니다.
 
 +
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html["AWS 설명서: IAM 사용자를 위한 액세스 키 관리"^]
@@ -247,7 +247,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 image:screenshot_tiering_aws_sec_group.png["Connector와 연결된 AWS 보안 그룹의 스크린샷"]
 
 +
-개인 엔드포인트와 통신하는 데 포트 80(HTTP)을 사용하는 경우 모두 설정됩니다. 이제 클러스터에서 Cloud Tiering을 설정할 수 있습니다.
+개인 엔드포인트와 통신하는 데 포트 80(HTTP)을 사용하는 경우 모두 설정됩니다. 지금 클러스터에서 BlueXP 계층화를 활성화할 수 있습니다.
 
 +
 개인 엔드포인트와 통신하는 데 포트 443(HTTPS)을 사용하는 경우 다음 4단계에 표시된 것처럼 VPC S3 엔드포인트에서 인증서를 복사하여 ONTAP 클러스터에 추가해야 합니다.
@@ -319,7 +319,7 @@ image:screenshot_tiering_aws_s3_bucket.png["S3 버킷으로 계층화를 설정�
 +
 Connector에 대한 IAM 정책을 사용하면 인스턴스가 정확한 접두사로 명명된 버킷에 대해 S3 작업을 수행할 수 있으므로 _fabric-pool_prefix가 필요합니다. 예를 들어, S3 bucket_fabric-pool-AFF1_의 이름을 지정할 수 있습니다. 여기서 AFF1은 클러스터의 이름입니다.
 
-.. * Storage Class *: Cloud Tiering은 계층형 데이터의 라이프사이클 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 데이터를 다른 클래스로 이동하는 규칙을 만들 수 있습니다.
+.. * 스토리지 클래스 *: BlueXP 계층화는 계층형 데이터의 수명 주기 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 데이터를 다른 클래스로 이동하는 규칙을 만들 수 있습니다.
 +
 계층화된 데이터를 전환할 S3 스토리지 클래스를 선택하고 데이터를 이동하기 전의 일 수를 선택한 다음 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 오브젝트 저장소에서 45일이 지난 후 계층형 데이터가 _Standard_class에서 _Standard-IA_class로 이동되었음을 보여 줍니다.
 
@@ -371,7 +371,7 @@ image:screenshot_tiering_policy_settings.png["구성 가능한 계층화 정책 
 클러스터의 볼륨에서 S3 오브젝트 스토리지로 데이터 계층화를 성공적으로 설정했습니다.
 
 .다음 단계
-link:task-licensing-cloud-tiering.html["Cloud Tiering 서비스에 가입해야 합니다"].
+link:task-licensing-cloud-tiering.html["BlueXP 계층화 서비스에 가입해야 합니다"].
 
 클러스터의 활성 및 비활성 데이터에 대한 정보를 검토할 수 있습니다. link:task-managing-tiering.html["계층화 설정 관리에 대해 자세히 알아보십시오"].
 

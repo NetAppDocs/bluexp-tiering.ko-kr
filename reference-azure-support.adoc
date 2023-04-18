@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-azure-support.html 
 keywords: microsoft azure, azure, hot, access tier, cold, regions 
-summary: Cloud Tiering은 두 개의 액세스 계층과 대부분의 영역을 지원합니다. 
+summary: BlueXP 계층화는 두 개의 액세스 계층과 대부분의 지역을 지원합니다. 
 ---
 = 지원되는 Azure Blob 액세스 계층 및 지역
 :hardbreaks:
@@ -14,17 +14,17 @@ summary: Cloud Tiering은 두 개의 액세스 계층과 대부분의 영역을 
 
 
 [role="lead"]
-Cloud Tiering은 두 개의 액세스 계층과 대부분의 영역을 지원합니다.
+BlueXP 계층화는 두 개의 액세스 계층과 대부분의 지역을 지원합니다.
 
 
 
 == 지원되는 Azure Blob 액세스 계층
 
-Azure로 데이터 계층화를 설정할 때 Cloud Tiering은 비활성 데이터에 대해 _Hot_access 계층을 자동으로 사용합니다. Cloud Tiering은 수명 주기 규칙을 적용하여 특정 일 수 후에 _Hot_access 계층에서 _Cool_access 계층으로 데이터를 전환할 수 있습니다.
+Azure로 데이터 계층화를 설정할 때 BlueXP 계층화는 비활성 데이터에 대해 _hot_access 계층을 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수가 지나면 데이터가 _Hot_access 계층에서 _Cool_access 계층으로 이동하도록 할 수 있습니다.
 
 Cool_access 계층을 선택하지 않으면 데이터가 _Hot_access 계층에 그대로 유지되고 규칙이 적용되지 않습니다.
 
-Cloud Tiering 라이프사이클 규칙을 구성할 때는 Azure 계정에 컨테이너를 설정할 때 라이프사이클 규칙을 구성하지 않아야 합니다.
+BlueXP 계층화 라이프사이클 규칙을 구성할 때 Azure 계정에 컨테이너를 설정할 때 수명 주기 규칙을 구성하지 않아야 합니다.
 
 https://docs.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview["Azure Blob 액세스 계층에 대해 알아보십시오"^].
 
@@ -32,4 +32,4 @@ https://docs.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview["Azur
 
 == 지원되는 Azure 지역
 
-Cloud Tiering은 Connector를 통해 액세스할 수 있는 모든 지역의 모든 스토리지 계정에 계층화를 지원합니다.
+BlueXP 계층화는 Connector를 통해 액세스할 수 있는 모든 지역의 모든 스토리지 계정에 대한 계층화를 지원합니다.
