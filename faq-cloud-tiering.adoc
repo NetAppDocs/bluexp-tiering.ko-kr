@@ -479,7 +479,7 @@ ONTAP는 오브젝트 스토리지 간에 데이터를 읽고 씁니다. 오브�
 
 === 클라우드에 저장된 콜드 데이터를 관리하기 위해 모니터링 및 보고를 위해 사용할 수 있는 툴은 무엇입니까?
 
-BlueXP 계층화 이외의 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] 및 https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 디지털 자문업체"^] 모니터링 및 보고에 사용할 수 있습니다.
+BlueXP 계층화 이외의 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] 및 https://docs.netapp.com/us-en/active-iq/index.html["BlueXP 디지털 자문업체"^] 모니터링 및 보고에 사용할 수 있습니다.
 
 
 

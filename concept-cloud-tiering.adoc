@@ -135,7 +135,7 @@ Azure 또는 GCP로 계층화할 때는 현재 연간 계약이 지원되지 않
 
 NetApp에서 * BlueXP 계층화 * 라이센스(이전의 "Cloud Tiering" 라이센스)를 구매하여 라이센스를 구입하십시오. 1년, 2년 또는 3년 기간 라이센스를 구입하고 계층화 용량을 지정할 수 있습니다. BYOL BlueXP 계층화 라이센스는 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. BlueXP 계층화 라이센스에서 정의한 전체 계층화 용량을 모든 온프레미스 클러스터에서 사용할 수 있습니다.
 
-BlueXP 계층화 라이센스를 구입한 후에는 BlueXP의 디지털 지갑을 사용하여 라이센스를 추가해야 합니다. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP 계층화 BYOL 라이센스 사용 방법에 대해 알아보십시오"].
+BlueXP 계층화 라이센스를 구입한 후에는 BlueXP의 BlueXP 디지털 지갑을 사용하여 라이센스를 추가해야 합니다. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP 계층화 BYOL 라이센스 사용 방법에 대해 알아보십시오"].
 
 앞서 설명한 것처럼 BYOL 라이센스를 구입한 경우에도 사용한 만큼만 지불하는 구독을 설정하는 것이 좋습니다.
 
@@ -205,7 +205,7 @@ NOTE: 다시 가열된 데이터는 공간이 있는 경우에만 성능 계층�
 +
 데이터는 즉시 계층화되므로 SnapMirror는 성능 계층이 아닌 클라우드 계층에서 데이터를 읽습니다. 이로 인해 SnapMirror 작업 속도가 느려지며, 다른 계층화 정책을 사용하는 경우에도 나중에 다른 SnapMirror 작업이 느려집니다.
 
-* 마찬가지로, Cloud Backup은 계층화 정책을 통해 설정된 볼륨의 영향을 받습니다. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXP 백업 및 복구와 관련된 계층화 정책 고려 사항을 참조하십시오"^].
+* BlueXP 백업 및 복구는 계층화 정책을 통해 설정된 볼륨의 영향을 받습니다. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXP 백업 및 복구와 관련된 계층화 정책 고려 사항을 참조하십시오"^].
 
 
 --
