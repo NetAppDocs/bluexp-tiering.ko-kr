@@ -65,7 +65,6 @@ NOTE: Connector와 StorageGRID 간의 통신은 오브젝트 스토리지 설정
 
 --
 지원되는 ONTAP 버전입니다:: ONTAP 9.4 이상
-필수 응용 프로그램 액세스 매개 변수입니다:: 클러스터 관리자 사용자는 "콘솔" 응용 프로그램 액세스 권한이 있어야 합니다. ONTAP 명령 '보안 로그인 표시'를 사용하여 확인할 수 있습니다. "admin" 사용자의 _Application_열에 "console"이 표시되어야 합니다. 필요한 경우 'Security login create' 명령을 사용하여 콘솔 응용 프로그램 액세스를 추가합니다. https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["자세한 내용은 "보안 로그인" 명령을 참조하십시오"].
 라이센싱:: BlueXP 계정에 BlueXP 계층화 라이센스가 필요하지 않으며, 데이터를 StorageGRID로 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.
 클러스터 네트워킹 요구 사항::
 +
