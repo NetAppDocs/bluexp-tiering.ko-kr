@@ -39,7 +39,7 @@ AWS Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에서 
 
 [[subscribe-aws]]
 .단계
-. BlueXP에서 * 이동성 > 계층화 > 온프레미스 대시보드 * 를 클릭합니다.
+. BlueXP에서 * 이동성 > 계층화 > 온-프레미스 대시보드 * 를 클릭합니다.
 . Marketplace subscriptions_section에서 Amazon Web Services 아래의 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.
 . 에서 구독하십시오 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS 마켓플레이스 를 참조하십시오"^]그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.
 +
@@ -57,7 +57,7 @@ Azure Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에�
 
 [[subscribe-azure]]
 .단계
-. BlueXP에서 * 이동성 > 계층화 > 온프레미스 대시보드 * 를 클릭합니다.
+. BlueXP에서 * 이동성 > 계층화 > 온-프레미스 대시보드 * 를 클릭합니다.
 . Marketplace Subscriptions_ 섹션의 Microsoft Azure에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.
 . 에서 구독하십시오 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure 마켓플레이스 를 참조하십시오"^]그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.
 +
@@ -75,7 +75,7 @@ GCP Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에서 
 
 [[subscribe-gcp]]
 .단계
-. BlueXP에서 * 이동성 > 계층화 > 온프레미스 대시보드 * 를 클릭합니다.
+. BlueXP에서 * 이동성 > 계층화 > 온-프레미스 대시보드 * 를 클릭합니다.
 . Marketplace Subscriptions_ 섹션의 Google Cloud에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.
 . 에서 구독하십시오 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP 마켓플레이스"^]그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.
 +
