@@ -63,7 +63,7 @@ Connector에 대한 권한을 설정하여 S3 버킷을 생성하고 관리합�
 
 [role="quick-margin-list"]
 * AWS Marketplace에서 구독하려면 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["BlueXP Marketplace 오퍼링으로 이동합니다"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
-* BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Wallet에서 계정에 추가하십시오"].
+* BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP 디지털 지갑에서 계정에 추가하십시오"].
 
 
 
@@ -99,9 +99,9 @@ BlueXP 커넥터는 BlueXP 기능을 위한 주요 소프트웨어입니다. 비
 
 AWS VPC 또는 사내에 Connector가 이미 구축되어 있는 경우 모두 설정됩니다. 그렇지 않은 경우, 두 위치 중 하나에서 커넥터를 생성하여 ONTAP 데이터를 AWS S3 스토리지로 계층화해야 합니다. 다른 클라우드 공급자에 배포된 Connector는 사용할 수 없습니다.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS에 커넥터 구축"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Linux 호스트에 커넥터 설치"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에 커넥터 구축"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Linux 호스트에 커넥터 설치"^]
 
 
 
@@ -110,11 +110,11 @@ AWS VPC 또는 사내에 Connector가 이미 구축되어 있는 경우 모두 �
 
 * 커넥터가 설치된 네트워크에서 다음 연결을 사용할 수 있는지 확인합니다.
 +
-** 포트 443을 통해 BlueXP 계층화 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
+** 포트 443을 통해 BlueXP 계층화 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
 ** 포트 443을 통해 ONTAP 클러스터 관리 LIF에 HTTPS로 연결합니다
 
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html#cloud-tiering["커넥터에 S3 버킷을 관리할 수 있는 권한이 있는지 확인합니다"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["커넥터에 S3 버킷을 관리할 수 있는 권한이 있는지 확인합니다"^]
 * ONTAP 클러스터에서 VPC로의 직접 연결 또는 VPN 연결이 있고 커넥터와 S3 간의 통신을 AWS 내부 네트워크(* 전용* 연결)에 유지하고자 하는 경우 S3로 VPC 엔드포인트 인터페이스를 활성화해야 합니다. <<VPC 엔드포인트 인터페이스를 사용하여 전용 연결을 위해 시스템을 구성합니다,VPC 엔드포인트 인터페이스를 설정하는 방법을 확인하십시오.>>
 
 
@@ -182,7 +182,7 @@ IPspace 내의 모든 인터클러스터 LIF는 오브젝트 저장소에 대한
 
 오브젝트 스토리지로 콜드 데이터를 계층화하기 전에 BlueXP에서 사내 ONTAP 클러스터를 검색해야 합니다. 클러스터를 추가하려면 클러스터 관리 IP 주소와 admin 사용자 계정의 암호를 알아야 합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 
 
 
@@ -206,7 +206,7 @@ NOTE: 특정 기간 동안 계층형 데이터가 로 전환되는 저렴한 스
 
 
 .단계
-. 확인합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html#cloud-tiering["그러한 S3 권한"^] 는 Connector에 권한을 제공하는 IAM 역할의 일부입니다. Connector를 처음 배포할 때 기본적으로 포함되어 있어야 합니다. 그렇지 않으면 누락된 권한을 추가해야 합니다. 를 참조하십시오 https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS 설명서: IAM 정책 편집"^].
+. 확인합니다 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["그러한 S3 권한"^] 는 Connector에 권한을 제공하는 IAM 역할의 일부입니다. Connector를 처음 배포할 때 기본적으로 포함되어 있어야 합니다. 그렇지 않으면 누락된 권한을 추가해야 합니다. 를 참조하십시오 https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS 설명서: IAM 정책 편집"^].
 . 서비스를 활성화하면 계층화 마법사에서 액세스 키와 암호 키를 입력하라는 메시지가 표시됩니다. 이러한 자격 증명은 ONTAP 클러스터에 전달되므로 ONTAP은 데이터를 S3 버킷으로 계층화할 수 있습니다. 이를 위해서는 다음과 같은 권한을 가진 IAM 사용자를 생성해야 합니다.
 +
 [source, json]
@@ -253,7 +253,7 @@ image:screenshot_tiering_aws_sec_group.png["Connector와 연결된 AWS 보안 �
 +
 image:screenshot_endpoint_dns_aws_console.png["AWS 콘솔에서 VPC 엔드포인트의 DNS 이름 스크린샷"]
 
-. VPC S3 엔드포인트에서 인증서를 가져옵니다. 당신은 이렇게 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["BlueXP Connector를 호스팅하는 VM에 로그인합니다"^] 다음 명령을 실행합니다. 엔드포인트의 DNS 이름을 입력할 때 "*"를 대체하여 "bucket"을 앞에 추가합니다.
+. VPC S3 엔드포인트에서 인증서를 가져옵니다. 당신은 이렇게 합니다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["BlueXP Connector를 호스팅하는 VM에 로그인합니다"^] 다음 명령을 실행합니다. 엔드포인트의 DNS 이름을 입력할 때 "*"를 대체하여 "bucket"을 앞에 추가합니다.
 +
 [source, text]
 ----
@@ -289,7 +289,7 @@ Please enter Certificate: Press <Enter> when done
 AWS 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터 계층화를 시작합니다.
 
 .필요한 것
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["온프레미스 작업 환경"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["온프레미스 작업 환경"^].
 * 필요한 S3 권한이 있는 IAM 사용자를 위한 AWS 액세스 키입니다.
 
 

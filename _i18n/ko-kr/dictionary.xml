@@ -24,12 +24,9 @@
   <block id="ac711435545c1b14c721179de8ab94a0" category="list-text">지원되는 볼륨 및 애그리게이트</block>
   <block id="cbd3171b775ecc9b275479726c41ccec" category="inline-link-macro">FabricPool에서 지원하지 않는 기능 또는 기능입니다</block>
   <block id="8141ab52bd695a7c4b2c43e785d8bf58" category="section-title">ONTAP 클러스터 검색</block>
-  <block id="6ff483ff43e1d1341ed8bca213a5d6c2" category="paragraph"><block ref="781159370dedb574e61a716048070385" category="inline-link-rx"></block>.</block>
   <block id="d32e4305e9f04e1cbc37d3e892619ee7" category="section-title">커넥터 작성 또는 전환</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="inline-link">커넥터에 대해 자세히 알아보십시오</block>
-  <block id="da1264a616f156bd6836a85f7dfdea5a" category="list-text"><block ref="da1264a616f156bd6836a85f7dfdea5a" category="inline-link-rx"></block></block>
   <block id="c870531773e82c374eb4125c8029e25e" category="inline-link">커넥터 간 전환</block>
-  <block id="74d39f4b6fe0e32c5cfa2ed86891bf44" category="list-text"><block ref="74d39f4b6fe0e32c5cfa2ed86891bf44" category="inline-link-rx"></block></block>
   <block id="a8e8e48001e032c3b5939047d15db5a2" category="section-title">커넥터를 위한 네트워킹 준비</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
   <block id="aadbd6cd1f8b4e9deafea8f1d6c8333c" category="list-text">커넥터가 설치된 네트워크에서 다음 연결을 사용할 수 있는지 확인합니다.</block>
@@ -39,7 +36,6 @@
   <block id="18a5ea96fd1a711fe5cc2e22701fb42c" category="paragraph"><block ref="18a5ea96fd1a711fe5cc2e22701fb42c" category="inline-link-rx"></block></block>
   <block id="fd0b15799911e1006e252a82c698b372" category="paragraph">AWS 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터 계층화를 시작합니다.</block>
   <block id="04e0208908b4c6086bf83c95b22aff8b" category="inline-link">온프레미스 작업 환경</block>
-  <block id="5b47faa45c60368d15dfdd5dfe93817e" category="list-text"><block ref="05e67941b6656a354bb250fa5965cbfe" category="inline-link-rx"></block>.</block>
   <block id="1595204d9df7479eb1cce9861446c4a3" category="list-text">필요한 S3 권한이 있는 IAM 사용자를 위한 AWS 액세스 키입니다.</block>
   <block id="b2a8895a08251e3a0ba8598464e85f4a" category="inline-image-macro">온-프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 나타나는 활성화 옵션을 보여 주는 스크린샷</block>
   <block id="b7507ffc73507c1071aa3369e64f9b02" category="paragraph"><block ref="b7507ffc73507c1071aa3369e64f9b02" category="inline-image-macro-rx" type="image"></block></block>
@@ -67,7 +63,6 @@
   <block id="2cafddf420b95c64349d73efe588833a" category="inline-link-macro">클러스터에서 데이터 계층화 관리</block>
   <block id="562e713c869e9e0d8e8516f6f6d3f8f0" category="summary">비활성 데이터를 StorageGRID로 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보</block>
   <block id="075a50bfdbc0e76c495036f6c78ac1fb" category="doc">사내 ONTAP 클러스터에서 StorageGRID로 데이터 계층화</block>
-  <block id="b559e6916f00df2bc761660cda3f2e0a" category="list-text">ONTAP 9.4 이상을 실행하는 온프레미스 ONTAP 클러스터 및 사용자 지정 포트를 통해 StorageGRID에 연결합니다.<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>.</block>
   <block id="5fce56af1e1158cc023bf250fa9ab688" category="list-text">S3 권한이 있는 AWS 액세스 키가 있는 StorageGRID 10.3 이상</block>
   <block id="576fdb5dd15e14e6977927216a394612" category="list-text">구내에 설치된 커넥터.</block>
   <block id="9cd38a30ef1c3ae6b31cfb50d4f1a25f" category="admonition">Connector와 StorageGRID 간의 통신은 오브젝트 스토리지 설정만 해당됩니다.</block>
@@ -123,7 +118,6 @@
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으십시오</block>
   <block id="7f07b498da08e19eda2c8c1c5ee2c27e" category="summary">비활성 데이터를 Azure Blob 저장소에 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보합니다.</block>
   <block id="f7b28901adf8c67d01732b27eac78bee" category="doc">사내 ONTAP 클러스터에서 Azure Blob 스토리지로 데이터 계층화</block>
-  <block id="d2f518b275848356f172ff6ae0c10fa8" category="list-text">ONTAP 9.4 이상을 실행하고 Azure Blob 저장소에 HTTPS를 연결하는 온프레미스 ONTAP 클러스터<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>.</block>
   <block id="cd11b29aa1a96b5a94f154af73328fa6" category="list-text">Azure VNET 또는 구내에 설치된 커넥터.</block>
   <block id="144dfa5bd0d67a19aeb536f358a63c4c" category="admonition">Connector와 Blob 스토리지 간의 통신은 오브젝트 스토리지 설정에만 사용됩니다. Connector는 클라우드 대신 온프레미스에 상주할 수 있습니다.</block>
   <block id="1e62bbf0fcb0c66c8289f061c1788e98" category="paragraph">Azure Blob 저장소에 데이터를 계층화할 경우 ONTAP 클러스터는 다음 요구사항을 충족해야 합니다.</block>
@@ -305,7 +299,6 @@
   <block id="2f3ccf86e44d85ac02e49b28a63a02ba" category="paragraph">자세한 내용은 다음을 참조하십시오.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
   <block id="636acfcaa9d346397b4061f29f7518bd" category="summary">비활성 데이터를 Google 클라우드 스토리지로 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보</block>
-  <block id="c1cea5d4273001cc861a8845f88e0a7b" category="list-text">ONTAP 9.6 이상을 실행하고 Google 클라우드 스토리지에 HTTPS로 연결된 온프레미스 ONTAP 클러스터<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>.</block>
   <block id="2deaed2300671ee7d90104d75a9f9c41" category="list-text">사전 정의된 스토리지 관리자 역할 및 스토리지 액세스 키가 있는 서비스 계정입니다.</block>
   <block id="e020f6db5f627706b6bc9c4d66d7c52f" category="list-text">Google Cloud Platform VPC에 설치된 커넥터</block>
   <block id="c459bb33c487017b428eb64415bb051b" category="admonition">Connector와 Google Cloud Storage 간의 통신은 오브젝트 스토리지 설정만을 위한 것입니다.</block>
@@ -468,7 +461,6 @@
   <block id="ec0515a8a06c1c0cf10efc6cbb1bfab9" category="inline-link">FabricPool 사용에 대한 고려 사항 및 요구 사항</block>
   <block id="403df42df80267a7b2bc0be8c3e6685d" category="paragraph">비활성 데이터를 사내 ONTAP 시스템에서 다음 오브젝트 스토리지 공급자로 계층화할 수 있습니다.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
-  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">NSS 관리 &gt; NSS 계정 추가 * 를 클릭합니다.</block>
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">메시지가 표시되면 * 계속 * 을 클릭하여 Microsoft 로그인 페이지로 리디렉션됩니다.</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.</block>
@@ -497,7 +489,6 @@
   <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">Cloud Tiering 라이센스는 추가 클러스터 구성을 지원합니다</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오.</block>
   <block id="75ad6cd4979a906c67e27abc9ee1c14e" category="inline-link">지원되는 S3 스토리지 클래스를 참조하십시오.</block>
-  <block id="d3028cb26dae3dbde1ec068c17d15383" category="paragraph">Cloud Tiering을 설정할 때 특정 일 수 후에 비활성 데이터가 _Standard_storage 클래스에서 _Glacier Instant Retrieval_로 전환되도록 수명주기 규칙을 구성할 수 있습니다. 이를 통해 AWS 인프라 비용을 절감할 수 있습니다.<block ref="99f36cc81f33df65a0349e719000fada" category="inline-link-rx"></block></block>
   <block id="c8fe0ffee9071759c56b9a7d98bae676" category="section-title">FabricPool 라이센스가 있는 기존 클러스터에 대한 프로세스입니다</block>
   <block id="eb5050df74a7237bec4864cad6113b55" category="section-title">새로 생성된 클러스터에 대한 프로세스입니다</block>
   <block id="f457a5079118a07f91a021318abf923e" category="list-text">시스템 관리자 또는 ONTAP CLI를 사용하여 ONTAP 클러스터를 설치 및 구성합니다.</block>
@@ -706,7 +697,6 @@
   <block id="1f6fd3301ab6ce127efad422dec03d61" category="section-title">2022년 8월 3일</block>
   <block id="059c9f6829260507f53186d7191b058c" category="section-title">클러스터의 다른 애그리게이트로 추가 오브젝트 저장소를 구성하는 기능</block>
   <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">새로운 오브젝트 스토리지 기능에 대해 자세히 알아보십시오.</block>
-  <block id="e13d7be0c5a4bf2f3e8d1dd04f69dd41" category="paragraph">Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이지 세트가 추가되었습니다. 새 오브젝트 저장소를 추가하고, FabricPool 미러링을 위해 여러 오브젝트 저장소를 Aggregate에 연결하고, 기본 오브젝트 저장소와 미러 오브젝트 저장소를 바꾸고, 애그리게이트에 대한 오브젝트 저장소 연결을 삭제하는 등의 작업을 수행할 수 있습니다.<block ref="4f404ee3f4c3295f701ed8b17cef66df" category="inline-link-rx"></block></block>
   <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">MetroCluster 구성에 대한 Cloud Tiering 라이센스 지원</block>
   <block id="4f05e87f380a81f7a23601ecba757570" category="sidebar">오브젝트 스토리지 관리</block>
   <block id="44e298753e2ff93996d0e8ffa928a922" category="sidebar">클러스터에 대한 새 오브젝트 저장소를 추가합니다</block>
@@ -740,7 +730,6 @@
   <block id="929d25665bc92d22cf4a79265248dd36" category="section-title">커넥터 네트워킹 요구 사항</block>
   <block id="2e379f93711508ab69eec06837dd271c" category="inline-link">끝점 목록을 참조하십시오</block>
   <block id="76e709935c290dea4c7b1c0de4918211" category="inline-link">커넥터에 S3 버킷을 관리할 수 있는 권한이 있는지 확인합니다</block>
-  <block id="4e96d68b20a8c2caa7ac1a77b15169c3" category="list-text"><block ref="4e96d68b20a8c2caa7ac1a77b15169c3" category="inline-link-rx"></block></block>
   <block id="db41e7a8de9567fec002e93320c428ad" category="inline-xref">VPC 엔드포인트 인터페이스를 설정하는 방법을 확인하십시오.</block>
   <block id="b81793c592727efa905fe3e8a74bbb9d" category="list-text">ONTAP 클러스터에서 VPC로의 직접 연결 또는 VPN 연결이 있고 커넥터와 S3 간의 통신을 AWS 내부 네트워크(* 전용* 연결)에 유지하고자 하는 경우 S3로 VPC 엔드포인트 인터페이스를 활성화해야 합니다. <block ref="038eee040120b4244a9c2b9d19ca5787" category="inline-xref-macro-rx"></block></block>
   <block id="aa8387a4bff8defdb2d4c5777a1bf540" category="section-title">ONTAP 클러스터를 준비합니다</block>
@@ -764,7 +753,6 @@
   <block id="e1e27de3274b6be648bacdf85d89a282" category="list-text">S3 버킷에서 데이터를 읽고 쓸 수 있도록 사내 ONTAP 클러스터에 대한 권한.</block>
   <block id="b99f1169cc9c4dc4d04df2e1240f99b1" category="inline-link">그러한 S3 권한</block>
   <block id="a6e42fec71384a3a5d77eba684fba2c9" category="inline-link">AWS 설명서: IAM 정책 편집</block>
-  <block id="46c2f3b9e7da21f892e750d164cb2d57" category="list-text">확인합니다<block ref="91113a09caa216208c5e3ed063870cfa" category="inline-link-rx"></block> 는 Connector에 권한을 제공하는 IAM 역할의 일부입니다. Connector를 처음 배포할 때 기본적으로 포함되어 있어야 합니다. 그렇지 않으면 누락된 권한을 추가해야 합니다. 를 참조하십시오<block ref="6d4dc5f0c95117ac550b72968db62911" category="inline-link-rx"></block>.</block>
   <block id="5eb4ef1304848f6f34b1acbfed60cc32" category="list-text">서비스를 활성화하면 계층화 마법사에서 액세스 키와 암호 키를 입력하라는 메시지가 표시됩니다. 이러한 자격 증명은 ONTAP 클러스터에 전달되므로 ONTAP은 데이터를 S3 버킷으로 계층화할 수 있습니다. 이를 위해서는 다음과 같은 권한을 가진 IAM 사용자를 생성해야 합니다.</block>
   <block id="5d6d3c39001c5518d516e9053e5363e3" category="paragraph">를 참조하십시오<block ref="eb8d2636cc0b0f2875b50c1561ec0060" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="876b9c7ce7ebb4d81c240550c2c0e1e9" category="list-text">액세스 키를 만들거나 찾습니다.</block>
@@ -799,7 +787,6 @@
   <block id="2351127acb653fd60dafc73c8efcb79d" category="inline-link">AWS 마켓플레이스 페이지를 참조하십시오</block>
   <block id="66930a908819d6fce6483de6c770d313" category="paragraph">비활성 데이터를 AWS에 계층화할 때 에서 제공되는 연간 계약을 구독할 수 있습니다<block ref="7e9391e5068ba3345180f0de3723960c" category="inline-link-rx"></block>. 1년, 2년 또는 3년 조건으로 제공됩니다.</block>
   <block id="54b98a81c2ba2da3e9c721b03a4585b5" category="inline-link">가입 정보를 AWS 자격 증명과 연결합니다</block>
-  <block id="29b2b8613d3a7ed690246613f8654828" category="paragraph">이 옵션을 사용하려면 마켓플레이스 페이지에서 구독을 설정한 다음<block ref="f1f7c973fce685b876017d26d677c721" category="inline-link-rx"></block>.</block>
   <block id="29f6791775c21cd38fbdcb5b18589d37" category="paragraph">Azure 또는 GCP로 계층화할 때는 현재 연간 계약이 지원되지 않습니다.</block>
   <block id="beecf2fd8c511928c5d65a11860f7c21" category="paragraph">이전에 온프레미스 ONTAP 데이터를 클라우드로 계층화하기 위해 사용한 * FabricPool * 라이센스는 ONTAP 인터넷 액세스("다크 사이트")가 없는 사이트와 IBM 클라우드 오브젝트 스토리지로의 계층화 구성에 대해서만 유지됩니다. 이러한 유형의 구성을 사용하는 경우 System Manager 또는 ONTAP CLI를 사용하여 각 클러스터에 FabricPool 라이센스를 설치합니다.</block>
   <block id="1f0f4e4d1bc0286ff3e0b848a00fe06b" category="paragraph">일반적인 구성의 경우 전체 클러스터에 대해 하나의 오브젝트 저장소가 있습니다. 2022년 8월부터 * 고급 설정 * 페이지를 사용하여 클러스터의 추가 오브젝트 저장소를 추가한 다음, 다른 애그리게이트에 서로 다른 오브젝트 저장소를 연결하거나, 미러링을 위해 오브젝트 저장소 2개를 애그리게이트에 연결할 수 있습니다.</block>
@@ -810,9 +797,7 @@
   <block id="718ab8536a948516f06462c22a0f8852" category="list-text"><block ref="cb1be15d6f93cbd0769a2f1805d3c3a2" category="inline-link-macro-rx"></block>.</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">2022년 9월 19일</block>
   <block id="905ecf204d0cf0b2ed497e63ae9324d0" category="inline-link">VPC 엔드포인트 인터페이스를 사용하여 전용 연결을 위해 시스템을 구성합니다</block>
-  <block id="33e030edd0380c3b2d743ec2f989598c" category="paragraph">이전 릴리즈에서는 VPC 엔드포인트를 통해 클러스터를 S3 버킷에 연결하는 안전한 방법을 제공하는 데 시간이 많이 소요되었습니다. 이제 의 필수 단계를 수행할 수 있습니다<block ref="fb4b1250ed3d38b3a9447c7c732436c8" category="inline-link-rx"></block>그런 다음 네트워킹 페이지의 계층화 설정 마법사 중에 PrivateLink를 선택할 수 있습니다.</block>
   <block id="883959b6b7ad90936b33d524655bc282" category="inline-link">요구 사항 및 단계를 검토하여 비활성 데이터를 Amazon S3에 계층화합니다</block>
-  <block id="93d0679385afbe8961d65715ec42ad95" category="paragraph"><block ref="eae517fc6cf18ab5b51a15743d8fba49" category="inline-link-rx"></block>.</block>
   <block id="84b50dc471c57455cf0359ad021a8c58" category="paragraph">Amazon S3 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우, 내부 ONTAP 작업 환경을 대상으로 끌어서 계층화 설정 마법사를 시작할 수 있습니다.</block>
   <block id="b57c0deab1a5287b0457bf7ca26a95f4" category="admonition">MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 운영 오브젝트 저장소도 제거할지 묻는 메시지가 표시됩니다. 주 오브젝트 저장소를 애그리게이트에 계속 부착하도록 선택하거나 제거할 수 있습니다.</block>
   <block id="421539f25601331f9f5f1e59cdb43e21" category="section-title">연간 계약</block>
@@ -826,7 +811,6 @@
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">* 문제 설명 * : 해당 오류 메시지 또는 수행한 문제 해결 단계를 포함하여 문제에 대한 자세한 설명을 제공합니다.</block>
   <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">* 추가 이메일 주소 *: 다른 사람에게 이 문제를 알고자 할 경우 추가 이메일 주소를 입력하십시오.</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetApp Support로 케이스를 생성할 수 있는 케이스 생성 양식 스크린샷</block>
-  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">지원 케이스 번호와 함께 팝업이 나타납니다. NetApp 지원 전문가가 귀사의 사례를 검토하고 곧 다시 연결해 드릴 것입니다.</block>
   <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">지원 케이스 내역을 보려면 * 설정 &gt; 일정 * 을 클릭하고 "지원 케이스 생성"이라는 이름의 작업을 찾습니다. 오른쪽 끝에 있는 버튼을 사용하여 작업을 확장하여 세부 정보를 볼 수 있습니다.</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">케이스를 생성하려고 할 때 다음과 같은 오류 메시지가 나타날 수 있습니다.</block>
@@ -873,7 +857,6 @@
   <block id="25b94e7b58140f12be91fa8fd935fa59" category="list-text">아직 추가하지 않은 경우 NSS 계정을 BlueXP에 추가합니다.</block>
   <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">Resources * 페이지에서 * Register for Support * 를 클릭합니다.</block>
   <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">계정 일련 번호 및 지원 등록 옵션을 보여 주는 스크린샷</block>
-  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">기존 고객이지만 NSS 계정은 없습니다</block>
   <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">기존 사용권 및 제품 번호를 가지고 있지만 _NO_NSS 계정을 가지고 있는 기존 NetApp 고객은 NSS 계정을 만들어야 합니다.</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support 사이트 사용자 등록 양식</block>
@@ -882,7 +865,6 @@
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">위에 사용된 BlueXP 계정 일련 번호(960xxxx)를 일련 번호 필드에 복사해야 합니다. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp이 처음이었습니다</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetApp의 새로운 브랜드이고 NSS 계정이 없는 경우 아래의 각 단계를 수행하십시오.</block>
-  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp의 지원 등록 사이트</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">로 이동합니다<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 를 선택하고 * 등록된 NetApp 고객이 아닙니다 * 를 선택합니다.</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">필수 필드(빨간색 별표가 있는 필드)를 입력합니다.</block>
@@ -912,7 +894,6 @@
   <block id="46922e6b0c07daba7c3d3a262105baa4" category="paragraph">BlueXP는 클러스터를 검색하고 클러스터 이름을 작업 환경 이름으로 사용하여 Canvas의 작업 환경에 추가합니다.</block>
   <block id="985b7d4c5c97b3b1b7b1d93298dbfbe8" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 S3 호환 오브젝트 스토리지에 계층화합니다.</block>
   <block id="aa8039f331e46144ebc93c818d6c073d" category="list-text">에서 BlueXP PAYGO 서비스를 구독하려면<block ref="d668c832ccb70eb717d6736e1082df78" category="inline-link-rx"></block>,<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>, 또는<block ref="92655de6fae7d07ed3897ce19d51b88d" category="inline-link-rx"></block>를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.</block>
-  <block id="3fe1a647c6d6e3ecb4beb9fdbf88698a" category="inline-link-macro">BlueXP Digital Wallet에서 계정에 추가하십시오</block>
   <block id="115976a072e6ce2f2ab2d16440a6eced" category="paragraph">콜드 데이터 계층화를 시작하기 전에 BlueXP Canvas에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.</block>
   <block id="6f7498318061ab9585a9a930576417e9" category="paragraph">콜드 데이터의 계층화를 시작하려면 먼저 BlueXP에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">다음 질문은 BlueXP 커넥터와 관련이 있습니다.</block>
@@ -925,7 +906,6 @@
   <block id="f68bf28051d836364652b5a91d1bcd3a" category="list-text">BlueXP 계정 ID(지원 사이트에서 테넌트 ID라고 함)를 입력하고 * 제출 * 을 클릭하여 라이센스 파일을 다운로드합니다.</block>
   <block id="257ff1df6b80ed0bf9b3463d53be79f9" category="paragraph">BlueXP의 상단에서 * 계정 * 드롭다운을 선택한 다음 계정 옆의 * 계정 관리 * 를 클릭하여 BlueXP 계정 ID를 찾을 수 있습니다. 계정 ID는 개요 탭에 있습니다.</block>
   <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">NSS 계정을 BlueXP에 추가합니다</block>
-  <block id="fc76651edf85f11e6b8f2a81226ab59d" category="paragraph">드롭다운 목록에서 NetApp Support 사이트 계정을 사용할 수 없는 경우<block ref="6d9745cd4f1d60b55f06aef4c5cb6ec4" category="inline-link-rx"></block>.</block>
   <block id="8816958eed360786a943983e0bd031fd" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해 * 활성화 * 를 클릭하고, 표시되는 메시지에 따라 데이터를 Google Cloud Storage에 계층화합니다.</block>
   <block id="955a264d46a1f0536f93bcb5a3e454f1" category="list-text">BlueXP에서 온프레미스 클러스터를 검색할 수 있습니다.</block>
   <block id="92d46e494e7ad2aeddc2f61967fd1763" category="list-text">BlueXP는 객체 스토리지 공급자를 사용하도록 ONTAP를 구성하고 클러스터에서 활성 및 비활성 데이터의 양을 검색합니다.</block>
@@ -936,9 +916,7 @@
   <block id="49f77dce60fe49e3589be24b4ed37731" category="paragraph">오브젝트 스토리지로 콜드 데이터를 계층화하기 전에 BlueXP에서 사내 ONTAP 클러스터를 검색해야 합니다. 클러스터를 추가하려면 클러스터 관리 IP 주소와 admin 사용자 계정의 암호를 알아야 합니다.</block>
   <block id="761bfdc0fcb01bfd39ee5fe957d6cc2e" category="list-text">BlueXP 커넥터와 관련된 보안 그룹 구성을 수정합니다. 정책을 "사용자 지정"("전체 액세스"에서)으로 변경해야 하며 반드시 다음을 수행해야 합니다 <block ref="2e3aa01a102d96f1118abd47a89529bc" category="inline-xref-macro-rx"></block> 앞서 설명한 것처럼.</block>
   <block id="667b744af05e085368d150edc4b8a344" category="inline-link">BlueXP Connector를 호스팅하는 VM에 로그인합니다</block>
-  <block id="53580765f208bf3a21b9b94ab077bfb1" category="list-text">VPC S3 엔드포인트에서 인증서를 가져옵니다. 당신은 이렇게 합니다<block ref="baa295d957d2e86c0ec7224e7ed425da" category="inline-link-rx"></block> 다음 명령을 실행합니다. 엔드포인트의 DNS 이름을 입력할 때 "*"를 대체하여 "bucket"을 앞에 추가합니다.</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP에 대한 고지 사항</block>
-  <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXP 활용 사례</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
   <block id="39cff02cd4c2bfac12f446d78e59e3ca" category="paragraph">Azure Blob 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우 클러스터를 Azure Blob 작업 환경으로 끌어서 설치 마법사를 시작할 수 있습니다.</block>
@@ -996,7 +974,6 @@
   <block id="37ba276f010f4ea07f1196b487811443" category="cell">https://*.api.bluexp.netapp.com 으로 문의하십시오</block>
   <block id="c1b8b8c1767ffef37beebd6dca294a19" category="paragraph">온프레미스 커넥터를 사용하는 경우 리소스 그룹에 대한 액세스를 제공하는 Azure 구독을 입력해야 합니다.</block>
   <block id="838b026c40657f60dbef105628a74c67" category="paragraph">NetApp은 특히 제품이 출시된 제3자와의 지원 계약에 동의하지 않은 타사 오브젝트 저장소 서비스에서 발생하는 문제에 대해 어떠한 책임도 지지 않습니다. NetApp은 관련된 모든 손상에 대해 책임을 지지 않으며 해당 타사 제품에 대한 지원을 제공해야 한다는 점을 인정하고 이에 동의합니다.</block>
-  <block id="cde18ab8c63e317f54bbc67366c538fb" category="list-text">ONTAP 9.8 이상을 실행하는 온프레미스 ONTAP 클러스터의 소스 및 사용자 지정 포트를 통해 대상 S3 호환 오브젝트 스토리지로의 연결<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>.</block>
   <block id="4f2ba178f02065cd43bc7615b226c05d" category="paragraph">데이터를 S3 호환 오브젝트 스토리지로 계층화할 경우 소스 ONTAP 클러스터가 다음 요구사항을 충족해야 합니다.</block>
   <block id="9378df978e3f22322e7d49bdc1ff98b9" category="paragraph">소스 ONTAP 시스템은 오브젝트 스토리지 간에 데이터를 읽고 씁니다. 오브젝트 스토리지는 한 번도 시작되고, 응답 하기만 합니다.</block>
   <block id="77cf2aec599c4e8df2dcafbc11506767" category="list-text">모든 볼륨을 선택하려면 제목 행(<block ref="48e674c3b35bfe3d3a9cb29d2c6ff5c1" category="inline-image-macro-rx" type="image"></block>)를 클릭하고 * 볼륨 구성 * 을 클릭합니다.</block>
@@ -1009,11 +986,8 @@
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">클라우드 공급자 솔루션 지원</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXP에 통합한 다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
-  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
-  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Google Cloud용 Cloud Volumes Service</block>
-  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="6b97c869d129075dc99119cc6c266fd4" category="paragraph">BlueXP에서 사내 ONTAP 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 화면의 지시에 따라 데이터를 Azure Blob 저장소에 계층화합니다.</block>
   <block id="8d69c6a87500bfb8cb04a6182b6d844b" category="paragraph">데이터를 클라우드에 계층화하려면 Connector가 필요합니다. Azure Blob 저장소에 데이터를 계층화할 때 Azure VNET 또는 사내에서 Connector를 사용할 수 있습니다. 새 커넥터를 만들거나 현재 선택한 커넥터가 Azure 또는 온프레미스에 있는지 확인해야 합니다.</block>
   <block id="5354529f47c862f65799910961248e94" category="inline-link">사용자 지정 역할 권한이 필요합니다</block>
@@ -1059,27 +1033,19 @@
   <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">조직의 케이스 * 에서 * 보기 * 를 클릭하여 회사와 관련된 모든 케이스를 봅니다.</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정합니다.</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다.</block>
-  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">열의 내용을 필터링합니다.</block>
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷</block>
-  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">테이블에 나타나는 더하기 아이콘입니다</block>
-  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">을 클릭하여 테이블에 표시되는 열을 변경합니다 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 표시할 열을 선택합니다.</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">표에 표시할 수 있는 열을 보여 주는 스크린샷</block>
-  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 세 개의 점이 있는 아이콘</block>
-  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">를 클릭하여 기존 케이스를 관리합니다 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">* 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
-  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS 계정은 고객 수준 계정이어야 합니다(게스트 또는 임시 계정이 아님). 여러 개의 고객 수준 NSS 계정을 가질 수 있습니다.</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">NSS 계정은 파트너 수준 계정인 경우 하나만 있을 수 있습니다. 고객 수준 NSS 계정을 추가하려고 하면 파트너 수준 계정이 있으면 다음 오류 메시지가 나타납니다.</block>
   <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"NSS 고객 유형은 이미 다른 유형의 NSS 사용자가 있으므로 이 계정에 허용되지 않습니다."</block>
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">기존 고객 수준 NSS 계정이 있는 경우에도 마찬가지이며 파트너 수준 계정을 추가하려고 합니다.</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">로그인에 성공하면 NetApp은 NSS 사용자 이름을 저장합니다.</block>
-  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">이 ID는 이메일에 매핑되는 시스템 생성 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
-  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 에 * 자격 증명 업데이트 * 옵션이 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">이 옵션을 사용하면 다시 로그인하라는 메시지가 표시됩니다. 이러한 계정의 토큰은 90일 후에 만료됩니다. 이를 알리는 알림이 게시됩니다.</block>
   <block id="ad8e06edf5256a509aa4b626821aded3" category="list-text">S3 호환 오브젝트 스토리지(예: MinIO)</block>
   <block id="ad54fbabce5f384433a02d947362a539" category="paragraph">현재 MinIO 객체 스토리지가 검증되었습니다.</block>
@@ -1107,14 +1073,11 @@
   <block id="1aeaa2e92434fc1c27cf37cfd23e8592" category="list-text">Marketplace Subscriptions_ 섹션의 Google Cloud에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.</block>
   <block id="f16cf9a738fef68b5c516203192da03b" category="list-text">클러스터 페이지에서 을 클릭합니다 <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> 클러스터에 대해 * 라이선스 배포 * 를 선택합니다.</block>
   <block id="7e3b03fb1795db2dd05995429974e133" category="inline-link">Linux 호스트에 커넥터 설치</block>
-  <block id="b911d3b2a309c413ee66b9b771d150de" category="list-text"><block ref="b911d3b2a309c413ee66b9b771d150de" category="inline-link-rx"></block></block>
   <block id="67238cd5edf831d6bf11f3b651f7c0ce" category="list-text">클러스터 * 페이지에서 클러스터에 대한 * 계층 볼륨 * 을 클릭합니다.</block>
   <block id="19bbde7543a4103105c6f45a4826d973" category="list-text">클러스터 * 페이지에서 선택한 클러스터에 대한 * 고급 설정 * 을 클릭합니다.</block>
   <block id="9bfca8fb5771e5278530e3aec5c99564" category="list-text">고급 설정 페이지에서 집계 메뉴 아이콘을 클릭하고 * 집계 수정 * 을 선택합니다.</block>
   <block id="d5c1e697c8b22502370d8a4d89241230" category="list-text">BlueXP를 통해 관리하려는 클러스터에 대해 * 클러스터 검색 * 을 클릭하고 데이터 계층화를 구현합니다.</block>
-  <block id="d94cbfae2c85d4e68e18566207dbca79" category="list-text"><block ref="d94cbfae2c85d4e68e18566207dbca79" category="inline-link-rx"></block></block>
   <block id="fcb56b02923ad8fee5725ea3ab197730" category="inline-link">AWS에 커넥터 구축</block>
-  <block id="aeab24d7d3032243d8637fa1f7ff200c" category="list-text"><block ref="aeab24d7d3032243d8637fa1f7ff200c" category="inline-link-rx"></block></block>
   <block id="19a7096cffff1081298250811a27a2c9" category="list-text">Cloud Volumes ONTAP 시스템이 있는 경우 클러스터 페이지에서 하이브리드 클라우드 인프라의 데이터 계층화에 대한 전체 보기를 얻을 수 있습니다</block>
   <block id="9da46a2ddb041da98995ffb63fb8ed72" category="paragraph">무료 평가판이 끝나고 라이센스를 구독하거나 추가하지 않은 경우 ONTAP에서는 콜드 데이터를 오브젝트 스토리지에 더 이상 계층화하지 않습니다. 이전에 계층화된 모든 데이터에 계속 액세스할 수 있습니다. 즉, 이 데이터를 검색하고 사용할 수 있습니다. 검색할 경우 데이터가 클라우드에서 성능 계층으로 다시 이동됩니다.</block>
   <block id="23382689bb5023b2975968f57d098105" category="list-text">고급 설정 페이지에서 사용할 개체 저장소를 미러 개체 저장소의 위치로 끕니다.</block>
@@ -1126,9 +1089,6 @@
   <block id="91c0c3f0911cf0aa7791e2815ecf2507" category="paragraph">그러나 _BlueXP - 클라우드 데이터 서비스 배포 및 관리 _ 에 PAYGO 마켓플레이스가 가입되어 있는 경우 새로운 콜드 데이터는 객체 스토리지로 계속 계층화되어 사용량 기준으로 해당 요금을 지불할 수 있습니다.</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="5bfe7676a3f4e4197bf9f895c6b2fcb4" category="list-text">StorageGRID 시스템에 대한 포트 443을 통한 HTTPS 연결</block>
-  <block id="f8fffd3ee443f29d36b65a0e66a5f03a" category="paragraph">예. Connector 소프트웨어는 다운로드한 후 네트워크의 Linux 호스트에 수동으로 설치할 수 있습니다.<block ref="1b7ddd38e792a03a4b15132910b94d8c" category="inline-link-rx"></block>.</block>
-  <block id="99d3ed1cc58df8ac52e23dd69320374b" category="list-text"><block ref="99d3ed1cc58df8ac52e23dd69320374b" category="inline-link-rx"></block></block>
-  <block id="c395006d6063b66336be768382280c9e" category="paragraph">의 전체 끝점 목록을 참조하십시오<block ref="684a3f4234dd7d8f8b7d90e00da95138" category="inline-link-rx"></block>,<block ref="fd66fc554da543d0f7f94dcde36b2a2f" category="inline-link-rx"></block>, 또는<block ref="2484264a704a749bc992bec76f43f13d" category="inline-link-rx"></block> 설명합니다.</block>
   <block id="90d333fba347612ff8ecc43a29a3eed9" category="inline-link">BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다</block>
   <block id="a36dfacc56a130ed7ae9dd3590426d64" category="summary">BlueXP 계층화는 각 사내 클러스터의 데이터 계층화에 대한 종합적인 뷰를 제공합니다. 이 개요는 작업 환경을 명확하게 보여 주는 것으로 적절한 조치를 취할 수 있도록 해 줍니다.</block>
   <block id="55f9ae56b6fac196eddd4055167857aa" category="summary">NetApp의 BlueXP 계층화 서비스는 비활성 데이터를 사내 ONTAP 클러스터에서 오브젝트 스토리지로 자동으로 계층화하여 데이터 센터를 클라우드로 확장합니다. 따라서 애플리케이션 계층을 변경하지 않고 클러스터에서 귀중한 공간을 확보하여 더 많은 워크로드를 사용할 수 있습니다. BlueXP 계층화는 데이터 센터의 비용을 절감하고 CAPEX 모델에서 OPEX 모델로 전환할 수 있습니다.</block>
@@ -1140,7 +1100,6 @@
   <block id="c8e22b12eea261ba391a17a2adc3587f" category="paragraph">BlueXP 계층화는 자동화, 모니터링, 보고서 및 공통 관리 인터페이스를 제공합니다.</block>
   <block id="df6c94bf66394a97d434d11194d194ad" category="inline-link">BlueXP 웹 사이트의 BlueXP 계층화 페이지를 참조하십시오</block>
   <block id="81c22aed980244c51b17cc4f12778ff7" category="paragraph">BlueXP 계층화가 제공하는 가치에 대한 자세한 내용은<block ref="c0febc4c63fa1530e730382939cf4b85" category="inline-link-rx"></block>.</block>
-  <block id="dc2b7e70ea1bc1ef0d9e3e0dfe9388af" category="admonition">Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다.<block ref="d841e2ca06a23a295269523a8cf3293d" category="inline-link-rx"></block>.</block>
   <block id="2f03d9c18df5cee8e5d8c37bd5ae232f" category="inline-link-macro">이러한 구성 유형의 라이센스는 BlueXP 계층화를 사용하여 완료됩니다.</block>
   <block id="b04a2af085e80d4cc8c72fdbefe746dc" category="paragraph">또한 데이터를 IBM 클라우드 오브젝트 스토리지로 계층화하는 클러스터와 BlueXP 계층화 라이센스를 공유할 수도 있습니다. FabricPool 구성은 System Manager 또는 ONTAP CLI를 사용하여 설정해야 하지만 <block ref="20dafd556ef22dea5a2849b81c9733c3" category="inline-link-macro-rx"></block></block>
   <block id="1fe25e2ab14e95f6ec6dc8a127060587" category="paragraph">BlueXP 계층화는 비활성 데이터에 클라우드 공급자의 기본 스토리지 클래스/액세스 계층을 사용합니다. 그러나 일정 일 후에 기본 스토리지 클래스에서 다른 스토리지 클래스로 데이터가 자동으로 전환되도록 수명주기 규칙을 적용할 수 있습니다. 따라서 매우 낮은 콜드 데이터를 저렴한 스토리지로 이동하여 비용을 절감할 수 있습니다.</block>
@@ -1191,7 +1150,6 @@
   <block id="428af8783db8c9109b9c797e126e8129" category="paragraph">BlueXP 계층화는 ONTAP 버전 9.2 이상을 지원합니다.</block>
   <block id="f6b0f7df5cb11981474e0ffa00ecdfa5" category="paragraph">BlueXP 계층화는 단일 노드 및 고가용성 AFF, FAS 및 ONTAP Select 클러스터에서 지원됩니다. FabricPool 미러 구성 및 MetroCluster 구성의 클러스터도 지원됩니다.</block>
   <block id="01db98e655413dda68ababa1c977f95c" category="paragraph">예. BlueXP 계층화는 모든 집계에서 호스팅되는 볼륨을 계층화하도록 구성할 수 있습니다. 데이터 계층화 구성은 사용되는 컨트롤러의 유형과 클러스터가 이기종 클러스터인지 여부와 관련이 없습니다.</block>
-  <block id="9dc2eca8b56a6e3320db971a60243c1d" category="paragraph">Cloud Volumes ONTAP 시스템이 있는 경우 BlueXP 계층화 클러스터 페이지에서 하이브리드 클라우드 인프라의 데이터 계층화에 대한 전체 보기를 얻을 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다. BlueXP 계층화에서 Cloud Volumes ONTAP에 데이터 계층화를 설정할 수 없습니다.<block ref="d841e2ca06a23a295269523a8cf3293d" category="inline-link-rx"></block>.</block>
   <block id="05a72cdcbee711d668439bee533fb655" category="paragraph">BlueXP 계층화는 다음과 같은 오브젝트 스토리지 공급자를 지원합니다.</block>
   <block id="2260390f2092d3f8a936e44a4723c52a" category="paragraph">BlueXP 계층화는 _Standard_,_Standard - Infrequent Access_, _One Zone - Infrequent Access_, _Intelligent Tiering_ 및 _Glacier Instant Retrieval_storage 클래스에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 <block ref="f693663c1e0f361f1f4405a9653a3c4b" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="843698a42682835376dc249f3f91a717" category="section-title">Amazon S3 Glacier Flexible 및 S3 Glacier Deep Archive가 BlueXP 계층화로 지원되지 않는 이유는 무엇입니까?</block>
@@ -1219,7 +1177,6 @@
   <block id="67731652b48fdb7846ca466471556450" category="paragraph">연간 계약을 구매하여 연간 BlueXP 계층화 비용을 지불하십시오.</block>
   <block id="93f26f7b1e47a3f6bebd49a7fa7dd4b6" category="section-title">BlueXP 계층화 BYOL 라이센스 사용</block>
   <block id="c2319a35daf2868e6d5793e8fa613108" category="paragraph">BlueXP 계층화 라이센스가 없는 경우 다음 연락처로 문의해 주십시오.</block>
-  <block id="d24c279c3d050f8132eeb782120e60fe" category="paragraph">선택적으로 사용하지 않을 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 동일한 달러 당량 및 만료 날짜가 있는 BlueXP 계층화 라이센스로 변환할 수 있습니다.<block ref="c110e5a4a66d7429a8ced7dc2264a8f5" category="inline-link-rx"></block>.</block>
   <block id="feace567e2626d7786ec5e18354a5177" category="section-title">BlueXP 계층화 BYOL 라이센스는 2021년부터 제공됩니다</block>
   <block id="519bd74c1aa3e9805e24269a27ef9b6e" category="paragraph">BlueXP 계층화 서비스를 사용하는 BlueXP 내에서 지원되는 계층화 구성을 위해 2021년 8월에 새로운 * BlueXP 계층화 * 라이센스가 도입되었습니다. 현재 BlueXP는 Amazon S3, Azure Blob 스토리지, Google Cloud Storage, NetApp StorageGRID 및 S3 호환 오브젝트 스토리지로의 계층화를 지원합니다.</block>
   <block id="219f576e0419ffa72026ee6b3730b581" category="admonition">StorageGRID로 계층화하려면 FabricPool 또는 BlueXP 계층화 라이센스가 필요하지 않습니다.</block>
@@ -1257,13 +1214,11 @@
   <block id="4a744a6786776cc5df25ca40dc57cb36" category="paragraph">BlueXP 계층화는 Connector를 통해 액세스할 수 있는 모든 지역의 모든 스토리지 계정에 대한 계층화를 지원합니다.</block>
   <block id="07702d7eda621b95dd9a2353b7d4e568" category="list-text">데이터 센터의 ONTAP 클러스터, Google 클라우드 스토리지 및 BlueXP 계층화 서비스에 대한 아웃바운드 HTTPS 연결을 지원하는 커넥터용 네트워킹.</block>
   <block id="0dca8b35c3815430d139be9a39c2de9e" category="paragraph">무료 평가판 사용 기간이 끝나면 선불 종량제 구독, ONTAP BlueXP 계층화 라이센스 또는 다음 두 가지 BYOL 조합을 통한 BlueXP 계층화 비용 지불:</block>
-  <block id="ced189c6dbe6a08832e2f72a72491e23" category="list-text">BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 <block ref="17328282f8f552ccfc10816694e542ba" category="inline-link-macro-rx"></block>.</block>
   <block id="42d7a3492459b6a4b7796d3e6bc97556" category="inline-image-macro">클라우드 공급자의 커넥터 연결, ONTAP 클러스터에 대한 연결 커넥터, ONTAP 클러스터와 클라우드 공급자의 오브젝트 스토리지 간 연결을 사용하는 BlueXP 계층화 서비스를 보여 주는 아키텍처 이미지입니다. 활성 데이터는 ONTAP 클러스터에 있고 비활성 데이터는 오브젝트 스토리지에 상주합니다.</block>
   <block id="128e1563c5b229d76313f5c13e441bcd" category="paragraph"><block ref="128e1563c5b229d76313f5c13e441bcd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="136e9ba79f03c7ae200f44156978f4a6" category="paragraph">클러스터와 BlueXP 계층화 서비스를 연결할 필요가 없습니다.</block>
   <block id="08f7929b80310c79848e8222921a9fcc" category="paragraph">데이터 계층화를 설정할 때, BlueXP 계층화는 사용할 IPspace를 묻는 메시지를 표시합니다. 각 LIF가 연결되는 IPspace를 선택해야 합니다. 이는 여러분이 생성한 "기본" IPspace 또는 사용자 지정 IPspace가 될 수 있습니다. 에 대해 자세히 알아보십시오<block ref="b7275acfa36ebba0d4abaa0eae46bec7" category="inline-link-rx"></block> 및<block ref="bcaf833b6d9ebe7610dbaf3380869814" category="inline-link-rx"></block>.</block>
   <block id="9745617da3b0ea1d5c4d84af9c3f7900" category="admonition">BlueXP 계층화는 FlexGroup 볼륨을 지원합니다. 설치 프로그램은 다른 볼륨과 동일하게 작동합니다.</block>
-  <block id="e9a4dfb8797d9ce3ea78389c0224a40f" category="list-text">포트 443을 통해 BlueXP 계층화 서비스 및 Google Cloud 스토리지에 HTTPS로 연결합니다 <block ref="d9defc1077847b67f008853c06990134" category="inline-link-rx"></block>)</block>
   <block id="248ebf3fea7fa59de6d7580ff3a058b7" category="paragraph">계층화를 설정할 때는 스토리지 관리자 권한이 있는 서비스 계정에 대한 스토리지 액세스 키를 제공해야 합니다. 서비스 계정을 사용하면 BlueXP 계층화를 통해 데이터 계층화에 사용되는 클라우드 스토리지 버킷을 인증하고 액세스할 수 있습니다. Google Cloud Storage가 누가 요청을 하는지 알 수 있도록 키가 필요합니다.</block>
   <block id="ad1fd6589603bba39741a6cc32304074" category="inline-link-macro">BlueXP 계층화를 지원하는 지역</block>
   <block id="0b2b1a0ccf60fa341c50d50e1f497ce4" category="paragraph">클라우드 스토리지 버킷은 에 포함되어야 합니다 <block ref="4755ef6fff73d10da41c28fa47a87906" category="inline-link-macro-rx"></block>.</block>
@@ -1285,16 +1240,12 @@
   <block id="e9539e47f1a0a8a4cdc4f8081cd3f4ba" category="list-text">BlueXP 계정에 BlueXP 계층화 라이센스가 필요하지 않으며, 데이터를 StorageGRID로 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.</block>
   <block id="2cd89e6f0fcda5b09186fef88391ef89" category="admonition">BlueXP 계층화는 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설치 프로그램은 다른 볼륨과 동일하게 작동합니다.</block>
   <block id="83e95400e41cfc623b4a4a1461c18f83" category="list-text">StorageGRID로 계층화를 설정할 때는 S3 액세스 키와 암호 키를 사용하여 BlueXP 계층화를 제공해야 합니다. BlueXP 계층화는 키를 사용하여 버킷에 액세스합니다.</block>
-  <block id="a3419ebef48cc8ad439612e4e4ca281c" category="list-text">포트 443을 통해 BlueXP 계층화 서비스에 대한 HTTPS 연결 <block ref="4a7a4f89081133703af86b4e7832dbdb" category="inline-link-rx"></block>)</block>
   <block id="6679647b3dd9ac6d22d449c9098cc77d" category="paragraph">올바른 IPspace를 선택하면 BlueXP 계층화를 통해 ONTAP에서 StorageGRID 오브젝트 스토리지로의 연결을 설정할 수 있습니다.</block>
   <block id="56273c1cb08574200c49973b9bc5c615" category="summary">BlueXP 계층화의 새로운 기능에 대해 알아보십시오.</block>
   <block id="d423420066ca2ec630afe096f14eae4b" category="doc">BlueXP 계층화의 새로운 기능</block>
-  <block id="35083b11acbb58293019b38b8f232a5a" category="paragraph">계층 볼륨 페이지에서 보고서를 다운로드할 수 있으므로 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. BlueXP 계층화는 .csv 파일을 생성하여 필요에 따라 회사의 다른 사람에게 검토 및 전송할 수 있습니다.<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>.</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">BlueXP 계층화가 변경되었기 때문에 BlueXP 계층화 작업을 성공적으로 수행하려면 다음 Connector 엔드포인트를 변경해야 합니다.</block>
   <block id="3afb7cae2b7c3e96c6a4e1df765d3dce" category="section-title">끌어서 놓기를 통해 Azure Blob, Google Cloud Storage 및 StorageGRID에 BlueXP 계층화를 사용할 수 있습니다</block>
   <block id="18cd1c130656412d8089667948bc48a2" category="section-title">Amazon S3에 BlueXP 계층화를 활성화하려면 끌어다 놓으십시오</block>
-  <block id="add560b5a985ef003a6c14e31a803e74" category="paragraph">이제 MetroCluster 구성에 있는 클러스터와 Cloud Tiering 라이센스를 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다.<block ref="b5f02a07de174e4ad879f9049ab311c1" category="inline-link-rx"></block></block>
-  <block id="51338772de59dc7828409895ae5d0501" category="paragraph">이제 Cloud Tiering 라이센스는 MetroCluster 구성이 아닌 Tiering Mirror 구성 클러스터와 IBM Cloud Object Storage로 계층화되는 클러스터와 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다.<block ref="b5f02a07de174e4ad879f9049ab311c1" category="inline-link-rx"></block></block>
   <block id="a0396859c016deff163331729e87c6cf" category="summary">BlueXP 계층화는 여러 Google Cloud 스토리지 클래스와 대부분의 지역을 지원합니다.</block>
   <block id="e9885ff472161e4c48f508f106c6ad36" category="paragraph">데이터 계층화를 GCP로 설정하면 BlueXP 계층화는 비활성 데이터에 _Standard_storage 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.</block>
   <block id="58edb41c3cfab45408029ad69032402a" category="paragraph">BlueXP 계층화 라이프사이클 규칙을 구성할 때 Google 계정에 버킷을 설정할 때 라이프사이클 규칙을 구성하지 않아야 합니다.</block>
@@ -1304,7 +1255,6 @@
   <block id="1a20bbb9804807e18b8bffb0c1224d5b" category="paragraph"><block ref="1a20bbb9804807e18b8bffb0c1224d5b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="861751abd6cd88ad69b47e3f48ed40e1" category="inline-image-macro">BlueXP 계층화가 클러스터의 볼륨 및 비활성 데이터가 있는 AWS S3 스토리지와의 비공개 연결을 통해 통신하는 방법을 보여주는 다이어그램입니다.</block>
   <block id="416d6b305415c1b651308d03bee7d8bf" category="paragraph"><block ref="416d6b305415c1b651308d03bee7d8bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bb188fe477e19c259eca9386dbbcbe4d" category="list-text">포트 443을 통해 BlueXP 계층화 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 <block ref="e55fc914b3d027a7a2463283008a8fbf" category="inline-link-rx"></block>)</block>
   <block id="0db73897f94acf452b2b14679c1dbda3" category="admonition">BlueXP 계층화는 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설치 프로그램은 다른 볼륨과 동일하게 작동합니다.</block>
   <block id="0ad14aaf7eff30985750c0d80c7e4786" category="paragraph">BlueXP 계층화를 설정할 때 사용할 IPspace를 묻는 메시지가 표시됩니다. 이러한 LIF와 연결되는 IPspace를 선택해야 합니다. 이는 여러분이 생성한 "기본" IPspace 또는 사용자 지정 IPspace가 될 수 있습니다.</block>
   <block id="57c83c3911b1cfb3313ecdbbf6f7b3bc" category="paragraph">새 클러스터에 데이터 계층화를 설정할 때 S3 버킷을 생성하거나 Connector가 설정된 AWS 계정에서 기존 S3 버킷을 선택하라는 메시지가 표시됩니다. AWS 계정에는 BlueXP 계층화에 입력할 수 있는 권한 및 액세스 키가 있어야 합니다. ONTAP 클러스터는 액세스 키를 사용하여 S3의 내외부로 데이터를 계층화합니다.</block>
@@ -1316,8 +1266,6 @@
   <block id="8c191e41bb84293885ce2b93e583e6d9" category="list-text">데이터 센터의 ONTAP 클러스터, Azure 스토리지 및 BlueXP 계층화 서비스에 대한 아웃바운드 HTTPS 연결을 가능하게 하는 커넥터용 네트워킹.</block>
   <block id="77c987b6edf7f890ea169d4d845303d7" category="paragraph"><block ref="77c987b6edf7f890ea169d4d845303d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e90ca09e19c98a8ada0376d5e199bcf" category="inline-link">BlueXP 계층화에 필요한 특정 권한</block>
-  <block id="4a27ef316df72b61c98a70b1b30b2491" category="paragraph">BlueXP 버전 3.9.25 이상을 사용하여 커넥터를 만든 경우 모두 설정됩니다. Connector가 Azure 네트워크 내의 리소스 및 프로세스를 관리하는 데 필요한 권한을 제공하는 사용자 지정 역할은 기본적으로 설정됩니다. 를 참조하십시오<block ref="2e92f9b7c581d4f70c6be4a7886872e3" category="inline-link-rx"></block> 및<block ref="0f9cc71f13eb0da695b7328d01b25aa8" category="inline-link-rx"></block>.</block>
-  <block id="309682b59f90fcab2a762b6d4846bafd" category="list-text">포트 443을 통한 HTTPS 연결을 통해 BlueXP 계층화 서비스 및 Azure Blob 개체 저장소에 연결합니다 <block ref="5bf1914e1013b2901a1aed42fbd7a1ac" category="inline-link-rx"></block>)</block>
   <block id="177e3ee34a2fa4785a88af8672139305" category="paragraph">계층화를 설정할 때는 사용할 리소스 그룹과 리소스 그룹에 속한 스토리지 계정 및 Azure 컨테이너를 식별해야 합니다. 스토리지 계정을 사용하면 BlueXP 계층화를 통해 데이터 계층화에 사용되는 Blob 컨테이너를 인증하고 액세스할 수 있습니다.</block>
   <block id="3e9a3a79f6ff4a231c1c1039e1b70f99" category="paragraph">BlueXP 계층화는 General Purpose v2 및 Premium Block Blob 유형의 스토리지 계정만 지원합니다.</block>
   <block id="2d02ad0532e0a744a757daa60c3afcf3" category="admonition">특정 기간 동안 계층형 데이터가 로 전환되는 저렴한 액세스 계층을 사용하도록 BlueXP 계층화를 구성할 계획이라면 Azure 계정에 컨테이너를 설정할 때 수명 주기 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 수명 주기 전환을 관리합니다.</block>
@@ -1341,7 +1289,6 @@
   <block id="578b58628b699675aa94a9cb030f4eec" category="sidebar">BlueXP 계층화를 사용합니다</block>
   <block id="10fd54f4214c20c0fb0c8174413e67e6" category="sidebar">BlueXP 계층화 블로그 를 참조하십시오</block>
   <block id="368170efaa08caf814d05ad25b8849fe" category="paragraph">BlueXP 계층화 라이센스를 구입한 후에는 BlueXP의 BlueXP 디지털 지갑을 사용하여 라이센스를 추가해야 합니다. <block ref="18ff855f2755df77b673603c1159f8d7" category="inline-link-macro-rx"></block>.</block>
-  <block id="17d8fa7a4b309312cebf9b59da9a2365" category="list-text">BlueXP 백업 및 복구는 계층화 정책을 통해 설정된 볼륨의 영향을 받습니다.<block ref="c38d488619b3038630335754946446ec" category="inline-link-rx"></block>.</block>
   <block id="046d76eda0c1ca3ef0dc85e15394ce90" category="inline-link">BlueXP 디지털 자문업체</block>
   <block id="3ee9290056c3e6ae9cd8482931c1f104" category="paragraph">BlueXP 계층화 이외의<block ref="5ed6ecd932db92d4be0f0df08b269167" category="inline-link-rx"></block> 및<block ref="bced2809c175fbbacaa63c811a554606" category="inline-link-rx"></block> 모니터링 및 보고에 사용할 수 있습니다.</block>
   <block id="bb987c734075abca5676f20a90739886" category="paragraph">BlueXP 디지털 지갑 페이지를 사용하여 BlueXP 계층화 BYOL 라이센스를 관리합니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.</block>
@@ -1375,6 +1322,59 @@
   <block id="8e7506d0839acfb6f7efb77f1903df0d" category="list-text">현재 계층화되어 있는 데이터의 양 및 계층화할 수 있는 콜드 데이터의 양</block>
   <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">BlueXP 계층화 인터페이스에서 라이센스 탭이 제거되었습니다. PAYGO(pay-as-you-go) 서브스크립션에 대한 모든 라이센스는 이제 BlueXP 계층화 온-프레미스 대시보드에서 액세스할 수 있습니다. 또한 BlueXP 계층화 기능을 통해 BYOL(Bring-Your-Own-License)을 확인하고 관리할 수 있도록 해당 페이지에서 BlueXP 디지털 지갑까지 연결되는 링크도 있습니다.</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">"클러스터 대시보드" 탭의 이름이 "클러스터"로 바뀌고 "온프레미스 개요" 탭의 이름이 "온-프레미스 대시보드"로 바뀌었습니다. 이러한 페이지에는 추가 계층화 구성으로 스토리지 공간을 최적화할 수 있는지 평가하는 데 도움이 되는 몇 가지 정보가 추가되었습니다.</block>
-  <block id="cb75eb32a44d8c6565fd938d48a9e7af" category="list-text">클라우드 공급자 시장에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템에 대한 BlueXP 계층화도 자동으로 구독됩니다. BlueXP 계층화 * 온-프레미스 대시보드 * 탭에 활성 서브스크립션이 표시됩니다. 다시 가입하지 않아도 됩니다. 디지털 지갑에 활성 구독이 표시됩니다.</block>
   <block id="7703863e061bca8dc56bfd0084619b09" category="list-text">BlueXP에서 * 이동성 &gt; 계층화 &gt; 온-프레미스 대시보드 * 를 클릭합니다.</block>
+  <block id="2a55981be73b31d0de477ebba4506a52" category="paragraph">Cloud Volumes ONTAP 시스템이 있는 경우 BlueXP 계층화 클러스터 페이지에서 하이브리드 클라우드 인프라의 데이터 계층화에 대한 전체 보기를 얻을 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다. BlueXP 계층화에서 Cloud Volumes ONTAP에 데이터 계층화를 설정할 수 없습니다.<block ref="f5b25cbfd89581108090437b49ead269" category="inline-link-rx"></block>.</block>
+  <block id="e5831ab9170c5d74ab9db937a5339edb" category="paragraph">예. Connector 소프트웨어는 다운로드한 후 네트워크의 Linux 호스트에 수동으로 설치할 수 있습니다.<block ref="9e153516b147795eda775664f3a83ec4" category="inline-link-rx"></block>.</block>
+  <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">이 ID는 이메일에 매핑되는 시스템 생성 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 에 * 자격 증명 업데이트 * 옵션이 있습니다 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
+  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4171af878f04da4d606e87790b8753c5" category="list-text">ONTAP 9.4 이상을 실행하는 온프레미스 ONTAP 클러스터 및 사용자 지정 포트를 통해 StorageGRID에 연결합니다.<block ref="37a771554b6d226a7c4eb146e900f0b4" category="inline-link-rx"></block>.</block>
+  <block id="c306b081efdd6935cb1a3b72cedef051" category="paragraph"><block ref="ae9eece53d3424b3b3c2b5d7aaae5ba2" category="inline-link-rx"></block>.</block>
+  <block id="02156a4727415877195dc5302fa69275" category="list-text"><block ref="02156a4727415877195dc5302fa69275" category="inline-link-rx"></block></block>
+  <block id="bb61f2215683dbbd011cae7281f378e7" category="list-text"><block ref="bb61f2215683dbbd011cae7281f378e7" category="inline-link-rx"></block></block>
+  <block id="2aeeba0020a7848f7902186fbd8cb9e8" category="list-text"><block ref="2aeeba0020a7848f7902186fbd8cb9e8" category="inline-link-rx"></block></block>
+  <block id="e02dbf2c003ebdce76fe8d8f23c8cd81" category="list-text">포트 443을 통해 BlueXP 계층화 서비스에 대한 HTTPS 연결 <block ref="391228c0fd8ae5f276f519fba0168635" category="inline-link-rx"></block>)</block>
+  <block id="1c98944c12ba85ed964bb170facc908b" category="list-text"><block ref="d2c059274b0f8c8c22488502fa71ff00" category="inline-link-rx"></block>.</block>
+  <block id="14995f4b9e52d1c9842620dd299a9491" category="inline-link-macro">BlueXP 디지털 지갑에서 계정에 추가하십시오</block>
+  <block id="e3f4f14b998671c888f456a0ad08183b" category="list-text">BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 <block ref="c9b41d67bb59cbbda05a3d1ddac8d600" category="inline-link-macro-rx"></block>.</block>
+  <block id="7f197277fe853547357eb08c4f5f1cd0" category="list-text"><block ref="7f197277fe853547357eb08c4f5f1cd0" category="inline-link-rx"></block></block>
+  <block id="906825ff52dd59d45d29306547f559a5" category="list-text">포트 443을 통해 BlueXP 계층화 서비스 및 S3 오브젝트 스토리지에 HTTPS로 연결합니다 <block ref="63b337bf4559a585c3373707ecfcc413" category="inline-link-rx"></block>)</block>
+  <block id="736e7ce42afd814f93d6a6f0d3b53286" category="list-text"><block ref="736e7ce42afd814f93d6a6f0d3b53286" category="inline-link-rx"></block></block>
+  <block id="1764559644f64bef1e8af47a8af05e27" category="list-text">확인합니다<block ref="ad6b8247344a64d2ff735d66aa901246" category="inline-link-rx"></block> 는 Connector에 권한을 제공하는 IAM 역할의 일부입니다. Connector를 처음 배포할 때 기본적으로 포함되어 있어야 합니다. 그렇지 않으면 누락된 권한을 추가해야 합니다. 를 참조하십시오<block ref="6d4dc5f0c95117ac550b72968db62911" category="inline-link-rx"></block>.</block>
+  <block id="a6b673d310713aa4bdd09f8fd19acf66" category="list-text">VPC S3 엔드포인트에서 인증서를 가져옵니다. 당신은 이렇게 합니다<block ref="bee792b855389ef4e6c81f6aa6136d00" category="inline-link-rx"></block> 다음 명령을 실행합니다. 엔드포인트의 DNS 이름을 입력할 때 "*"를 대체하여 "bucket"을 앞에 추가합니다.</block>
+  <block id="af39bae06861b3074eed6e997f9a3ebf" category="paragraph">계층 볼륨 페이지에서 보고서를 다운로드할 수 있으므로 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. BlueXP 계층화는 .csv 파일을 생성하여 필요에 따라 회사의 다른 사람에게 검토 및 전송할 수 있습니다.<block ref="aaab920374e84f87020f8ba8578ab877" category="inline-link-rx"></block>.</block>
+  <block id="fa2934d386823619966e2cc6e222496c" category="paragraph">의 전체 끝점 목록을 참조하십시오<block ref="42eb7f749d4ba3adb326aa0a5756ba02" category="inline-link-rx"></block>,<block ref="96a9d4916fc49c8f082f1cb217b818c4" category="inline-link-rx"></block>, 또는<block ref="4f16be4d60318c8ffb97ef574631956d" category="inline-link-rx"></block> 설명합니다.</block>
+  <block id="0da74d536582f557c39085b5441ca38a" category="paragraph">이전 릴리즈에서는 VPC 엔드포인트를 통해 클러스터를 S3 버킷에 연결하는 안전한 방법을 제공하는 데 시간이 많이 소요되었습니다. 이제 의 필수 단계를 수행할 수 있습니다<block ref="f21e3ca279bfe71063fdc96c67a3b5b9" category="inline-link-rx"></block>그런 다음 네트워킹 페이지의 계층화 설정 마법사 중에 PrivateLink를 선택할 수 있습니다.</block>
+  <block id="b2917ea80501e4e266fb196a8938fa14" category="paragraph"><block ref="60aeda1e87e3285e814ff97260256aa7" category="inline-link-rx"></block>.</block>
+  <block id="97102364d27cfa2b371b04954f8509a5" category="paragraph">Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이지 세트가 추가되었습니다. 새 오브젝트 저장소를 추가하고, FabricPool 미러링을 위해 여러 오브젝트 저장소를 Aggregate에 연결하고, 기본 오브젝트 저장소와 미러 오브젝트 저장소를 바꾸고, 애그리게이트에 대한 오브젝트 저장소 연결을 삭제하는 등의 작업을 수행할 수 있습니다.<block ref="beab3aba355fc6cb093ce3f5ab5dae37" category="inline-link-rx"></block></block>
+  <block id="8988a1e5f033eb9ad9a8652cec24f2d1" category="paragraph">이제 MetroCluster 구성에 있는 클러스터와 Cloud Tiering 라이센스를 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다.<block ref="034dee4c81b485ee26e8054e04588c81" category="inline-link-rx"></block></block>
+  <block id="9f6052fbd8e40798fd43c9c396d5cc95" category="paragraph">이제 Cloud Tiering 라이센스는 MetroCluster 구성이 아닌 Tiering Mirror 구성 클러스터와 IBM Cloud Object Storage로 계층화되는 클러스터와 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다.<block ref="034dee4c81b485ee26e8054e04588c81" category="inline-link-rx"></block></block>
+  <block id="566cb438311fb3d1dc8b0eda5337ffb1" category="paragraph">Cloud Tiering을 설정할 때 특정 일 수 후에 비활성 데이터가 _Standard_storage 클래스에서 _Glacier Instant Retrieval_로 전환되도록 수명주기 규칙을 구성할 수 있습니다. 이를 통해 AWS 인프라 비용을 절감할 수 있습니다.<block ref="92f8f9f14153fe87119c57701f059ae7" category="inline-link-rx"></block></block>
+  <block id="f9cbaeb3412c248528eeb5b316882c2f" category="list-text">ONTAP 9.8 이상을 실행하는 온프레미스 ONTAP 클러스터의 소스 및 사용자 지정 포트를 통해 대상 S3 호환 오브젝트 스토리지로의 연결<block ref="37a771554b6d226a7c4eb146e900f0b4" category="inline-link-rx"></block>.</block>
+  <block id="0e3e175aa7efdfc360dab27c51b6fc80" category="admonition">Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다.<block ref="f5b25cbfd89581108090437b49ead269" category="inline-link-rx"></block>.</block>
+  <block id="994f1fa9f6b6f6276b10a9c8a8f18a8c" category="list-text">BlueXP 백업 및 복구는 계층화 정책을 통해 설정된 볼륨의 영향을 받습니다.<block ref="2db919f88216e9376af16eec91019e18" category="inline-link-rx"></block>.</block>
+  <block id="5f6fdb8f4b29baeb552fcdad9078be66" category="list-text">클라우드 공급자 시장에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템에 대한 BlueXP 계층화도 자동으로 구독됩니다. BlueXP 계층화 * 온-프레미스 대시보드 * 탭에 활성 서브스크립션이 표시됩니다. 다시 가입하지 않아도 됩니다. BlueXP 디지털 지갑에 활성 구독이 표시됩니다.</block>
+  <block id="7e1d9a12a6617957d93e562480c58a19" category="paragraph">이 옵션을 사용하려면 마켓플레이스 페이지에서 구독을 설정한 다음<block ref="3e7d826ab39799649c48f6e2f8f11222" category="inline-link-rx"></block>.</block>
+  <block id="1ba2cc4758ef6d9270d73cfc36a18caa" category="paragraph">선택적으로 사용하지 않을 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 동일한 달러 당량 및 만료 날짜가 있는 BlueXP 계층화 라이센스로 변환할 수 있습니다.<block ref="f4c32a82791cf9fc58c736c0aed05092" category="inline-link-rx"></block>.</block>
+  <block id="30fc689a9c3cd4222329fe3a4c818a33" category="paragraph">드롭다운 목록에서 NetApp Support 사이트 계정을 사용할 수 없는 경우<block ref="06a3bc9d474b5d4e44d1a2733cac785a" category="inline-link-rx"></block>.</block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">을 클릭하여 테이블에 표시되는 열을 변경합니다 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 표시할 열을 선택합니다.</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">를 클릭하여 기존 케이스를 관리합니다 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 사용 가능한 옵션 중 하나를 선택합니다.</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b62a489db7d21470a588af3757360c8f" category="list-text">ONTAP 9.4 이상을 실행하고 Azure Blob 저장소에 HTTPS를 연결하는 온프레미스 ONTAP 클러스터<block ref="37a771554b6d226a7c4eb146e900f0b4" category="inline-link-rx"></block>.</block>
+  <block id="3cf7465ae7f5c20ed45abc7161a7193a" category="list-text"><block ref="3cf7465ae7f5c20ed45abc7161a7193a" category="inline-link-rx"></block></block>
+  <block id="54c9e3b2a440566ab71486abe4df899a" category="paragraph">BlueXP 버전 3.9.25 이상을 사용하여 커넥터를 만든 경우 모두 설정됩니다. Connector가 Azure 네트워크 내의 리소스 및 프로세스를 관리하는 데 필요한 권한을 제공하는 사용자 지정 역할은 기본적으로 설정됩니다. 를 참조하십시오<block ref="ae3b48d48c05b567196be1134d253020" category="inline-link-rx"></block> 및<block ref="756a6d5fe62b6d963741b55b73ffa635" category="inline-link-rx"></block>.</block>
+  <block id="49d63f176acd1bb80a648752a4321494" category="list-text">포트 443을 통한 HTTPS 연결을 통해 BlueXP 계층화 서비스 및 Azure Blob 개체 저장소에 연결합니다 <block ref="73abec29c95edc01ed78226396cb9d9e" category="inline-link-rx"></block>)</block>
+  <block id="024cdb5b88e4353db8a9cf2173c17bdd" category="list-text">ONTAP 9.6 이상을 실행하고 Google 클라우드 스토리지에 HTTPS로 연결된 온프레미스 ONTAP 클러스터<block ref="37a771554b6d226a7c4eb146e900f0b4" category="inline-link-rx"></block>.</block>
+  <block id="6f13dcb9921df6d965fb4e7d649107d7" category="list-text"><block ref="6f13dcb9921df6d965fb4e7d649107d7" category="inline-link-rx"></block></block>
+  <block id="005bd5c50af49ea11282dc0a853c69b6" category="list-text">포트 443을 통해 BlueXP 계층화 서비스 및 Google Cloud 스토리지에 HTTPS로 연결합니다 <block ref="e228b87eff1d3a92b4544cd5652fc5ad" category="inline-link-rx"></block>)</block>
 </blocks>

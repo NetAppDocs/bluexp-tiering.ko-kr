@@ -27,7 +27,7 @@ summary: 비활성 데이터를 Google 클라우드 스토리지로 계층화하
 다음이 필요합니다.
 
 [role="quick-margin-list"]
-* ONTAP 9.6 이상을 실행하고 Google 클라우드 스토리지에 HTTPS로 연결된 온프레미스 ONTAP 클러스터 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
+* ONTAP 9.6 이상을 실행하고 Google 클라우드 스토리지에 HTTPS로 연결된 온프레미스 ONTAP 클러스터 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 * 사전 정의된 스토리지 관리자 역할 및 스토리지 액세스 키가 있는 서비스 계정입니다.
 * Google Cloud Platform VPC에 설치된 커넥터
 * 데이터 센터의 ONTAP 클러스터, Google 클라우드 스토리지 및 BlueXP 계층화 서비스에 대한 아웃바운드 HTTPS 연결을 지원하는 커넥터용 네트워킹.
@@ -43,7 +43,7 @@ BlueXP에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해
 
 [role="quick-margin-list"]
 * GCP 마켓플레이스를 구독하려면 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["BlueXP Marketplace 오퍼링으로 이동합니다"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
-* BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Wallet에서 계정에 추가하십시오"].
+* BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP 디지털 지갑에서 계정에 추가하십시오"].
 
 
 
@@ -107,7 +107,7 @@ NOTE: BlueXP 계층화는 FlexGroup 볼륨을 지원합니다. 설치 프로그�
 
 콜드 데이터의 계층화를 시작하려면 먼저 BlueXP에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 
 
 
@@ -115,8 +115,8 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 데이터를 클라우드에 계층화하려면 Connector가 필요합니다. 데이터를 Google 클라우드 스토리지로 계층화할 때 Google Cloud Platform VPC에서 Connector를 사용할 수 있어야 합니다. 새 커넥터를 만들거나 현재 선택한 커넥터가 GCP에 있는지 확인해야 합니다.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCP에서 커넥터 배포"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 커넥터 배포"^]
 
 
 
@@ -128,7 +128,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 .단계
 . 커넥터가 설치된 VPC에서 다음 연결을 사용할 수 있는지 확인합니다.
 +
-** 포트 443을 통해 BlueXP 계층화 서비스 및 Google Cloud 스토리지에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
+** 포트 443을 통해 BlueXP 계층화 서비스 및 Google Cloud 스토리지에 HTTPS로 연결합니다 (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
 ** 포트 443을 통해 ONTAP 클러스터 관리 LIF에 HTTPS로 연결합니다
 
 
@@ -169,7 +169,7 @@ NOTE: 특정 일 수 후에 계층형 데이터가 로 전환되는 저렴한 �
 Google Cloud 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터의 계층화를 시작합니다.
 
 .필요한 것
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["온프레미스 작업 환경"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["온프레미스 작업 환경"^].
 * 스토리지 관리자 역할이 있는 서비스 계정의 스토리지 액세스 키입니다.
 
 

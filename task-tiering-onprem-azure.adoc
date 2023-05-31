@@ -27,7 +27,7 @@ summary: 비활성 데이터를 Azure Blob 저장소에 계층화하여 온프�
 다음이 필요합니다.
 
 [role="quick-margin-list"]
-* ONTAP 9.4 이상을 실행하고 Azure Blob 저장소에 HTTPS를 연결하는 온프레미스 ONTAP 클러스터 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
+* ONTAP 9.4 이상을 실행하고 Azure Blob 저장소에 HTTPS를 연결하는 온프레미스 ONTAP 클러스터 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 * Azure VNET 또는 구내에 설치된 커넥터.
 * 데이터 센터의 ONTAP 클러스터, Azure 스토리지 및 BlueXP 계층화 서비스에 대한 아웃바운드 HTTPS 연결을 가능하게 하는 커넥터용 네트워킹.
 
@@ -42,7 +42,7 @@ BlueXP에서 사내 ONTAP 작업 환경을 선택하고 계층화 서비스에 �
 
 [role="quick-margin-list"]
 * Azure 마켓플레이스에서 구독하려면 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["BlueXP Marketplace 오퍼링으로 이동합니다"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
-* BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Wallet에서 계정에 추가하십시오"].
+* BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP 디지털 지갑에서 계정에 추가하십시오"].
 
 
 
@@ -106,7 +106,7 @@ NOTE: BlueXP 계층화는 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. �
 
 콜드 데이터의 계층화를 시작하려면 먼저 BlueXP에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 
 
 
@@ -114,16 +114,16 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 데이터를 클라우드에 계층화하려면 Connector가 필요합니다. Azure Blob 저장소에 데이터를 계층화할 때 Azure VNET 또는 사내에서 Connector를 사용할 수 있습니다. 새 커넥터를 만들거나 현재 선택한 커넥터가 Azure 또는 온프레미스에 있는지 확인해야 합니다.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Azure에서 커넥터 배포"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Linux 호스트에 커넥터 설치"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["커넥터에 대해 자세히 알아보십시오"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 커넥터 배포"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Linux 호스트에 커넥터 설치"^]
 
 
 
 
 === 필요한 커넥터 권한이 있는지 확인합니다
 
-BlueXP 버전 3.9.25 이상을 사용하여 커넥터를 만든 경우 모두 설정됩니다. Connector가 Azure 네트워크 내의 리소스 및 프로세스를 관리하는 데 필요한 권한을 제공하는 사용자 지정 역할은 기본적으로 설정됩니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#custom-role-permissions["사용자 지정 역할 권한이 필요합니다"^] 및 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#cloud-tiering["BlueXP 계층화에 필요한 특정 권한"^].
+BlueXP 버전 3.9.25 이상을 사용하여 커넥터를 만든 경우 모두 설정됩니다. Connector가 Azure 네트워크 내의 리소스 및 프로세스를 관리하는 데 필요한 권한을 제공하는 사용자 지정 역할은 기본적으로 설정됩니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#custom-role-permissions["사용자 지정 역할 권한이 필요합니다"^] 및 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#cloud-tiering["BlueXP 계층화에 필요한 특정 권한"^].
 
 이전 버전의 BlueXP를 사용하여 Connector를 만든 경우 Azure 계정에 대한 권한 목록을 편집하여 누락된 권한을 추가해야 합니다.
 
@@ -136,7 +136,7 @@ BlueXP 버전 3.9.25 이상을 사용하여 커넥터를 만든 경우 모두 �
 .단계
 . 커넥터가 설치된 네트워크에서 다음 연결을 사용할 수 있는지 확인합니다.
 +
-** 포트 443을 통한 HTTPS 연결을 통해 BlueXP 계층화 서비스 및 Azure Blob 개체 저장소에 연결합니다 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
+** 포트 443을 통한 HTTPS 연결을 통해 BlueXP 계층화 서비스 및 Azure Blob 개체 저장소에 연결합니다 (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["끝점 목록을 참조하십시오"^])
 ** 포트 443을 통해 ONTAP 클러스터 관리 LIF에 HTTPS로 연결합니다
 
 
@@ -166,7 +166,7 @@ NOTE: 특정 기간 동안 계층형 데이터가 로 전환되는 저렴한 액
 Azure 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터의 계층화를 시작합니다.
 
 .필요한 것
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["온프레미스 작업 환경"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["온프레미스 작업 환경"^].
 
 .단계
 . 사내 ONTAP 작업 환경을 선택합니다.

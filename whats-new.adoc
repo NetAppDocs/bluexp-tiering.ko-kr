@@ -40,7 +40,7 @@ BlueXP 계층화 인터페이스에서 라이센스 탭이 제거되었습니다
 
 === 이제 볼륨에 대한 계층화 보고서를 생성할 수 있습니다
 
-계층 볼륨 페이지에서 보고서를 다운로드할 수 있으므로 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. BlueXP 계층화는 .csv 파일을 생성하여 필요에 따라 회사의 다른 사람에게 검토 및 전송할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["계층화 보고서를 다운로드하는 방법을 확인하십시오"].
+계층 볼륨 페이지에서 보고서를 다운로드할 수 있으므로 관리 중인 클러스터에 있는 모든 볼륨의 계층화 상태를 검토할 수 있습니다. BlueXP 계층화는 .csv 파일을 생성하여 필요에 따라 회사의 다른 사람에게 검토 및 전송할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["계층화 보고서를 다운로드하는 방법을 확인하십시오"].
 
 
 
@@ -62,7 +62,7 @@ BlueXP 계층화가 변경되었기 때문에 BlueXP 계층화 작업을 성공�
 
 | https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오 | https://*.api.bluexp.netapp.com 으로 문의하십시오 
 |===
-의 전체 끝점 목록을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["설치하고"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google 클라우드"^], 또는 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure를 지원합니다"^] 설명합니다.
+의 전체 끝점 목록을 참조하십시오 https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["설치하고"^], https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google 클라우드"^], 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure를 지원합니다"^] 설명합니다.
 
 
 
@@ -82,9 +82,9 @@ Azure Blob, Google Cloud Storage 또는 StorageGRID 계층화 대상이 Canvas�
 
 === 계층화 마법사를 사용하면 S3 스토리지로 계층화할 때 AWS PrivateLink를 구성할 수 있습니다
 
-이전 릴리즈에서는 VPC 엔드포인트를 통해 클러스터를 S3 버킷에 연결하는 안전한 방법을 제공하는 데 시간이 많이 소요되었습니다. 이제 의 필수 단계를 수행할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPC 엔드포인트 인터페이스를 사용하여 전용 연결을 위해 시스템을 구성합니다"]그런 다음 네트워킹 페이지의 계층화 설정 마법사 중에 PrivateLink를 선택할 수 있습니다.
+이전 릴리즈에서는 VPC 엔드포인트를 통해 클러스터를 S3 버킷에 연결하는 안전한 방법을 제공하는 데 시간이 많이 소요되었습니다. 이제 의 필수 단계를 수행할 수 있습니다 https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPC 엔드포인트 인터페이스를 사용하여 전용 연결을 위해 시스템을 구성합니다"]그런 다음 네트워킹 페이지의 계층화 설정 마법사 중에 PrivateLink를 선택할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["요구 사항 및 단계를 검토하여 비활성 데이터를 Amazon S3에 계층화합니다"].
+https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html["요구 사항 및 단계를 검토하여 비활성 데이터를 Amazon S3에 계층화합니다"].
 
 
 
@@ -106,13 +106,13 @@ MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 운영 
 
 === 클러스터의 다른 애그리게이트로 추가 오브젝트 저장소를 구성하는 기능
 
-Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이지 세트가 추가되었습니다. 새 오브젝트 저장소를 추가하고, FabricPool 미러링을 위해 여러 오브젝트 저장소를 Aggregate에 연결하고, 기본 오브젝트 저장소와 미러 오브젝트 저장소를 바꾸고, 애그리게이트에 대한 오브젝트 저장소 연결을 삭제하는 등의 작업을 수행할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-object-storage.html["새로운 오브젝트 스토리지 기능에 대해 자세히 알아보십시오."]
+Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이지 세트가 추가되었습니다. 새 오브젝트 저장소를 추가하고, FabricPool 미러링을 위해 여러 오브젝트 저장소를 Aggregate에 연결하고, 기본 오브젝트 저장소와 미러 오브젝트 저장소를 바꾸고, 애그리게이트에 대한 오브젝트 저장소 연결을 삭제하는 등의 작업을 수행할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-object-storage.html["새로운 오브젝트 스토리지 기능에 대해 자세히 알아보십시오."]
 
 
 
 === MetroCluster 구성에 대한 Cloud Tiering 라이센스 지원
 
-이제 MetroCluster 구성에 있는 클러스터와 Cloud Tiering 라이센스를 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
+이제 MetroCluster 구성에 있는 클러스터와 Cloud Tiering 라이센스를 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
 
 
 
@@ -122,7 +122,7 @@ Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이�
 
 === Cloud Tiering 라이센스는 추가 클러스터 구성을 지원합니다
 
-이제 Cloud Tiering 라이센스는 MetroCluster 구성이 아닌 Tiering Mirror 구성 클러스터와 IBM Cloud Object Storage로 계층화되는 클러스터와 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
+이제 Cloud Tiering 라이센스는 MetroCluster 구성이 아닌 Tiering Mirror 구성 클러스터와 IBM Cloud Object Storage로 계층화되는 클러스터와 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
 
 
 
@@ -132,7 +132,7 @@ Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이�
 
 === 이제 Amazon S3 Glacier Instant Retrieval 저장소 클래스를 사용할 수 있습니다
 
-Cloud Tiering을 설정할 때 특정 일 수 후에 비활성 데이터가 _Standard_storage 클래스에서 _Glacier Instant Retrieval_로 전환되도록 수명주기 규칙을 구성할 수 있습니다. 이를 통해 AWS 인프라 비용을 절감할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-tiering/reference-aws-support.html["지원되는 S3 스토리지 클래스를 참조하십시오."]
+Cloud Tiering을 설정할 때 특정 일 수 후에 비활성 데이터가 _Standard_storage 클래스에서 _Glacier Instant Retrieval_로 전환되도록 수명주기 규칙을 구성할 수 있습니다. 이를 통해 AWS 인프라 비용을 절감할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/reference-aws-support.html["지원되는 S3 스토리지 클래스를 참조하십시오."]
 
 
 

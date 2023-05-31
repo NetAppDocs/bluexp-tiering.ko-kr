@@ -43,7 +43,7 @@ BlueXP 계층화는 자동화, 모니터링, 보고서 및 공통 관리 인터�
 BlueXP 계층화가 제공하는 가치에 대한 자세한 내용은 https://bluexp.netapp.com/cloud-tiering["BlueXP 웹 사이트의 BlueXP 계층화 페이지를 참조하십시오"^].
 
 
-TIP: Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다"^].
+TIP: Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다"^].
 
 
 
@@ -205,7 +205,7 @@ NOTE: 다시 가열된 데이터는 공간이 있는 경우에만 성능 계층�
 +
 데이터는 즉시 계층화되므로 SnapMirror는 성능 계층이 아닌 클라우드 계층에서 데이터를 읽습니다. 이로 인해 SnapMirror 작업 속도가 느려지며, 다른 계층화 정책을 사용하는 경우에도 나중에 다른 SnapMirror 작업이 느려집니다.
 
-* BlueXP 백업 및 복구는 계층화 정책을 통해 설정된 볼륨의 영향을 받습니다. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXP 백업 및 복구와 관련된 계층화 정책 고려 사항을 참조하십시오"^].
+* BlueXP 백업 및 복구는 계층화 정책을 통해 설정된 볼륨의 영향을 받습니다. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXP 백업 및 복구와 관련된 계층화 정책 고려 사항을 참조하십시오"^].
 
 
 --
