@@ -45,6 +45,8 @@ sidebar:
       url: "/task-tiering-test.html"
     - title: 모든 클러스터의 계층화 개요 보기
       url: "/task-tiering-onprem-overview.html"
+    - title: 계층화 알림의 상태를 모니터링합니다
+      url: "/task-monitor-tiering-alerts.html"
   - title: 참조하십시오
     entries:
     - title: 지원되는 Amazon S3 스토리지 클래스 및 지역
@@ -91,6 +93,8 @@ homepage:
       url: task-managing-tiering.html#reviewing-tiering-info-for-a-cluster
     - title: 추가 볼륨의 데이터를 계층화합니다
       url: task-managing-tiering.html#tiering-data-from-additional-volumes
+    - title: 비활성 데이터를 오브젝트 저장소에 업로드하도록 대역폭을 변경합니다
+      url: task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage
     - title: 클라우드에서 성능 계층으로 데이터 이동
       url: task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier
     - title: 애그리게이트에서 계층화 설정을 관리합니다
