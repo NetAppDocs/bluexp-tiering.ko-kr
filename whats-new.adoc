@@ -18,6 +18,22 @@ BlueXP 계층화의 새로운 기능에 대해 알아보십시오.
 
 
 
+== 2023년 8월 9일
+
+
+
+=== 계층화된 데이터가 저장되는 버킷 이름에 사용자 지정 접두사를 사용합니다
+
+이전에는 버킷 이름을 정의할 때 기본 "fabric-pool" 접두사를 사용해야 했습니다(예: _fabric-pool-bucket1_). 이제 버킷 이름을 지정할 때 사용자 지정 접두사를 사용할 수 있습니다. 이 기능은 데이터를 Amazon S3로 계층화하는 경우에만 사용할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["자세한 정보"].
+
+
+
+=== 모든 BlueXP Connector에서 클러스터를 검색합니다
+
+사용자 환경의 모든 스토리지 시스템을 관리하기 위해 여러 커넥터를 사용하는 경우 계층화를 구현할 클러스터가 다른 커넥터에 있을 수 있습니다. 어떤 커넥터가 특정 클러스터를 관리하고 있는지 확실하지 않은 경우 BlueXP 계층화를 사용하여 모든 커넥터를 검색할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors["자세한 정보"].
+
+
+
 == 2023년 7월 4일
 
 
@@ -131,13 +147,3 @@ Cloud Tiering UI에 오브젝트 스토리지 구성을 위한 새로운 페이�
 === MetroCluster 구성에 대한 Cloud Tiering 라이센스 지원
 
 이제 MetroCluster 구성에 있는 클러스터와 Cloud Tiering 라이센스를 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]
-
-
-
-== 2022년 5월 3일
-
-
-
-=== Cloud Tiering 라이센스는 추가 클러스터 구성을 지원합니다
-
-이제 Cloud Tiering 라이센스는 MetroCluster 구성이 아닌 Tiering Mirror 구성 클러스터와 IBM Cloud Object Storage로 계층화되는 클러스터와 공유할 수 있습니다. 이러한 시나리오에 더 이상 사용되지 않는 FabricPool 라이센스를 사용할 필요가 없습니다. 따라서 더 많은 클러스터에서 "유동" Cloud Tiering 라이센스를 더 쉽게 사용할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오."]

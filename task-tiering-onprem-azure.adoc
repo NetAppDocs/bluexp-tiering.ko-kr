@@ -217,7 +217,7 @@ image:screenshot_tiering_lifecycle_selection_azure.png["특정 일 수 후에 �
 ** 여러 볼륨을 선택하려면 각 볼륨에 대한 확인란을 선택합니다(image:button_backup_1_volume.png[""])를 클릭하고 * 볼륨 구성 * 을 클릭합니다.
 ** 단일 볼륨을 선택하려면 행(또는)을 클릭합니다 image:screenshot_edit_icon.gif["연필 아이콘을 편집합니다"] 아이콘)을 클릭합니다.
 +
-image:screenshot_tiering_tier_volumes.png["단일 볼륨, 다중 볼륨 또는 모든 볼륨을 선택하는 방법 및 선택한 볼륨 수정 단추를 보여 주는 스크린샷"]
+image:screenshot_tiering_initial_volumes.png["단일 볼륨, 다중 볼륨 또는 모든 볼륨을 선택하는 방법 및 선택한 볼륨 수정 단추를 보여 주는 스크린샷"]
 
 
 
@@ -226,7 +226,7 @@ image:screenshot_tiering_tier_volumes.png["단일 볼륨, 다중 볼륨 또는 �
 link:concept-cloud-tiering.html#volume-tiering-policies["볼륨 계층화 정책 및 냉각 일에 대해 자세히 알아보십시오"].
 
 +
-image:screenshot_tiering_policy_settings.png["구성 가능한 계층화 정책 설정을 보여 주는 스크린샷"]
+image:screenshot_tiering_initial_policy_settings.png["구성 가능한 계층화 정책 설정을 보여 주는 스크린샷"]
 
 
 
