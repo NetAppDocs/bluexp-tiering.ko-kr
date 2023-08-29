@@ -147,7 +147,7 @@ https://cloud.google.com/vpc/docs/configure-private-google-access["개인 Google
 클라우드 스토리지 버킷은 에 포함되어야 합니다 link:reference-google-support.html#supported-google-cloud-regions["BlueXP 계층화를 지원하는 지역"].
 
 
-NOTE: 특정 일 수 후에 계층형 데이터가 로 전환되는 저렴한 스토리지 클래스를 사용하도록 BlueXP 계층화를 구성할 계획이라면 GCP 계정에서 버킷을 설정할 때 수명 주기 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 수명 주기 전환을 관리합니다.
+NOTE: 특정 일 수가 지나면 계층 데이터가 로 전환될 더 저렴한 비용의 스토리지 클래스를 사용하도록 BlueXP 계층화를 구성하려는 경우, GCP 계정에서 버킷을 설정할 때 라이프사이클 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 라이프사이클 전환을 관리합니다.
 
 .단계
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["사전 정의된 스토리지 관리자 역할이 있는 서비스 계정을 생성합니다"^].
@@ -187,18 +187,18 @@ image:screenshot_setup_tiering_onprem.png["온-프레미스 ONTAP 작업 환경�
 . Create Object Storage * 페이지의 단계를 완료합니다.
 +
 .. * 버킷 *: 새 Google Cloud Storage 버킷을 추가하거나 기존 버킷을 선택합니다.
-.. * 스토리지 클래스 수명 주기 *: BlueXP 계층화는 계층화된 데이터의 수명 주기 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만, 특정 일 수가 지나면 데이터를 다른 클래스로 이동하는 규칙을 만들 수 있습니다.
+.. * Storage Class Lifecycle *: BlueXP 계층화는 계층형 데이터의 라이프사이클 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 다른 스토리지 클래스를 적용하는 규칙을 생성할 수 있습니다.
 +
-계층화된 데이터를 전환할 Google Cloud 스토리지 클래스를 선택하고 데이터가 이동될 때까지 남은 일 수를 선택한 다음 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 오브젝트 저장소에서 30일 후에 계층형 데이터가 _Standard_class에서 _Nearline_class로 이동한 다음 오브젝트 저장소에서 60일 후에 _Coldline_class로 이동함을 보여 줍니다.
+계층화된 데이터를 전환할 Google Cloud 스토리지 클래스와 데이터가 해당 클래스에 할당되기 전의 일 수를 선택한 후 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 계층화된 데이터가 개체 저장소에서 30일 후에 _Standard_class에서 _Nearline_class에 할당된 다음 60일 후에 _Coldline_class에 할당됨을 보여 줍니다.
 
 +
 이 스토리지 클래스에 데이터 보존 * 을 선택하면 해당 스토리지 클래스에 데이터가 유지됩니다. link:reference-google-support.html["지원되는 스토리지 클래스를 참조하십시오"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_gcp.png["특정 일 수 이후에 데이터가 이동되는 추가 스토리지 클래스를 선택하는 방법을 보여 주는 스크린샷"]
+image:screenshot_tiering_lifecycle_selection_gcp.png["특정 일 수 이후 데이터에 할당된 추가 저장소 클래스를 선택하는 방법을 보여 주는 스크린샷"]
 
 +
-수명 주기 규칙은 선택한 버킷의 모든 오브젝트에 적용됩니다.
+선택한 버킷의 모든 오브젝트에 수명주기 규칙이 적용됩니다.
 
 .. * 자격 증명 *: 스토리지 관리자 역할이 있는 서비스 계정의 스토리지 액세스 키와 암호 키를 입력합니다.
 .. * 클러스터 네트워크 *: ONTAP가 오브젝트 스토리지에 연결하는 데 사용해야 하는 IPspace를 선택합니다.

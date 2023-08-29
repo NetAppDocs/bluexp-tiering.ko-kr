@@ -41,12 +41,8 @@
   <block id="b7507ffc73507c1071aa3369e64f9b02" category="paragraph"><block ref="b7507ffc73507c1071aa3369e64f9b02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9dcb4338cde0614db53499ea9fe7fe74" category="paragraph">온프레미스 커넥터를 사용하는 경우 생성할 기존 S3 버킷 또는 새 S3 버킷에 대한 액세스를 제공하는 AWS 계정 ID를 입력해야 합니다.</block>
   <block id="c58cf9282f95328fc92b4502fbef9f23" category="paragraph">Connector에 대한 IAM 정책을 사용하면 인스턴스가 정확한 접두사로 명명된 버킷에 대해 S3 작업을 수행할 수 있으므로 _fabric-pool_prefix가 필요합니다. 예를 들어, S3 bucket_fabric-pool-AFF1_의 이름을 지정할 수 있습니다. 여기서 AFF1은 클러스터의 이름입니다.</block>
-  <block id="3ef4bb9a8277742de6597e9937678503" category="paragraph">계층화된 데이터를 전환할 S3 스토리지 클래스를 선택하고 데이터를 이동하기 전의 일 수를 선택한 다음 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 오브젝트 저장소에서 45일이 지난 후 계층형 데이터가 _Standard_class에서 _Standard-IA_class로 이동되었음을 보여 줍니다.</block>
   <block id="c171e8fa2a3cb53de525ce805c3883dc" category="inline-link-macro">지원되는 스토리지 클래스를 참조하십시오</block>
   <block id="6fb9dd2d432abbfd2e290dea633d688c" category="paragraph">이 스토리지 클래스에 데이터 보존 * 을 선택하면 데이터가 _Standard_storage 클래스에 남아 있고 규칙이 적용되지 않습니다. <block ref="aa3328f427a38479d06747ebf1a05fc3" category="inline-link-macro-rx"></block>.</block>
-  <block id="8ae6032dc43b667771c8605a20954b09" category="inline-image-macro">특정 일 수 이후에 데이터가 이동되는 다른 스토리지 클래스를 선택하는 방법을 보여 주는 스크린샷</block>
-  <block id="fadcc9c239b21cc5038ad590074bcf33" category="paragraph"><block ref="fadcc9c239b21cc5038ad590074bcf33" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ea09ff0f2c6993eddf0252bc7fcbd724" category="paragraph">수명 주기 규칙은 선택한 버킷의 모든 오브젝트에 적용됩니다.</block>
   <block id="c6d7cecaf22190d03dd1883702c04c49" category="list-text">* 자격 증명 *: 필요한 S3 권한이 있는 IAM 사용자의 액세스 키 ID와 비밀 키를 입력하고 * 계속 * 을 클릭합니다.</block>
   <block id="3be503b52a53c50161649d2d51182eba" category="paragraph">IAM 사용자는 * S3 Bucket * 페이지에서 선택하거나 생성한 버킷과 동일한 AWS 계정에 있어야 합니다.</block>
   <block id="edb5302d21562d6e6d64d3bbe03d94b4" category="list-text">* 클러스터 네트워크 *: ONTAP가 오브젝트 스토리지에 연결하는 데 사용해야 하는 IPspace를 선택하고 * 계속 * 을 클릭합니다.</block>
@@ -130,12 +126,8 @@
   <block id="256fb1d2776e7f3b364ce4414a65b2cd" category="section-title">Azure Blob 저장소 준비 중</block>
   <block id="0cff75f8a1ea859d852b43f30a5a65c5" category="section-title">첫 번째 클러스터에서 Azure Blob 스토리지로 비활성 데이터 계층화</block>
   <block id="eeee7c2206f30d34992557feb0d7900f" category="paragraph">Azure 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터의 계층화를 시작합니다.</block>
-  <block id="f9ec0a0e3f7751a980419c9235987d65" category="paragraph">계층화된 데이터를 이동할 액세스 계층과 데이터를 이동할 일 수를 선택하고 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 오브젝트 저장소에서 45일 후에 계층형 데이터가 _Hot_class에서 _Cool_class로 이동되었음을 보여 줍니다.</block>
   <block id="a6de011c08144280abbea085810f3465" category="inline-link-macro">지원되는 액세스 계층 을 참조하십시오</block>
   <block id="4f79964148c7f12ce0e111c7b8d932a5" category="paragraph">이 액세스 계층에 데이터 보존 * 을 선택하면 데이터는 _hot_access 계층에 그대로 유지되고 규칙이 적용되지 않습니다. <block ref="462d8509e8137fe02ca002d803caf321" category="inline-link-macro-rx"></block>.</block>
-  <block id="68a83a6344da48ff48b7dfe970c4f766" category="inline-image-macro">특정 일 수 후에 데이터가 이동되는 다른 액세스 계층을 선택하는 방법을 보여 주는 스크린샷</block>
-  <block id="76ebfce4c2c67a5c80f5e3389cadd984" category="paragraph"><block ref="76ebfce4c2c67a5c80f5e3389cadd984" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d2f15cc1f6b52e91b3fa0f67c5683cc7" category="paragraph">수명 주기 규칙은 선택한 저장소 계정의 모든 BLOB 컨테이너에 적용됩니다.</block>
   <block id="ade7907875a5b3e50997036947f13251" category="paragraph">클러스터의 볼륨에서 Azure Blob 개체 스토리지로 데이터 계층화를 설정했습니다.</block>
   <block id="339e18b687c59777d2931b47d72cb440" category="summary">이제 사내 ONTAP 클러스터에서 데이터 계층화를 설정했으므로 추가 볼륨의 데이터를 계층화하고, 볼륨의 계층화 정책을 변경하고, 추가 클러스터를 검색할 수 있습니다.</block>
   <block id="93772529b8117fc8010ab6872129a19c" category="section-title">추가 볼륨의 데이터 계층화</block>
@@ -163,7 +155,6 @@
   <block id="bec6ef790b888208733b1195a4c79a9d" category="cell">활성 파일 시스템 데이터만 클라우드에서 계층화하여 성능 계층으로 상향 이동합니다(스냅샷 복사본은 클라우드에 남아 있음).</block>
   <block id="b45317b449074be01eb535dc51134b25" category="cell">계층화 정책이 "콜드 스냅샷"으로 변경되었습니다.</block>
   <block id="4462bf0f5ca8a6a2218e38c86b45446e" category="admonition">클라우드에서 전송되는 데이터 양에 따라 클라우드 공급자가 비용을 청구할 수 있습니다.</block>
-  <block id="518c45bb71686bd34cfd0dd7adfb3ce0" category="paragraph">클라우드에서 이동하는 모든 데이터에 대해 성능 계층에 충분한 공간이 있어야 합니다.</block>
   <block id="39ccd40812695aaa7bc077a0fc353a0e" category="paragraph"><block ref="39ccd40812695aaa7bc077a0fc353a0e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56687950ee1692c1c4b88c4fd8cd206f" category="paragraph">계층화 정책이 변경되고 계층화된 데이터가 성능 계층으로 다시 마이그레이션되기 시작합니다. 클라우드에 있는 데이터의 양에 따라 전송 프로세스에 시간이 다소 걸릴 수 있습니다.</block>
   <block id="176eb530d68328d73cd752bcf53ad2be" category="section-title">애그리게이트에서 계층화 설정 관리</block>
@@ -189,7 +180,6 @@
   <block id="65f5911f922c92104ab33c2cd05d4a45" category="paragraph">오른쪽 패널에서 이 클러스터에 대한 계층화 서비스 또는 기타 서비스를 활성화할 수 있습니다.</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">피처</block>
   <block id="e06e7e77771ffb8d53ca2e5570304aa3" category="list-text">자동화를 통해 사내 ONTAP 클러스터에서 클라우드로 데이터 계층화를 간편하게 설정 및 관리할 수 있습니다</block>
-  <block id="6541954d76e96f1b8ac31c72f38d4cf5" category="list-text">기본 클라우드 공급자 스토리지 클래스/액세스 계층을 선택하거나, 수명 주기 관리를 사용하여 오래된 계층적 데이터를 보다 비용 효율적인 계층으로 이동할 수 있습니다</block>
   <block id="63df1b7fcfa29df67a9798d7767e4c54" category="list-text">단일 창을 통해 여러 클러스터에서 FabricPool를 독립적으로 관리할 필요가 없습니다</block>
   <block id="c1ad703a668852b216aa10032b7c0cda" category="list-text">보고서에는 각 클러스터에서 활성 및 비활성 데이터의 양이 표시됩니다</block>
   <block id="50ce53d55b005f76b356132a3901cfcf" category="list-text">계층화 상태는 문제가 발생할 때 이를 식별하고 해결하는 데 도움이 됩니다</block>
@@ -222,7 +212,6 @@
   <block id="ee32623ddfba76c17a3869197764085b" category="list-text">버킷/컨테이너, 스토리지 클래스 또는 액세스 계층, 계층형 데이터에 대한 라이프사이클 규칙 등 오브젝트 스토리지에 대한 세부 정보를 제공하여 계층화를 설정합니다.</block>
   <block id="f0fbe063f098b4fb5463ff8919a9c737" category="list-text">계층화할 볼륨과 해당 볼륨에 적용할 계층화 정책을 선택합니다.</block>
   <block id="7cff4595565023a72889d0ae1bf58e66" category="list-text">ONTAP는 비활성 데이터가 비활성 상태로 간주되기 위한 임계값에 도달하는 즉시 비활성 데이터를 오브젝트 저장소로 계층화하기 시작합니다( 참조) <block ref="3ab88d3ba20857380b0d484a33d90bf5" category="inline-xref-macro-rx"></block>)를 클릭합니다.</block>
-  <block id="0976a1e155055359baa0c396e75dc0c4" category="list-text">계층 데이터에 수명 주기 규칙을 적용한 경우(일부 공급자에서만 사용 가능), 특정 기간 동안 오래된 계층화된 데이터는 보다 비용 효율적인 계층으로 이동됩니다.</block>
   <block id="837170b3ba6314929f53008e61dfc57b" category="section-title">볼륨 계층화 정책</block>
   <block id="de16c6002cab30d2b476bb8b41b8a8bc" category="paragraph">계층화할 볼륨을 선택할 때 각 볼륨에 적용할 _ 볼륨 계층화 정책 _ 을(를) 선택합니다. 계층화 정책은 볼륨의 사용자 데이터 블록을 클라우드로 이동할 시기 또는 시기를 결정합니다.</block>
   <block id="8b637101caf758f4d80e51a84eb98902" category="paragraph">또한 * 냉각 기간 * 을 조정할 수 있습니다. 볼륨의 사용자 데이터가 "콜드" 상태로 간주되어 오브젝트 스토리지로 이동되기 전에 비활성 상태로 유지해야 하는 일 수입니다. 냉각 기간을 조정할 수 있는 계층화 정책의 경우 ONTAP 9.8 이상을 사용할 경우 2 ~ 183일, 이전 ONTAP 버전의 경우 2 ~ 63일, 권장 모범 사례는 2 ~ 63일입니다.</block>
@@ -320,10 +309,7 @@
   <block id="2577ad1c0f2232095ff146a7a2495193" category="paragraph">Google Cloud 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터의 계층화를 시작합니다.</block>
   <block id="79acb6eba535e7721e5fb3655d5ceb55" category="list-text">스토리지 관리자 역할이 있는 서비스 계정의 스토리지 액세스 키입니다.</block>
   <block id="fc8c5ebf28401d27b54c3e6e00e7652b" category="list-text">* 버킷 *: 새 Google Cloud Storage 버킷을 추가하거나 기존 버킷을 선택합니다.</block>
-  <block id="4d37a0bea5cd5e6af86422bf6e5f582c" category="paragraph">계층화된 데이터를 전환할 Google Cloud 스토리지 클래스를 선택하고 데이터가 이동될 때까지 남은 일 수를 선택한 다음 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 오브젝트 저장소에서 30일 후에 계층형 데이터가 _Standard_class에서 _Nearline_class로 이동한 다음 오브젝트 저장소에서 60일 후에 _Coldline_class로 이동함을 보여 줍니다.</block>
   <block id="7332d2c8833268f79cdb767402899334" category="paragraph">이 스토리지 클래스에 데이터 보존 * 을 선택하면 해당 스토리지 클래스에 데이터가 유지됩니다. <block ref="e76bf2468a23f23815e0d228a823b0f2" category="inline-link-macro-rx"></block>.</block>
-  <block id="02f2e04342c521beba4c0e40c63a54c6" category="inline-image-macro">특정 일 수 이후에 데이터가 이동되는 추가 스토리지 클래스를 선택하는 방법을 보여 주는 스크린샷</block>
-  <block id="82944aceb2b2f9b8317c2c75d8459d31" category="paragraph"><block ref="82944aceb2b2f9b8317c2c75d8459d31" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a29ca8aa6cf5a1c81887b82cc0bd9606" category="list-text">* 자격 증명 *: 스토리지 관리자 역할이 있는 서비스 계정의 스토리지 액세스 키와 암호 키를 입력합니다.</block>
   <block id="494e659680f3920311106585f89fc251" category="list-text">* 클러스터 네트워크 *: ONTAP가 오브젝트 스토리지에 연결하는 데 사용해야 하는 IPspace를 선택합니다.</block>
   <block id="6d954756dedc1d7d245aee367353a05f" category="list-text">계층화할 볼륨을 선택하려면 * 계속 * 을 클릭합니다.</block>
@@ -789,7 +775,6 @@
   <block id="0da0639ab808878f568f3c4f06c02689" category="inline-link">MetroCluster 요구 사항에 대한 자세한 내용은 ONTAP 설명서를 참조하십시오</block>
   <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">계층화 마법사를 사용하면 S3 스토리지로 계층화할 때 AWS PrivateLink를 구성할 수 있습니다</block>
   <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 계층화 동작을 선택합니다</block>
-  <block id="cd71992689f7bdbde4a7c9f0653f44f3" category="paragraph">MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 운영 오브젝트 저장소도 제거할지 묻는 메시지가 표시됩니다. 주 오브젝트 저장소를 애그리게이트에 계속 부착하도록 선택하거나 제거할 수 있습니다.</block>
   <block id="c80805cd1b291fd4590a3c0b82caa095" category="inline-link">FabricPool 미러에 대한 자세한 정보</block>
   <block id="4a6b2da2ae625dffc7d1a103b7579d57" category="paragraph">두 번째 오브젝트 저장소를 Aggregate에 연결하여 FabricPool 미러를 생성하여 데이터를 두 개의 오브젝트 저장소에 동기식으로 계층화할 수 있습니다. Aggregate에 이미 연결된 오브젝트 저장소가 하나 있어야 합니다.<block ref="8af213a751b87119e23e85f52fbc72d6" category="inline-link-rx"></block>.</block>
   <block id="2dc183e0073f3c1e0402cafe50273750" category="paragraph">MetroCluster 구성을 사용하는 경우 다른 가용성 영역에 있는 퍼블릭 클라우드에서 오브젝트 저장소를 사용하는 것이 좋습니다.<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>.</block>
@@ -1095,8 +1080,6 @@
   <block id="2635a2c2a5875da466928f37a3656f92" category="section-title">BlueXP 계층화와 함께 MinIO와 같은 다른 S3 호환 오브젝트 스토리지 서비스를 사용할 수 있습니까?</block>
   <block id="5ca7b325f239c40dfe97803e13e73bda" category="paragraph">BlueXP 계층화는 비활성 데이터에 대한 _hot_or_cool_access 계층에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 <block ref="db7ac7f0446977850e1dd33ce55fa427" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="cc0e38735d6a6d5c6f8a983629bc6d70" category="paragraph">BlueXP 계층화는 _Standard_, _Nearline_, _Coldline_ 및 _Archive_ 스토리지 클래스에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 <block ref="7bf35a231ca3eab0ba1eb206f6515726" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
-  <block id="d32cf30eb64db80be23b1b7adb2c4750" category="section-title">BlueXP 계층화는 수명 주기 관리 정책의 사용을 지원합니까?</block>
-  <block id="747606dd3b03b035bd7ea8403e06f4c9" category="paragraph">예. 수명 주기 관리를 활성화하여 BlueXP 계층화가 특정 기간 동안 기본 스토리지 클래스/액세스 계층에서 보다 비용 효율적인 계층으로 데이터를 전환할 수 있습니다. 라이프사이클 규칙은 Amazon S3 및 Google Cloud 스토리지에 대해 선택한 버킷의 모든 오브젝트 및 Azure Blob에 대해 선택한 스토리지 계정의 모든 컨테이너에 적용됩니다.</block>
   <block id="ef3c70877c9673810777cd54ae91e823" category="section-title">BlueXP 계층화는 전체 클러스터에 대해 하나의 오브젝트 저장소를 사용합니까, 아니면 집합당 하나의 오브젝트 저장소를 사용합니까?</block>
   <block id="f106af130ecd68cee50ea019090595af" category="paragraph">Connector는 클라우드 계정 또는 온프레미스 컴퓨팅 인스턴스에서 실행되는 소프트웨어로, BlueXP에서 클라우드 리소스를 안전하게 관리할 수 있도록 지원합니다. BlueXP 계층화 서비스를 사용하려면 Connector를 배포해야 합니다.</block>
   <block id="371daca43d3f216ec028adfb6f08791a" category="section-title">BlueXP 계층화를 사용하기 전에 클라우드 서비스 제공업체의 계정이 필요합니까?</block>
@@ -1159,9 +1142,7 @@
   <block id="248ebf3fea7fa59de6d7580ff3a058b7" category="paragraph">계층화를 설정할 때는 스토리지 관리자 권한이 있는 서비스 계정에 대한 스토리지 액세스 키를 제공해야 합니다. 서비스 계정을 사용하면 BlueXP 계층화를 통해 데이터 계층화에 사용되는 클라우드 스토리지 버킷을 인증하고 액세스할 수 있습니다. Google Cloud Storage가 누가 요청을 하는지 알 수 있도록 키가 필요합니다.</block>
   <block id="ad1fd6589603bba39741a6cc32304074" category="inline-link-macro">BlueXP 계층화를 지원하는 지역</block>
   <block id="0b2b1a0ccf60fa341c50d50e1f497ce4" category="paragraph">클라우드 스토리지 버킷은 에 포함되어야 합니다 <block ref="4755ef6fff73d10da41c28fa47a87906" category="inline-link-macro-rx"></block>.</block>
-  <block id="68389982c548f7484e3faf74d303b156" category="admonition">특정 일 수 후에 계층형 데이터가 로 전환되는 저렴한 스토리지 클래스를 사용하도록 BlueXP 계층화를 구성할 계획이라면 GCP 계정에서 버킷을 설정할 때 수명 주기 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 수명 주기 전환을 관리합니다.</block>
   <block id="9055cc03b08218d8d0a85e5c61679917" category="paragraph">나중에 BlueXP 계층화를 설정할 때 키를 입력해야 합니다.</block>
-  <block id="22dddafd825c6ae8af45fc69b0ce9131" category="list-text">* 스토리지 클래스 수명 주기 *: BlueXP 계층화는 계층화된 데이터의 수명 주기 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만, 특정 일 수가 지나면 데이터를 다른 클래스로 이동하는 규칙을 만들 수 있습니다.</block>
   <block id="935caa2f5bbffc2ed896d78ac41238ca" category="paragraph">올바른 IPspace를 선택하면 BlueXP 계층화를 통해 ONTAP에서 클라우드 공급자의 오브젝트 스토리지로의 연결을 설정할 수 있습니다.</block>
   <block id="11111dd67c502101799d49112cfd9b02" category="inline-link-macro">BlueXP 계층화 서비스에 가입해야 합니다</block>
   <block id="6247f58abd669c41c23382cbaf049807" category="paragraph"><block ref="7cf71f55c0a5cf9e0968e64e4bace22e" category="inline-link-macro-rx"></block>.</block>
@@ -1194,19 +1175,14 @@
   <block id="416d6b305415c1b651308d03bee7d8bf" category="paragraph"><block ref="416d6b305415c1b651308d03bee7d8bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0db73897f94acf452b2b14679c1dbda3" category="admonition">BlueXP 계층화는 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설치 프로그램은 다른 볼륨과 동일하게 작동합니다.</block>
   <block id="0ad14aaf7eff30985750c0d80c7e4786" category="paragraph">BlueXP 계층화를 설정할 때 사용할 IPspace를 묻는 메시지가 표시됩니다. 이러한 LIF와 연결되는 IPspace를 선택해야 합니다. 이는 여러분이 생성한 "기본" IPspace 또는 사용자 지정 IPspace가 될 수 있습니다.</block>
-  <block id="e12d69112c676a34f24fe32d8c78054b" category="admonition">특정 기간 동안 계층형 데이터가 로 전환되는 저렴한 스토리지 클래스를 사용하도록 BlueXP 계층화를 구성할 계획이라면 AWS 계정에서 버킷을 설정할 때 수명 주기 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 수명 주기 전환을 관리합니다.</block>
   <block id="6f7815856002a1331164afcaf80de883" category="paragraph">BlueXP 계층화는 액세스 키를 ONTAP 클러스터에 전달합니다. 자격 증명은 BlueXP 계층화 서비스에 저장되지 않습니다.</block>
   <block id="0faf47b6f5732c018e12a7f9c05b2120" category="paragraph">개인 엔드포인트와 통신하는 데 포트 80(HTTP)을 사용하는 경우 모두 설정됩니다. 지금 클러스터에서 BlueXP 계층화를 활성화할 수 있습니다.</block>
-  <block id="b3365c3e2694749c32c06ef38b69f279" category="list-text">* 스토리지 클래스 *: BlueXP 계층화는 계층형 데이터의 수명 주기 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 데이터를 다른 클래스로 이동하는 규칙을 만들 수 있습니다.</block>
   <block id="8c191e41bb84293885ce2b93e583e6d9" category="list-text">데이터 센터의 ONTAP 클러스터, Azure 스토리지 및 BlueXP 계층화 서비스에 대한 아웃바운드 HTTPS 연결을 가능하게 하는 커넥터용 네트워킹.</block>
   <block id="77c987b6edf7f890ea169d4d845303d7" category="paragraph"><block ref="77c987b6edf7f890ea169d4d845303d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e90ca09e19c98a8ada0376d5e199bcf" category="inline-link">BlueXP 계층화에 필요한 특정 권한</block>
   <block id="177e3ee34a2fa4785a88af8672139305" category="paragraph">계층화를 설정할 때는 사용할 리소스 그룹과 리소스 그룹에 속한 스토리지 계정 및 Azure 컨테이너를 식별해야 합니다. 스토리지 계정을 사용하면 BlueXP 계층화를 통해 데이터 계층화에 사용되는 Blob 컨테이너를 인증하고 액세스할 수 있습니다.</block>
   <block id="3e9a3a79f6ff4a231c1c1039e1b70f99" category="paragraph">BlueXP 계층화는 General Purpose v2 및 Premium Block Blob 유형의 스토리지 계정만 지원합니다.</block>
-  <block id="2d02ad0532e0a744a757daa60c3afcf3" category="admonition">특정 기간 동안 계층형 데이터가 로 전환되는 저렴한 액세스 계층을 사용하도록 BlueXP 계층화를 구성할 계획이라면 Azure 계정에 컨테이너를 설정할 때 수명 주기 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 수명 주기 전환을 관리합니다.</block>
-  <block id="9d69a47ee84474f4e4a5eddf2f92fce9" category="list-text">* 액세스 계층 수명 주기 *: BlueXP 계층화는 계층화된 데이터의 수명 주기 전환을 관리합니다. 데이터는 _Hot_class에서 시작되지만 특정 일 수 후에 _Cool_class로 데이터를 이동하는 규칙을 만들 수 있습니다.</block>
   <block id="8395a887269d6d32807663d5b146b004" category="paragraph">클러스터에 구성된 모든 오브젝트 저장소와 이러한 객체가 연결된 집계를 볼 수 있습니다. BlueXP 계층화는 각 클러스터에 대해 이 정보를 제공합니다.</block>
-  <block id="af29bc41d01e6d915afeefec98082d55" category="list-text">* 스토리지 클래스 수명 주기 *: BlueXP 계층화는 계층화된 데이터의 수명 주기 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 데이터를 다른 클래스로 이동하는 규칙을 만들 수 있습니다.</block>
   <block id="a7534748b05a4e2cd2cc98557d80265f" category="paragraph">BlueXP 계층화를 통해 계층화된 데이터를 다른 클라우드 공급자로 쉽게 마이그레이션할 수 있습니다. 예를 들어, Amazon S3에서 Azure Blob으로 이동하려면 위에 나열된 단계를 순서대로 수행할 수 있습니다.</block>
   <block id="3ba3b9c66dc287b5cb13e6a63f117260" category="inline-link-macro">BlueXP 계층화에 대한 고지 사항</block>
   <block id="072ac4eafcf075811201623eddbc2488" category="list-text"><block ref="072ac4eafcf075811201623eddbc2488" category="inline-link-macro-rx"></block></block>
@@ -1435,4 +1411,28 @@
   <block id="b839d32c555694a5245fa2fa33d17d88" category="section-title">계층화된 데이터가 저장되는 버킷 이름에 사용자 지정 접두사를 사용합니다</block>
   <block id="6eb4429639db75cb3b56cc38a3fb8785" category="paragraph">이전에는 버킷 이름을 정의할 때 기본 "fabric-pool" 접두사를 사용해야 했습니다(예: _fabric-pool-bucket1_). 이제 버킷 이름을 지정할 때 사용자 지정 접두사를 사용할 수 있습니다. 이 기능은 데이터를 Amazon S3로 계층화하는 경우에만 사용할 수 있습니다.<block ref="3e8270d3bc816ce30c7c11fe6d073535" category="inline-link-rx"></block>.</block>
   <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">사용자 환경의 모든 스토리지 시스템을 관리하기 위해 여러 커넥터를 사용하는 경우 계층화를 구현할 클러스터가 다른 커넥터에 있을 수 있습니다. 어떤 커넥터가 특정 클러스터를 관리하고 있는지 확실하지 않은 경우 BlueXP 계층화를 사용하여 모든 커넥터를 검색할 수 있습니다.<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>.</block>
+  <block id="d441270e2d66b6759e1bbe07190e3d30" category="admonition">특정 일 수가 지나면 계층형 데이터가 전환될 저비용 액세스 계층을 사용하도록 BlueXP 계층화를 구성하려는 경우, Azure 계정에서 컨테이너를 설정할 때 라이프사이클 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 라이프사이클 전환을 관리합니다.</block>
+  <block id="03d332289b553799480f6108ffeafb87" category="list-text">* 액세스 계층 라이프사이클 *: BlueXP 계층화는 계층형 데이터의 라이프사이클 전환을 관리합니다. 데이터는 _Hot_class에서 시작되지만 일정 일 후에 _Cool_class를 데이터에 적용하는 규칙을 만들 수 있습니다.</block>
+  <block id="8e3bd47632d430bddfe95f785eeac535" category="paragraph">계층화된 데이터를 전환할 액세스 계층과 데이터가 해당 계층에 할당되기 전의 일 수를 선택하고 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 계층화된 데이터가 객체 스토리지에서 45일 후에 _Hot_class의 _Cool_class에 할당됨을 보여 줍니다.</block>
+  <block id="edb46c71cd537834a31acba5c8bb3324" category="inline-image-macro">특정 일 수 이후 데이터에 할당된 다른 액세스 계층을 선택하는 방법을 보여 주는 스크린샷</block>
+  <block id="971e98c37b530be649080f29af3f0b98" category="paragraph"><block ref="971e98c37b530be649080f29af3f0b98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7f6ab23305817b45bc45d181186c25e8" category="paragraph">수명 주기 규칙은 선택한 저장소 계정의 모든 BLOB 컨테이너에 적용됩니다.</block>
+  <block id="a8118667904ce7570dde8558058e5227" category="list-text">기본 클라우드 공급자의 스토리지 클래스/액세스 계층을 선택하거나 라이프사이클 관리를 사용하여 오래된 계층화된 데이터에 보다 비용 효율적인 계층을 할당할 수 있습니다</block>
+  <block id="1951a5c5d1665bf8eab527dfe7f2ae39" category="list-text">계층화된 데이터에 수명주기 규칙을 적용한 경우(일부 공급업체에서만 사용 가능), 오래된 계층화된 데이터는 일정 기간 후에 보다 비용 효율적인 계층에 할당됩니다.</block>
+  <block id="ca664e90b4edf01d3d768fd83c5887e5" category="section-title">BlueXP 계층화는 라이프사이클 관리 정책 사용을 지원합니까?</block>
+  <block id="5b957b9367139438dee313dd29a9705d" category="paragraph">예. BlueXP 계층화를 통해 특정 기간이 지나면 BlueXP 계층화가 데이터를 기본 스토리지 클래스/액세스 계층에서 더 비용 효율적인 계층으로 전환할 수 있도록 라이프사이클 관리를 지원할 수 있습니다. 라이프사이클 규칙은 Amazon S3 및 Google Cloud 스토리지의 선택한 버킷에 있는 모든 오브젝트와 Azure Blob에 대해 선택된 스토리지 계정의 모든 컨테이너에 적용됩니다.</block>
+  <block id="4ddb3e74d9bc198503357d68911e693a" category="admonition">특정 일 수가 지나면 계층 데이터가 로 전환될 더 저렴한 비용의 스토리지 클래스를 사용하도록 BlueXP 계층화를 구성하려는 경우, GCP 계정에서 버킷을 설정할 때 라이프사이클 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 라이프사이클 전환을 관리합니다.</block>
+  <block id="62395102d7e1f3d3f1a74e04e3954c6b" category="list-text">* Storage Class Lifecycle *: BlueXP 계층화는 계층형 데이터의 라이프사이클 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 다른 스토리지 클래스를 적용하는 규칙을 생성할 수 있습니다.</block>
+  <block id="33b44815b500b88c5109f80b9d682999" category="paragraph">계층화된 데이터를 전환할 Google Cloud 스토리지 클래스와 데이터가 해당 클래스에 할당되기 전의 일 수를 선택한 후 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 계층화된 데이터가 개체 저장소에서 30일 후에 _Standard_class에서 _Nearline_class에 할당된 다음 60일 후에 _Coldline_class에 할당됨을 보여 줍니다.</block>
+  <block id="9ca91908fe96ca20c6a4b4e97d2f509d" category="inline-image-macro">특정 일 수 이후 데이터에 할당된 추가 저장소 클래스를 선택하는 방법을 보여 주는 스크린샷</block>
+  <block id="2fed6515a6445979e275cfaa6232f5b6" category="paragraph"><block ref="2fed6515a6445979e275cfaa6232f5b6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7b099b08bcdba808b8417a43925b14ad" category="paragraph">선택한 버킷의 모든 오브젝트에 수명주기 규칙이 적용됩니다.</block>
+  <block id="d95059d33fe41ec441d7f8845f71b3db" category="admonition">계층적 데이터가 특정 일 후에 로 전환되는 저렴한 비용의 스토리지 클래스를 사용하도록 BlueXP 계층화를 구성하려는 경우, AWS 계정에서 버킷을 설정할 때 라이프사이클 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 라이프사이클 전환을 관리합니다.</block>
+  <block id="76fef9bde23c0cdb9c92abd0340843f1" category="list-text">* 스토리지 클래스 *: BlueXP 계층화는 계층형 데이터의 라이프사이클 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 다른 스토리지 클래스를 데이터에 적용하는 규칙을 생성할 수 있습니다.</block>
+  <block id="55ce04104758d742493f1c9d59b8c760" category="paragraph">계층화된 데이터를 전환하려는 S3 스토리지 클래스와 데이터가 해당 클래스에 할당되기 전의 일 수를 선택하고 * Continue * 를 클릭합니다. 예를 들어, 아래 스크린샷은 계층화된 데이터가 객체 스토리지에서 45일 후에 _Standard_class의 _Standard-IA_class에 할당됨을 보여 줍니다.</block>
+  <block id="99ee3b4b2d66299d325269e75fc1ecf2" category="inline-image-macro">특정 일 수 후에 데이터에 할당된 다른 저장소 클래스를 선택하는 방법을 보여 주는 스크린샷</block>
+  <block id="825036f84bd328348dcc5f9cc4dcfac8" category="paragraph"><block ref="825036f84bd328348dcc5f9cc4dcfac8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15b2d2644c0eb82c219365b9d3ed6f75" category="paragraph">성능 계층에 클라우드에서 다시 이동되는 모든 데이터에 사용할 공간이 충분한지 확인합니다.</block>
+  <block id="18711602a05157009e1d81446d484cb4" category="list-text">* Storage Class Lifecycle *: BlueXP 계층화는 계층형 데이터의 라이프사이클 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 다른 스토리지 클래스를 데이터에 적용하는 규칙을 생성할 수 있습니다.</block>
+  <block id="8ca0007104a6880fedaff25fc59dc8ad" category="paragraph">MetroCluster 구성에서 미러 개체 저장소를 제거하면 기본 개체 저장소도 제거할지 묻는 메시지가 표시됩니다. 주 오브젝트 저장소를 애그리게이트에 계속 부착하도록 선택하거나 제거할 수 있습니다.</block>
 </blocks>
