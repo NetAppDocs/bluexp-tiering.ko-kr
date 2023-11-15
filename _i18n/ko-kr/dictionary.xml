@@ -327,7 +327,6 @@
   <block id="a70c9916d691b1eb3e72bf59caa27ce2" category="section-title">AWS Marketplace에서 구독</block>
   <block id="03909f0465e674709c33e446a2657166" category="paragraph">다음 비디오는 프로세스를 보여 줍니다.</block>
   <block id="8feab303f9a851219461fc3a5bccb103" category="section-title">Azure 마켓플레이스에서 구독</block>
-  <block id="d96cb6abed792dbbfc1aebbc934cb55d" category="section-title">GCP Marketplace에서 구독</block>
   <block id="7bd914491d17c534e3612cd97579060e" category="list-text">mailto:ng-cloud-tiering@netapp.com?subject=Licensing [라이센스 구매를 위해 이메일 보내기].</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">자세한 내용을 보려면 여기를 클릭하십시오</block>
   <block id="63b75697f87dc9e5a0f1c93ebf6056b5" category="paragraph">현재 FabricPool 라이센스를 사용 중인 경우 FabricPool 라이센스가 만료 날짜 또는 최대 용량에 도달할 때까지 영향을 받지 않습니다. 라이센스를 업데이트해야 하는 경우 또는 그 이전에 데이터를 클라우드로 계층화할 수 있는 기능이 중단되지 않도록 NetApp에 문의하십시오.</block>
@@ -744,9 +743,7 @@
   <block id="4d4499464e1749775c821bea4d3050f7" category="paragraph">또한, 클러스터에 있는 특정 애그리게이트의 데이터를 여러 오브젝트 저장소로 계층화하려는 경우 추가 오브젝트 스토리지를 생성할 수 있습니다. 또는 계층화된 데이터가 추가 오브젝트 저장소로 복제되는 FabricPool 미러링을 사용하려는 경우 <block ref="f977424bbc57cc401e0fdede18cc12da" category="inline-link-macro-rx"></block>.</block>
   <block id="66145e361f72b54aa011f59d543dfb08" category="section-title">연간 계약을 사용합니다</block>
   <block id="2351127acb653fd60dafc73c8efcb79d" category="inline-link">AWS 마켓플레이스 페이지를 참조하십시오</block>
-  <block id="66930a908819d6fce6483de6c770d313" category="paragraph">비활성 데이터를 AWS에 계층화할 때 에서 제공되는 연간 계약을 구독할 수 있습니다<block ref="7e9391e5068ba3345180f0de3723960c" category="inline-link-rx"></block>. 1년, 2년 또는 3년 조건으로 제공됩니다.</block>
   <block id="54b98a81c2ba2da3e9c721b03a4585b5" category="inline-link">가입 정보를 AWS 자격 증명과 연결합니다</block>
-  <block id="29f6791775c21cd38fbdcb5b18589d37" category="paragraph">Azure 또는 GCP로 계층화할 때는 현재 연간 계약이 지원되지 않습니다.</block>
   <block id="beecf2fd8c511928c5d65a11860f7c21" category="paragraph">이전에 온프레미스 ONTAP 데이터를 클라우드로 계층화하기 위해 사용한 * FabricPool * 라이센스는 ONTAP 인터넷 액세스("다크 사이트")가 없는 사이트와 IBM 클라우드 오브젝트 스토리지로의 계층화 구성에 대해서만 유지됩니다. 이러한 유형의 구성을 사용하는 경우 System Manager 또는 ONTAP CLI를 사용하여 각 클러스터에 FabricPool 라이센스를 설치합니다.</block>
   <block id="1f0f4e4d1bc0286ff3e0b848a00fe06b" category="paragraph">일반적인 구성의 경우 전체 클러스터에 대해 하나의 오브젝트 저장소가 있습니다. 2022년 8월부터 * 고급 설정 * 페이지를 사용하여 클러스터의 추가 오브젝트 저장소를 추가한 다음, 다른 애그리게이트에 서로 다른 오브젝트 저장소를 연결하거나, 미러링을 위해 오브젝트 저장소 2개를 애그리게이트에 연결할 수 있습니다.</block>
   <block id="c51354053e48bdd26e7dd1bcbe8db297" category="list-text">없음: 모든 데이터를 항상 핫 상태로 분류하므로 볼륨의 데이터를 오브젝트 스토리지로 이동하지 않습니다.</block>
@@ -828,9 +825,7 @@
   <block id="6f7498318061ab9585a9a930576417e9" category="paragraph">콜드 데이터의 계층화를 시작하려면 먼저 BlueXP에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">다음 질문은 BlueXP 커넥터와 관련이 있습니다.</block>
   <block id="b3ac7359e28ad36cfcfef7d4cff76670" category="list-text">Azure의 경우 BlueXP에 제공해야 하는 권한 이외에 추가 권한이 필요하지 않습니다.</block>
-  <block id="f1b10f6f612755bd0b4bd43376cb6834" category="list-text">에서 구독하십시오<block ref="d668c832ccb70eb717d6736e1082df78" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
   <block id="0c664d98088fac0e3d869a21cac0c6c4" category="list-text">에서 구독하십시오<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
-  <block id="e4db414e6112e54da73cbeaaacf47826" category="list-text">에서 구독하십시오<block ref="92655de6fae7d07ed3897ce19d51b88d" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">라이센스를 요청하려면 BlueXP 오른쪽 하단의 채팅 아이콘을 클릭하십시오.</block>
   <block id="e031d1891af14066db39ea9bc5a67edb" category="list-text">BlueXP에서 지원되지 않는 구성을 사용하는 경우 FabricPool 라이센스를 계속 사용할 수 있습니다.<block ref="f4b8492105dcaca906c2ce90b9ccab9e" category="inline-link-rx"></block>.</block>
   <block id="f68bf28051d836364652b5a91d1bcd3a" category="list-text">BlueXP 계정 ID(지원 사이트에서 테넌트 ID라고 함)를 입력하고 * 제출 * 을 클릭하여 라이센스 파일을 다운로드합니다.</block>
@@ -1030,7 +1025,6 @@
   <block id="9335e172ddfade48320b47cd34c682a8" category="paragraph">BlueXP 계층화는 사용량 기반 라이센스를 선불 종량제 모델로 제공합니다. 클라우드 공급자의 마켓플레이스를 통해 구독한 후에는 계층별 데이터(선불금 없이)에 대해 GB당 비용을 지불합니다. 클라우드 공급자가 월별 요금을 청구합니다.</block>
   <block id="793e8e21e4c6d6e9102d21e5ceeb9ef6" category="paragraph">무료 평가판 사용 시 또는 BlueXP 계층화 BYOL 라이센스를 초과하지 않은 경우 선불 종량제 구독으로 요금이 부과되지 않습니다.</block>
   <block id="a48331bea4b593b755f99fa927d65638" category="paragraph"><block ref="4a6532d8b81197880664db7ef07b3202" category="inline-link-macro-rx"></block>.</block>
-  <block id="a05ea6f9f4f0a8968aa8c0288bad4b53" category="paragraph">BlueXP 계층화는 비활성 데이터를 Amazon S3에 계층화할 때 연간 계약을 제공합니다. 1년, 2년 또는 3년 조건으로 제공됩니다.</block>
   <block id="49de8995cf3b9508af67fbbd5e085640" category="inline-link-macro">BlueXP 계층화 BYOL 라이센스 사용 방법에 대해 알아보십시오</block>
   <block id="a42e9abff9358e2d7f140d2a5cca181b" category="inline-link-macro">BlueXP 계층화 라이센스가 FabricPool 라이선스와 어떻게 다른지 자세히 읽어보십시오</block>
   <block id="73bd12c72df2f49e3c020653025ff48b" category="admonition">2021년 8월부터 기존 * FabricPool * 라이센스가 * Cloud Tiering * 라이센스로 대체되었습니다. <block ref="e6f9c79a0a8d34aafe89d9b302bb60e6" category="inline-link-macro-rx"></block>.</block>
@@ -1092,8 +1086,6 @@
   <block id="c174dc6f5adc76b760a64752a5683812" category="paragraph">클라우드 공급자의 마켓플레이스에서 선불 종량제 구독을 통해 Cloud Volumes ONTAP 시스템 및 BlueXP 계층화와 같은 다양한 클라우드 데이터 서비스의 사용 라이선스를 취득할 수 있습니다.</block>
   <block id="1febaf5111f6d0a8a13d54e09b64c6b8" category="paragraph">AWS Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에서 AWS S3로 데이터를 계층화하기 위한 용량제 구독을 설정합니다.</block>
   <block id="1ca8ff1356ad77544b7267aaa0b19042" category="paragraph">Azure Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에서 Azure Blob 스토리지까지 데이터 계층화를 위한 용량제 구독을 설정합니다.</block>
-  <block id="de1cdae44076062eb7f546c81cfb6990" category="paragraph">GCP Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에서 Google Cloud 스토리지로 데이터 계층화에 대한 용량제 구독을 설정합니다.</block>
-  <block id="67731652b48fdb7846ca466471556450" category="paragraph">연간 계약을 구매하여 연간 BlueXP 계층화 비용을 지불하십시오.</block>
   <block id="93f26f7b1e47a3f6bebd49a7fa7dd4b6" category="section-title">BlueXP 계층화 BYOL 라이센스 사용</block>
   <block id="c2319a35daf2868e6d5793e8fa613108" category="paragraph">BlueXP 계층화 라이센스가 없는 경우 다음 연락처로 문의해 주십시오.</block>
   <block id="feace567e2626d7786ec5e18354a5177" category="section-title">BlueXP 계층화 BYOL 라이센스는 2021년부터 제공됩니다</block>
@@ -1265,7 +1257,6 @@
   <block id="0e3e175aa7efdfc360dab27c51b6fc80" category="admonition">Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다.<block ref="f5b25cbfd89581108090437b49ead269" category="inline-link-rx"></block>.</block>
   <block id="994f1fa9f6b6f6276b10a9c8a8f18a8c" category="list-text">BlueXP 백업 및 복구는 계층화 정책을 통해 설정된 볼륨의 영향을 받습니다.<block ref="2db919f88216e9376af16eec91019e18" category="inline-link-rx"></block>.</block>
   <block id="5f6fdb8f4b29baeb552fcdad9078be66" category="list-text">클라우드 공급자 시장에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템에 대한 BlueXP 계층화도 자동으로 구독됩니다. BlueXP 계층화 * 온-프레미스 대시보드 * 탭에 활성 서브스크립션이 표시됩니다. 다시 가입하지 않아도 됩니다. BlueXP 디지털 지갑에 활성 구독이 표시됩니다.</block>
-  <block id="7e1d9a12a6617957d93e562480c58a19" category="paragraph">이 옵션을 사용하려면 마켓플레이스 페이지에서 구독을 설정한 다음<block ref="3e7d826ab39799649c48f6e2f8f11222" category="inline-link-rx"></block>.</block>
   <block id="1ba2cc4758ef6d9270d73cfc36a18caa" category="paragraph">선택적으로 사용하지 않을 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 동일한 달러 당량 및 만료 날짜가 있는 BlueXP 계층화 라이센스로 변환할 수 있습니다.<block ref="f4c32a82791cf9fc58c736c0aed05092" category="inline-link-rx"></block>.</block>
   <block id="30fc689a9c3cd4222329fe3a4c818a33" category="paragraph">드롭다운 목록에서 NetApp Support 사이트 계정을 사용할 수 없는 경우<block ref="06a3bc9d474b5d4e44d1a2733cac785a" category="inline-link-rx"></block>.</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -1436,4 +1427,17 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">클라우드 공급자의 파일 서비스에 대한 지원을 받습니다</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">클라우드 공급자의 파일 서비스, 자체 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 BlueXP 설명서에서 "도움말 얻기"를 참조하십시오.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXP 및 해당 스토리지 솔루션 및 서비스에 관한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
+  <block id="120c551b91db0cd715347530ec78eefa" category="list-text">에서 구독하십시오<block ref="60fa25c896f0169de9e5a75989c9f27f" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
+  <block id="4df3a4b719debe027add38476f2fd8fd" category="section-title">Google Cloud Marketplace를 구독합니다</block>
+  <block id="725a72912ce0fc328960741c96d6166c" category="paragraph">Google Cloud 마켓플레이스에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에서 Google Cloud 스토리지로 데이터 계층화에 대한 용량제 구독을 설정합니다.</block>
+  <block id="98ad2c075d2fb10da4cf15c985c3f43f" category="inline-link">Google Cloud 마켓플레이스 를 참조하십시오</block>
+  <block id="6b141e3757b598fe4797872cf41433a3" category="list-text">에서 구독하십시오<block ref="82ddec44156571798c68c5bde2400da5" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
+  <block id="5bb5fe9a2717870250d6e9535cfc3ddf" category="paragraph">연간 계약을 구매하여 연간 BlueXP 계층화 비용을 지불하십시오. 연간 계약은 1년, 2년 또는 3년 기간으로 제공됩니다.</block>
+  <block id="b32259fac98434133e04f9d5edeccc2f" category="paragraph">비활성 데이터를 AWS에 계층화할 때 에서 연간 계약을 구독할 수 있습니다<block ref="85c21eb306ec4bcbda7252ca6117fc5c" category="inline-link-rx"></block>. 이 옵션을 사용하려면 마켓플레이스 페이지에서 구독을 설정한 다음<block ref="3e7d826ab39799649c48f6e2f8f11222" category="inline-link-rx"></block>.</block>
+  <block id="bd0202b4a5e368ede75c41822527f8dd" category="inline-link">Azure 마켓플레이스 페이지</block>
+  <block id="f201c550f444b5128aeb063bf930d1e2" category="inline-link">구독을 Azure 자격 증명에 연결합니다</block>
+  <block id="56623ade00abb157c138588791032ca9" category="paragraph">비활성 데이터를 Azure에 계층화할 때 에서 연간 계약을 구독할 수 있습니다<block ref="d5a65c1c4876b0fa6968c9e08ffea7e8" category="inline-link-rx"></block>. 이 옵션을 사용하려면 마켓플레이스 페이지에서 구독을 설정한 다음<block ref="81924c3896adc46721210987cc1f149c" category="inline-link-rx"></block>.</block>
+  <block id="77d720d97cc99bdd67ce50e58655dc3f" category="paragraph">Google Cloud로 계층화할 때 연간 계약은 현재 지원되지 않습니다.</block>
+  <block id="74369b8ae005333b4dd61fb93f495946" category="paragraph">BlueXP 계층화는 비활성 데이터를 Amazon S3 또는 Azure에 계층화할 때 연간 계약을 제공합니다. 1년, 2년 또는 3년 조건으로 제공됩니다.</block>
+  <block id="8a2304319d2e68c914c95280f8d1b529" category="paragraph">Google Cloud로 계층화할 때 연간 계약은 현재 지원되지 않습니다.</block>
 </blocks>

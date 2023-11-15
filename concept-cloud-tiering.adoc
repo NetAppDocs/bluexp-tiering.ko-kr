@@ -125,9 +125,9 @@ link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-paygo-subscription["
 
 === 연간 계약
 
-BlueXP 계층화는 비활성 데이터를 Amazon S3에 계층화할 때 연간 계약을 제공합니다. 1년, 2년 또는 3년 조건으로 제공됩니다.
+BlueXP 계층화는 비활성 데이터를 Amazon S3 또는 Azure에 계층화할 때 연간 계약을 제공합니다. 1년, 2년 또는 3년 조건으로 제공됩니다.
 
-Azure 또는 GCP로 계층화할 때는 현재 연간 계약이 지원되지 않습니다.
+Google Cloud로 계층화할 때 연간 계약은 현재 지원되지 않습니다.
 
 
 
