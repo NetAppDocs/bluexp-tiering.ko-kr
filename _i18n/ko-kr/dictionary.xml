@@ -1119,7 +1119,6 @@
   <block id="5b68fac5f1ce77d65201586ce9a60468" category="list-text"><block ref="1f8cdb76c7bd9ccb2f67a5fe3a108324" category="inline-link-macro-rx"></block> 새 클러스터 또는 클러스터에 필요한 용량</block>
   <block id="35871aa5a51169ec1ce0c1aa1e2550f0" category="list-text">BlueXP 계층화에서는 <block ref="210b64e2207c15c9773eb7d42739f7fc" category="inline-link-macro-rx"></block>.</block>
   <block id="5853c8a054007c0c99bbc9662a53c4fb" category="summary">BlueXP 계층화는 두 개의 액세스 계층과 대부분의 지역을 지원합니다.</block>
-  <block id="e8823c938290b3df1d69b5821a4bbbb8" category="paragraph">Azure로 데이터 계층화를 설정할 때 BlueXP 계층화는 비활성 데이터에 대해 _hot_access 계층을 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수가 지나면 데이터가 _Hot_access 계층에서 _Cool_access 계층으로 이동하도록 할 수 있습니다.</block>
   <block id="95d5445b66336b61fe8c176426e3cb6b" category="paragraph">BlueXP 계층화 라이프사이클 규칙을 구성할 때 Azure 계정에 컨테이너를 설정할 때 수명 주기 규칙을 구성하지 않아야 합니다.</block>
   <block id="4a744a6786776cc5df25ca40dc57cb36" category="paragraph">BlueXP 계층화는 Connector를 통해 액세스할 수 있는 모든 지역의 모든 스토리지 계정에 대한 계층화를 지원합니다.</block>
   <block id="07702d7eda621b95dd9a2353b7d4e568" category="list-text">데이터 센터의 ONTAP 클러스터, Google 클라우드 스토리지 및 BlueXP 계층화 서비스에 대한 아웃바운드 HTTPS 연결을 지원하는 커넥터용 네트워킹.</block>
@@ -1155,7 +1154,6 @@
   <block id="3afb7cae2b7c3e96c6a4e1df765d3dce" category="section-title">끌어서 놓기를 통해 Azure Blob, Google Cloud Storage 및 StorageGRID에 BlueXP 계층화를 사용할 수 있습니다</block>
   <block id="18cd1c130656412d8089667948bc48a2" category="section-title">Amazon S3에 BlueXP 계층화를 활성화하려면 끌어다 놓으십시오</block>
   <block id="a0396859c016deff163331729e87c6cf" category="summary">BlueXP 계층화는 여러 Google Cloud 스토리지 클래스와 대부분의 지역을 지원합니다.</block>
-  <block id="e9885ff472161e4c48f508f106c6ad36" category="paragraph">데이터 계층화를 GCP로 설정하면 BlueXP 계층화는 비활성 데이터에 _Standard_storage 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.</block>
   <block id="58edb41c3cfab45408029ad69032402a" category="paragraph">BlueXP 계층화 라이프사이클 규칙을 구성할 때 Google 계정에 버킷을 설정할 때 라이프사이클 규칙을 구성하지 않아야 합니다.</block>
   <block id="2d5551329360393b3ea83aeec84cf519" category="paragraph">BlueXP 계층화는 다음 영역을 지원합니다.</block>
   <block id="85fc382665546ae4cc771b24663b67ce" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 시스템에서 BlueXP 계층화를 활성화합니다</block>
@@ -1177,7 +1175,6 @@
   <block id="3ba3b9c66dc287b5cb13e6a63f117260" category="inline-link-macro">BlueXP 계층화에 대한 고지 사항</block>
   <block id="072ac4eafcf075811201623eddbc2488" category="list-text"><block ref="072ac4eafcf075811201623eddbc2488" category="inline-link-macro-rx"></block></block>
   <block id="be097470e9ac90369332a05c045a9742" category="summary">BlueXP 계층화는 여러 S3 스토리지 클래스와 대부분의 영역을 지원합니다.</block>
-  <block id="9febe911a8cef93d7919b4e705d2af96" category="paragraph">AWS로 데이터 계층화를 설정할 때 BlueXP 계층화는 비활성 데이터에 _Standard_storage 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.</block>
   <block id="b48e3a08ac6bdb2960ebbf7583060d5c" category="paragraph">BlueXP 계층화 라이프사이클 규칙을 구성할 때 AWS 계정에 버킷을 설정할 때 라이프사이클 규칙을 구성하지 않아야 합니다.</block>
   <block id="35e385e351037991047fc3503ac66ea0" category="paragraph">BlueXP 계층화는 다음 AWS 영역을 지원합니다.</block>
   <block id="2af8ca26b1bcf00d88a15b8f1992fa35" category="list-text">소스 ONTAP 클러스터에 대한 아웃바운드 HTTPS 연결, S3 호환 오브젝트 스토리지 및 BlueXP 계층화 서비스를 지원하는 커넥터용 네트워킹.</block>
@@ -1440,4 +1437,7 @@
   <block id="77d720d97cc99bdd67ce50e58655dc3f" category="paragraph">Google Cloud로 계층화할 때 연간 계약은 현재 지원되지 않습니다.</block>
   <block id="74369b8ae005333b4dd61fb93f495946" category="paragraph">BlueXP 계층화는 비활성 데이터를 Amazon S3 또는 Azure에 계층화할 때 연간 계약을 제공합니다. 1년, 2년 또는 3년 조건으로 제공됩니다.</block>
   <block id="8a2304319d2e68c914c95280f8d1b529" category="paragraph">Google Cloud로 계층화할 때 연간 계약은 현재 지원되지 않습니다.</block>
+  <block id="a6946f1b4a14c4860d7cb9b918379334" category="paragraph">온프레미스 ONTAP 시스템에서 GCP로 데이터 계층화를 설정할 경우, BlueXP 계층화는 비활성 데이터에 대해 _Standard_스토리지 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.</block>
+  <block id="90fd6199eed378ef0bf6c4f8d3ed5ebc" category="paragraph">온프레미스 ONTAP 시스템에서 Azure로 데이터 계층화를 설정할 경우 BlueXP 계층화는 비활성 데이터에 대해 _Hot_access 계층을 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수가 지나면 데이터가 _Hot_access 계층에서 _Cool_access 계층으로 이동하도록 할 수 있습니다.</block>
+  <block id="17c353c0dd208c819d731350ef2b1300" category="paragraph">온프레미스 ONTAP 시스템에서 AWS로 데이터 계층화를 설정할 때 BlueXP 계층화는 비활성 데이터에 대해 _Standard_스토리지 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.</block>
 </blocks>
