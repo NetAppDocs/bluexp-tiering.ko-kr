@@ -417,25 +417,11 @@
   <block id="51ae64fb3620d7b88a6fc20148f0e2d7" category="sidebar">지원되는 Amazon S3 스토리지 클래스 및 지역</block>
   <block id="483b947377ff3a8f0bfe2df65d4f5292" category="sidebar">지원되는 Azure 액세스 계층 및 지역</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식 및 지원</block>
-  <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">사내 ONTAP 데이터를 클라우드에 계층화</block>
-  <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Azure Blob에 계층화</block>
-  <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Google Cloud로 계층화합니다</block>
-  <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">일반 S3로 계층화</block>
-  <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">계층화 설정을 관리합니다</block>
-  <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">클러스터의 계층화 정보를 검토합니다</block>
-  <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">추가 볼륨의 데이터를 계층화합니다</block>
-  <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">클라우드에서 성능 계층으로 데이터 이동</block>
-  <block id="b19237098460d786516168b98687becc" category="sidebar">애그리게이트에서 계층화 설정을 관리합니다</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 커뮤니티</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
-  <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">기타 리소스</block>
   <block id="cb6793246bf8a1d9872b2f128304ed8c" category="list-text">Glacier 빠른 검색</block>
   <block id="7beb276ec918c2d8eb132df5ed6fe576" category="section-title">어떤 유형의 ONTAP 시스템이 지원됩니까?</block>
   <block id="ec0515a8a06c1c0cf10efc6cbb1bfab9" category="inline-link">FabricPool 사용에 대한 고려 사항 및 요구 사항</block>
   <block id="403df42df80267a7b2bc0be8c3e6685d" category="paragraph">비활성 데이터를 사내 ONTAP 시스템에서 다음 오브젝트 스토리지 공급자로 계층화할 수 있습니다.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">로그인 페이지에서 인증 프로세스를 수행할 수 있도록 NetApp Support 사이트의 등록 이메일 주소와 암호를 제공합니다.</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
@@ -451,7 +437,6 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">문서화</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto:ng-cloudmanager-feedback@netapp.com [피드백 이메일]</block>
   <block id="fd01295dbf857b2bc6bcef4166b23207" category="paragraph">원래 ONTAP 9.8부터 All-SSD 애그리게이트를 포함한 AFF, FAS 및 ONTAP Select 시스템에서 지원되어 HDD로 구성된 애그리게이트 데이터와 고성능 SSD를 함께 계층화할 수 있습니다. 을 참조하십시오<block ref="6b92341e29e5578d52c0690ebbf4bdb7" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">이러한 유형의 클러스터에 대한 라이센스 부여 및 구성 방법을 확인하십시오.</block>
   <block id="c8fe0ffee9071759c56b9a7d98bae676" category="section-title">FabricPool 라이센스가 있는 기존 클러스터에 대한 프로세스입니다</block>
@@ -661,10 +646,6 @@
   <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">새로운 오브젝트 스토리지 기능에 대해 자세히 알아보십시오.</block>
   <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">MetroCluster 구성에 대한 Cloud Tiering 라이센스 지원</block>
   <block id="4f05e87f380a81f7a23601ecba757570" category="sidebar">오브젝트 스토리지 관리</block>
-  <block id="44e298753e2ff93996d0e8ffa928a922" category="sidebar">클러스터에 대한 새 오브젝트 저장소를 추가합니다</block>
-  <block id="f479e40bc5b0a3dc9ce1b1c43ebdec89" category="sidebar">미러링을 위해 두 번째 오브젝트 저장소를 Aggregate에 추가합니다</block>
-  <block id="07ed437d90cdfd3243fc6c8fa8ddacff" category="sidebar">운영 객체 저장소와 미러 객체 저장소를 바꿉니다</block>
-  <block id="500c3424a2151541a2d7783c7e308bb5" category="sidebar">미러 오브젝트 저장소를 제거합니다</block>
   <block id="5c37edf1ec718afd1ab9a5a51043e0ce" category="paragraph">다음 단계를 수행하여 빠르게 시작하십시오. 각 단계에 대한 자세한 내용은 이 항목의 다음 섹션을 참조하십시오.</block>
   <block id="e41af01898aa01f20e528d19fdda2ec8" category="paragraph">사내 ONTAP 클러스터를 퍼블릭 인터넷을 통해 AWS S3에 직접 연결할지, VPN 또는 AWS 직접 연결을 사용할지, 프라이빗 VPC 엔드 포인트 인터페이스를 통해 트래픽을 AWS S3에 연결할지 선택합니다.</block>
   <block id="2095d7a797c25bb28e0630e6f0234176" category="inline-xref">사용 가능한 연결 방법을 참조하십시오.</block>
@@ -810,7 +791,6 @@
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">문제를 해결하는 데 도움이 되는 문서를 찾으려면 BlueXP 기술 자료를 검색하십시오.</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">현재 보고 있는 BlueXP 문서입니다.</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">저희는 귀하의 의견을 소중하게 생각합니다. BlueXP 개선에 도움이 되는 피드백을 제출하십시오.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">* 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제에 해당하는 BlueXP를 예로 들 수 있습니다.</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">작업 환경 목록은 서비스의 상단 배너에서 선택한 BlueXP 계정, 작업 영역 및 커넥터의 범위 내에 있습니다.</block>
   <block id="d7945c5e359d6ac7ea9f91926a2538da" category="list-text">왼쪽 탐색 메뉴에서 * 이동성 &gt; 계층화 * 를 선택합니다.</block>
@@ -842,7 +822,6 @@
   <block id="761bfdc0fcb01bfd39ee5fe957d6cc2e" category="list-text">BlueXP 커넥터와 관련된 보안 그룹 구성을 수정합니다. 정책을 "사용자 지정"("전체 액세스"에서)으로 변경해야 하며 반드시 다음을 수행해야 합니다 <block ref="2e3aa01a102d96f1118abd47a89529bc" category="inline-xref-macro-rx"></block> 앞서 설명한 것처럼.</block>
   <block id="667b744af05e085368d150edc4b8a344" category="inline-link">BlueXP Connector를 호스팅하는 VM에 로그인합니다</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP에 대한 고지 사항</block>
-  <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXP 활용 사례</block>
   <block id="39cff02cd4c2bfac12f446d78e59e3ca" category="paragraph">Azure Blob 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우 클러스터를 Azure Blob 작업 환경으로 끌어서 설치 마법사를 시작할 수 있습니다.</block>
   <block id="0e8a08e502abe437efca593eced30efb" category="paragraph">Google Cloud Storage 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우 클러스터를 Google Cloud Storage 작업 환경으로 끌어서 설정 마법사를 시작할 수 있습니다.</block>
   <block id="bb9a67152dc7c7f6ad99d55da23a9b5c" category="paragraph">StorageGRID 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우 클러스터를 StorageGRID 작업 환경으로 끌어서 설치 마법사를 시작할 수 있습니다.</block>
@@ -925,8 +904,6 @@
   <block id="d8de974cae25c190e1656a12aae05ac0" category="paragraph">데이터 계층화는 블록 레벨에서 수행되므로, 데이터 블록이 특정 기간 동안 액세스하지 않은 후에는 콜드 블록으로 간주되고, 계층화 정책의 최소 냉각 일 속성에 의해 정의됩니다. 해당 범위는 ONTAP 9.7 이전 버전에서 2-63일 또는 ONTAP 9.8부터 2-183일입니다.</block>
   <block id="538632f98286e11da7898a8dd8c5940a" category="list-text">데이터를 StorageGRID로 계층화할 경우 비용이 발생하지 않으므로 BYOL 라이센스 또는 PAYGO 등록이 필요하지 않습니다. 이러한 계층형 데이터는 라이센스에서 구입한 용량에 포함되지 않습니다.</block>
   <block id="822f69d2e49d7da6f8c764e0680f2f75" category="list-text">BlueXP에서 라이센스를 자동으로 업데이트할 수 없는 경우 라이센스 파일을 수동으로 업로드해야 합니다.</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">새로운 기능</block>
-  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">볼륨의 계층화 정책을 변경합니다</block>
   <block id="1c573cd95f6407add05436f6ac05d6ec" category="section-title">볼륨에 대한 계층화 보고서를 다운로드합니다</block>
   <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">다운로드</block>
   <block id="fe8e7e0f08b18c3c012d94d74e8386ce" category="inline-image-macro">모든 볼륨의 계층화 상태를 나열하는 CSV 파일을 생성하는 방법을 보여 주는 스크린샷</block>
@@ -1035,7 +1012,6 @@
   <block id="9f8c581a3e79e5eec6093e6268b28bc1" category="paragraph">BlueXP 계층화는 다음과 같이 작동합니다.</block>
   <block id="5a7419c9aa51e2139e939dedaa6171a0" category="inline-link">BlueXP 백업 및 복구와 관련된 계층화 정책 고려 사항을 참조하십시오</block>
   <block id="7cbf862de1ab23f12df78abcf9a0087e" category="list-text">BlueXP 계층화가 계층화할 수 있는 총 볼륨 수는 ONTAP 시스템의 볼륨 수보다 적을 수 있습니다. 이는 볼륨을 일부 애그리게이트로 계층화할 수 없기 때문입니다. 에 대한 ONTAP 설명서를 참조하십시오<block ref="bc16a784cd65f4901578ebb3b70f2118" category="inline-link-rx"></block>.</block>
-  <block id="9f59a0e0e7951a95c986f51f69c22219" category="summary">BlueXP 계층화(Cloud Tiering)는 비활성 데이터를 사내 ONTAP 클러스터에서 오브젝트 스토리지로 자동으로 계층화하여 데이터 센터를 클라우드로 확장합니다.</block>
   <block id="94cbb43a5cde5c6df8693b056bc08139" category="doc">BlueXP 계층화 설명서</block>
   <block id="385f5a69872344869e286bbc3eedd68b" category="doc">BlueXP 계층화 기술 FAQ</block>
   <block id="85ce209d7aca067422f010e5d0f9ae5e" category="section-title">BlueXP 계층화 서비스</block>
@@ -1185,7 +1161,6 @@
   <block id="b17634fcfc0a3e48f196f1ec2f579385" category="paragraph">올바른 IPspace를 선택하면 BlueXP 계층화를 통해 ONTAP에서 S3 호환 오브젝트 스토리지로의 연결을 설정할 수 있습니다.</block>
   <block id="54715a5b3c5fb74681657643084de7cc" category="sidebar">BlueXP 계층화 문서</block>
   <block id="578b58628b699675aa94a9cb030f4eec" category="sidebar">BlueXP 계층화를 사용합니다</block>
-  <block id="10fd54f4214c20c0fb0c8174413e67e6" category="sidebar">BlueXP 계층화 블로그 를 참조하십시오</block>
   <block id="368170efaa08caf814d05ad25b8849fe" category="paragraph">BlueXP 계층화 라이센스를 구입한 후에는 BlueXP의 BlueXP 디지털 지갑을 사용하여 라이센스를 추가해야 합니다. <block ref="18ff855f2755df77b673603c1159f8d7" category="inline-link-macro-rx"></block>.</block>
   <block id="046d76eda0c1ca3ef0dc85e15394ce90" category="inline-link">BlueXP 디지털 자문업체</block>
   <block id="3ee9290056c3e6ae9cd8482931c1f104" category="paragraph">BlueXP 계층화 이외의<block ref="5ed6ecd932db92d4be0f0df08b269167" category="inline-link-rx"></block> 및<block ref="bced2809c175fbbacaa63c811a554606" category="inline-link-rx"></block> 모니터링 및 보고에 사용할 수 있습니다.</block>
@@ -1331,7 +1306,6 @@
   <block id="b6d7a1ad9440cb7fff09db239b1313d7" category="paragraph">이 설정은 데이터를 계층화하는 다른 클러스터에 할당된 대역폭에 영향을 주지 않습니다.</block>
   <block id="7911cbd17bf94032db18ecf08e4fe5c8" category="list-text">Tiering Setup * 페이지의 섹션을 완료하십시오.</block>
   <block id="fe35e262c448d76aba8db40105f10ae6" category="paragraph">필요에 따라 이전에 구성한 AWS PrivateLink를 사용할지 여부를 선택합니다. <block ref="e6b15c4e63006b05802c430924113019" category="inline-xref-macro-rx"></block> 끝점 구성을 안내하는 대화 상자가 표시됩니다.</block>
-  <block id="e1c9950bf8922ee7b7ee2dc803696a6a" category="sidebar">비활성 데이터를 오브젝트 저장소에 업로드하도록 대역폭을 변경합니다</block>
   <block id="c52a9d7f6355ad24bacb2c5f23c0e863" category="paragraph">BlueXP 계층화 라이센스를 구매한 후에는 BlueXP 계층화 일련 번호 및 NSS 계정을 입력하거나 NLF 라이센스 파일을 업로드하여 BlueXP에서 라이센스를 활성화합니다. 아래 단계에서는 NLF 라이센스 파일을 가져오는 방법을 보여 줍니다(해당 방법을 사용하려는 경우).</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
   <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">시작하기 전에 다음 정보가 필요합니다.</block>
@@ -1440,4 +1414,6 @@
   <block id="a6946f1b4a14c4860d7cb9b918379334" category="paragraph">온프레미스 ONTAP 시스템에서 GCP로 데이터 계층화를 설정할 경우, BlueXP 계층화는 비활성 데이터에 대해 _Standard_스토리지 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.</block>
   <block id="90fd6199eed378ef0bf6c4f8d3ed5ebc" category="paragraph">온프레미스 ONTAP 시스템에서 Azure로 데이터 계층화를 설정할 경우 BlueXP 계층화는 비활성 데이터에 대해 _Hot_access 계층을 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수가 지나면 데이터가 _Hot_access 계층에서 _Cool_access 계층으로 이동하도록 할 수 있습니다.</block>
   <block id="17c353c0dd208c819d731350ef2b1300" category="paragraph">온프레미스 ONTAP 시스템에서 AWS로 데이터 계층화를 설정할 때 BlueXP 계층화는 비활성 데이터에 대해 _Standard_스토리지 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp는 지원 및 라이센스와 관련된 인증 서비스의 ID 공급자로 Microsoft Entra ID를 사용합니다.</block>
+  <block id="36a7f0d732c9746e546a6bf227b6a550" category="summary">BlueXP 계층화를 통해 온프레미스 ONTAP 클러스터에서 오브젝트 스토리지로 비활성 데이터를 자동으로 계층화하여 데이터 센터를 클라우드로 확장합니다.</block>
 </blocks>
