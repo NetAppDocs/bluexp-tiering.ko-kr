@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>BlueXP 계층화 기술 FAQ | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="BlueXP 계층화 기술 FAQ | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/bluexp-tiering/faq-cloud-tiering.html" />
+	<meta property="og:description" content="이 FAQ는 질문에 대한 간단한 답변을 찾는 경우에 도움이 될 수 있습니다." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/bluexp-tiering/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="이 FAQ는 질문에 대한 간단한 답변을 찾는 경우에 도움이 될 수 있습니다.">
+  <meta name="keywords" content=" faq, questions, requirements, service connector, object store, object storage, aws, azure, bucket, cluster, aggregate, s3, storage class, standard, inactive data reporting, auto, volume tiering policy, policy, tiering policy, snapshot, cold, inactive, infrequent"><!-- Icons -->
+  <link rel="icon" href="/ko-kr/bluexp-tiering/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ko-kr/bluexp-tiering/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/bluexp-tiering/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ko-kr/bluexp-tiering/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/bluexp-tiering/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ko-kr/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-tiering/faq-cloud-tiering.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-tiering/faq-cloud-tiering.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/bluexp-tiering/js/na-search.js'></script><script src='/ko-kr/bluexp-tiering/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ko-kr/bluexp-tiering/js/custom-dropdown.js'></script>
+  <script src='/ko-kr/bluexp-tiering/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/bluexp-tiering/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/bluexp-tiering/js/jszip.min.js'></script><script src='/ko-kr/bluexp-tiering/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ko-kr/bluexp-tiering/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/kr">
+                <image id="ie-header-logo" src="/ko-kr/bluexp-tiering/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">문서</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ko-kr/bluexp-tiering/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">한국어</span>
+                    <img src="/ko-kr/bluexp-tiering/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/bluexp-tiering/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-tiering/faq-cloud-tiering.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ko-kr/bluexp-tiering/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">모든 NetApp</span>
+                    <img src="/ko-kr/bluexp-tiering/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/bluexp-tiering/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">지원</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">기술 자료</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/ko/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">교육</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ko-kr/bluexp-tiering/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ko-kr/bluexp-tiering/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">모든 문서</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">클라우드 문서</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/ko-kr/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ko-kr/bluexp-tiering/">-->
+      BlueXP tiering
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ko-kr/bluexp-tiering/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ko-kr/bluexp-tiering/search.html" 
+        data-type="widget"
+        data-placeholder="설명서 검색"
+        data-no-results-found="{query}에 대한 결과를 찾을 수 없습니다"
+        data-did-you-mean="{suggestion}을(를) 검색하십시오."
+        data-no-results-found-did-you-mean="{query}에 대한 결과가 없습니다. {suggestion}을(를) 찾고 계시는 건가요?"
+        data-results-found="{hitCount}개의 결과를 찾았습니다"
+        data-error-message="오류가 발생했습니다. 다시 시도해 주십시오."
+        data-error-reset="검색 재설정"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP 계층화 문서"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-tiering/index.html">
+        BlueXP 계층화 문서
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="릴리스 정보"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-tiering/whats-new.html">
+        릴리스 정보
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시작하십시오"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-tiering/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-tiering/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시작하십시오</div>-->
+         시작하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP 계층화에 대해 알아보십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/concept-cloud-tiering.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/concept-cloud-tiering.html">
+        BlueXP 계층화에 대해 알아보십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="사내 데이터를 클라우드로 계층화합니다"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-tiering/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-tiering/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 사내 데이터를 클라우드로 계층화합니다</div>-->
+         사내 데이터를 클라우드로 계층화합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Amazon S3에 계층화"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-tiering-onprem-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-tiering/task-tiering-onprem-aws.html">
+        Amazon S3에 계층화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure Blob 저장소에 계층화"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-tiering-onprem-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-tiering/task-tiering-onprem-azure.html">
+        Azure Blob 저장소에 계층화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud Storage로 계층화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-tiering-onprem-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-tiering/task-tiering-onprem-gcp.html">
+        Google Cloud Storage로 계층화합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID로 계층화"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-tiering-onprem-storagegrid.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-tiering/task-tiering-onprem-storagegrid.html">
+        StorageGRID로 계층화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="S3 오브젝트 스토리지로 계층화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-tiering-onprem-s3-compat.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-tiering/task-tiering-onprem-s3-compat.html">
+        S3 오브젝트 스토리지로 계층화합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센스를 설정합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-licensing-cloud-tiering.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/task-licensing-cloud-tiering.html">
+        라이센스를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="FAQ 를 참조하십시오"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/faq-cloud-tiering.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/faq-cloud-tiering.html">
+        FAQ 를 참조하십시오
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP 계층화를 사용합니다"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-tiering/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-tiering/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXP 계층화를 사용합니다</div>-->
+         BlueXP 계층화를 사용합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="데이터 계층화 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-managing-tiering.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/task-managing-tiering.html">
+        데이터 계층화 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="오브젝트 스토리지 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-managing-object-storage.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/task-managing-object-storage.html">
+        오브젝트 스토리지 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="클라우드 성능 테스트"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-tiering-test.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/task-tiering-test.html">
+        클라우드 성능 테스트
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="모든 클러스터의 계층화 개요 보기"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-tiering-onprem-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/task-tiering-onprem-overview.html">
+        모든 클러스터의 계층화 개요 보기
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="계층화 알림의 상태를 모니터링합니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-monitor-tiering-alerts.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/task-monitor-tiering-alerts.html">
+        계층화 알림의 상태를 모니터링합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="참조하십시오"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-tiering/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-tiering/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 참조하십시오</div>-->
+         참조하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지원되는 Amazon S3 스토리지 클래스 및 지역"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/reference-aws-support.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/reference-aws-support.html">
+        지원되는 Amazon S3 스토리지 클래스 및 지역
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지원되는 Azure 액세스 계층 및 지역"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/reference-azure-support.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/reference-azure-support.html">
+        지원되는 Azure 액세스 계층 및 지역
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지원되는 Google Cloud 스토리지 클래스 및 지역"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/reference-google-support.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/reference-google-support.html">
+        지원되는 Google Cloud 스토리지 클래스 및 지역
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지식 및 지원"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-tiering/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-tiering/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 지식 및 지원</div>-->
+         지식 및 지원
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지원을 위해 등록하십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/task-support-registration.html">
+        지원을 위해 등록하십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="도움을 받으십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-tiering/task-get-help.html">
+        도움을 받으십시오
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="법적 고지"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/faq-cloud-tiering.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-tiering/legal-notices.html">
+        법적 고지
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ko-kr/bluexp-tiering"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ko-kr/bluexp-tiering"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ko-kr/bluexp-tiering/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">BlueXP 계층화 기술 FAQ</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-08-29 15:22:38 +0000">08/29/2023</time>
+        
+    
+    
+        <span>기여자
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ko-kr/bluexp-tiering/images/discuss-sm.svg" alt="" class="github-icon" />변경 제안</span>
+        <img src="/ko-kr/bluexp-tiering/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ko-kr/bluexp-tiering/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-tiering.ko-kr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ko-kr/bluexp-tiering/faq-cloud-tiering.html&page-title=BlueXP 계층화 기술 FAQ" class="page-nav-contribute-link" role="button">문서 변경사항 요청</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-tiering/blob/main/faq-cloud-tiering.adoc" class="page-nav-contribute-link" role="button">이 페이지 편집</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >기여하는 방법 알아보기</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ko-kr/bluexp-tiering/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ko-kr/bluexp-tiering/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ko-kr/bluexp-tiering/pdfs/fullsite-sidebar/BlueXP_계층화_설명서.pdf" >
+                    <img src="/ko-kr/bluexp-tiering/images/pdf-icon.png" alt="" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-tiering/pdfs/sidebar/시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-tiering/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시작하십시오
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-tiering/pdfs/sidebar/사내_데이터를_클라우드로_계층화합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-tiering/images/pdf-icon.png" alt="" width="16" height="16"/>
+            사내 데이터를 클라우드로 계층화합니다
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-tiering/pdfs/sidebar/BlueXP_계층화를_사용합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-tiering/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXP 계층화를 사용합니다
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-tiering/pdfs/sidebar/참조하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-tiering/images/pdf-icon.png" alt="" width="16" height="16"/>
+            참조하십시오
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-tiering/pdfs/sidebar/지식_및_지원.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-tiering/images/pdf-icon.png" alt="" width="16" height="16"/>
+            지식 및 지원
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ko-kr/bluexp-tiering/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>이 FAQ는 질문에 대한 간단한 답변을 찾는 경우에 도움이 될 수 있습니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="bluexp-계층화-서비스">BlueXP 계층화 서비스</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>다음 FAQ는 BlueXP 계층화의 작동 방식과 관련이 있습니다.</p>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화-서비스를-사용하면-어떤-이점이-있습니까">BlueXP 계층화 서비스를 사용하면 어떤 이점이 있습니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화는 빠른 데이터 증가에 따른 당면 과제를 해결함으로써 다음과 같은 이점을 제공합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>데이터 센터를 클라우드로 손쉽게 확장하므로 최대 50배 더 많은 공간을 확보할 수 있습니다</p>
+</li>
+<li>
+<p>스토리지 최적화를 통해 평균 70%의 스토리지 비용이 절감됩니다</p>
+</li>
+<li>
+<p>총 소유 비용이 평균 30% 절감되었습니다</p>
+</li>
+<li>
+<p>애플리케이션을 리팩토링할 필요가 없습니다</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="클라우드로-계층화하는데-어떤-종류의-데이터가-유용합니까">클라우드로 계층화하는데 어떤 종류의 데이터가 유용합니까?</h3>
+<div class="paragraph">
+<p>기본적으로 운영 스토리지 시스템과 2차 스토리지 시스템 모두에서 비활성 상태로 간주되는 데이터는 클라우드로 이동하는 데 적합한 대상입니다. 운영 시스템에서 이러한 데이터에는 스냅샷, 기록 레코드 및 완료된 프로젝트가 포함될 수 있습니다. 보조 시스템의 경우 DR 및 백업을 위해 만들어진 기본 데이터의 복사본이 포함된 모든 볼륨이 여기에 포함됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="nas-볼륨과-san-볼륨-모두의-데이터를-계층화할-수-있습니까">NAS 볼륨과 SAN 볼륨 모두의 데이터를 계층화할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. NAS 볼륨의 데이터를 퍼블릭 클라우드 또는 StorageGRID와 같은 프라이빗 클라우드로 계층화할 수 있습니다. SAN 프로토콜에서 액세스하는 데이터를 계층화할 경우 SAN 프로토콜이 NAS보다 연결 문제에 더 민감하기 때문에 프라이빗 클라우드를 사용하는 것이 좋습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="비활성-데이터-또는-자주-사용하지-않는-데이터의-정의는-무엇이며-어떻게-제어합니까">비활성 데이터 또는 자주 사용하지 않는 데이터의 정의는 무엇이며 어떻게 제어합니까?</h3>
+<div class="paragraph">
+<p>콜드 데이터라고도 할 수 있는 것에 대한 정의는 "일정 시간 동안 액세스하지 않은 볼륨 블록(메타데이터 제외)"입니다. "시간"은 Cooling-days라는 계층화 정책 속성에 의해 결정됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화를-통해-클라우드-계층에서-스토리지-효율성을-유지할-수-있습니까">BlueXP 계층화를 통해 클라우드 계층에서 스토리지 효율성을 유지할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. 데이터를 클라우드 계층으로 이동할 때 압축, 중복제거, 컴팩션과 같은 ONTAP 볼륨 레벨 스토리지 효율성이 유지됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="fabricpool와-bluexp-계층화의-차이점은-무엇입니까">FabricPool와 BlueXP 계층화의 차이점은 무엇입니까?</h3>
+<div class="paragraph">
+<p>FabricPool는 ONTAP CLI 및 System Manager를 통해 자체 관리하거나 BlueXP 계층화를 통해 서비스로 관리할 수 있는 ONTAP 계층화 기술입니다. BlueXP 계층화는 ONTAP와 클라우드 모두에서 고급 자동화 프로세스를 통해 FabricPool를 관리 서비스로 전환함으로써 하이브리드 및 멀티 클라우드 구축 전반에 걸친 계층화에 대한 뛰어난 가시성과 제어 기능을 제공합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="데이터를-클라우드로-계층화해서-재해-복구-또는-백업아카이브에-사용할-수-있습니까">데이터를 클라우드로 계층화해서 재해 복구 또는 백업/아카이브에 사용할 수 있습니까?</h3>
+<div class="paragraph">
+<p>아니요 볼륨의 메타데이터는 성능 계층에서 계층화되지 않으므로 오브젝트 스토리지에 저장된 데이터에 직접 액세스할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>그러나 BlueXP 계층화를 사용하면 보조 시스템 및 SnapMirror 대상 볼륨(DP 볼륨)에서 이를 활성화하여 모든 데이터를 계층화함으로써(메타데이터 제외) 데이터 센터의 설치 공간과 TCO를 줄임으로써 비용 효율적인 백업 및 DR을 달성할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="볼륨-또는-애그리게이트-레벨에서-bluexp-계층화가-적용됩니까">볼륨 또는 애그리게이트 레벨에서 BlueXP 계층화가 적용됩니까?</h3>
+<div class="paragraph">
+<p>볼륨 레벨에서 BlueXP 계층화는 계층화 정책을 각 볼륨과 연결하여 사용할 수 있습니다. 콜드 데이터 식별은 블록 수준에서 수행됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화는-클라우드에-계층화할-블록을-어떻게-결정합니까">BlueXP 계층화는 클라우드에 계층화할 블록을 어떻게 결정합니까?</h3>
+<div class="paragraph">
+<p>볼륨과 연관된 계층화 정책은 계층화와 시기를 제어하는 메커니즘입니다. 이 정책은 데이터 블록 유형(스냅샷, 사용자 데이터 또는 둘 다) 및 냉각 기간을 정의합니다. 을 참조하십시오 <a href="concept-cloud-tiering.html#volume-tiering-policies">"볼륨 계층화 정책"</a> 를 참조하십시오.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화는-볼륨-용량에-어떤-영향을-미칩니까">BlueXP 계층화는 볼륨 용량에 어떤 영향을 미칩니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화는 볼륨의 용량에는 영향을 주지 않고 집합적 성능 계층 사용에는 영향을 미치지 않습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화는-비활성-데이터-보고를-활성화합니까">BlueXP 계층화는 비활성 데이터 보고를 활성화합니까?</h3>
+<div class="paragraph">
+<p>예. BlueXP 계층화는 각 집계에서 IDR(Inactive Data Reporting)을 활성화합니다. 이 설정을 통해 저비용 오브젝트 스토리지로 계층화할 수 있는 비활성 데이터의 양을 파악할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="idr을-실행하는-순간부터-정보를-표시하는-데-얼마나-걸립니까">IDR을 실행하는 순간부터 정보를 표시하는 데 얼마나 걸립니까?</h3>
+<div class="paragraph">
+<p>구성된 냉각 기간이 지난 후 IDR이 정보를 표시하기 시작합니다. IDR은 ONTAP 9.7 이하 버전을 사용하여 조정되지 않는 냉각 기간을 31일로 했습니다. ONTAP 9.8부터 IDR 냉각 기간은 최대 183일까지 구성할 수 있습니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="추가-수익-실적을">추가 수익 실적을</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>다음 FAQ는 BlueXP 계층화 사용과 관련된 라이센스 및 비용과 관련이 있습니다.</p>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화-비용은-어느-정도입니까">BlueXP 계층화 비용은 어느 정도입니까?</h3>
+<div class="paragraph">
+<p>콜드 데이터를 퍼블릭 클라우드에 계층화할 경우:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>PAYGO(pay-as-you-go)의 경우 사용량 기반 구독: GB/월 $0.05.</p>
+</li>
+<li>
+<p>연간(BYOL)의 경우 기간 기반 가입형: GB당 $0.033/월 기준</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://bluexp.netapp.com/pricing">"가격 세부 정보를 참조하십시오"</a>.</p>
+</div>
+<div class="paragraph">
+<p>콜드 데이터를 NetApp StorageGRID 시스템(프라이빗 클라우드)에 계층화할 경우 비용이 들지 않습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="동일한-ontap-클러스터에-byol-및-paygo-라이센스를-모두-사용할-수-있습니까">동일한 ONTAP 클러스터에 BYOL 및 PAYGO 라이센스를 모두 사용할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. BlueXP 계층화를 통해 BYOL 라이센스, PAYGO 구독 또는 두 가지 조합을 사용할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="byol-용량-제한에-도달하면-어떻게-됩니까">BYOL 용량 제한에 도달하면 어떻게 됩니까?</h3>
+<div class="paragraph">
+<p>BYOL 용량 제한에 도달하면 새로운 콜드 데이터의 계층화가 중지됩니다. 이전에 계층화된 모든 데이터에 계속 액세스할 수 있습니다. 즉, 이 데이터를 검색하고 사용할 수 있습니다. 검색할 경우 데이터가 클라우드에서 성능 계층으로 다시 이동됩니다.</p>
+</div>
+<div class="paragraph">
+<p>그러나 _BlueXP - 클라우드 데이터 서비스 배포 및 관리 _ 에 PAYGO 마켓플레이스가 가입되어 있는 경우 새로운 콜드 데이터는 객체 스토리지로 계속 계층화되어 사용량 기준으로 해당 요금을 지불할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화-라이센스에는-클라우드-제공업체의-이그레스-비용이-포함되어-있습니까">BlueXP 계층화 라이센스에는 클라우드 제공업체의 이그레스 비용이 포함되어 있습니까?</h3>
+<div class="paragraph">
+<p>아니요, 그렇지 않습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="사내-시스템의-재수화-비용은-클라우드-공급자가-부담하는-외부-비용에-따라-다릅니까">사내 시스템의 재수화 비용은 클라우드 공급자가 부담하는 외부 비용에 따라 다릅니까?</h3>
+<div class="paragraph">
+<p>예. 퍼블릭 클라우드에서 읽을 때는 이그레스 비용이 부과됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="클라우드-요금은-어떻게-예측합니까-bluexp-계층화를-위한-가상-모드가-있습니까">클라우드 요금은 어떻게 예측합니까? BlueXP 계층화를 위한 "가상" 모드가 있습니까?</h3>
+<div class="paragraph">
+<p>클라우드 공급자가 데이터 호스팅에 얼마나 많은 비용을 청구할지 예측하는 가장 좋은 방법은 계산기를 사용하는 것입니다. <a href="https://calculator.aws/#/">"설치하고"</a>, <a href="https://azure.microsoft.com/en-us/pricing/calculator/">"Azure를 지원합니다"</a> 및 <a href="https://cloud.google.com/products/calculator">"Google 클라우드"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="클라우드-공급자가-오브젝트-스토리지에서-사내-스토리지로-데이터를-읽거나-검색하는-데-추가-비용이-부과됩니까">클라우드 공급자가 오브젝트 스토리지에서 사내 스토리지로 데이터를 읽거나 검색하는 데 추가 비용이 부과됩니까?</h3>
+<div class="paragraph">
+<p>예. 확인합니다 <a href="https://aws.amazon.com/s3/pricing/">"Amazon S3 가격"</a>, <a href="https://azure.microsoft.com/en-us/pricing/details/storage/blobs/">"Blob 가격 책정 차단"</a>, 및 <a href="https://cloud.google.com/storage/pricing">"클라우드 스토리지 가격"</a> 데이터 읽기/검색으로 인해 발생한 추가 가격입니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화를-활성화하기-전에-볼륨의-절약-효과를-예측하고-콜드-데이터-보고서를-받으려면-어떻게-해야-합니까">BlueXP 계층화를 활성화하기 전에 볼륨의 절약 효과를 예측하고 콜드 데이터 보고서를 받으려면 어떻게 해야 합니까?</h3>
+<div class="paragraph">
+<p>추정치를 얻으려면 ONTAP 클러스터를 BlueXP에 추가하고 BlueXP 계층화 클러스터 페이지를 통해 검사하기만 하면 됩니다. 클러스터에 대한 잠재적인 계층화 절감 비용 계산 * 을 클릭하여 을 시작합니다 <a href="https://bluexp.netapp.com/cloud-tiering-service-tco" target="_blank" rel="noopener">"BlueXP 계층화 TCO 계산기"</a> 얼마나 많은 비용을 절감할 수 있는지 알아보십시오.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap">ONTAP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>다음 질문은 ONTAP과 관련이 있습니다.</p>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화는-어떤-ontap-버전을-지원합니까">BlueXP 계층화는 어떤 ONTAP 버전을 지원합니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화는 ONTAP 버전 9.2 이상을 지원합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="어떤-유형의-ontap-시스템이-지원됩니까">어떤 유형의 ONTAP 시스템이 지원됩니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화는 단일 노드 및 고가용성 AFF, FAS 및 ONTAP Select 클러스터에서 지원됩니다. FabricPool 미러 구성 및 MetroCluster 구성의 클러스터도 지원됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="fas-시스템에서-hdd만-사용하여-데이터를-계층화할-수-있습니까">FAS 시스템에서 HDD만 사용하여 데이터를 계층화할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. ONTAP 9.8부터 HDD 애그리게이트에 호스팅된 볼륨의 데이터를 계층화할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="hdd가-있는-fas-노드가-있는-클러스터에-연결된-aff의-데이터를-계층화할-수-있습니까">HDD가 있는 FAS 노드가 있는 클러스터에 연결된 AFF의 데이터를 계층화할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. BlueXP 계층화는 모든 집계에서 호스팅되는 볼륨을 계층화하도록 구성할 수 있습니다. 데이터 계층화 구성은 사용되는 컨트롤러의 유형과 클러스터가 이기종 클러스터인지 여부와 관련이 없습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-volumes-ontap는-어떻습니까">Cloud Volumes ONTAP는 어떻습니까?</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 시스템이 있는 경우 BlueXP 계층화 클러스터 페이지에서 하이브리드 클라우드 인프라의 데이터 계층화에 대한 전체 보기를 얻을 수 있습니다. 그러나 Cloud Volumes ONTAP 시스템은 BlueXP 계층화에서 읽기 전용입니다. BlueXP 계층화에서 Cloud Volumes ONTAP에 데이터 계층화를 설정할 수 없습니다. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html" target="_blank" rel="noopener">"BlueXP의 작업 환경에서 Cloud Volumes ONTAP 시스템에 대한 계층화를 설정합니다"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ontap-클러스터에-필요한-다른-요구사항은-무엇입니까">ONTAP 클러스터에 필요한 다른 요구사항은 무엇입니까?</h3>
+<div class="paragraph">
+<p>콜드 데이터의 계층화 위치에 따라 달라짐 자세한 내용은 다음 링크를 참조하십시오.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-tiering-onprem-aws.html#prepare-your-ontap-cluster">"Amazon S3에 데이터 계층화"</a></p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-azure.html#preparing-your-ontap-clusters">"Azure Blob 저장소에 데이터 계층화"</a></p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-gcp.html#preparing-your-ontap-clusters">"데이터를 Google 클라우드 스토리지로 계층화"</a></p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-storagegrid.html#preparing-your-ontap-clusters">"데이터를 StorageGRID에 계층화"</a></p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-s3-compat.html#preparing-your-ontap-clusters">"데이터를 S3 오브젝트 스토리지로 계층화"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="오브젝트-스토리지">오브젝트 스토리지</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>다음 질문은 오브젝트 스토리지와 관련이 있습니다.</p>
+</div>
+<div class="sect2">
+<h3 id="어떤-오브젝트-스토리지-공급자가-지원됩니까">어떤 오브젝트 스토리지 공급자가 지원됩니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화는 다음과 같은 오브젝트 스토리지 공급자를 지원합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon S3</p>
+</li>
+<li>
+<p>Microsoft Azure Blob</p>
+</li>
+<li>
+<p>Google 클라우드 스토리지</p>
+</li>
+<li>
+<p>NetApp StorageGRID를 참조하십시오</p>
+</li>
+<li>
+<p>S3 호환 오브젝트 스토리지(예: MinIO)</p>
+</li>
+<li>
+<p>IBM 클라우드 오브젝트 스토리지(FabricPool 구성은 System Manager 또는 ONTAP CLI를 사용하여 수행해야 함)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="나만의-버킷컨테이너를-사용할-수-있습니까">나만의 버킷/컨테이너를 사용할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예, 가능합니다. 데이터 계층화를 설정할 때는 새 버킷/컨테이너를 추가하거나 기존 버킷/컨테이너를 선택할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="지원되는-지역은-어디입니까">지원되는 지역은 어디입니까?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference-aws-support.html">"지원되는 AWS 영역"</a></p>
+</li>
+<li>
+<p><a href="reference-azure-support.html">"지원되는 Azure 지역"</a></p>
+</li>
+<li>
+<p><a href="reference-google-support.html">"지원되는 Google Cloud 지역"</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="지원되는-s3-스토리지-클래스는-무엇입니까">지원되는 S3 스토리지 클래스는 무엇입니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화는 <em>Standard</em>,<em>Standard - Infrequent Access</em>, <em>One Zone - Infrequent Access</em>, <em>Intelligent Tiering</em> 및 _Glacier Instant Retrieval_storage 클래스에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 <a href="reference-aws-support.html">"지원되는 S3 스토리지 클래스"</a> 를 참조하십시오.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="amazon-s3-glacier-flexible-및-s3-glacier-deep-archive가-bluexp-계층화로-지원되지-않는-이유는-무엇입니까">Amazon S3 Glacier Flexible 및 S3 Glacier Deep Archive가 BlueXP 계층화로 지원되지 않는 이유는 무엇입니까?</h3>
+<div class="paragraph">
+<p>Amazon S3 Glacier Flexible 및 S3 Glacier Deep Archive가 지원되지 않는 주된 이유는 BlueXP 계층화가 고성능 계층화 솔루션으로 설계되었기 때문에 데이터를 지속적으로 사용하고 신속하게 검색할 수 있어야 하기 때문입니다. S3 Glacier Flexible 및 S3 Glacier Deep Archive를 사용하여 데이터 검색을 몇 분에서 48시간 이내에 수행할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화와-함께-minio와-같은-다른-s3-호환-오브젝트-스토리지-서비스를-사용할-수-있습니까">BlueXP 계층화와 함께 MinIO와 같은 다른 S3 호환 오브젝트 스토리지 서비스를 사용할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. ONTAP 9.8 이상을 사용하는 클러스터에서는 계층화 UI를 통해 S3 호환 오브젝트 스토리지를 구성할 수 있습니다. <a href="task-tiering-onprem-s3-compat.html">"자세한 내용은 여기 를 참조하십시오"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="어떤-azure-blob-액세스-계층이-지원됩니까">어떤 Azure Blob 액세스 계층이 지원됩니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화는 비활성 데이터에 대한 _hot_or_cool_access 계층에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 <a href="reference-azure-support.html">"지원되는 Azure Blob 액세스 계층"</a> 를 참조하십시오.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="google-cloud-storage에서-지원되는-스토리지-클래스는-무엇입니까">Google Cloud Storage에서 지원되는 스토리지 클래스는 무엇입니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화는 <em>Standard</em>, <em>Nearline</em>, <em>Coldline</em> 및 <em>Archive</em> 스토리지 클래스에 대한 데이터 계층화를 지원합니다. 을 참조하십시오 <a href="reference-google-support.html">"지원되는 Google Cloud 스토리지 클래스"</a> 를 참조하십시오.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화는-라이프사이클-관리-정책-사용을-지원합니까">BlueXP 계층화는 라이프사이클 관리 정책 사용을 지원합니까?</h3>
+<div class="paragraph">
+<p>예. BlueXP 계층화를 통해 특정 기간이 지나면 BlueXP 계층화가 데이터를 기본 스토리지 클래스/액세스 계층에서 더 비용 효율적인 계층으로 전환할 수 있도록 라이프사이클 관리를 지원할 수 있습니다. 라이프사이클 규칙은 Amazon S3 및 Google Cloud 스토리지의 선택한 버킷에 있는 모든 오브젝트와 Azure Blob에 대해 선택된 스토리지 계정의 모든 컨테이너에 적용됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화는-전체-클러스터에-대해-하나의-오브젝트-저장소를-사용합니까-아니면-집합당-하나의-오브젝트-저장소를-사용합니까">BlueXP 계층화는 전체 클러스터에 대해 하나의 오브젝트 저장소를 사용합니까, 아니면 집합당 하나의 오브젝트 저장소를 사용합니까?</h3>
+<div class="paragraph">
+<p>일반적인 구성의 경우 전체 클러스터에 대해 하나의 오브젝트 저장소가 있습니다. 2022년 8월부터 * 고급 설정 * 페이지를 사용하여 클러스터의 추가 오브젝트 저장소를 추가한 다음, 다른 애그리게이트에 서로 다른 오브젝트 저장소를 연결하거나, 미러링을 위해 오브젝트 저장소 2개를 애그리게이트에 연결할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="여러-개의-버킷을-동일한-aggregate에-연결할-수-있습니까">여러 개의 버킷을 동일한 Aggregate에 연결할 수 있습니까?</h3>
+<div class="paragraph">
+<p>미러링 목적으로 애그리게이트당 최대 2개의 버킷을 연결할 수 있으며, 여기서 콜드 데이터는 두 버킷에 동기식으로 계층됩니다. 버킷은 여러 공급자 및 다양한 위치에서 사용할 수 있습니다. 2022년 8월부터 * 고급 설정 * 페이지를 사용하여 두 개의 오브젝트 저장소를 단일 Aggregate에 연결할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="서로-다른-버킷이-동일한-클러스터의-여러-aggregate에-연결될-수-있습니까">서로 다른 버킷이 동일한 클러스터의 여러 Aggregate에 연결될 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. 일반적인 모범 사례는 하나의 버킷을 여러 애그리게이트로 연결하는 것입니다. 하지만 퍼블릭 클라우드를 사용할 경우 오브젝트 스토리지 서비스에 대한 최대 IOPS 제한이 있으므로 여러 개의 버킷을 고려해야 합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="한-클러스터에서-다른-클러스터로-볼륨을-마이그레이션할-때-계층화된-데이터는-어떻게-됩니까">한 클러스터에서 다른 클러스터로 볼륨을 마이그레이션할 때 계층화된 데이터는 어떻게 됩니까?</h3>
+<div class="paragraph">
+<p>한 클러스터에서 다른 클러스터로 볼륨을 마이그레이션할 때는 모든 콜드 데이터를 클라우드 계층에서 읽습니다. 대상 클러스터의 쓰기 위치는 계층화가 설정되었는지 여부 및 소스 볼륨과 대상 볼륨에 사용된 계층화 정책의 유형에 따라 달라집니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="한-노드에서-같은-클러스터의-다른-노드로-볼륨을-이동할-때-계층적-데이터는-어떻게-됩니까">한 노드에서 같은 클러스터의 다른 노드로 볼륨을 이동할 때 계층적 데이터는 어떻게 됩니까?</h3>
+<div class="paragraph">
+<p>대상 Aggregate에 연결된 클라우드 계층이 없는 경우 소스 애그리게이트의 클라우드 계층에서 데이터를 읽은 후 타겟 애그리게이트의 로컬 계층에 전체가 기록됩니다. 대상 애그리게이트에 클라우드 계층이 연결되어 있는 경우, 소스 애그리게이트의 클라우드 계층에서 데이터를 읽은 다음 타겟 애그리게이트의 로컬 계층에 먼저 기록함으로써 빠른 컷오버를 지원합니다. 이후 사용된 계층화 정책에 따라 클라우드 계층에 기록됩니다.</p>
+</div>
+<div class="paragraph">
+<p>ONTAP 9.6부터 대상 애그리게이트는 소스 애그리게이트와 동일한 클라우드 계층을 사용하는 경우, 콜드 데이터는 로컬 계층으로 다시 이동하지 않습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="계층화된-데이터를-다시-성능-계층으로-가져오려면-어떻게-해야-합니까">계층화된 데이터를 다시 성능 계층으로 가져오려면 어떻게 해야 합니까?</h3>
+<div class="paragraph">
+<p>Write Back(다시 쓰기)은 일반적으로 읽기에 대해 수행되며 계층화 정책 유형에 따라 달라집니다. ONTAP 9.8 이전에는 전체 볼륨의 쓰기를 _volume move_operation으로 수행할 수 있습니다. ONTAP 9.8부터 계층화 UI에는 모든 데이터를 * 되돌리거나 * 활성 파일 시스템을 * 가져오는 옵션이 있습니다 *. <a href="task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier">"데이터를 성능 계층으로 다시 이동하는 방법을 알아보십시오"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="기존-afffas-컨트롤러를-새로운-컨트롤러로-교체할-때-계층형-데이터를-다시-온프레미스로-마이그레이션할-수-있습니까">기존 AFF/FAS 컨트롤러를 새로운 컨트롤러로 교체할 때 계층형 데이터를 다시 온프레미스로 마이그레이션할 수 있습니까?</h3>
+<div class="paragraph">
+<p>아니요 "헤드 스왑" 절차를 수행하는 동안 변경된 것은 애그리게이트의 소유입니다. 이 경우 데이터를 이동하지 않고 새 컨트롤러로 변경됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="클라우드-공급자의-콘솔-또는-오브젝트-스토리지-탐색기를-사용하여-데이터를-버킷으로-계층화할-수-있습니까-ontap-없이-오브젝트-스토리지에-저장된-데이터를-직접-사용할-수-있습니까">클라우드 공급자의 콘솔 또는 오브젝트 스토리지 탐색기를 사용하여 데이터를 버킷으로 계층화할 수 있습니까? ONTAP 없이 오브젝트 스토리지에 저장된 데이터를 직접 사용할 수 있습니까?</h3>
+<div class="paragraph">
+<p>아니요 클라우드로 구축 및 계층화된 오브젝트에는 단일 파일이 아니라 여러 파일에서 최대 1,024개의 4KB 블록이 포함됩니다. 볼륨의 메타데이터는 항상 로컬 계층에 유지됩니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="커넥터">커넥터</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>다음 질문은 BlueXP 커넥터와 관련이 있습니다.</p>
+</div>
+<div class="sect2">
+<h3 id="커넥터란-무엇입니까">커넥터란 무엇입니까?</h3>
+<div class="paragraph">
+<p>Connector는 클라우드 계정 또는 온프레미스 컴퓨팅 인스턴스에서 실행되는 소프트웨어로, BlueXP에서 클라우드 리소스를 안전하게 관리할 수 있도록 지원합니다. BlueXP 계층화 서비스를 사용하려면 Connector를 배포해야 합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="커넥터를-어디에-설치해야-합니까">커넥터를 어디에 설치해야 합니까?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>데이터를 S3로 계층화할 때 Connector는 AWS VPC 또는 사내에 상주할 수 있습니다.</p>
+</li>
+<li>
+<p>데이터를 Blob 저장소에 계층화할 때 Connector는 Azure VNET 또는 사내에 상주할 수 있습니다.</p>
+</li>
+<li>
+<p>데이터를 Google 클라우드 스토리지로 계층화할 때 Connector는 Google Cloud Platform VPC에 상주해야 합니다.</p>
+</li>
+<li>
+<p>데이터를 StorageGRID 또는 다른 S3 호환 스토리지 공급자와 계층화할 경우 커넥터가 사내에 있어야 합니다.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="connector를-온-프레미스에-배포할-수-있습니까">Connector를 온-프레미스에 배포할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. Connector 소프트웨어는 다운로드한 후 네트워크의 Linux 호스트에 수동으로 설치할 수 있습니다. <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html">"Connector를 설치 방법에 대해 알아보십시오"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-계층화를-사용하기-전에-클라우드-서비스-제공업체의-계정이-필요합니까">BlueXP 계층화를 사용하기 전에 클라우드 서비스 제공업체의 계정이 필요합니까?</h3>
+<div class="paragraph">
+<p>예. 사용할 오브젝트 스토리지를 정의하려면 먼저 계정이 있어야 합니다. VPC 또는 VNET에서 클라우드에서 Connector를 설정할 때도 클라우드 스토리지 공급자 계정이 필요합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="커넥터에-장애가-발생할-경우-어떤-영향이-있습니까">커넥터에 장애가 발생할 경우 어떤 영향이 있습니까?</h3>
+<div class="paragraph">
+<p>커넥터 장애가 발생할 경우 계층화된 환경에 대한 가시화만 영향을 받습니다. 모든 데이터에 액세스할 수 있으며 새로 식별된 콜드 데이터는 오브젝트 스토리지로 자동으로 계층됩니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="계층화-정책">계층화 정책</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="사용-가능한-계층화-정책은-무엇입니까">사용 가능한 계층화 정책은 무엇입니까?</h3>
+<div class="paragraph">
+<p>다음과 같은 4가지 계층화 정책이 있습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>없음: 모든 데이터를 항상 핫 상태로 분류하므로 볼륨의 데이터를 오브젝트 스토리지로 이동하지 않습니다.</p>
+</li>
+<li>
+<p>콜드 스냅샷(스냅샷 전용): 콜드 스냅샷 블록만 오브젝트 스토리지로 이동합니다.</p>
+</li>
+<li>
+<p>콜드 사용자 데이터 및 스냅샷(자동): 콜드 스냅샷 블록과 콜드 사용자 데이터 블록이 모두 오브젝트 스토리지로 이동됩니다.</p>
+</li>
+<li>
+<p>모든 사용자 데이터(모두): 모든 데이터를 차갑게 분류하고 전체 볼륨을 오브젝트 스토리지로 즉시 이동합니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="concept-cloud-tiering.html#volume-tiering-policies">"계층화 정책에 대해 자세히 알아보십시오"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="어느-시점에서-데이터가-콜드-데이터라고-간주됩니까">어느 시점에서 데이터가 콜드 데이터라고 간주됩니까?</h3>
+<div class="paragraph">
+<p>데이터 계층화는 블록 레벨에서 수행되므로, 데이터 블록이 특정 기간 동안 액세스하지 않은 후에는 콜드 블록으로 간주되고, 계층화 정책의 최소 냉각 일 속성에 의해 정의됩니다. 해당 범위는 ONTAP 9.7 이전 버전에서 2-63일 또는 ONTAP 9.8부터 2-183일입니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="데이터를-클라우드-계층으로-계층화되기-전의-기본-냉각-기간은-얼마입니까">데이터를 클라우드 계층으로 계층화되기 전의 기본 냉각 기간은 얼마입니까?</h3>
+<div class="paragraph">
+<p>콜드 스냅샷 정책의 기본 냉각 기간은 2일이고, 콜드 사용자 데이터 및 스냅샷의 기본 냉각 기간은 31일입니다. cooling-days 매개 변수는 모든 계층화 정책에 적용할 수 없습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="전체-백업을-수행할-때-오브젝트-스토리지에서-모든-계층화된-데이터를-검색합니까">전체 백업을 수행할 때 오브젝트 스토리지에서 모든 계층화된 데이터를 검색합니까?</h3>
+<div class="paragraph">
+<p>전체 백업 중에는 콜드 데이터가 모두 읽힙니다. 데이터 검색은 사용되는 계층화 정책에 따라 달라집니다. All 및 Cold User Data 및 Snapshots 정책을 사용할 때는 콜드 데이터가 성능 계층에 다시 기록되지 않습니다. 콜드 스냅샷 정책을 사용하는 경우 백업에 사용된 이전 스냅샷의 경우에만 해당 콜드 블록이 검색됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="볼륨당-계층화-크기를-선택할-수-있습니까">볼륨당 계층화 크기를 선택할 수 있습니까?</h3>
+<div class="paragraph">
+<p>아니요 하지만 계층화 대상 볼륨, 계층화할 데이터 유형 및 냉각 기간을 선택할 수 있습니다. 이 작업은 계층화 정책을 해당 볼륨과 연결하여 수행합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="all-user-data-정책이-데이터-보호-볼륨에-대한-유일한-옵션입니까">All User Data 정책이 데이터 보호 볼륨에 대한 유일한 옵션입니까?</h3>
+<div class="paragraph">
+<p>아니요 데이터 보호(DP) 볼륨은 사용 가능한 세 가지 정책 중 어느 정책과 연결될 수 있습니다. 소스 및 대상(DP) 볼륨에 사용된 정책 유형에 따라 데이터의 쓰기 위치가 결정됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="볼륨의-계층화-정책을-none으로-재설정하면-콜드-데이터가-리하이드레이션되거나-향후-콜드-블록이-클라우드로-이동되지-않습니까">볼륨의 계층화 정책을 None으로 재설정하면 콜드 데이터가 리하이드레이션되거나 향후 콜드 블록이 클라우드로 이동되지 않습니까?</h3>
+<div class="paragraph">
+<p>계층화 정책을 재설정할 때 재수화가 발생하지 않지만 새로운 콜드 블록이 클라우드 계층으로 이동하는 것을 방지합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="데이터를-클라우드에-계층화한-후-계층화-정책을-변경할-수-있습니까">데이터를 클라우드에 계층화한 후 계층화 정책을 변경할 수 있습니까?</h3>
+<div class="paragraph">
+<p>예. 변경 후 동작은 새로운 관련 정책에 따라 달라집니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="특정-데이터가-클라우드로-이동하지-않으려면-어떻게-해야-합니까">특정 데이터가 클라우드로 이동하지 않으려면 어떻게 해야 합니까?</h3>
+<div class="paragraph">
+<p>계층화 정책을 해당 데이터가 포함된 볼륨과 연결하지 마십시오.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="파일의-메타데이터는-어디에-저장됩니까">파일의 메타데이터는 어디에 저장됩니까?</h3>
+<div class="paragraph">
+<p>볼륨의 메타데이터는 성능 계층에 항상 로컬에 저장됩니다. 따라서 클라우드로 계층화되지 않습니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="네트워킹-및-보안">네트워킹 및 보안</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>다음 질문은 네트워킹 및 보안과 관련이 있습니다.</p>
+</div>
+<div class="sect2">
+<h3 id="네트워킹-요구-사항은-무엇입니까">네트워킹 요구 사항은 무엇입니까?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ONTAP 클러스터는 포트 443을 통해 객체 스토리지 공급자에 대한 HTTPS 연결을 시작합니다.</p>
+<div class="paragraph">
+<p>ONTAP는 오브젝트 스토리지 간에 데이터를 읽고 씁니다. 오브젝트 스토리지는 한 번도 시작되고, 응답 하기만 합니다.</p>
+</div>
+</li>
+<li>
+<p>StorageGRID의 경우 ONTAP 클러스터는 사용자가 지정한 포트를 통해 StorageGRID에 HTTPS 연결을 시작합니다(계층화 설정 중에 포트 구성 가능).</p>
+</li>
+<li>
+<p>커넥터는 포트 443을 통해 ONTAP 클러스터, 오브젝트 저장소 및 BlueXP 계층화 서비스에 아웃바운드 HTTPS 연결이 필요합니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>자세한 내용은 다음을 참조하십시오.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-tiering-onprem-aws.html">"Amazon S3에 데이터 계층화"</a></p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-azure.html">"Azure Blob 저장소에 데이터 계층화"</a></p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-gcp.html">"데이터를 Google 클라우드 스토리지로 계층화"</a></p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-storagegrid.html">"데이터를 StorageGRID에 계층화"</a></p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-s3-compat.html">"데이터를 S3 오브젝트 스토리지로 계층화"</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="클라우드에-저장된-콜드-데이터를-관리하기-위해-모니터링-및-보고를-위해-사용할-수-있는-툴은-무엇입니까">클라우드에 저장된 콜드 데이터를 관리하기 위해 모니터링 및 보고를 위해 사용할 수 있는 툴은 무엇입니까?</h3>
+<div class="paragraph">
+<p>BlueXP 계층화 이외의 <a href="https://docs.netapp.com/us-en/active-iq-unified-manager/" target="_blank" rel="noopener">"Active IQ Unified Manager"</a> 및 <a href="https://docs.netapp.com/us-en/active-iq/index.html" target="_blank" rel="noopener">"BlueXP 디지털 자문업체"</a> 모니터링 및 보고에 사용할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="클라우드-공급자에-대한-네트워크-링크가-실패할-경우-어떤-영향이-있습니까">클라우드 공급자에 대한 네트워크 링크가 실패할 경우 어떤 영향이 있습니까?</h3>
+<div class="paragraph">
+<p>네트워크 장애가 발생할 경우 로컬 성능 계층은 온라인 상태를 유지하며 핫 데이터는 계속 액세스할 수 있습니다. 하지만 이미 클라우드 계층으로 이동한 블록은 액세스할 수 없으며 애플리케이션에서 해당 데이터에 액세스하려고 할 때 오류 메시지를 받게 됩니다. 연결이 복원되면 모든 데이터에 원활하게 액세스할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="네트워크-대역폭-권장-사항이-있습니까">네트워크 대역폭 권장 사항이 있습니까?</h3>
+<div class="paragraph">
+<p>기본 FabricPool 계층화 기술의 읽기 지연 시간은 클라우드 계층과의 연결에 따라 달라집니다. 계층화는 모든 대역폭에서 작동하지만 적절한 성능을 제공하기 위해 인터클러스터 LIF를 10Gbps 포트에 배치하는 것이 좋습니다. 커넥터에 대한 권장 사항이나 대역폭 제한은 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>또한 비활성 데이터를 볼륨에서 오브젝트 스토리지로 전송하는 동안 사용되는 네트워크 대역폭의 양을 조절할 수 있습니다. 계층화용으로 클러스터를 구성하고 나중에 * 클러스터 * 페이지에서 _maximum transfer rate_setting을 사용할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="사용자가-계층화된-데이터에-액세스하려고-할-때-지연이-발생합니까">사용자가 계층화된 데이터에 액세스하려고 할 때 지연이 발생합니까?</h3>
+<div class="paragraph">
+<p>예. 지연 시간은 접속에 따라 달라지므로 클라우드 계층은 로컬 계층과 동일한 지연 시간을 제공할 수 없습니다. 오브젝트 저장소의 지연 시간과 처리량을 추정하기 위해 BlueXP 계층화는 오브젝트 저장소가 연결된 후 계층화가 설정되기 전에 사용할 수 있는 클라우드 성능 테스트(ONTAP 오브젝트 저장소 프로파일러를 기반으로 함)를 제공합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="내-데이터는-어떻게-보호됩니까">내 데이터는 어떻게 보호됩니까?</h3>
+<div class="paragraph">
+<p>AES-256-GCM 암호화는 성능 계층과 클라우드 계층 모두에서 유지됩니다. TLS 1.2 암호화는 데이터를 계층 간에 이동할 때 유선으로 암호화하고, 커넥터와 ONTAP 클러스터 및 오브젝트 저장소 간의 통신을 암호화하는 데 사용됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="aff에-이더넷-포트를-설치-및-구성해야-합니까">AFF에 이더넷 포트를 설치 및 구성해야 합니까?</h3>
+<div class="paragraph">
+<p>예. 인터클러스터 LIF는 클라우드로 계층화할 데이터로 볼륨을 호스팅하는 HA 쌍 내의 각 노드에 있는 이더넷 포트에 구성해야 합니다. 자세한 내용은 데이터를 계층화할 클라우드 공급자의 요구사항 섹션을 참조하십시오.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="어떤-권한이-필요합니까">어떤 권한이 필요합니까?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-tiering-onprem-aws.html#set-up-s3-permissions">"Amazon의 경우 S3 버킷을 관리할 수 있는 권한이 필요합니다"</a>.</p>
+</li>
+<li>
+<p>Azure의 경우 BlueXP에 제공해야 하는 권한 이외에 추가 권한이 필요하지 않습니다.</p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-gcp.html#preparing-google-cloud-storage">"Google Cloud의 경우 스토리지 액세스 키가 있는 서비스 계정에 스토리지 관리자 권한이 필요합니다"</a>.</p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-storagegrid.html#preparing-storagegrid">"StorageGRID의 경우 S3 권한이 필요합니다"</a>.</p>
+</li>
+<li>
+<p><a href="task-tiering-onprem-s3-compat.html#preparing-s3-compatible-object-storage">"S3 호환 오브젝트 스토리지의 경우 S3 권한이 필요합니다"</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ko-kr/bluexp-tiering/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ko-kr/bluexp-tiering/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">이 페이지에서</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">이용 약관</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">개인 정보 보호 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">쿠키 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">쿠키 설정</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">이 페이지에 대한 피드백 보내기</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/bluexp-tiering/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/bluexp-tiering/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/bluexp-tiering/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/bluexp-tiering/js/ie-tabbed-blocks.js'></script>
+    <script src='/ko-kr/bluexp-tiering/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
