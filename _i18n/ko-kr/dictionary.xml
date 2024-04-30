@@ -1416,4 +1416,26 @@
   <block id="17c353c0dd208c819d731350ef2b1300" category="paragraph">온프레미스 ONTAP 시스템에서 AWS로 데이터 계층화를 설정할 때 BlueXP 계층화는 비활성 데이터에 대해 _Standard_스토리지 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp는 지원 및 라이센스와 관련된 인증 서비스의 ID 공급자로 Microsoft Entra ID를 사용합니다.</block>
   <block id="36a7f0d732c9746e546a6bf227b6a550" category="summary">BlueXP 계층화를 통해 온프레미스 ONTAP 클러스터에서 오브젝트 스토리지로 비활성 데이터를 자동으로 계층화하여 데이터 센터를 클라우드로 확장합니다.</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">새로운 기능</block>
+  <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">사내 ONTAP 데이터를 클라우드에 계층화</block>
+  <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Azure Blob에 계층화</block>
+  <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Google Cloud로 계층화합니다</block>
+  <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">일반 S3로 계층화</block>
+  <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">계층화 설정을 관리합니다</block>
+  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">볼륨의 계층화 정책을 변경합니다</block>
+  <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">클러스터의 계층화 정보를 검토합니다</block>
+  <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">추가 볼륨의 데이터를 계층화합니다</block>
+  <block id="e1c9950bf8922ee7b7ee2dc803696a6a" category="sidebar">비활성 데이터를 오브젝트 저장소에 업로드하도록 대역폭을 변경합니다</block>
+  <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">클라우드에서 성능 계층으로 데이터 이동</block>
+  <block id="b19237098460d786516168b98687becc" category="sidebar">애그리게이트에서 계층화 설정을 관리합니다</block>
+  <block id="44e298753e2ff93996d0e8ffa928a922" category="sidebar">클러스터에 대한 새 오브젝트 저장소를 추가합니다</block>
+  <block id="f479e40bc5b0a3dc9ce1b1c43ebdec89" category="sidebar">미러링을 위해 두 번째 오브젝트 저장소를 Aggregate에 추가합니다</block>
+  <block id="07ed437d90cdfd3243fc6c8fa8ddacff" category="sidebar">운영 객체 저장소와 미러 객체 저장소를 바꿉니다</block>
+  <block id="500c3424a2151541a2d7783c7e308bb5" category="sidebar">미러 오브젝트 저장소를 제거합니다</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="10fd54f4214c20c0fb0c8174413e67e6" category="sidebar">BlueXP 계층화 블로그 를 참조하십시오</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
+  <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">기타 리소스</block>
+  <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXP 활용 사례</block>
 </blocks>
