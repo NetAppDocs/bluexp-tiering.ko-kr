@@ -272,5 +272,5 @@ image:screenshot_tiering_search for_cluster.png["BlueXP 커넥터에 있는 클�
 +
 BlueXP 계층화에서 클러스터를 찾을 수 있는 경우 Connector의 이름이 표시됩니다.
 
-. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#switch-between-connectors["Connector로 전환하고 클러스터에 대한 계층화를 구성합니다"^].
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Connector로 전환하고 클러스터에 대한 계층화를 구성합니다"^].
 
