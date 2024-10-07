@@ -760,7 +760,6 @@
   <block id="243263104c829e77835d632f591230d5" category="summary">NetApp 기술 지원 팀과 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 BlueXP에 추가한 다음 지원 등록을 해야 합니다.</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">지원 권한을 활성화하려면 두 가지 형태의 등록이 있습니다.</block>
-  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">BlueXP 계정 ID 지원 가입 등록(BlueXP의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">이는 BlueXP 내의 모든 서비스에 대한 단일 지원 가입 ID의 역할을 합니다. 각 BlueXP 계정 수준 지원 구독을 등록해야 합니다.</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">클라우드 공급자 마켓플레이스의 구독과 연결된 Cloud Volumes ONTAP 일련 번호 등록(20자리 909201xxxxxxxx 일련 번호)</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">이러한 일련 번호는 일반적으로 _PAYGO 일련 번호_라고 하며 Cloud Volumes ONTAP 배포 시 BlueXP에서 생성됩니다.</block>
@@ -791,7 +790,6 @@
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">현재 보고 있는 BlueXP 문서입니다.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">* 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제에 해당하는 BlueXP를 예로 들 수 있습니다.</block>
-  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">작업 환경 목록은 서비스의 상단 배너에서 선택한 BlueXP 계정, 작업 영역 및 커넥터의 범위 내에 있습니다.</block>
   <block id="d7945c5e359d6ac7ea9f91926a2538da" category="list-text">왼쪽 탐색 메뉴에서 * 이동성 &gt; 계층화 * 를 선택합니다.</block>
   <block id="77c2f2a395526537d532a604d4148171" category="paragraph">NSS 자격 증명이 BlueXP에 저장된 경우 계정의 클러스터가 목록에 표시됩니다.</block>
   <block id="05d09a490352dd1a62f556737b4e126c" category="paragraph">NSS 자격 증명이 BlueXP에 저장되지 않은 경우, 먼저 자격 증명을 추가하라는 메시지가 표시된 후 검색되지 않은 클러스터를 볼 수 있습니다.</block>
@@ -807,8 +805,6 @@
   <block id="0c664d98088fac0e3d869a21cac0c6c4" category="list-text">에서 구독하십시오<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">라이센스를 요청하려면 BlueXP 오른쪽 하단의 채팅 아이콘을 클릭하십시오.</block>
   <block id="e031d1891af14066db39ea9bc5a67edb" category="list-text">BlueXP에서 지원되지 않는 구성을 사용하는 경우 FabricPool 라이센스를 계속 사용할 수 있습니다.<block ref="f4b8492105dcaca906c2ce90b9ccab9e" category="inline-link-rx"></block>.</block>
-  <block id="f68bf28051d836364652b5a91d1bcd3a" category="list-text">BlueXP 계정 ID(지원 사이트에서 테넌트 ID라고 함)를 입력하고 * 제출 * 을 클릭하여 라이센스 파일을 다운로드합니다.</block>
-  <block id="257ff1df6b80ed0bf9b3463d53be79f9" category="paragraph">BlueXP의 상단에서 * 계정 * 드롭다운을 선택한 다음 계정 옆의 * 계정 관리 * 를 클릭하여 BlueXP 계정 ID를 찾을 수 있습니다. 계정 ID는 개요 탭에 있습니다.</block>
   <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">NSS 계정을 BlueXP에 추가합니다</block>
   <block id="8816958eed360786a943983e0bd031fd" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해 * 활성화 * 를 클릭하고, 표시되는 메시지에 따라 데이터를 Google Cloud Storage에 계층화합니다.</block>
   <block id="955a264d46a1f0536f93bcb5a3e454f1" category="list-text">BlueXP에서 온프레미스 클러스터를 검색할 수 있습니다.</block>
@@ -841,7 +837,6 @@
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">지원 등록 페이지에서 계정 ID 일련 번호를 찾습니다.</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">위의 2단계에서 계정의 일련 번호를 복사하고 보안 검색을 완료한 다음 NetApp의 글로벌 데이터 개인 정보 보호 정책을 읽는지 확인합니다.</block>
-  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1개</block>
   <block id="6f863df0df6a06cb4fad6fa2f223e77f" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 사용할 구성 방법을 식별합니다</block>
@@ -1054,7 +1049,6 @@
   <block id="78e084a8e123f468bdc8292351608ac4" category="paragraph">예. 지연 시간은 접속에 따라 달라지므로 클라우드 계층은 로컬 계층과 동일한 지연 시간을 제공할 수 없습니다. 오브젝트 저장소의 지연 시간과 처리량을 추정하기 위해 BlueXP 계층화는 오브젝트 저장소가 연결된 후 계층화가 설정되기 전에 사용할 수 있는 클라우드 성능 테스트(ONTAP 오브젝트 저장소 프로파일러를 기반으로 함)를 제공합니다.</block>
   <block id="588536d1b6de932fbea2c2b22f963d72" category="summary">첫 번째 클러스터에서 계층화를 설정하면 BlueXP 계층화를 30일 동안 무료로 사용할 수 있습니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 또는 연간 구독을 통해 BlueXP 계층화에 대한 비용을 지불하거나 NetApp에서 BYOL 라이센스를 받거나 이 둘을 결합하여 비용을 지불해야 합니다.</block>
   <block id="8202299929ccdfe388049a03c2c36d60" category="doc">BlueXP 계층화에 대한 라이센스를 설정합니다</block>
-  <block id="f6013530929ce5c8125f05448da6c33e" category="list-text">BYOL BlueXP 계층화 라이센스(이전의 "Cloud Tiering" 라이센스)는 BlueXP 계정의 여러 온-프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. 이는 각 클러스터에 대해 _FabricPool_라이센스를 구입한 과거와 다릅니다(그리고 훨씬 더 쉬움).</block>
   <block id="4f38e9048319fde605a07b6a4c99d8f5" category="inline-link-macro">BlueXP 계층화에 대한 라이선스의 작동 방식에 대해 자세히 알아보십시오</block>
   <block id="917e8711906a1b676db9798fcc2be9a1" category="paragraph"><block ref="4edd15551f6199902649e3b2955f6f1d" category="inline-link-macro-rx"></block>.</block>
   <block id="c98e930332bafdf23443b7d47efce588" category="section-title">BlueXP 계층화 PAYGO 구독을 사용합니다</block>
@@ -1071,7 +1065,6 @@
   <block id="316a7aed758eb7b043492e848b931117" category="section-title">BlueXP 계층화 라이센스 파일을 얻습니다</block>
   <block id="9b1441120e66cf63798ba27aa3531664" category="list-text">BlueXP 계층화 라이센스 일련 번호를 입력합니다.</block>
   <block id="1a8eb6c0b4ba023742d25f05dbe5273d" category="section-title">BlueXP 계층화 BYOL 라이센스를 계정에 추가합니다</block>
-  <block id="87afcfb4fef2a4d3fb672d29a7991ab4" category="paragraph">BlueXP 계정에 대한 BlueXP 계층화 라이센스를 구입한 후 BlueXP 계층화 서비스를 사용하려면 BlueXP에 라이센스를 추가해야 합니다.</block>
   <block id="58db88b7cd0054a3b13ce2930a48dad9" category="list-text">Governance &gt; Digital Wallet &gt; Data Services Licenses * 를 클릭합니다.</block>
   <block id="6b4dd8f152b00922385ef0e152554720" category="inline-image-macro">BlueXP 계층화 BYOL 라이센스를 추가하는 페이지를 보여 주는 스크린샷</block>
   <block id="0a54431ad29a96ceb71a9ab3f197983c" category="paragraph"><block ref="0a54431ad29a96ceb71a9ab3f197983c" category="inline-image-macro-rx" type="image"></block></block>
@@ -1119,7 +1112,6 @@
   <block id="02a08db5d0a39ed9c8dcd2ad1853be2e" category="list-text">ONTAP 클러스터, StorageGRID 및 BlueXP 계층화 서비스에 대한 아웃바운드 HTTPS 연결을 가능하게 하는 커넥터용 네트워킹.</block>
   <block id="5551962687b10a9e81f434a8452784af" category="inline-image-macro">BlueXP 계층화 서비스(구내 커넥터 연결), ONTAP 클러스터 연결 커넥터, ONTAP 클러스터와 개체 스토리지 간 연결을 보여 주는 아키텍처 이미지입니다. 활성 데이터는 ONTAP 클러스터에 있고 비활성 데이터는 오브젝트 스토리지에 상주합니다.</block>
   <block id="3375a6272f3c0fd37932a7d67a06f3cc" category="paragraph"><block ref="3375a6272f3c0fd37932a7d67a06f3cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e9539e47f1a0a8a4cdc4f8081cd3f4ba" category="list-text">BlueXP 계정에 BlueXP 계층화 라이센스가 필요하지 않으며, 데이터를 StorageGRID로 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.</block>
   <block id="2cd89e6f0fcda5b09186fef88391ef89" category="admonition">BlueXP 계층화는 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. 설치 프로그램은 다른 볼륨과 동일하게 작동합니다.</block>
   <block id="83e95400e41cfc623b4a4a1461c18f83" category="list-text">StorageGRID로 계층화를 설정할 때는 S3 액세스 키와 암호 키를 사용하여 BlueXP 계층화를 제공해야 합니다. BlueXP 계층화는 키를 사용하여 버킷에 액세스합니다.</block>
   <block id="6679647b3dd9ac6d22d449c9098cc77d" category="paragraph">올바른 IPspace를 선택하면 BlueXP 계층화를 통해 ONTAP에서 StorageGRID 오브젝트 스토리지로의 연결을 설정할 수 있습니다.</block>
@@ -1177,7 +1169,6 @@
   <block id="f4c3107fb758c7edea8576312dff63ac" category="inline-link-macro">BlueXP 디지털 지갑에 라이센스를 추가합니다</block>
   <block id="1953cb0b13a811a9fb3db1b69c5f0a2d" category="list-text">BlueXP의 경우 <block ref="fb3a1da5f1072aaa3d6f4c9eaa7cccb2" category="inline-link-macro-rx"></block>.</block>
   <block id="891ca3a65a7ff1025eab9d895f17f04a" category="paragraph">NetApp에서 * BlueXP 계층화 * 라이센스(이전의 "Cloud Tiering" 라이센스)를 구매하여 라이센스를 구입하십시오. 1년, 2년 또는 3년 기간 라이센스를 구매하고 계층화 용량을 최소 10TiB에서 지정할 수 있습니다. BYOL BlueXP 계층화 라이센스는 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. BlueXP 계층화 라이센스에서 정의한 전체 계층화 용량을 모든 온프레미스 클러스터에서 사용할 수 있습니다.</block>
-  <block id="2105bccac1837aa99c46baf38ee1c998" category="paragraph">NetApp에서 제공하는 자체 라이센스는 1년, 2년 또는 3년간 제공됩니다. BYOL * BlueXP 계층화 * 라이센스(이전의 "클라우드 계층화" 라이센스)는 BlueXP 계정의 여러 사내 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. BlueXP 계층화 라이센스에 정의된 전체 계층화 용량은 온프레미스 클러스터 * 의 * 전체 * 간에 공유되므로 초기 라이센스와 갱신을 간편하게 수행할 수 있습니다. 계층화 BYOL 라이센스의 최소 용량은 10TiB에서 시작됩니다.</block>
   <block id="76e73aa82e342d9c46acf62eef4dcfc4" category="paragraph">계층화 &gt; 온프레미스 대시보드 * 를 클릭하기만 하면 됩니다. BlueXP 계층화는 환경에 대한 다음과 같은 세부 정보를 제공합니다.</block>
   <block id="73363ef02ce267ee93816a7a9661efbb" category="inline-image-macro">온-프레미스 대시보드 페이지의 스크린샷</block>
   <block id="d8dd920a9088057867f1c70674cd6044" category="paragraph"><block ref="d8dd920a9088057867f1c70674cd6044" category="inline-image-macro-rx" type="image"></block></block>
@@ -1245,25 +1236,18 @@
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">일련 번호가 있는 ONTAP 시스템의 케이스를 여는 경우 NSS 계정은 해당 시스템의 일련 번호와 연결되어 있어야 합니다.</block>
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">두 가지 유형의 일련 번호를 등록하면 지원 티켓 열기와 자동 케이스 생성 등의 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
-  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">NetApp 지원을 위해 BlueXP 계정을 등록합니다</block>
-  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">지원을 등록하고 지원 권한을 활성화하려면 BlueXP 계정의 한 사용자가 NetApp Support 사이트 계정을 BlueXP 로그인에 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
-  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">리소스 * 페이지에 계정이 지원을 위해 등록되었다는 내용이 표시됩니다.</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">계정 일련 번호와 녹색 확인란이 표시된 스크린샷 및 지원을 위해 등록된 텍스트.</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">다른 BlueXP 사용자는 BlueXP 로그인과 NetApp Support 사이트 계정을 연결하지 않은 경우 동일한 지원 등록 상태를 볼 수 없습니다. 그러나 BlueXP 계정이 지원을 위해 등록되지 않은 것은 아닙니다. 계정에 있는 한 사용자가 이 단계를 따랐을 경우 계정이 등록되었습니다.</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">기존 사용권 및 제품 번호가 _NO_NSS인 기존 NetApp 고객인 경우 NSS 계정을 만들어 BlueXP 로그인과 연결해야 합니다.</block>
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">의 단계를 완료하여 새 NSS 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support 사이트 계정이 있으면 의 단계를 완료하여 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Cloud Volumes ONTAP 지원을 위해 NSS 자격 증명을 연결합니다</block>
-  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">Cloud Volumes ONTAP에 대해 다음 주요 워크플로를 사용하려면 NetApp Support 사이트 자격 증명을 BlueXP 계정과 연결해야 합니다.</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">지원을 위해 선불 종량제 Cloud Volumes ONTAP 시스템을 등록합니다</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">NSS 계정을 제공하면 시스템에 대한 지원을 활성화하고 NetApp 기술 지원 리소스에 액세스할 수 있습니다.</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">BYOL(Bring Your Own License) 방식으로 Cloud Volumes ONTAP 구축</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">BlueXP에서 사용권 키를 업로드하고 구입한 용어에 대한 구독을 활성화하려면 NSS 계정을 제공해야 합니다. 여기에는 기간 갱신을 위한 자동 업데이트가 포함됩니다.</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP 소프트웨어를 최신 릴리즈로 업그레이드하는 중입니다</block>
-  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">NSS 자격 증명을 BlueXP 계정과 연결하는 것은 BlueXP 사용자 로그인과 연결된 NSS 계정과 다릅니다.</block>
-  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP 계정 ID와 연결됩니다. BlueXP 계정에 속한 사용자는 * 지원 &gt; NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023년 7월 4일</block>
   <block id="f955a076eeae4df4466469593ff635ca" category="section-title">이제 비활성 데이터를 오브젝트 저장소에 업로드하는 데 사용되는 대역폭을 조정할 수 있습니다</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">자세한 정보</block>
@@ -1305,10 +1289,6 @@
   <block id="fe35e262c448d76aba8db40105f10ae6" category="paragraph">필요에 따라 이전에 구성한 AWS PrivateLink를 사용할지 여부를 선택합니다. <block ref="e6b15c4e63006b05802c430924113019" category="inline-xref-macro-rx"></block> 끝점 구성을 안내하는 대화 상자가 표시됩니다.</block>
   <block id="c52a9d7f6355ad24bacb2c5f23c0e863" category="paragraph">BlueXP 계층화 라이센스를 구매한 후에는 BlueXP 계층화 일련 번호 및 NSS 계정을 입력하거나 NLF 라이센스 파일을 업로드하여 BlueXP에서 라이센스를 활성화합니다. 아래 단계에서는 NLF 라이센스 파일을 가져오는 방법을 보여 줍니다(해당 방법을 사용하려는 경우).</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
-  <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">시작하기 전에 다음 정보가 필요합니다.</block>
-  <block id="31c32a382d97a37a96c1074e48f523a5" category="list-text">BlueXP 계층화 일련 번호</block>
-  <block id="079aeecf06b109e4316b0a68ea943f2b" category="paragraph">판매 주문에서 이 번호를 찾거나 계정 팀에 문의하여 이 정보를 확인하십시오.</block>
-  <block id="bcbbd9a155e07caa8b31001adc835c79" category="list-text">BlueXP 계정 ID</block>
   <block id="a6cfac773f21906007a8ddf407596067" category="list-text">라이센스 키 * 열에서 * NetApp 라이센스 파일 가져오기 * 를 클릭합니다.</block>
   <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">BlueXP에서 * 도움말 &gt; 지원 * 을 선택합니다.</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">전화로 통화하려면 * 전화 * 를 선택하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
@@ -1332,7 +1312,6 @@
   <block id="fdc19b19bb08b842183f4536b3eec76b" category="list-text">* 커넥터 권한 *:</block>
   <block id="a23c48c7dacd4cbd23073fcbf60fd74b" category="list-text">확인합니다<block ref="540eaaeac9761e2ce00566e2544cdb50" category="inline-link-rx"></block> 는 Connector에 권한을 제공하는 IAM 역할의 일부입니다. Connector를 처음 배포할 때 기본적으로 포함되어 있어야 합니다. 그렇지 않은 경우 누락된 사용 권한을 추가해야 합니다. 를 참조하십시오<block ref="6d4dc5f0c95117ac550b72968db62911" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="66a7f2c8895d7b21d1201fccfd4bdba8" category="list-text">BlueXP 계층화가 생성하는 기본 버킷에는 "fabric-pool"이라는 접두사가 있습니다. 버킷에 다른 접두사를 사용하려면 사용할 이름으로 권한을 사용자 지정해야 합니다. S3 사용 권한에는 회선이 표시됩니다<block ref="c712bdd29459fc8b86dccbf521d236c1" prefix=" " category="inline-code"></block>. "fabric-pool"을 사용하려는 접두사로 변경해야 합니다. 예를 들어 "Tiering-1"을 버킷의 접두사로 사용하려면 이 줄을 로 변경합니다<block ref="f36e7f2ef320186e3d37d367e5be31fc" prefix=" " category="inline-code"></block>.</block>
-  <block id="ffab91aa955935f27edca0e2b61e13ec" category="paragraph">동일한 BlueXP 계정에서 추가 클러스터에 사용할 버킷에 다른 접두사를 사용하려면 다른 버킷의 접두사를 가진 다른 줄을 추가할 수 있습니다. 예를 들면 다음과 같습니다.</block>
   <block id="38efd96fb4da1774586c4379285d5732" category="paragraph"><block ref="f36e7f2ef320186e3d37d367e5be31fc" prefix="" category="inline-code"></block><block ref="98422a36dda2cb7df4362652f96b84d8" prefix=" " category="inline-code"></block></block>
   <block id="bfe84f0ff43744ba679acbdbf46ab156" category="paragraph">고유 버킷을 만들고 표준 접두사를 사용하지 않는 경우 이 라인을 로 변경해야 합니다<block ref="d97fa8f672dbe6f85ad395e3369cf55a" prefix=" " category="inline-code"></block> 모든 버킷이 인식됩니다. 그러나 이렇게 하면 볼륨의 비활성 데이터를 보관하도록 설계된 버킷을 사용하지 않고 모든 버킷을 노출할 수 있습니다.</block>
   <block id="93965115cac9e91f74b649a6fba443e5" category="list-text">* 클러스터 권한 *:</block>
@@ -1434,10 +1413,36 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">기타 리소스</block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXP 활용 사례</block>
-  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="inline-link">온-프레미스에 커넥터를 설치하고 설정합니다</block>
-  <block id="510a18acc0e91814caa7b29fd0c6cf03" category="list-text"><block ref="510a18acc0e91814caa7b29fd0c6cf03" category="inline-link-rx"></block></block>
   <block id="f86faf1862caeed3f6dccfce3a669edf" category="inline-link">커넥터 사이를 전환합니다</block>
   <block id="803e45c7378965c1863722d57b5fdb0a" category="list-text"><block ref="803e45c7378965c1863722d57b5fdb0a" category="inline-link-rx"></block></block>
   <block id="8adbc3c324aa6698c29b0a7962b11b00" category="list-text">VPC S3 엔드포인트에서 인증서를 가져옵니다. 당신은 이렇게 합니다<block ref="b93c91598d8e86da04085f6831b06e68" category="inline-link-rx"></block> 다음 명령을 실행합니다. 엔드포인트의 DNS 이름을 입력할 때 "*"를 대체하여 "bucket"을 앞에 추가합니다.</block>
   <block id="99bf438e4ecdfb9997a6cefdd9799e09" category="list-text"><block ref="f3a4b869b7377490c5c486397514cea6" category="inline-link-rx"></block>.</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">작업 환경 목록은 서비스 상단 배너에서 선택한 BlueXP  조직(또는 계정), 프로젝트(또는 작업 영역) 및 커넥터 범위 내에 있습니다.</block>
+  <block id="0aac35c69d56f468c7891da9594e68be" category="list-text">BYOL BlueXP  계층화 라이센스(이전 명칭: "Cloud Tiering" 라이센스)는 BlueXP  조직의 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. 이는 각 클러스터에 대해 _FabricPool_라이센스를 구입한 과거와 다릅니다(그리고 훨씬 더 쉬움).</block>
+  <block id="7f58c7f218a280f56c54c444e1bb8411" category="paragraph">NetApp에서 제공하는 자체 라이센스는 1년, 2년 또는 3년간 제공됩니다. BYOL * BlueXP  Tiering * 라이센스(이전 명칭: "클라우드 계층화" 라이센스)는 BlueXP  조직의 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. BlueXP 계층화 라이센스에 정의된 전체 계층화 용량은 온프레미스 클러스터 * 의 * 전체 * 간에 공유되므로 초기 라이센스와 갱신을 간편하게 수행할 수 있습니다. 계층화 BYOL 라이센스의 최소 용량은 10TiB에서 시작됩니다.</block>
+  <block id="0e48ab0bd412e2c6d662a3a4540397a0" category="paragraph">BlueXP  계층화 일련 번호가 필요합니다. 판매 주문에서 이 번호를 찾거나 계정 팀에 문의하여 이 정보를 확인하십시오.</block>
+  <block id="e53331a3231a958d20a4871d8efc35d8" category="list-text">BlueXP  계정 ID 찾기:</block>
+  <block id="e0e8a7d90375792efecad34c0c923e32" category="inline-image-macro">BlueXP  웹 콘솔의 오른쪽 상단에 표시되는 설정 아이콘입니다.</block>
+  <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">BlueXP  콘솔의 오른쪽 위에서&gt; * ID 및 액세스 관리 * 를 선택합니다<block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="3bcef3f6238058ae825d608e1557c538" category="list-text">조직 페이지에서 계정 ID를 찾아 복사합니다.</block>
+  <block id="2bd8c9344d3768dd44b910db169ef1fa" category="paragraph">나열된 계정 ID가 없고 조직 ID만 있는 경우 조직 ID의 처음 8개 문자를 복사하여 _account-_에 추가해야 합니다</block>
+  <block id="14da2ef10b9e4cc4d0981b05fff98072" category="paragraph">예를 들어 다음과 같이 조직 ID라고 가정해 보겠습니다.</block>
+  <block id="2740d3013330ec13ae7693ee76bc6509" category="paragraph">ea10e1c6-80cc-4219-8e99-3c3e6b161ba5</block>
+  <block id="6ffe1a2d88424dc37ba43bdf5999183e" category="paragraph">계정 ID는 다음과 같습니다.</block>
+  <block id="c0b58edc6437b03c81d24f7ded6f3648" category="paragraph">계정 - ea10e1c6</block>
+  <block id="d4393f7d35eb6fcb480572ab5d418710" category="list-text">BlueXP  계정 ID(지원 사이트에서 테넌트 ID라고 함)를 입력하고 * 제출 * 을 클릭하여 라이센스 파일을 다운로드합니다.</block>
+  <block id="921d59a1a10f4e2423dfe3d60997086a" category="paragraph">BlueXP  계층화 라이센스를 구입한 후에는 BlueXP  계층화 서비스를 사용하려면 BlueXP 에 라이센스를 추가해야 합니다.</block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">BlueXP  계정 일련 번호(BlueXP 의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)를 등록하는 중입니다.</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">NetApp 지원을 받으려면 BlueXP 를 등록 하십시오</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">지원을 등록하고 지원 권한을 활성화하려면 BlueXP  조직(또는 계정)의 사용자 한 명이 NetApp 지원 사이트 계정을 BlueXP  로그인과 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">리소스 * 페이지에 귀하의 BlueXP  조직이 지원을 위해 등록되었다는 메시지가 표시됩니다.</block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">다른 BlueXP 사용자는 BlueXP 로그인과 NetApp Support 사이트 계정을 연결하지 않은 경우 동일한 지원 등록 상태를 볼 수 없습니다. 하지만 그렇다고 BlueXP  조직이 지원에 등록되어 있지 않다는 뜻은 아닙니다. 조직 내 한 명의 사용자가 이 단계를 수행하면 조직이 등록됩니다.</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 그러면 처리 속도가 빨라집니다.</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Cloud Volumes ONTAP에서 다음과 같은 주요 워크플로우를 사용하려면 NetApp 지원 사이트 자격 증명을 BlueXP  조직과 연결해야 합니다.</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">NSS 자격 증명을 BlueXP  조직과 연결하는 것은 BlueXP  사용자 로그인과 연결된 NSS 계정과 다릅니다.</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP  조직 ID와 연결됩니다. BlueXP  조직에 속한 사용자는 * 지원 &gt; NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
+  <block id="ab890419f359dee3122c3a46ece4de91" category="paragraph">동일한 BlueXP  조직의 추가 클러스터에 사용할 버킷에 대해 다른 접두사를 사용하려면 다른 버킷에 대한 접두사가 있는 다른 줄을 추가할 수 있습니다. 예를 들면 다음과 같습니다.</block>
+  <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">Connector 온-프레미스를 설치하고 설정합니다</block>
+  <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
+  <block id="e611f8473aa031238f45b544d113b51c" category="list-text">BlueXP  조직에 BlueXP  계층화 라이센스가 필요하지 않으며 StorageGRID로 데이터를 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.</block>
 </blocks>
