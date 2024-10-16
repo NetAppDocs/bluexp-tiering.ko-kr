@@ -1445,4 +1445,5 @@
   <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">Connector 온-프레미스를 설치하고 설정합니다</block>
   <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
   <block id="e611f8473aa031238f45b544d113b51c" category="list-text">BlueXP  조직에 BlueXP  계층화 라이센스가 필요하지 않으며 StorageGRID로 데이터를 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.</block>
+  <block id="aca1d9b834f4ef7d5cdec1dd3d882bd0" category="paragraph">BlueXP 는 이 알림에 대한 이메일을 보내지 않습니다.</block>
 </blocks>
