@@ -1,0 +1,17 @@
+= 대역폭을 조정하여 비활성 데이터를 전송합니다
+:allow-uri-read: 
+
+
+
+
+=== 대역폭을 조정하여 비활성 데이터를 전송합니다
+
+BlueXP 계층화를 활성화하면 ONTAP는 무제한의 네트워크 대역폭을 사용하여 클러스터의 볼륨에서 객체 스토리지로 비활성 데이터를 전송할 수 있습니다. 계층화 트래픽이 일반 사용자 워크로드에 영향을 주는 경우 전송 중에 사용할 수 있는 대역폭의 양을 조절할 수 있습니다. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["자세한 정보"].
+
+
+
+=== 알림 센터에 계층화 이벤트가 표시됩니다
+
+계층화 이벤트 "Tier additional data from cluster <name> to object storage to increase storage Efficiency"는 이제 클러스터가 데이터를 계층화하는 경우를 포함하여 콜드 데이터의 20% 미만을 계층화할 때 알림으로 표시됩니다.
+
+이 알림은 시스템의 효율성을 높이고 스토리지 비용을 절감하는 데 도움이 되는 "권장 사항"입니다. 에 대한 링크를 제공합니다 https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP 계층화 총 소유 비용 및 절감 계산기"^] 비용 절감 효과를 계산하는 데 도움이 됩니다.

@@ -641,9 +641,7 @@
   <block id="ba34121e3527a1918b936c79899e68fa" category="paragraph">미러링 목적으로 애그리게이트당 최대 2개의 버킷을 연결할 수 있으며, 여기서 콜드 데이터는 두 버킷에 동기식으로 계층됩니다. 버킷은 여러 공급자 및 다양한 위치에서 사용할 수 있습니다. 2022년 8월부터 * 고급 설정 * 페이지를 사용하여 두 개의 오브젝트 저장소를 단일 Aggregate에 연결할 수 있습니다.</block>
   <block id="6c66decef59a00987dd2d537b80e9092" category="paragraph">예. 일반적인 모범 사례는 하나의 버킷을 여러 애그리게이트로 연결하는 것입니다. 하지만 퍼블릭 클라우드를 사용할 경우 오브젝트 스토리지 서비스에 대한 최대 IOPS 제한이 있으므로 여러 개의 버킷을 고려해야 합니다.</block>
   <block id="1f6fd3301ab6ce127efad422dec03d61" category="section-title">2022년 8월 3일</block>
-  <block id="059c9f6829260507f53186d7191b058c" category="section-title">클러스터의 다른 애그리게이트로 추가 오브젝트 저장소를 구성하는 기능</block>
   <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">새로운 오브젝트 스토리지 기능에 대해 자세히 알아보십시오.</block>
-  <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">MetroCluster 구성에 대한 Cloud Tiering 라이센스 지원</block>
   <block id="4f05e87f380a81f7a23601ecba757570" category="sidebar">오브젝트 스토리지 관리</block>
   <block id="5c37edf1ec718afd1ab9a5a51043e0ce" category="paragraph">다음 단계를 수행하여 빠르게 시작하십시오. 각 단계에 대한 자세한 내용은 이 항목의 다음 섹션을 참조하십시오.</block>
   <block id="e41af01898aa01f20e528d19fdda2ec8" category="paragraph">사내 ONTAP 클러스터를 퍼블릭 인터넷을 통해 AWS S3에 직접 연결할지, VPN 또는 AWS 직접 연결을 사용할지, 프라이빗 VPC 엔드 포인트 인터페이스를 통해 트래픽을 AWS S3에 연결할지 선택합니다.</block>
@@ -750,8 +748,6 @@
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">제품 내 채팅을 사용합니다</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">에서 비기술 케이스를 제출하십시오<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="0da0639ab808878f568f3c4f06c02689" category="inline-link">MetroCluster 요구 사항에 대한 자세한 내용은 ONTAP 설명서를 참조하십시오</block>
-  <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">계층화 마법사를 사용하면 S3 스토리지로 계층화할 때 AWS PrivateLink를 구성할 수 있습니다</block>
-  <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">MetroCluster 구성에서 미러 오브젝트 저장소를 제거할 때 계층화 동작을 선택합니다</block>
   <block id="c80805cd1b291fd4590a3c0b82caa095" category="inline-link">FabricPool 미러에 대한 자세한 정보</block>
   <block id="4a6b2da2ae625dffc7d1a103b7579d57" category="paragraph">두 번째 오브젝트 저장소를 Aggregate에 연결하여 FabricPool 미러를 생성하여 데이터를 두 개의 오브젝트 저장소에 동기식으로 계층화할 수 있습니다. Aggregate에 이미 연결된 오브젝트 저장소가 하나 있어야 합니다.<block ref="8af213a751b87119e23e85f52fbc72d6" category="inline-link-rx"></block>.</block>
   <block id="2dc183e0073f3c1e0402cafe50273750" category="paragraph">MetroCluster 구성을 사용하는 경우 다른 가용성 영역에 있는 퍼블릭 클라우드에서 오브젝트 저장소를 사용하는 것이 좋습니다.<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>.</block>
@@ -906,7 +902,6 @@
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetApp Support로 케이스 생성</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">리소스 * 페이지의 기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023년 3월 5일</block>
-  <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">이제 볼륨에 대한 계층화 보고서를 생성할 수 있습니다</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">계층화 보고서를 다운로드하는 방법을 확인하십시오</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">지원 사례 관리(Preview)</block>
   <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">BlueXP에서 직접 활성 및 해결된 지원 사례를 보고 관리할 수 있습니다. NSS 계정 및 회사와 관련된 케이스를 관리할 수 있습니다.</block>
@@ -948,7 +943,6 @@
   <block id="78663d9137e3cc2c3049532938b4c70f" category="list-text">Details &amp; Credentials_ 페이지에서 클러스터 이름이 작업 환경 이름으로 추가되므로 * Go * 를 클릭합니다.</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023년 4월 3일</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">라이센스 탭이 제거되었습니다</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">계층화 탭의 이름이 바뀌었으며 내용이 업데이트되었습니다</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.</block>
@@ -1118,8 +1112,6 @@
   <block id="56273c1cb08574200c49973b9bc5c615" category="summary">BlueXP 계층화의 새로운 기능에 대해 알아보십시오.</block>
   <block id="d423420066ca2ec630afe096f14eae4b" category="doc">BlueXP 계층화의 새로운 기능</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">BlueXP 계층화가 변경되었기 때문에 BlueXP 계층화 작업을 성공적으로 수행하려면 다음 Connector 엔드포인트를 변경해야 합니다.</block>
-  <block id="3afb7cae2b7c3e96c6a4e1df765d3dce" category="section-title">끌어서 놓기를 통해 Azure Blob, Google Cloud Storage 및 StorageGRID에 BlueXP 계층화를 사용할 수 있습니다</block>
-  <block id="18cd1c130656412d8089667948bc48a2" category="section-title">Amazon S3에 BlueXP 계층화를 활성화하려면 끌어다 놓으십시오</block>
   <block id="a0396859c016deff163331729e87c6cf" category="summary">BlueXP 계층화는 여러 Google Cloud 스토리지 클래스와 대부분의 지역을 지원합니다.</block>
   <block id="58edb41c3cfab45408029ad69032402a" category="paragraph">BlueXP 계층화 라이프사이클 규칙을 구성할 때 Google 계정에 버킷을 설정할 때 라이프사이클 규칙을 구성하지 않아야 합니다.</block>
   <block id="2d5551329360393b3ea83aeec84cf519" category="paragraph">BlueXP 계층화는 다음 영역을 지원합니다.</block>
@@ -1249,10 +1241,8 @@
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">BlueXP에서 사용권 키를 업로드하고 구입한 용어에 대한 구독을 활성화하려면 NSS 계정을 제공해야 합니다. 여기에는 기간 갱신을 위한 자동 업데이트가 포함됩니다.</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP 소프트웨어를 최신 릴리즈로 업그레이드하는 중입니다</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023년 7월 4일</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">이제 비활성 데이터를 오브젝트 저장소에 업로드하는 데 사용되는 대역폭을 조정할 수 있습니다</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">자세한 정보</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">BlueXP 계층화를 활성화하면 ONTAP는 무제한의 네트워크 대역폭을 사용하여 클러스터의 볼륨에서 객체 스토리지로 비활성 데이터를 전송할 수 있습니다. 계층화 트래픽이 일반 사용자 워크로드에 영향을 주는 경우 전송 중에 사용할 수 있는 대역폭의 양을 조절할 수 있습니다.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">"낮은 계층화"에 대한 계층화 이벤트가 알림 센터에 표시됩니다</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">계층화 이벤트 "Tier additional data from cluster &lt;name&gt; to object storage to increase storage Efficiency"는 이제 클러스터가 데이터를 계층화하는 경우를 포함하여 콜드 데이터의 20% 미만을 계층화할 때 알림으로 표시됩니다.</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP 계층화 총 소유 비용 및 절감 계산기</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">이 알림은 시스템의 효율성을 높이고 스토리지 비용을 절감하는 데 도움이 되는 "권장 사항"입니다. 에 대한 링크를 제공합니다<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> 비용 절감 효과를 계산하는 데 도움이 됩니다.</block>
@@ -1341,7 +1331,6 @@
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">NSS 관리 &gt; NSS 계정 추가 * 를 선택합니다.</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">메시지가 표시되면 * 계속 * 을 선택하여 Microsoft 로그인 페이지로 리디렉션합니다.</block>
   <block id="4bca0fdcdafed1e5f31435f4b19c8738" category="section-title">2023년 8월 9일</block>
-  <block id="b839d32c555694a5245fa2fa33d17d88" category="section-title">계층화된 데이터가 저장되는 버킷 이름에 사용자 지정 접두사를 사용합니다</block>
   <block id="6eb4429639db75cb3b56cc38a3fb8785" category="paragraph">이전에는 버킷 이름을 정의할 때 기본 "fabric-pool" 접두사를 사용해야 했습니다(예: _fabric-pool-bucket1_). 이제 버킷 이름을 지정할 때 사용자 지정 접두사를 사용할 수 있습니다. 이 기능은 데이터를 Amazon S3로 계층화하는 경우에만 사용할 수 있습니다.<block ref="3e8270d3bc816ce30c7c11fe6d073535" category="inline-link-rx"></block>.</block>
   <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">사용자 환경의 모든 스토리지 시스템을 관리하기 위해 여러 커넥터를 사용하는 경우 계층화를 구현할 클러스터가 다른 커넥터에 있을 수 있습니다. 어떤 커넥터가 특정 클러스터를 관리하고 있는지 확실하지 않은 경우 BlueXP 계층화를 사용하여 모든 커넥터를 검색할 수 있습니다.<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>.</block>
   <block id="d441270e2d66b6759e1bbe07190e3d30" category="admonition">특정 일 수가 지나면 계층형 데이터가 전환될 저비용 액세스 계층을 사용하도록 BlueXP 계층화를 구성하려는 경우, Azure 계정에서 컨테이너를 설정할 때 라이프사이클 규칙을 선택하지 않아야 합니다. BlueXP 계층화는 라이프사이클 전환을 관리합니다.</block>
@@ -1446,4 +1435,15 @@
   <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
   <block id="e611f8473aa031238f45b544d113b51c" category="list-text">BlueXP  조직에 BlueXP  계층화 라이센스가 필요하지 않으며 StorageGRID로 데이터를 계층화할 때 ONTAP 클러스터에 FabricPool 라이센스가 필요하지 않습니다.</block>
   <block id="aca1d9b834f4ef7d5cdec1dd3d882bd0" category="paragraph">BlueXP 는 이 알림에 대한 이메일을 보내지 않습니다.</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">계층화 탭의 이름이 변경되고 업데이트되었습니다</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="doc">대역폭을 조정하여 비활성 데이터를 전송합니다</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">알림 센터에 계층화 이벤트가 표시됩니다</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="doc">버킷 이름에 사용자 지정 접두사를 사용합니다</block>
+  <block id="5f659aa043041b7c7bd07335ac62ca55" category="section-title">볼륨에 대한 계층화 보고서를 생성합니다</block>
+  <block id="02a02728987c939621edc3e2dc71d234" category="section-title">끌어서 놓기를 통해 추가 대상에 계층화할 수 있습니다</block>
+  <block id="dc7d0bd65a1626d3b5577529e98dab87" category="section-title">Amazon S3로 계층화할 때 AWS PrivateLink를 구성합니다</block>
+  <block id="5b509c72bc50acb8c10c2952b7982420" category="section-title">끌어서 놓기를 통해 Amazon S3에 계층화할 수 있습니다</block>
+  <block id="e183a98351b41fa6323d79a2f03c328c" category="section-title">미러 오브젝트 저장소를 제거할 때 계층화 동작을 선택합니다</block>
+  <block id="847d8c6cf21c261bf367fb1c3c41bf62" category="section-title">다른 애그리게이트에 대해 추가 오브젝트 저장소를 구성합니다</block>
+  <block id="ed16268923e9fecfd07bdd809ee9d213" category="section-title">MetroCluster 구성에 대한 라이센스 지원</block>
 </blocks>
