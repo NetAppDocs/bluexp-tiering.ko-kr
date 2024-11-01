@@ -54,7 +54,8 @@ AWS Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에서 
 다음 비디오는 프로세스를 보여 줍니다.
 
 +
-video::video_subscribing_aws_tiering.mp4[width=848,height=480]
+.AWS 마켓플레이스에서 BlueXP를 구독하십시오
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 
@@ -72,7 +73,8 @@ Azure Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에�
 다음 비디오는 프로세스를 보여 줍니다.
 
 +
-video::video_subscribing_azure_tiering.mp4[width=848,height=480]
+.Azure 마켓플레이스에서 BlueXP를 구독하십시오
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
@@ -90,7 +92,8 @@ Google Cloud 마켓플레이스에서 BlueXP 계층화를 구독하여 ONTAP 클
 다음 비디오는 프로세스를 보여 줍니다.
 
 +
-video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
+.Google Cloud 마켓플레이스에서 BlueXP를 구독하십시오
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 
