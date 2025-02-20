@@ -338,21 +338,7 @@
   <block id="a7bd9725f68ab51f56b292638f876d9b" category="cell">계층화 구성 및 관리는 System Manager 또는 ONTAP CLI를 통해 수행됩니다.</block>
   <block id="84d29247572532708a78dd9938063ac5" category="cell">구성이 완료되면 무료 평가판을 사용하여 30일 동안 라이센스 없이 계층화 서비스를 사용할 수 있습니다.</block>
   <block id="0f54a92e132940776f23febb26ca8ceb" category="cell">구성이 완료되면 처음 10TB의 데이터를 무료로 계층화할 수 있습니다.</block>
-  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support 사이트</block>
-  <block id="80c4b6e3dfa1d4f33033585b7c74e7e9" category="list-text">에 로그인합니다<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> 시스템 &gt; 소프트웨어 라이센스 * 를 클릭합니다.</block>
-  <block id="5190e9ec018f5e661ec4b31ff1b34423" category="inline-image-macro">일련 번호로 검색한 후 라이센스 테이블을 보여 주는 스크린샷</block>
-  <block id="d15379b9f839ac6523d1b06ad8763875" category="paragraph"><block ref="d15379b9f839ac6523d1b06ad8763875" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="56273f3344c87fabbf5196fba9816fff" category="inline-image-macro">테넌트 ID를 입력한 다음 제출을 클릭하여 라이센스 파일을 다운로드할 수 있는 라이센스 가져오기 대화 상자가 표시된 스크린샷</block>
-  <block id="212f5a95c637538f9375d966345ca9f7" category="paragraph"><block ref="212f5a95c637538f9375d966345ca9f7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">라이선스 추가 * 를 클릭합니다.</block>
-  <block id="c1b2dc0798d3960e25b8a12c751f53ec" category="list-text">Add License_대화 상자에서 라이센스 정보를 입력하고 * Add License * 를 클릭합니다.</block>
-  <block id="80b8da08efcb9500667b0fc290bbe1f6" category="list-text">계층화 라이선스 일련 번호가 있고 NSS 계정을 알고 있는 경우 * 일련 번호 입력 * 옵션을 선택하고 해당 정보를 입력합니다.</block>
-  <block id="4488cc251929ad2c43c07191375ca26e" category="list-text">계층화 라이센스 파일이 있는 경우 * 라이센스 파일 업로드 * 옵션을 선택하고 표시되는 메시지에 따라 파일을 첨부합니다.</block>
-  <block id="b2b168bd64a341a85c749cb61bba40cb" category="inline-xref">NetApp Support 사이트에서 라이센스 파일을 받으십시오</block>
   <block id="8f0a75d2d5a82f31f2cf069c3b0ee684" category="inline-image-macro">추가 아이콘</block>
-  <block id="3ce750f001c2369e23b68f3210d9f100" category="inline-image-macro">특정 서비스에 대한 라이센스 업데이트 단추를 선택하는 스크린샷</block>
-  <block id="2bdb7af2b6613fafdba930fb09034d3f" category="paragraph"><block ref="2bdb7af2b6613fafdba930fb09034d3f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="41e921305ae1b027e5d364af4a2a9df2" category="list-text">Update License_page에서 라이센스 파일을 업로드하고 * Update License * 를 클릭합니다.</block>
   <block id="8fa2690e71ce0c54acb839630146cadd" category="doc">클러스터에서 데이터 계층화에 대한 개요를 확인하십시오</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="list-text">정책</block>
   <block id="4be1b347cffb3177e749a7dea6f54978" category="list-text">각 계층화 정책이 볼륨에 적용된 횟수</block>
@@ -801,7 +787,6 @@
   <block id="0c664d98088fac0e3d869a21cac0c6c4" category="list-text">에서 구독하십시오<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.</block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">라이센스를 요청하려면 BlueXP 오른쪽 하단의 채팅 아이콘을 클릭하십시오.</block>
   <block id="e031d1891af14066db39ea9bc5a67edb" category="list-text">BlueXP에서 지원되지 않는 구성을 사용하는 경우 FabricPool 라이센스를 계속 사용할 수 있습니다.<block ref="f4b8492105dcaca906c2ce90b9ccab9e" category="inline-link-rx"></block>.</block>
-  <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">NSS 계정을 BlueXP에 추가합니다</block>
   <block id="8816958eed360786a943983e0bd031fd" category="paragraph">BlueXP에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해 * 활성화 * 를 클릭하고, 표시되는 메시지에 따라 데이터를 Google Cloud Storage에 계층화합니다.</block>
   <block id="955a264d46a1f0536f93bcb5a3e454f1" category="list-text">BlueXP에서 온프레미스 클러스터를 검색할 수 있습니다.</block>
   <block id="92d46e494e7ad2aeddc2f61967fd1763" category="list-text">BlueXP는 객체 스토리지 공급자를 사용하도록 ONTAP를 구성하고 클러스터에서 활성 및 비활성 데이터의 양을 검색합니다.</block>
@@ -891,7 +876,6 @@
   <block id="05278fe4264fa7714f2deb1dc83a1f0f" category="paragraph">아니요 클라우드로 구축 및 계층화된 오브젝트에는 단일 파일이 아니라 여러 파일에서 최대 1,024개의 4KB 블록이 포함됩니다. 볼륨의 메타데이터는 항상 로컬 계층에 유지됩니다.</block>
   <block id="d8de974cae25c190e1656a12aae05ac0" category="paragraph">데이터 계층화는 블록 레벨에서 수행되므로, 데이터 블록이 특정 기간 동안 액세스하지 않은 후에는 콜드 블록으로 간주되고, 계층화 정책의 최소 냉각 일 속성에 의해 정의됩니다. 해당 범위는 ONTAP 9.7 이전 버전에서 2-63일 또는 ONTAP 9.8부터 2-183일입니다.</block>
   <block id="538632f98286e11da7898a8dd8c5940a" category="list-text">데이터를 StorageGRID로 계층화할 경우 비용이 발생하지 않으므로 BYOL 라이센스 또는 PAYGO 등록이 필요하지 않습니다. 이러한 계층형 데이터는 라이센스에서 구입한 용량에 포함되지 않습니다.</block>
-  <block id="822f69d2e49d7da6f8c764e0680f2f75" category="list-text">BlueXP에서 라이센스를 자동으로 업데이트할 수 없는 경우 라이센스 파일을 수동으로 업로드해야 합니다.</block>
   <block id="1c573cd95f6407add05436f6ac05d6ec" category="section-title">볼륨에 대한 계층화 보고서를 다운로드합니다</block>
   <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">다운로드</block>
   <block id="fe8e7e0f08b18c3c012d94d74e8386ce" category="inline-image-macro">모든 볼륨의 계층화 상태를 나열하는 CSV 파일을 생성하는 방법을 보여 주는 스크린샷</block>
@@ -1054,21 +1038,6 @@
   <block id="219f576e0419ffa72026ee6b3730b581" category="admonition">StorageGRID로 계층화하려면 FabricPool 또는 BlueXP 계층화 라이센스가 필요하지 않습니다.</block>
   <block id="7a75abe8763b34e741fcabf5e89398eb" category="cell">BlueXP 계층화 라이센스</block>
   <block id="534497403860589544cd9e470d2d110b" category="cell">계층화 구성 및 관리는 BlueXP의 BlueXP 계층화 서비스를 통해 수행됩니다.</block>
-  <block id="316a7aed758eb7b043492e848b931117" category="section-title">BlueXP 계층화 라이센스 파일을 얻습니다</block>
-  <block id="9b1441120e66cf63798ba27aa3531664" category="list-text">BlueXP 계층화 라이센스 일련 번호를 입력합니다.</block>
-  <block id="1a8eb6c0b4ba023742d25f05dbe5273d" category="section-title">BlueXP 계층화 BYOL 라이센스를 계정에 추가합니다</block>
-  <block id="58db88b7cd0054a3b13ce2930a48dad9" category="list-text">Governance &gt; Digital Wallet &gt; Data Services Licenses * 를 클릭합니다.</block>
-  <block id="6b4dd8f152b00922385ef0e152554720" category="inline-image-macro">BlueXP 계층화 BYOL 라이센스를 추가하는 페이지를 보여 주는 스크린샷</block>
-  <block id="0a54431ad29a96ceb71a9ab3f197983c" category="paragraph"><block ref="0a54431ad29a96ceb71a9ab3f197983c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6b151ce754bba307afbfbdfbdb41717b" category="paragraph">BlueXP는 BlueXP 계층화 서비스가 활성화되도록 라이센스를 추가합니다.</block>
-  <block id="28b875681d54f556230ca5c52173e3df" category="section-title">BlueXP 계층화 BYOL 라이센스 업데이트</block>
-  <block id="85884cbcf3bef3a960250a4bea4d78c9" category="paragraph">라이센스가 부여된 기간이 만료일이 다가오고 있거나 라이센스가 부여된 용량이 한도에 도달한 경우 BlueXP 계층화에 알림이 표시됩니다.</block>
-  <block id="a257270f45c3400d010c6b64e1918bbc" category="inline-image-macro">BlueXP 계층화 페이지에서 만료 예정인 라이센스를 보여 주는 스크린샷</block>
-  <block id="823ff9e6c8c5bae175b237dc370d0f90" category="paragraph"><block ref="823ff9e6c8c5bae175b237dc370d0f90" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0404c6f4bcf79c09ea3f68a74aa284df" category="paragraph">BlueXP 계층화 라이센스가 만료되기 전에 업데이트하여 데이터를 클라우드에 계층화하는 기능이 중단되지 않도록 할 수 있습니다.</block>
-  <block id="0df47d96ab99d3765b297d66af42219e" category="list-text">BlueXP의 오른쪽 하단에 있는 채팅 아이콘을 클릭하여 특정 일련 번호에 대한 BlueXP 계층화 라이센스의 기간 연장 또는 추가 용량을 요청합니다.</block>
-  <block id="d7f004a77faee56e8076bcfdfa7b0560" category="list-text">가능합니다 <block ref="025fb98ec9c8a155e5ac365eabb828dc" category="inline-xref-macro-rx"></block>.</block>
-  <block id="89e28d16ae270dfde9199b600dc87aa5" category="paragraph">BlueXP는 라이센스를 업데이트하여 BlueXP 계층화 서비스를 계속 활성화합니다.</block>
   <block id="9af45e6d474a73f991c4a2515264ca3c" category="section-title">특수한 구성의 클러스터에 BlueXP 계층화 라이센스 적용</block>
   <block id="ba4742e3fc97f92aee8dd17337d92765" category="paragraph">다음 구성의 ONTAP 클러스터는 BlueXP 계층화 라이센스를 사용할 수 있지만, 라이센스는 단일 노드 클러스터, HA 구성 클러스터, 계층화 미러 구성의 클러스터, FabricPool 미러를 사용한 MetroCluster 구성과 다른 방식으로 적용되어야 합니다.</block>
   <block id="788e22af5bb5495bee686a619fa97145" category="list-text">"다크 사이트"에 설치된 클러스터</block>
@@ -1148,11 +1117,6 @@
   <block id="bb987c734075abca5676f20a90739886" category="paragraph">BlueXP 디지털 지갑 페이지를 사용하여 BlueXP 계층화 BYOL 라이센스를 관리합니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.</block>
   <block id="3fafe7ba610db00ca5147d2e5246692c" category="list-text">BlueXP에서 지원되는 구성을 사용하는 경우 FabricPool 라이센스가 BlueXP 계층화 라이센스로 변환되고 BlueXP 디지털 지갑에 표시됩니다. 초기 라이센스가 만료되면 BlueXP 계층화 라이센스를 업데이트해야 합니다.</block>
   <block id="c02dda54728a1d7496d2f0b0f6025e92" category="cell">BlueXP 디지털 지갑에 등록되어 있습니다.</block>
-  <block id="01b47f7bb171f9330df8674ddf7b5762" category="paragraph">이 상태는 BlueXP 디지털 지갑 페이지에도 표시됩니다.</block>
-  <block id="0553876f11122be0920f9fa9c803d152" category="inline-image-macro">BlueXP 디지털 전자지갑에서 만료 중인 라이센스를 보여 주는 스크린샷.</block>
-  <block id="be95aaa9ff9dad75f49bfadf917b8f70" category="paragraph"><block ref="be95aaa9ff9dad75f49bfadf917b8f70" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b23b97d3c26b0f7e2265329756cea9ca" category="paragraph">라이센스 비용을 지불하고 NetApp Support 사이트에 등록한 후 BlueXP는 BlueXP 디지털 지갑의 라이센스를 자동으로 업데이트하고 데이터 서비스 라이센스 페이지에 변경 내용이 5-10분 내에 반영됩니다.</block>
-  <block id="70196feeb01dc8dfdb5276a2398e60f9" category="list-text">BlueXP 디지털 전자지갑의 _Data Services Licenses_탭에서 를 클릭합니다 <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> 업데이트하는 서비스 일련 번호에 대해 * Update License * 를 클릭합니다.</block>
   <block id="f06c1d2da57ae64b66baec3eaec4f2fb" category="paragraph">언제 <block ref="2383fd55f46b5a2b7b7779e64af3b388" category="inline-link-macro-rx"></block>BlueXP 계층화는 FabricPool 라이센스를 인식하고 BlueXP 디지털 지갑에 라이센스를 추가합니다. 이러한 클러스터는 평소와 같이 데이터를 계속 계층화합니다. FabricPool 라이센스가 만료되면 BlueXP 계층화 라이센스를 구입해야 합니다.</block>
   <block id="5ac06364a2cad0af68f73e54f03c4205" category="list-text">"상위" BlueXP 계층화 라이센스는 모든 클러스터가 계층화에 사용하는 용량을 추적하여 라이센스에 충분한 용량이 있는지 확인합니다. 총 라이센스 용량과 유효 기간은 BlueXP 디지털 지갑에 나와 있습니다.</block>
   <block id="4acb8884a848c4db6d41852f96aa4ef6" category="admonition">System Manager 또는 ONTAP CLI에서 "하위" 라이센스에 대한 라이센스 용량 및 만료 날짜가 실제 정보가 아니므로 정보가 동일하지 않을 수 있습니다. 이러한 값은 BlueXP 계층화 소프트웨어에서 내부적으로 관리됩니다. 실제 정보는 BlueXP 디지털 지갑에서 추적할 수 있습니다.</block>
@@ -1208,7 +1172,6 @@
   <block id="994f1fa9f6b6f6276b10a9c8a8f18a8c" category="list-text">BlueXP 백업 및 복구는 계층화 정책을 통해 설정된 볼륨의 영향을 받습니다.<block ref="2db919f88216e9376af16eec91019e18" category="inline-link-rx"></block>.</block>
   <block id="5f6fdb8f4b29baeb552fcdad9078be66" category="list-text">클라우드 공급자 시장에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템에 대한 BlueXP 계층화도 자동으로 구독됩니다. BlueXP 계층화 * 온-프레미스 대시보드 * 탭에 활성 서브스크립션이 표시됩니다. 다시 가입하지 않아도 됩니다. BlueXP 디지털 지갑에 활성 구독이 표시됩니다.</block>
   <block id="1ba2cc4758ef6d9270d73cfc36a18caa" category="paragraph">선택적으로 사용하지 않을 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 동일한 달러 당량 및 만료 날짜가 있는 BlueXP 계층화 라이센스로 변환할 수 있습니다.<block ref="f4c32a82791cf9fc58c736c0aed05092" category="inline-link-rx"></block>.</block>
-  <block id="30fc689a9c3cd4222329fe3a4c818a33" category="paragraph">드롭다운 목록에서 NetApp Support 사이트 계정을 사용할 수 없는 경우<block ref="06a3bc9d474b5d4e44d1a2733cac785a" category="inline-link-rx"></block>.</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
@@ -1275,9 +1238,6 @@
   <block id="b6d7a1ad9440cb7fff09db239b1313d7" category="paragraph">이 설정은 데이터를 계층화하는 다른 클러스터에 할당된 대역폭에 영향을 주지 않습니다.</block>
   <block id="7911cbd17bf94032db18ecf08e4fe5c8" category="list-text">Tiering Setup * 페이지의 섹션을 완료하십시오.</block>
   <block id="fe35e262c448d76aba8db40105f10ae6" category="paragraph">필요에 따라 이전에 구성한 AWS PrivateLink를 사용할지 여부를 선택합니다. <block ref="e6b15c4e63006b05802c430924113019" category="inline-xref-macro-rx"></block> 끝점 구성을 안내하는 대화 상자가 표시됩니다.</block>
-  <block id="c52a9d7f6355ad24bacb2c5f23c0e863" category="paragraph">BlueXP 계층화 라이센스를 구매한 후에는 BlueXP 계층화 일련 번호 및 NSS 계정을 입력하거나 NLF 라이센스 파일을 업로드하여 BlueXP에서 라이센스를 활성화합니다. 아래 단계에서는 NLF 라이센스 파일을 가져오는 방법을 보여 줍니다(해당 방법을 사용하려는 경우).</block>
-  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
-  <block id="a6cfac773f21906007a8ddf407596067" category="list-text">라이센스 키 * 열에서 * NetApp 라이센스 파일 가져오기 * 를 클릭합니다.</block>
   <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">BlueXP에서 * 도움말 &gt; 지원 * 을 선택합니다.</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">전화로 통화하려면 * 전화 * 를 선택하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
   <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">NetApp 지원 전문가와 함께 티켓을 열려면 * 케이스 생성 * 을 선택하십시오.</block>
@@ -1407,18 +1367,6 @@
   <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">작업 환경 목록은 서비스 상단 배너에서 선택한 BlueXP  조직(또는 계정), 프로젝트(또는 작업 영역) 및 커넥터 범위 내에 있습니다.</block>
   <block id="0aac35c69d56f468c7891da9594e68be" category="list-text">BYOL BlueXP  계층화 라이센스(이전 명칭: "Cloud Tiering" 라이센스)는 BlueXP  조직의 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. 이는 각 클러스터에 대해 _FabricPool_라이센스를 구입한 과거와 다릅니다(그리고 훨씬 더 쉬움).</block>
   <block id="7f58c7f218a280f56c54c444e1bb8411" category="paragraph">NetApp에서 제공하는 자체 라이센스는 1년, 2년 또는 3년간 제공됩니다. BYOL * BlueXP  Tiering * 라이센스(이전 명칭: "클라우드 계층화" 라이센스)는 BlueXP  조직의 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. BlueXP 계층화 라이센스에 정의된 전체 계층화 용량은 온프레미스 클러스터 * 의 * 전체 * 간에 공유되므로 초기 라이센스와 갱신을 간편하게 수행할 수 있습니다. 계층화 BYOL 라이센스의 최소 용량은 10TiB에서 시작됩니다.</block>
-  <block id="0e48ab0bd412e2c6d662a3a4540397a0" category="paragraph">BlueXP  계층화 일련 번호가 필요합니다. 판매 주문에서 이 번호를 찾거나 계정 팀에 문의하여 이 정보를 확인하십시오.</block>
-  <block id="e53331a3231a958d20a4871d8efc35d8" category="list-text">BlueXP  계정 ID 찾기:</block>
-  <block id="e0e8a7d90375792efecad34c0c923e32" category="inline-image-macro">BlueXP  웹 콘솔의 오른쪽 상단에 표시되는 설정 아이콘입니다.</block>
-  <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">BlueXP  콘솔의 오른쪽 위에서&gt; * ID 및 액세스 관리 * 를 선택합니다<block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>.</block>
-  <block id="3bcef3f6238058ae825d608e1557c538" category="list-text">조직 페이지에서 계정 ID를 찾아 복사합니다.</block>
-  <block id="2bd8c9344d3768dd44b910db169ef1fa" category="paragraph">나열된 계정 ID가 없고 조직 ID만 있는 경우 조직 ID의 처음 8개 문자를 복사하여 _account-_에 추가해야 합니다</block>
-  <block id="14da2ef10b9e4cc4d0981b05fff98072" category="paragraph">예를 들어 다음과 같이 조직 ID라고 가정해 보겠습니다.</block>
-  <block id="2740d3013330ec13ae7693ee76bc6509" category="paragraph">ea10e1c6-80cc-4219-8e99-3c3e6b161ba5</block>
-  <block id="6ffe1a2d88424dc37ba43bdf5999183e" category="paragraph">계정 ID는 다음과 같습니다.</block>
-  <block id="c0b58edc6437b03c81d24f7ded6f3648" category="paragraph">계정 - ea10e1c6</block>
-  <block id="d4393f7d35eb6fcb480572ab5d418710" category="list-text">BlueXP  계정 ID(지원 사이트에서 테넌트 ID라고 함)를 입력하고 * 제출 * 을 클릭하여 라이센스 파일을 다운로드합니다.</block>
-  <block id="921d59a1a10f4e2423dfe3d60997086a" category="paragraph">BlueXP  계층화 라이센스를 구입한 후에는 BlueXP  계층화 서비스를 사용하려면 BlueXP 에 라이센스를 추가해야 합니다.</block>
   <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">BlueXP  계정 일련 번호(BlueXP 의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)를 등록하는 중입니다.</block>
   <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">NetApp 지원을 받으려면 BlueXP 를 등록 하십시오</block>
   <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">지원을 등록하고 지원 권한을 활성화하려면 BlueXP  조직(또는 계정)의 사용자 한 명이 NetApp 지원 사이트 계정을 BlueXP  로그인과 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
@@ -1449,4 +1397,8 @@
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Google Cloud 마켓플레이스에서 BlueXP를 구독하십시오</block>
   <block id="2e02ef063e4f9a11ed835693daa2e7d1" category="inline-link">Active IQ Digital Advisor(Digital Advisor)에서 클러스터의 계층화 정보 보기</block>
   <block id="aac4751e2e50c3f9d64afc60244ec854" category="paragraph">이 NetApp 제품에 익숙한 사용자도 사용할 수<block ref="ab766f8aad1f1b4bf567a28cf12cabcb" category="inline-link-rx"></block> 있습니다. 왼쪽 탐색 창에서 * 클라우드 권장사항 * 을 선택하면 됩니다.</block>
+  <block id="936ae05f91caeb56b08682cd274bed64" category="section-title">BlueXP  계층화 라이센스를 관리합니다</block>
+  <block id="1430b68e61364b237636f6f0ce8e282a" category="paragraph">라이센스 기간이 만료일에 가까워지거나 라이센스 용량이 제한에 도달한 경우 BlueXP  계층화와 디지털 지갑에서 알림을 받게 됩니다.</block>
+  <block id="f59ab7df4b9fd3526a4fbed390f7fa9a" category="inline-link">디지털 지갑에서 라이선스 관리에 대해 알아봅니다</block>
+  <block id="bdfa472a184585b4fa4633165dc44d15" category="paragraph">BlueXP  디지털 지갑을 통해 기존 라이선스를 업데이트하고, 라이선스 상태를 확인하고, 새 라이선스를 추가할 수 있습니다.<block ref="eb38d0c8186bca45da4435026f76609b" category="inline-link-rx"></block>..</block>
 </blocks>

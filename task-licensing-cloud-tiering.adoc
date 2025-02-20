@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
-keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
+keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
 summary: 첫 번째 클러스터에서 계층화를 설정하면 BlueXP 계층화를 30일 동안 무료로 사용할 수 있습니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 또는 연간 구독을 통해 BlueXP 계층화에 대한 비용을 지불하거나 NetApp에서 BYOL 라이센스를 받거나 이 둘을 결합하여 비용을 지불해야 합니다. 
 ---
 = BlueXP 계층화에 대한 라이센스를 설정합니다
@@ -161,106 +161,11 @@ TIP: StorageGRID로 계층화하려면 FabricPool 또는 BlueXP 계층화 라이
 |===
 
 
-=== BlueXP 계층화 라이센스 파일을 얻습니다
+=== BlueXP  계층화 라이센스를 관리합니다
 
-BlueXP 계층화 라이센스를 구매한 후에는 BlueXP 계층화 일련 번호 및 NSS 계정을 입력하거나 NLF 라이센스 파일을 업로드하여 BlueXP에서 라이센스를 활성화합니다. 아래 단계에서는 NLF 라이센스 파일을 가져오는 방법을 보여 줍니다(해당 방법을 사용하려는 경우).
+라이센스 기간이 만료일에 가까워지거나 라이센스 용량이 제한에 도달한 경우 BlueXP  계층화와 디지털 지갑에서 알림을 받게 됩니다.
 
-.시작하기 전에
-BlueXP  계층화 일련 번호가 필요합니다. 판매 주문에서 이 번호를 찾거나 계정 팀에 문의하여 이 정보를 확인하십시오.
-
-.단계
-. BlueXP  계정 ID 찾기:
-+
-.. BlueXP  콘솔의 오른쪽 위에서> * ID 및 액세스 관리 * 를 선택합니다image:icon-settings-option.png["BlueXP  웹 콘솔의 오른쪽 상단에 표시되는 설정 아이콘입니다."].
-.. 조직 페이지에서 계정 ID를 찾아 복사합니다.
-+
-나열된 계정 ID가 없고 조직 ID만 있는 경우 조직 ID의 처음 8개 문자를 복사하여 _account-_에 추가해야 합니다
-
-+
-예를 들어 다음과 같이 조직 ID라고 가정해 보겠습니다.
-
-+
-ea10e1c6-80cc-4219-8e99-3c3e6b161ba5
-
-+
-계정 ID는 다음과 같습니다.
-
-+
-계정 - ea10e1c6
-
-
-
-. 에 로그인합니다 https://mysupport.netapp.com["NetApp Support 사이트"^] 시스템 > 소프트웨어 라이센스 * 를 클릭합니다.
-. BlueXP 계층화 라이센스 일련 번호를 입력합니다.
-+
-image:screenshot_cloud_tiering_license_step1.gif["일련 번호로 검색한 후 라이센스 테이블을 보여 주는 스크린샷"]
-
-. 라이센스 키 * 열에서 * NetApp 라이센스 파일 가져오기 * 를 클릭합니다.
-. BlueXP  계정 ID(지원 사이트에서 테넌트 ID라고 함)를 입력하고 * 제출 * 을 클릭하여 라이센스 파일을 다운로드합니다.
-+
-image:screenshot_cloud_tiering_license_step2.gif["테넌트 ID를 입력한 다음 제출을 클릭하여 라이센스 파일을 다운로드할 수 있는 라이센스 가져오기 대화 상자가 표시된 스크린샷"]
-
-
-
-
-
-=== BlueXP 계층화 BYOL 라이센스를 계정에 추가합니다
-
-BlueXP  계층화 라이센스를 구입한 후에는 BlueXP  계층화 서비스를 사용하려면 BlueXP 에 라이센스를 추가해야 합니다.
-
-.단계
-. Governance > Digital Wallet > Data Services Licenses * 를 클릭합니다.
-. 라이선스 추가 * 를 클릭합니다.
-. Add License_대화 상자에서 라이센스 정보를 입력하고 * Add License * 를 클릭합니다.
-+
-** 계층화 라이선스 일련 번호가 있고 NSS 계정을 알고 있는 경우 * 일련 번호 입력 * 옵션을 선택하고 해당 정보를 입력합니다.
-+
-드롭다운 목록에서 NetApp Support 사이트 계정을 사용할 수 없는 경우 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSS 계정을 BlueXP에 추가합니다"^].
-
-** 계층화 라이센스 파일이 있는 경우 * 라이센스 파일 업로드 * 옵션을 선택하고 표시되는 메시지에 따라 파일을 첨부합니다.
-+
-image:screenshot_services_license_add.png["BlueXP 계층화 BYOL 라이센스를 추가하는 페이지를 보여 주는 스크린샷"]
-
-
-
-
-
-.결과
-BlueXP는 BlueXP 계층화 서비스가 활성화되도록 라이센스를 추가합니다.
-
-
-
-=== BlueXP 계층화 BYOL 라이센스 업데이트
-
-라이센스가 부여된 기간이 만료일이 다가오고 있거나 라이센스가 부여된 용량이 한도에 도달한 경우 BlueXP 계층화에 알림이 표시됩니다.
-
-image:screenshot_services_license_expire2.png["BlueXP 계층화 페이지에서 만료 예정인 라이센스를 보여 주는 스크린샷"]
-
-이 상태는 BlueXP 디지털 지갑 페이지에도 표시됩니다.
-
-image:screenshot_services_license_expire1.png["BlueXP 디지털 전자지갑에서 만료 중인 라이센스를 보여 주는 스크린샷."]
-
-BlueXP 계층화 라이센스가 만료되기 전에 업데이트하여 데이터를 클라우드에 계층화하는 기능이 중단되지 않도록 할 수 있습니다.
-
-.단계
-. BlueXP의 오른쪽 하단에 있는 채팅 아이콘을 클릭하여 특정 일련 번호에 대한 BlueXP 계층화 라이센스의 기간 연장 또는 추가 용량을 요청합니다.
-+
-라이센스 비용을 지불하고 NetApp Support 사이트에 등록한 후 BlueXP는 BlueXP 디지털 지갑의 라이센스를 자동으로 업데이트하고 데이터 서비스 라이센스 페이지에 변경 내용이 5-10분 내에 반영됩니다.
-
-. BlueXP에서 라이센스를 자동으로 업데이트할 수 없는 경우 라이센스 파일을 수동으로 업로드해야 합니다.
-+
-.. 가능합니다 <<BlueXP 계층화 라이센스 파일을 얻습니다,NetApp Support 사이트에서 라이센스 파일을 받으십시오>>.
-.. BlueXP 디지털 전자지갑의 _Data Services Licenses_탭에서 를 클릭합니다 image:screenshot_horizontal_more_button.gif["추가 아이콘"] 업데이트하는 서비스 일련 번호에 대해 * Update License * 를 클릭합니다.
-+
-image:screenshot_services_license_update.png["특정 서비스에 대한 라이센스 업데이트 단추를 선택하는 스크린샷"]
-
-.. Update License_page에서 라이센스 파일을 업로드하고 * Update License * 를 클릭합니다.
-
-
-
-
-.결과
-BlueXP는 라이센스를 업데이트하여 BlueXP 계층화 서비스를 계속 활성화합니다.
+BlueXP  디지털 지갑을 통해 기존 라이선스를 업데이트하고, 라이선스 상태를 확인하고, 새 라이선스를 추가할 수 있습니다. https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["디지털 지갑에서 라이선스 관리에 대해 알아봅니다"^]..
 
 
 
