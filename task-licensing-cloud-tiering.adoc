@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
-keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
+keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering, license 
 summary: 첫 번째 클러스터에서 계층화를 설정하면 BlueXP 계층화를 30일 동안 무료로 사용할 수 있습니다. 무료 평가판이 끝나면 클라우드 공급자 마켓플레이스에서 종량제 또는 연간 구독을 통해 BlueXP 계층화에 대한 비용을 지불하거나 NetApp에서 BYOL 라이센스를 받거나 이 둘을 결합하여 비용을 지불해야 합니다. 
 ---
 = BlueXP 계층화에 대한 라이센스를 설정합니다
@@ -38,6 +38,8 @@ BlueXP 계층화 라이센스가 없는 경우 첫 번째 클러스터에 계층
 == BlueXP 계층화 PAYGO 구독을 사용합니다
 
 클라우드 공급자의 마켓플레이스에서 선불 종량제 구독을 통해 Cloud Volumes ONTAP 시스템 및 BlueXP 계층화와 같은 다양한 클라우드 데이터 서비스의 사용 라이선스를 취득할 수 있습니다.
+
+BlueXP  계층화를 구독하면 디지털 지갑에서 구독을 관리할 수 있습니다. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html#view-your-subscriptions["디지털 지갑을 사용하는 방법을 알아보십시오."^]
 
 
 
@@ -122,7 +124,7 @@ BlueXP 계층화 라이센스가 없는 경우 다음 연락처로 문의해 주
 
 선택적으로 사용하지 않을 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 동일한 달러 당량 및 만료 날짜가 있는 BlueXP 계층화 라이센스로 변환할 수 있습니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["자세한 내용을 보려면 여기를 클릭하십시오"^].
 
-BlueXP 디지털 지갑 페이지를 사용하여 BlueXP 계층화 BYOL 라이센스를 관리합니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.
+BlueXP 디지털 지갑 페이지를 사용하여 BlueXP 계층화 BYOL 라이센스를 관리합니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["디지털 지갑을 사용하는 방법을 알아보십시오."^]
 
 
 

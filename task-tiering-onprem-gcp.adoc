@@ -43,7 +43,7 @@ BlueXP에서 사내 작업 환경을 선택하고, 계층화 서비스에 대해
 
 [role="quick-margin-list"]
 * GCP 마켓플레이스를 구독하려면 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["BlueXP Marketplace 오퍼링으로 이동합니다"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
-* BlueXP 계층화 BYOL 라이센스를 사용하여 비용을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [구매 시 문의하기]를 클릭한 다음 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP 디지털 지갑에서 계정에 추가하십시오"].
+* BlueXP  계층화 BYOL 라이센스를 사용하여 요금을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [하나를 구매해야 하는 경우 문의]을 누른 다음link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["BlueXP 디지털 지갑에서 계정에 추가하십시오"^],
 
 
 
