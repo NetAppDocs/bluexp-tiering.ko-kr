@@ -1397,7 +1397,6 @@
   <block id="1430b68e61364b237636f6f0ce8e282a" category="paragraph">라이센스 기간이 만료일에 가까워지거나 라이센스 용량이 제한에 도달한 경우 BlueXP  계층화와 디지털 지갑에서 알림을 받게 됩니다.</block>
   <block id="f59ab7df4b9fd3526a4fbed390f7fa9a" category="inline-link">디지털 지갑에서 라이선스 관리에 대해 알아봅니다</block>
   <block id="bdfa472a184585b4fa4633165dc44d15" category="paragraph">BlueXP  디지털 지갑을 통해 기존 라이선스를 업데이트하고, 라이선스 상태를 확인하고, 새 라이선스를 추가할 수 있습니다.<block ref="eb38d0c8186bca45da4435026f76609b" category="inline-link-rx"></block>..</block>
-  <block id="b9f5b01b4774bcb7362c0c3c8c045c8f" category="section-title">BYOL 용량 제한에 도달하거나 BYOL 라이센스가 만료되면 어떻게 됩니까?</block>
   <block id="3bd6904fad56f42c6c8fca6339e68a52" category="paragraph">BYOL 용량 제한에 도달하거나 BYOL 라이센스가 만료된 경우 새로운 콜드 데이터의 계층화가 중단되면 새로운 콜드 데이터의 계층화가 중지됩니다. 이전에 계층화된 모든 데이터에 계속 액세스할 수 있습니다. 즉, 이 데이터를 검색하고 사용할 수 있습니다. 검색할 경우 데이터가 클라우드에서 성능 계층으로 다시 이동됩니다.</block>
   <block id="b5e80cebccc83c069af38aa776874590" category="inline-link-macro">디지털 지갑을 사용하는 방법을 알아보십시오.</block>
   <block id="d89bd65e8fd665e3441fc89af7b8df3e" category="paragraph">BlueXP  계층화를 구독하면 디지털 지갑에서 구독을 관리할 수 있습니다. <block ref="d49cdac2c2a5c8f3e20a0ee99c2a8fbf" category="inline-link-macro-rx"></block></block>
@@ -1405,4 +1404,5 @@
   <block id="b5f6f9235ede8b6d89d84e0a91d1d416" category="list-text">BlueXP  계층화 BYOL 라이센스를 사용하여 요금을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [하나를 구매해야 하는 경우 문의]을 누른 다음<block ref="7514748750b360406b2849d4de48dd88" category="inline-link-macro-rx"></block>,</block>
   <block id="f5b439eae5ededef7363a59554dfd116" category="list-text">BlueXP  계층화 BYOL 라이센스를 사용하여 요금을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [하나를 구매해야 하는 경우 문의]을 누른 다음<block ref="9c02282928f3218db393c9c2756eb321" category="inline-link-macro-rx"></block>,</block>
   <block id="1f7ed36d878143cac28b03439d01a547" category="list-text">BlueXP  계층화 BYOL 라이센스를 사용하여 요금을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [하나를 구매해야 하는 경우 문의]을 누른 다음<block ref="9c02282928f3218db393c9c2756eb321" category="inline-link-macro-rx"></block>, .</block>
+  <block id="18edf950b6f18ca0e897a7237c2d214e" category="section-title">BYOL 용량 제한에 도달하거나 BYOL 라이센스가 만료되면 어떻게 됩니까?</block>
 </blocks>
