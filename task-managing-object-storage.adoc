@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-object-storage.html 
-keywords: object storage, mirror object storage, create object storage, remove object storage, swap object storage, display object storage 
+keywords: object storage, mirror object storage, create object storage, remove object storage, swap object storage, display object storage, license 
 summary: 데이터를 특정 오브젝트 스토리지에 계층화하도록 온프레미스 ONTAP 클러스터를 구성한 후에는 추가 오브젝트 스토리지 작업을 수행할 수 있습니다. 새 오브젝트 스토리지를 추가하고, 계층화된 데이터를 보조 오브젝트 스토리지에 미러링하고, 기본 및 미러 오브젝트 스토리지를 바꾸고, 애그리게이트에서 미러링된 오브젝트 저장소를 제거하는 등의 작업을 수행할 수 있습니다. 
 ---
 = 데이터 계층화에 사용되는 오브젝트 스토리지 관리
@@ -91,9 +91,9 @@ IAM 사용자는 * S3 Bucket * 페이지에서 선택하거나 생성한 버킷�
 
 두 번째 오브젝트 저장소를 Aggregate에 연결하여 FabricPool 미러를 생성하여 데이터를 두 개의 오브젝트 저장소에 동기식으로 계층화할 수 있습니다. Aggregate에 이미 연결된 오브젝트 저장소가 하나 있어야 합니다. https://docs.netapp.com/us-en/ontap/fabricpool/create-mirror-task.html["FabricPool 미러에 대한 자세한 정보"^].
 
-MetroCluster 구성을 사용하는 경우 다른 가용성 영역에 있는 퍼블릭 클라우드에서 오브젝트 저장소를 사용하는 것이 좋습니다. https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["MetroCluster 요구 사항에 대한 자세한 내용은 ONTAP 설명서를 참조하십시오"^].
+MetroCluster 구성을 사용할 때는 서로 다른 가용성 영역에 있는 퍼블릭 클라우드의 오브젝트 저장소를 사용하는 것이 가장 좋습니다. https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["MetroCluster 요구 사항에 대한 자세한 내용은 ONTAP 설명서를 참조하십시오"^].. MetroCluster 내에서는, 미러링되지 않은 애그리게이트를 사용하지 않는 것이 좋습니다. 그렇게 하면 오류 메시지가 표시됩니다.
 
-MetroCluster 구성에서 StorageGRID를 오브젝트 저장소로 사용하는 경우 두 ONTAP 시스템 모두 단일 StorageGRID 시스템으로 FabricPool 계층화를 수행할 수 있습니다. 각 ONTAP 시스템은 데이터를 서로 다른 버킷에 계층화해야 합니다.
+MetroCluster 구성에서 StorageGRID를 오브젝트 저장소로 사용할 경우 두 ONTAP 시스템 모두에서 단일 StorageGRID 시스템에 FabricPool 계층화를 수행할 수 있습니다. 각 ONTAP 시스템은 데이터를 서로 다른 버킷에 계층화해야 합니다.
 
 .단계
 . 클러스터 * 페이지에서 선택한 클러스터에 대한 * 고급 설정 * 을 클릭합니다.

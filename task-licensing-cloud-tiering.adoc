@@ -208,7 +208,7 @@ NOTE: System Manager 또는 ONTAP CLI에서 "하위" 라이센스에 대한 라�
 이 시점에서는 계층화를 구성하지 마십시오.
 
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP 계층화 라이센스를 구입합니다"] 새 클러스터 또는 클러스터에 필요한 용량
-. BlueXP의 경우 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP 디지털 지갑에 라이센스를 추가합니다"].
+. BlueXP <<licenses,BlueXP 디지털 지갑에 라이센스를 추가합니다>>에서 [BlueXP  디지털 지갑에 라이선스 추가].
 . BlueXP 계층화에서는 link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["새로운 클러스터를 만나보세요"].
 . 클러스터 페이지에서 을 클릭합니다 image:screenshot_horizontal_more_button.gif["추가 아이콘"] 클러스터에 대해 * 라이선스 배포 * 를 선택합니다.
 +
