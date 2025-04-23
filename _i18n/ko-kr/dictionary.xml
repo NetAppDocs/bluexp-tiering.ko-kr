@@ -1407,32 +1407,5 @@
   <block id="d3a48b6792b79f1932baa44071945c80" category="list-text">BlueXP <block ref="e5625abf9d60b2626bb47dbb5c12864c" category="inline-xref-macro-rx"></block>에서 [BlueXP  디지털 지갑에 라이선스 추가].</block>
   <block id="af35d47e77f1b287fca9c2a638c644aa" category="paragraph">MetroCluster 구성을 사용할 때는 서로 다른 가용성 영역에 있는 퍼블릭 클라우드의 오브젝트 저장소를 사용하는 것이 가장 좋습니다.<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>.. MetroCluster 내에서는, 미러링되지 않은 애그리게이트를 사용하지 않는 것이 좋습니다. 그렇게 하면 오류 메시지가 표시됩니다.</block>
   <block id="437a34485fe2ce742e7d58f52bb6c1e5" category="paragraph">MetroCluster 구성에서 StorageGRID를 오브젝트 저장소로 사용할 경우 두 ONTAP 시스템 모두에서 단일 StorageGRID 시스템에 FabricPool 계층화를 수행할 수 있습니다. 각 ONTAP 시스템은 데이터를 서로 다른 버킷에 계층화해야 합니다.</block>
-  <block id="aa43861a5e0a7fa90f107ba3b50f03cd" category="paragraph">BlueXP  계층화는 다음과 같은 Azure 지역을 지원합니다. Azure 중국 지역은 계층화 대상으로 지원되지 않습니다.</block>
-  <block id="f5cd262901883dff68d06b215fb0f28e" category="section-title">아프리카</block>
-  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">남아프리카 북부에 있습니다</block>
-  <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">호주 동부</block>
-  <block id="c2701212de431ec66277aeb9ec636184" category="list-text">호주 남동부</block>
-  <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">동아시아</block>
-  <block id="12fd3aa0a9f080663613364badb43e93" category="list-text">일본 동부</block>
-  <block id="33e5ad3a780212ee47f127965a2dda72" category="list-text">일본 서부</block>
-  <block id="6da3164e9884fb44e54fda035450cfaa" category="list-text">대한민국 중앙입니다</block>
-  <block id="cbbf2ae44538816cc573fa3ad561a434" category="list-text">대한민국</block>
-  <block id="ef005ab2b7187e0e4953a0abfdacad42" category="list-text">동남 아시아</block>
-  <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">프랑스 중부</block>
-  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">독일 웨스트 센트럴</block>
-  <block id="85c1bd2190b5e1105a9c4e7e6a224a96" category="list-text">독일 북쪽</block>
-  <block id="d0fe0e3b6520479f718b98f0d471b7d0" category="list-text">북유럽</block>
-  <block id="390a1a81c9b43f7d364b54144161673d" category="list-text">영국 남부</block>
-  <block id="23d58738c27b56ae980ce7b45716f6a5" category="list-text">영국 서부</block>
-  <block id="8fb2033d01e3efa2825282a13f86c14e" category="list-text">서유럽</block>
-  <block id="ea7c65fe418bef9cfe86be4944b30bcb" category="list-text">캐나다 동부</block>
-  <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">미국 중부</block>
-  <block id="3c110de67497eb3f8d4c100e43101c81" category="list-text">미국 동부</block>
-  <block id="7c61981f0be77fb7e4061ba5395ff02b" category="list-text">동서 2</block>
-  <block id="e306e59ae933d5705ad58b576840cfb7" category="list-text">미국 중북부</block>
-  <block id="00a0c4ce62672ec36639c314d0d8e114" category="list-text">미국 중남부</block>
-  <block id="f3397c566fedcaa2f63145169ba345fc" category="list-text">미국 서부</block>
-  <block id="c349d3a26cf4231660785a0c5b4cb007" category="list-text">서부 미국 2</block>
-  <block id="e74523dfd57d69116c6dc03759fe0a7b" category="list-text">미국 서부</block>
-  <block id="47b9af39407829080e9cfeee3607c39c" category="list-text">브라질 남부</block>
+  <block id="34d2244a64410dd4e28da2b82bf54998" category="paragraph">BlueXP  계층화는 Microsoft Azure가 21Vianet에서 운영하는 중국을 제외한 모든 Azure 지역에서 지원됩니다.</block>
 </blocks>
