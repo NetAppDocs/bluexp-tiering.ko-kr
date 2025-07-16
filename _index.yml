@@ -15,7 +15,7 @@ indexpage:
       url: whats-new.html
     - title: 라이센스를 설정합니다
       url: task-licensing-cloud-tiering.html
-  - title: 사내 ONTAP 데이터를 클라우드에 계층화
+  - title: 온프레미스 ONTAP 데이터를 클라우드로 계층화
     links:
     - title: Amazon S3에 계층화
       url: task-tiering-onprem-aws.html

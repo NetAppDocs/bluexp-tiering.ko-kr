@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-azure.html 
 keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, azure, blob, azure blob 
-summary: 비활성 데이터를 Azure Blob 저장소에 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보합니다. 
+summary: 비활성 데이터를 Azure Blob Storage로 계층화하여 온-프레미스 ONTAP 클러스터의 공간을 확보하세요. 
 ---
 = 사내 ONTAP 클러스터에서 Azure Blob 스토리지로 데이터 계층화
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 비활성 데이터를 Azure Blob 저장소에 계층화하여 온프�
 
 
 [role="lead"]
-비활성 데이터를 Azure Blob 저장소에 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보합니다.
+비활성 데이터를 Azure Blob Storage로 계층화하여 온-프레미스 ONTAP 클러스터의 공간을 확보하세요.
 
 
 
@@ -27,21 +27,21 @@ summary: 비활성 데이터를 Azure Blob 저장소에 계층화하여 온프�
 다음이 필요합니다.
 
 [role="quick-margin-list"]
-* ONTAP 9.4 이상을 실행하고 Azure Blob 저장소에 HTTPS를 연결하는 온프레미스 ONTAP 클러스터 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
+* ONTAP 9.4 이상을 실행하고 Azure Blob Storage에 HTTPS로 연결된 온-프레미스 ONTAP 클러스터입니다.  https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^] .
 * Azure VNET 또는 구내에 설치된 커넥터.
 * 데이터 센터의 ONTAP 클러스터, Azure 스토리지 및 BlueXP 계층화 서비스에 대한 아웃바운드 HTTPS 연결을 가능하게 하는 커넥터용 네트워킹.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 계층화 설정
 [role="quick-margin-para"]
-BlueXP에서 사내 ONTAP 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 화면의 지시에 따라 데이터를 Azure Blob 저장소에 계층화합니다.
+BlueXP 에서 온-프레미스 ONTAP 작업 환경을 선택하고 계층화 서비스에 대해 *사용*을 선택한 다음, 메시지에 따라 데이터를 Azure Blob 저장소로 계층화합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] 라이센스를 설정합니다
 [role="quick-margin-para"]
 무료 평가판 사용 기간이 끝나면 선불 종량제 구독, ONTAP BlueXP 계층화 라이센스 또는 다음 두 가지 BYOL 조합을 통한 BlueXP 계층화 비용 지불:
 
 [role="quick-margin-list"]
-* Azure 마켓플레이스에서 구독하려면 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["BlueXP Marketplace 오퍼링으로 이동합니다"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
+* Azure Marketplace에서 구독하려면  https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["BlueXP Marketplace 오퍼링으로 이동합니다"^] 을 클릭하고 *구독*을 선택한 다음, 안내를 따르세요.
 * BlueXP  계층화 BYOL 라이센스를 사용하여 요금을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [하나를 구매해야 하는 경우 문의]을 누른 다음link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["BlueXP 디지털 지갑에서 계정에 추가하십시오"],
 
 
@@ -104,7 +104,7 @@ NOTE: BlueXP 계층화는 ONTAP 9.5부터 FlexGroup 볼륨을 지원합니다. �
 
 === ONTAP 클러스터 검색
 
-콜드 데이터의 계층화를 시작하려면 먼저 BlueXP에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
+콜드 데이터의 계층화를 시작하려면 먼저 BlueXP 에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 
@@ -131,7 +131,7 @@ BlueXP 버전 3.9.25 이상을 사용하여 커넥터를 만든 경우 모두 �
 
 === 커넥터를 위한 네트워킹 준비
 
-커넥터에 필요한 네트워크 연결이 있는지 확인합니다. 커넥터는 온프레미스 또는 Azure에 설치할 수 있습니다.
+커넥터에 필요한 네트워크 연결이 있는지 확인합니다. 커넥터는 온-프레미스 또는 Azure에 설치할 수 있습니다.
 
 .단계
 . 커넥터가 설치된 네트워크에서 다음 연결을 사용할 수 있는지 확인합니다.
@@ -169,29 +169,29 @@ Azure 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터�
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["온프레미스 작업 환경"^].
 
 .단계
-. 사내 ONTAP 작업 환경을 선택합니다.
+. 온프레미스 ONTAP 작업 환경을 선택하세요.
 . 오른쪽 패널에서 계층화 서비스에 대해 * 활성화 * 를 클릭합니다.
 +
 Azure Blob 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우 클러스터를 Azure Blob 작업 환경으로 끌어서 설치 마법사를 시작할 수 있습니다.
 
 +
-image:screenshot_setup_tiering_onprem.png["온-프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 나타나는 활성화 옵션을 보여 주는 스크린샷"]
+image:screenshot_setup_tiering_onprem.png["온-프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 나타나는 활성화 옵션을 보여주는 스크린샷입니다."]
 
 . * 개체 스토리지 이름 정의 *: 이 개체 스토리지의 이름을 입력합니다. 이 클러스터에서 애그리게이트와 함께 사용할 수 있는 다른 오브젝트 스토리지와는 고유해야 합니다.
-. * 공급자 선택 *: * Microsoft Azure * 를 선택하고 * 계속 * 을 클릭합니다.
+. *공급자 선택*: *Microsoft Azure*를 선택하고 *계속*을 선택합니다.
 . Create Object Storage * 페이지의 단계를 완료합니다.
 +
-.. * 리소스 그룹 *: 기존 컨테이너가 관리되는 리소스 그룹 또는 계층화된 데이터에 대한 새 컨테이너를 만들려는 위치를 선택하고 * 계속 * 을 클릭합니다.
+.. *리소스 그룹*: 기존 컨테이너가 관리되는 리소스 그룹이나 계층형 데이터에 대한 새 컨테이너를 만들 리소스 그룹을 선택하고 *계속*을 선택합니다.
 +
-온프레미스 커넥터를 사용하는 경우 리소스 그룹에 대한 액세스를 제공하는 Azure 구독을 입력해야 합니다.
+온-프레미스 커넥터를 사용하는 경우 리소스 그룹에 대한 액세스를 제공하는 Azure 구독을 입력해야 합니다.
 
-.. * Azure Container *: 라디오 버튼을 선택하여 저장소 계정에 새 Blob 컨테이너를 추가하거나 기존 컨테이너를 사용합니다. 그런 다음 저장소 계정을 선택하고 기존 컨테이너를 선택하거나 새 컨테이너의 이름을 입력합니다. 그런 다음 * 계속 * 을 클릭합니다.
+.. * Azure Container *: 라디오 버튼을 선택하여 저장소 계정에 새 Blob 컨테이너를 추가하거나 기존 컨테이너를 사용합니다. 그런 다음 저장소 계정을 선택하고 기존 컨테이너를 선택하거나 새 컨테이너의 이름을 입력합니다. 그런 다음 *계속*을 선택하세요.
 +
 이 단계에서 나타나는 스토리지 계정 및 컨테이너는 이전 단계에서 선택한 리소스 그룹에 속합니다.
 
 .. * 액세스 계층 라이프사이클 *: BlueXP 계층화는 계층형 데이터의 라이프사이클 전환을 관리합니다. 데이터는 _Hot_class에서 시작되지만 일정 일 후에 _Cool_class를 데이터에 적용하는 규칙을 만들 수 있습니다.
 +
-계층화된 데이터를 전환할 액세스 계층과 데이터가 해당 계층에 할당되기 전의 일 수를 선택하고 * 계속 * 을 클릭합니다. 예를 들어, 아래 스크린샷은 계층화된 데이터가 객체 스토리지에서 45일 후에 _Hot_class의 _Cool_class에 할당됨을 보여 줍니다.
+계층화된 데이터를 전환할 액세스 계층과 데이터가 해당 계층에 할당되기 전까지의 일수를 선택한 후 *계속*을 선택합니다. 예를 들어, 아래 스크린샷은 계층화된 데이터가 객체 스토리지에서 45일 후에 _Hot_class의 _Cool_class에 할당됨을 보여 줍니다.
 
 +
 이 액세스 계층에 데이터 보존 * 을 선택하면 데이터는 _hot_access 계층에 그대로 유지되고 규칙이 적용되지 않습니다. link:reference-azure-support.html["지원되는 액세스 계층 을 참조하십시오"^].
@@ -202,7 +202,7 @@ image:screenshot_tiering_lifecycle_selection_azure.png["특정 일 수 이후 �
 +
 수명 주기 규칙은 선택한 저장소 계정의 모든 BLOB 컨테이너에 적용됩니다.
 
-.. * 클러스터 네트워크 *: ONTAP가 오브젝트 스토리지에 연결하는 데 사용해야 하는 IPspace를 선택하고 * 계속 * 을 클릭합니다.
+.. *클러스터 네트워크*: ONTAP 개체 스토리지에 연결하는 데 사용할 IP 공간을 선택하고 *계속*을 선택합니다.
 +
 올바른 IPspace를 선택하면 BlueXP 계층화를 통해 ONTAP에서 클라우드 공급자의 오브젝트 스토리지로의 연결을 설정할 수 있습니다.
 
@@ -213,15 +213,15 @@ image:screenshot_tiering_lifecycle_selection_azure.png["특정 일 수 이후 �
 
 . Tier Volumes_ 페이지에서 계층화를 구성할 볼륨을 선택하고 계층화 정책 페이지를 시작합니다.
 +
-** 모든 볼륨을 선택하려면 제목 행(image:button_backup_all_volumes.png[""])를 클릭하고 * 볼륨 구성 * 을 클릭합니다.
-** 여러 볼륨을 선택하려면 각 볼륨에 대한 확인란을 선택합니다(image:button_backup_1_volume.png[""])를 클릭하고 * 볼륨 구성 * 을 클릭합니다.
-** 단일 볼륨을 선택하려면 행(또는)을 클릭합니다 image:screenshot_edit_icon.gif["연필 아이콘을 편집합니다"] 아이콘)을 클릭합니다.
+** 모든 볼륨을 선택하려면 제목 행의 상자를 선택하십시오. image:button_backup_all_volumes.png[""] )을 클릭하고 *볼륨 구성*을 선택합니다.
+** 여러 볼륨을 선택하려면 각 볼륨의 상자를 선택하십시오. image:button_backup_1_volume.png[""] )을 클릭하고 *볼륨 구성*을 선택합니다.
+** 단일 볼륨을 선택하려면 행을 선택하십시오(또는 image:screenshot_edit_icon.gif["연필 아이콘을 편집합니다"] 볼륨에 대한 아이콘)
 +
 image:screenshot_tiering_initial_volumes.png["단일 볼륨, 다중 볼륨 또는 모든 볼륨을 선택하는 방법 및 선택한 볼륨 수정 단추를 보여 주는 스크린샷"]
 
 
 
-. Tiering Policy_대화 상자에서 계층화 정책을 선택하고 선택한 볼륨의 냉각 날짜를 필요에 따라 조정한 다음 * Apply * 를 클릭합니다.
+. _계층화 정책_ 대화 상자에서 계층화 정책을 선택하고, 선택적으로 선택한 볼륨에 대한 냉각 일수를 조정하고 *적용*을 선택합니다.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["볼륨 계층화 정책 및 냉각 일에 대해 자세히 알아보십시오"].
 

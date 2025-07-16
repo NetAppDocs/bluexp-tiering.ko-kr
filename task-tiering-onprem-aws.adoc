@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-aws.html 
 keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, aws, amazon, s3 
-summary: 비활성 데이터를 Amazon S3에 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간 확보 
+summary: 비활성 데이터를 Amazon S3에 계층화하여 온프레미스 ONTAP 클러스터의 공간을 확보하세요. 
 ---
 = 사내 ONTAP 클러스터에서 Amazon S3로 데이터 계층화
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 비활성 데이터를 Amazon S3에 계층화하여 온프레미스 ONT
 
 
 [role="lead"]
-비활성 데이터를 Amazon S3에 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간 확보
+비활성 데이터를 Amazon S3에 계층화하여 온프레미스 ONTAP 클러스터의 공간을 확보하세요.
 
 
 
@@ -48,11 +48,11 @@ BlueXP에서 ONTAP 클러스터를 검색하고, 클러스터가 최소 요구 �
 Connector에 대한 권한을 설정하여 S3 버킷을 생성하고 관리합니다. 또한 S3 버킷에서 데이터를 읽고 쓸 수 있도록 사내 ONTAP 클러스터에 대한 권한을 설정해야 합니다.
 
 [role="quick-margin-para"]
-<<S3 권한 설정,Connector 및 온프레미스 클러스터에 대한 권한을 설정하는 방법을 확인하십시오.>>
+<<S3 권한 설정,커넥터와 온프레미스 클러스터에 대한 권한을 설정하는 방법을 알아보세요.>>
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["다섯"] 시스템에서 BlueXP 계층화를 활성화합니다
 [role="quick-margin-para"]
-사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 Amazon S3에 계층화합니다.
+온프레미스 작업 환경을 선택하고, 계층화 서비스에 대해 *활성화*를 선택한 다음, 화면의 지시에 따라 데이터를 Amazon S3로 계층화합니다.
 
 [role="quick-margin-para"]
 <<첫 번째 클러스터에서 Amazon S3로 비활성 데이터 계층화,볼륨에 대해 계층화를 설정하는 방법을 확인하십시오.>>
@@ -62,7 +62,7 @@ Connector에 대한 권한을 설정하여 S3 버킷을 생성하고 관리합�
 무료 평가판 사용 기간이 끝나면 선불 종량제 구독, ONTAP BlueXP 계층화 라이센스 또는 다음 두 가지 BYOL 조합을 통한 BlueXP 계층화 비용 지불:
 
 [role="quick-margin-list"]
-* AWS Marketplace에서 구독하려면 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["BlueXP Marketplace 오퍼링으로 이동합니다"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
+* AWS Marketplace에서 구독하려면  https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["BlueXP Marketplace 오퍼링으로 이동합니다"^] 을 클릭하고 *구독*을 선택한 다음, 안내를 따르세요.
 * BlueXP  계층화 BYOL 라이센스를 사용하여 요금을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [하나를 구매해야 하는 경우 문의]을 누른 다음link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["BlueXP 디지털 지갑에서 계정에 추가하십시오"],
 
 
@@ -255,7 +255,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 
 표준 공용 인터넷 연결을 사용하려는 경우 모든 권한은 Connector에 의해 설정되며 다른 작업은 필요하지 않습니다. 이 연결 유형은 에 나와 있습니다 <<연결 옵션에 대한 네트워크 다이어그램,위의 첫 번째 다이어그램>>.
 
-사내 데이터 센터에서 VPC로 인터넷을 통해 보다 안전하게 연결하려면 계층화 활성화 마법사에서 AWS PrivateLink 연결을 선택할 수 있습니다. VPN 또는 AWS Direct Connect를 사용하여 프라이빗 IP 주소를 사용하는 VPC 엔드포인트 인터페이스를 통해 사내 시스템을 연결하려는 경우 필요합니다. 이 연결 유형은 에 나와 있습니다 <<연결 옵션에 대한 네트워크 다이어그램,위의 두 번째 다이어그램>>.
+온프레미스 데이터 센터에서 VPC로 인터넷을 통해 더욱 안전하게 연결하려면 계층화 활성화 마법사에서 AWS PrivateLink 연결을 선택하는 옵션이 있습니다. VPN 또는 AWS Direct Connect를 사용하여 프라이빗 IP 주소를 사용하는 VPC 엔드포인트 인터페이스를 통해 사내 시스템을 연결하려는 경우 필요합니다. 이 연결 유형은 <<연결 옵션에 대한 네트워크 다이어그램,위의 두 번째 다이어그램>> .
 
 . Amazon VPC 콘솔 또는 명령줄을 사용하여 인터페이스 엔드포인트 구성을 생성합니다. https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["Amazon S3에 AWS PrivateLink를 사용하는 방법에 대한 자세한 정보를 확인하십시오"^].
 . BlueXP 커넥터와 관련된 보안 그룹 구성을 수정합니다. 정책을 "사용자 지정"("전체 액세스"에서)으로 변경해야 하며 반드시 다음을 수행해야 합니다 <<S3 권한 설정,필요한 S3 커넥터 권한을 추가합니다>> 앞서 설명한 것처럼.
@@ -313,31 +313,31 @@ AWS 환경을 준비한 후 첫 번째 클러스터에서 비활성 데이터 �
 
 
 .단계
-. 사내 ONTAP 작업 환경을 선택합니다.
+. 온프레미스 ONTAP 작업 환경을 선택하세요.
 . 오른쪽 패널에서 계층화 서비스에 대해 * 활성화 * 를 클릭합니다.
 +
 Amazon S3 계층화 대상이 Canvas의 작업 환경으로 존재하는 경우 클러스터를 작업 환경으로 끌어서 설정 마법사를 시작할 수 있습니다.
 
 +
-image:screenshot_setup_tiering_onprem.png["온-프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 나타나는 활성화 옵션을 보여 주는 스크린샷"]
+image:screenshot_setup_tiering_onprem.png["온-프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 나타나는 활성화 옵션을 보여주는 스크린샷입니다."]
 
 . * 개체 스토리지 이름 정의 *: 이 개체 스토리지의 이름을 입력합니다. 이 클러스터에서 애그리게이트와 함께 사용할 수 있는 다른 오브젝트 스토리지와는 고유해야 합니다.
-. * 공급자 선택 *: * Amazon Web Services * 를 선택하고 * 계속 * 을 클릭합니다.
+. *공급자 선택*: *Amazon Web Services*를 선택하고 *계속*을 선택합니다.
 +
 image:screenshot_tiering_aws_s3_bucket.png["S3 버킷으로 계층화를 설정하기 위해 제공해야 하는 데이터를 보여 주는 스크린샷"]
 
 . Tiering Setup * 페이지의 섹션을 완료하십시오.
 +
-.. * S3 버킷 *: 새 S3 버킷을 추가하거나 기존 S3 버킷을 선택하고 버킷 영역을 선택한 후 * Continue * 를 클릭합니다.
+.. *S3 버킷*: 새로운 S3 버킷을 추가하거나 기존 S3 버킷을 선택하고, 버킷 지역을 선택한 후 *계속*을 선택합니다.
 +
-온프레미스 커넥터를 사용하는 경우 생성할 기존 S3 버킷 또는 새 S3 버킷에 대한 액세스를 제공하는 AWS 계정 ID를 입력해야 합니다.
+온프레미스 커넥터를 사용하는 경우 기존 S3 버킷이나 생성될 새 S3 버킷에 대한 액세스를 제공하는 AWS 계정 ID를 입력해야 합니다.
 
 +
 Connector에 대한 IAM 정책은 인스턴스가 정확한 접두사로 명명된 버킷에 대해 S3 작업을 수행할 수 있도록 하기 때문에 _fabric-pool_prefix가 기본적으로 사용됩니다. 예를 들어, S3 bucket_fabric-pool-AFF1_의 이름을 지정할 수 있습니다. 여기서 AFF1은 클러스터의 이름입니다. 계층화에 사용되는 버킷의 접두사를 정의할 수도 있습니다. 을 참조하십시오 <<S3 권한 설정,S3 사용 권한을 설정하는 중입니다>> 사용할 사용자 지정 접두사를 인식하는 AWS 권한이 있는지 확인합니다.
 
 .. * 스토리지 클래스 *: BlueXP 계층화는 계층형 데이터의 라이프사이클 전환을 관리합니다. 데이터는 _Standard_class에서 시작되지만 특정 일 수 후에 다른 스토리지 클래스를 데이터에 적용하는 규칙을 생성할 수 있습니다.
 +
-계층화된 데이터를 전환하려는 S3 스토리지 클래스와 데이터가 해당 클래스에 할당되기 전의 일 수를 선택하고 * Continue * 를 클릭합니다. 예를 들어, 아래 스크린샷은 계층화된 데이터가 객체 스토리지에서 45일 후에 _Standard_class의 _Standard-IA_class에 할당됨을 보여 줍니다.
+계층화된 데이터를 전환할 S3 스토리지 클래스를 선택하고, 데이터가 해당 클래스에 할당되기 전까지의 일수를 선택한 후 *계속*을 선택합니다. 예를 들어, 아래 스크린샷은 계층화된 데이터가 객체 스토리지에서 45일 후에 _Standard_class의 _Standard-IA_class에 할당됨을 보여 줍니다.
 
 +
 이 스토리지 클래스에 데이터 보존 * 을 선택하면 데이터가 _Standard_storage 클래스에 남아 있고 규칙이 적용되지 않습니다. link:reference-aws-support.html["지원되는 스토리지 클래스를 참조하십시오"^].
@@ -348,11 +348,11 @@ image:screenshot_tiering_lifecycle_selection_aws.png["특정 일 수 후에 데�
 +
 선택한 버킷의 모든 오브젝트에 수명주기 규칙이 적용됩니다.
 
-.. * 자격 증명 *: 필요한 S3 권한이 있는 IAM 사용자의 액세스 키 ID와 비밀 키를 입력하고 * 계속 * 을 클릭합니다.
+.. *자격 증명*: 필요한 S3 권한이 있는 IAM 사용자의 액세스 키 ID와 비밀 키를 입력하고 *계속*을 선택합니다.
 +
 IAM 사용자는 * S3 Bucket * 페이지에서 선택하거나 생성한 버킷과 동일한 AWS 계정에 있어야 합니다.
 
-.. * 네트워킹 *: 네트워킹 세부 정보를 입력하고 * 계속 * 을 클릭합니다.
+.. *네트워킹*: 네트워킹 세부 정보를 입력하고 *계속*을 선택하세요.
 +
 계층화할 볼륨이 상주하는 ONTAP 클러스터에서 IPspace를 선택합니다. 이 IPspace용 인터클러스터 LIF는 클라우드 공급자의 오브젝트 스토리지에 연결할 수 있도록 아웃바운드 인터넷 액세스를 가져야 합니다.
 
@@ -366,15 +366,15 @@ IAM 사용자는 * S3 Bucket * 페이지에서 선택하거나 생성한 버킷�
 
 . Tier Volumes_ 페이지에서 계층화를 구성할 볼륨을 선택하고 계층화 정책 페이지를 시작합니다.
 +
-** 모든 볼륨을 선택하려면 제목 행(image:button_backup_all_volumes.png[""])를 클릭하고 * 볼륨 구성 * 을 클릭합니다.
-** 여러 볼륨을 선택하려면 각 볼륨에 대한 확인란을 선택합니다(image:button_backup_1_volume.png[""])를 클릭하고 * 볼륨 구성 * 을 클릭합니다.
-** 단일 볼륨을 선택하려면 행(또는)을 클릭합니다 image:screenshot_edit_icon.gif["연필 아이콘을 편집합니다"] 아이콘)을 클릭합니다.
+** 모든 볼륨을 선택하려면 제목 행의 상자를 선택하십시오. image:button_backup_all_volumes.png[""] )을 클릭하고 *볼륨 구성*을 선택합니다.
+** 여러 볼륨을 선택하려면 각 볼륨의 상자를 선택하십시오. image:button_backup_1_volume.png[""] )을 클릭하고 *볼륨 구성*을 선택합니다.
+** 단일 볼륨을 선택하려면 행을 선택하십시오(또는 image:screenshot_edit_icon.gif["연필 아이콘을 편집합니다"] 볼륨에 대한 아이콘)
 +
 image:screenshot_tiering_initial_volumes.png["단일 볼륨, 다중 볼륨 또는 모든 볼륨을 선택하는 방법 및 선택한 볼륨 수정 단추를 보여 주는 스크린샷"]
 
 
 
-. Tiering Policy_대화 상자에서 계층화 정책을 선택하고 선택한 볼륨의 냉각 날짜를 필요에 따라 조정한 다음 * Apply * 를 클릭합니다.
+. _계층화 정책_ 대화 상자에서 계층화 정책을 선택하고, 선택적으로 선택한 볼륨에 대한 냉각 일수를 조정하고 *적용*을 선택합니다.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["볼륨 계층화 정책 및 냉각 일에 대해 자세히 알아보십시오"].
 

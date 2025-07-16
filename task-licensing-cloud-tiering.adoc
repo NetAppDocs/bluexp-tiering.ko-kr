@@ -18,26 +18,26 @@ summary: 첫 번째 클러스터에서 계층화를 설정하면 BlueXP 계층�
 
 추가 내용을 읽기 전에 몇 가지 참고 사항을 확인하십시오.
 
-* 클라우드 공급자 시장에서 이미 BlueXP 구독(PAYGO)을 구독한 경우 사내 ONTAP 시스템에 대한 BlueXP 계층화도 자동으로 구독됩니다. BlueXP 계층화 * 온-프레미스 대시보드 * 탭에 활성 서브스크립션이 표시됩니다. 다시 가입하지 않아도 됩니다. BlueXP 디지털 지갑에 활성 구독이 표시됩니다.
+* 클라우드 공급업체 마켓플레이스에서 NetApp Intelligent Services(PAYGO)를 이미 구독했다면 온프레미스 ONTAP 시스템용 계층화 서비스도 자동으로 구독됩니다. 계층화 *온프레미스 대시보드* 탭에서 활성 구독을 확인할 수 있습니다. 다시 가입하지 않아도 됩니다. 디지털 지갑에서도 활성 구독을 확인할 수 있습니다.
 * BYOL BlueXP  계층화 라이센스(이전 명칭: "Cloud Tiering" 라이센스)는 BlueXP  조직의 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. 이는 각 클러스터에 대해 _FabricPool_라이센스를 구입한 과거와 다릅니다(그리고 훨씬 더 쉬움).
 * 데이터를 StorageGRID로 계층화할 경우 비용이 발생하지 않으므로 BYOL 라이센스 또는 PAYGO 등록이 필요하지 않습니다. 이러한 계층형 데이터는 라이센스에서 구입한 용량에 포함되지 않습니다.
 
 
-link:concept-cloud-tiering.html#pricing-and-licenses["BlueXP 계층화에 대한 라이선스의 작동 방식에 대해 자세히 알아보십시오"].
+link:concept-cloud-tiering.html#pricing-and-licenses["계층화에 대한 라이선싱 작동 방식에 대해 자세히 알아보세요."]..
 
 
 
 == 30일 무료 평가판
 
-BlueXP 계층화 라이센스가 없는 경우 첫 번째 클러스터에 계층화를 설정할 때 BlueXP 계층화를 30일 동안 무료로 체험해 볼 수 있습니다. 30일 무료 평가판이 종료된 후에는 선불 종량제 구독, 연간 구독, BYOL 라이센스 또는 조합을 통해 BlueXP 계층화 비용을 지불해야 합니다.
+티어링 라이선스가 없는 경우, 첫 번째 클러스터에 티어링을 설정하면 30일 무료 티어링 체험이 시작됩니다. 30일 무료 체험 기간이 종료된 후에는 종량제 구독, 연간 구독, BYOL 라이선스 또는 이 두 가지를 조합하여 티어링 비용을 지불해야 합니다.
 
 무료 평가판이 끝나고 라이센스를 구독하거나 추가하지 않은 경우 ONTAP에서는 콜드 데이터를 오브젝트 스토리지에 더 이상 계층화하지 않습니다. 이전에 계층화된 모든 데이터에 계속 액세스할 수 있습니다. 즉, 이 데이터를 검색하고 사용할 수 있습니다. 검색할 경우 데이터가 클라우드에서 성능 계층으로 다시 이동됩니다.
 
 
 
-== BlueXP 계층화 PAYGO 구독을 사용합니다
+== NetApp Intelligent Services 계층화 PAYGO 구독을 사용하세요
 
-클라우드 공급자의 마켓플레이스에서 선불 종량제 구독을 통해 Cloud Volumes ONTAP 시스템 및 BlueXP 계층화와 같은 다양한 클라우드 데이터 서비스의 사용 라이선스를 취득할 수 있습니다.
+클라우드 공급업체의 마켓플레이스에서 사용량에 따라 요금을 지불하는 구독을 통해 계층화와 같은 Cloud Volumes ONTAP 시스템 및 NetApp Intelligent Services 사용에 대한 라이선스를 구매할 수 있습니다.
 
 BlueXP  계층화를 구독하면 디지털 지갑에서 구독을 관리할 수 있습니다. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html#view-your-subscriptions["디지털 지갑을 사용하는 방법을 알아보십시오."^]
 
@@ -49,8 +49,8 @@ AWS Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에서 
 
 [[subscribe-aws]]
 .단계
-. BlueXP에서 * 이동성 > 계층화 > 온-프레미스 대시보드 * 를 클릭합니다.
-. Marketplace subscriptions_section에서 Amazon Web Services 아래의 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.
+. BlueXP 에서 *모빌리티 > 계층화 > 온프레미스 대시보드*를 선택합니다.
+. _마켓플레이스 구독_ 섹션에서 Amazon Web Services 아래의 *구독*을 선택한 다음 *계속*을 선택합니다.
 . 에서 구독하십시오 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["AWS 마켓플레이스 를 참조하십시오"^]그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.
 +
 다음 비디오는 프로세스를 보여 줍니다.
@@ -68,8 +68,8 @@ Azure Marketplace에서 BlueXP 계층화를 구독하여 ONTAP 클러스터에�
 
 [[subscribe-azure]]
 .단계
-. BlueXP에서 * 이동성 > 계층화 > 온-프레미스 대시보드 * 를 클릭합니다.
-. Marketplace Subscriptions_ 섹션의 Microsoft Azure에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.
+. BlueXP 에서 *모빌리티 > 계층화 > 온프레미스 대시보드*를 선택합니다.
+. _마켓플레이스 구독_ 섹션에서 Microsoft Azure 아래의 *구독*을 선택한 다음 *계속*을 선택합니다.
 . 에서 구독하십시오 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure 마켓플레이스 를 참조하십시오"^]그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.
 +
 다음 비디오는 프로세스를 보여 줍니다.
@@ -87,8 +87,8 @@ Google Cloud 마켓플레이스에서 BlueXP 계층화를 구독하여 ONTAP 클
 
 [[subscribe-gcp]]
 .단계
-. BlueXP에서 * 이동성 > 계층화 > 온-프레미스 대시보드 * 를 클릭합니다.
-. Marketplace Subscriptions_ 섹션의 Google Cloud에서 * Subscribe * 를 클릭한 다음 * Continue * 를 클릭합니다.
+. BlueXP 에서 *모빌리티 > 계층화 > 온프레미스 대시보드*를 선택합니다.
+. _마켓플레이스 구독_ 섹션에서 Google Cloud 아래의 *구독*을 선택한 다음 *계속*을 선택합니다.
 . 에서 구독하십시오 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud 마켓플레이스 를 참조하십시오"^]그런 다음 BlueXP 웹 사이트에 다시 로그인하여 등록을 완료합니다.
 +
 다음 비디오는 프로세스를 보여 줍니다.
@@ -102,7 +102,7 @@ video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 == 연간 계약을 사용합니다
 
-연간 계약을 구매하여 연간 BlueXP 계층화 비용을 지불하십시오. 연간 계약은 1년, 2년 또는 3년 기간으로 제공됩니다.
+연간 계약을 구매하여 매년 티어링 비용을 지불하세요. 연간 계약은 1년, 2년 또는 3년 기간으로 제공됩니다.
 
 비활성 데이터를 AWS에 계층화할 때 에서 연간 계약을 구독할 수 있습니다 https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["AWS 마켓플레이스 페이지를 참조하십시오"^]. 이 옵션을 사용하려면 마켓플레이스 페이지에서 구독을 설정한 다음 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["가입 정보를 AWS 자격 증명과 연결합니다"^].
 
@@ -114,17 +114,17 @@ Google Cloud로 계층화할 때 연간 계약은 현재 지원되지 않습니�
 
 == BlueXP 계층화 BYOL 라이센스 사용
 
-NetApp에서 제공하는 자체 라이센스는 1년, 2년 또는 3년간 제공됩니다. BYOL * BlueXP  Tiering * 라이센스(이전 명칭: "클라우드 계층화" 라이센스)는 BlueXP  조직의 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. BlueXP 계층화 라이센스에 정의된 전체 계층화 용량은 온프레미스 클러스터 * 의 * 전체 * 간에 공유되므로 초기 라이센스와 갱신을 간편하게 수행할 수 있습니다. 계층화 BYOL 라이센스의 최소 용량은 10TiB에서 시작됩니다.
+NetApp에서 제공하는 자체 라이센스는 1년, 2년 또는 3년간 제공됩니다. BYOL * BlueXP  Tiering * 라이센스(이전 명칭: "클라우드 계층화" 라이센스)는 BlueXP  조직의 여러 온프레미스 ONTAP 클러스터에서 사용할 수 있는 _floating_license입니다. BlueXP tiering 라이선스에 정의된 총 계층화 용량은 *모든* 온프레미스 클러스터에서 공유되므로 초기 라이선스 부여와 갱신이 쉽습니다. 계층화 BYOL 라이센스의 최소 용량은 10TiB에서 시작됩니다.
 
 BlueXP 계층화 라이센스가 없는 경우 다음 연락처로 문의해 주십시오.
 
-* mailto:ng-cloud-tiering@netapp.com?subject=Licensing [라이센스 구매를 위해 이메일 보내기].
-* 라이센스를 요청하려면 BlueXP 오른쪽 하단의 채팅 아이콘을 클릭하십시오.
+* NetApp 영업 담당자에게 문의하세요.
+* NetApp 지원 부서에 문의하십시오.
 
 
 선택적으로 사용하지 않을 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 동일한 달러 당량 및 만료 날짜가 있는 BlueXP 계층화 라이센스로 변환할 수 있습니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["자세한 내용을 보려면 여기를 클릭하십시오"^].
 
-BlueXP 디지털 지갑 페이지를 사용하여 BlueXP 계층화 BYOL 라이센스를 관리합니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["디지털 지갑을 사용하는 방법을 알아보십시오."^]
+디지털 지갑 페이지를 사용하여 라이선스를 관리합니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["디지털 지갑을 사용하는 방법을 알아보십시오."^]
 
 
 
@@ -210,11 +210,11 @@ NOTE: System Manager 또는 ONTAP CLI에서 "하위" 라이센스에 대한 라�
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP 계층화 라이센스를 구입합니다"] 새 클러스터 또는 클러스터에 필요한 용량
 . BlueXP <<licenses,BlueXP 디지털 지갑에 라이센스를 추가합니다>>에서 [BlueXP  디지털 지갑에 라이선스 추가].
 . BlueXP 계층화에서는 link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["새로운 클러스터를 만나보세요"].
-. 클러스터 페이지에서 을 클릭합니다 image:screenshot_horizontal_more_button.gif["추가 아이콘"] 클러스터에 대해 * 라이선스 배포 * 를 선택합니다.
+. 클러스터 페이지에서 다음을 선택하세요. image:screenshot_horizontal_more_button.gif["추가 아이콘"] 클러스터에 대해 *라이선스 배포*를 선택합니다.
 +
 image:screenshot_tiering_deploy_license.png["ONTAP 클러스터에 계층화 라이센스를 구축하는 방법을 보여 주는 스크린샷"]
 
-. Deploy License_대화상자에서 * deploy * 를 클릭합니다.
+. _라이선스 배포_ 대화 상자에서 *배포*를 선택합니다.
 +
 하위 라이센스가 ONTAP 클러스터에 배포됩니다.
 

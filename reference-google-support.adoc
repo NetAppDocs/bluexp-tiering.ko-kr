@@ -20,7 +20,7 @@ BlueXP 계층화는 여러 Google Cloud 스토리지 클래스와 대부분의 �
 
 == 지원되는 GCP 스토리지 클래스입니다
 
-온프레미스 ONTAP 시스템에서 GCP로 데이터 계층화를 설정할 경우, BlueXP 계층화는 비활성 데이터에 대해 _Standard_스토리지 클래스를 자동으로 사용합니다. BlueXP 계층화는 수명 주기 규칙을 적용하여 특정 일 수 후에 데이터가 _Standard_storage 클래스에서 다른 스토리지 클래스로 전환될 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.
+온프레미스 ONTAP 시스템에서 Google Cloud Storage로 데이터 계층화를 설정하면 계층화 과정에서 비활성 데이터에 _Standard_ 스토리지 클래스가 자동으로 사용됩니다. 계층화 과정에서는 특정 기간(일) 후 데이터가 _Standard_ 스토리지 클래스에서 다른 스토리지 클래스로 전환되도록 수명 주기 규칙을 적용할 수 있습니다. 다음 스토리지 클래스 중에서 선택할 수 있습니다.
 
 * 니어라인
 * 콜드라인
@@ -29,7 +29,7 @@ BlueXP 계층화는 여러 Google Cloud 스토리지 클래스와 대부분의 �
 
 다른 스토리지 클래스를 선택하지 않으면 데이터가 _Standard_storage 클래스에 남아 있고 규칙이 적용되지 않습니다.
 
-BlueXP 계층화 라이프사이클 규칙을 구성할 때 Google 계정에 버킷을 설정할 때 라이프사이클 규칙을 구성하지 않아야 합니다.
+계층화 수명 주기 규칙을 구성하는 경우 Google 계정에서 버킷을 설정할 때 어떤 수명 주기 규칙도 구성해서는 안 됩니다.
 
 https://cloud.google.com/storage/docs/storage-classes["Google Cloud Storage 클래스에 대해 알아보십시오"^].
 
@@ -37,7 +37,7 @@ https://cloud.google.com/storage/docs/storage-classes["Google Cloud Storage 클�
 
 == 지원되는 Google Cloud 지역
 
-BlueXP 계층화는 다음 영역을 지원합니다.
+티어링은 다음 지역을 지원합니다.
 
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-s3-compat.html 
 keywords: data tiering, fabricpool, cloud tiering, tiering cold data, tiering inactive data, tiering aff, tiering fas, tiering ontap, tiering volumes, tier data, tier cold data, tier fas, tier aff, tier ontap, s3, tier to s3, minio 
-summary: 'S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 스토리지 서비스에 비활성 데이터를 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보하십시오.' 
+summary: 'Simple Storage Service(S3) 프로토콜을 사용하는 모든 Object Storage 서비스에 비활성 데이터를 계층화하여 온프레미스 ONTAP 클러스터의 공간을 확보하세요.' 
 ---
 = 사내 ONTAP 클러스터에서 S3 오브젝트 스토리지로 데이터 계층화
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 �
 
 
 [role="lead"]
-S3(Simple Storage Service) 프로토콜을 사용하는 오브젝트 스토리지 서비스에 비활성 데이터를 계층화하여 온프레미스 ONTAP 클러스터의 여유 공간을 확보합니다.
+Simple Storage Service(S3) 프로토콜을 사용하는 모든 개체 스토리지 서비스에 비활성 데이터를 계층화하여 온프레미스 ONTAP 클러스터의 공간을 확보하세요.
 
 현재 MinIO 객체 스토리지가 검증되었습니다.
 
@@ -36,7 +36,7 @@ NetApp은 특히 제품이 출시된 제3자와의 지원 계약에 동의하지
 다음이 필요합니다.
 
 [role="quick-margin-list"]
-* ONTAP 9.8 이상을 실행하는 온프레미스 ONTAP 클러스터의 소스 및 사용자 지정 포트를 통해 대상 S3 호환 오브젝트 스토리지로의 연결 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
+* ONTAP 9.8 이상을 실행하는 소스 온프레미스 ONTAP 클러스터와 대상 S3 호환 개체 스토리지에 대한 사용자 지정 포트를 통한 연결.  https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^] .
 * ONTAP 클러스터가 버킷에 액세스할 수 있도록 객체 스토리지 서버의 FQDN, 액세스 키 및 암호 키.
 * 구내에 설치된 커넥터.
 * 소스 ONTAP 클러스터에 대한 아웃바운드 HTTPS 연결, S3 호환 오브젝트 스토리지 및 BlueXP 계층화 서비스를 지원하는 커넥터용 네트워킹.
@@ -44,15 +44,15 @@ NetApp은 특히 제품이 출시된 제3자와의 지원 계약에 동의하지
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 계층화 설정
 [role="quick-margin-para"]
-BlueXP에서 사내 작업 환경을 선택하고 계층화 서비스에 대해 * 활성화 * 를 클릭한 다음 표시되는 메시지에 따라 데이터를 S3 호환 오브젝트 스토리지에 계층화합니다.
+BlueXP 에서 온-프레미스 작업 환경을 선택하고 계층화 서비스에 대해 *활성화*를 선택한 다음, 메시지에 따라 데이터를 S3 호환 개체 스토리지로 계층화합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] 라이센스를 설정합니다
 [role="quick-margin-para"]
-클라우드 공급자의 선불 종량제 구독, NetApp BlueXP 계층화 기능을 통해 BlueXP 계층화를 사용할 수 있습니다. 자체 라이센스 또는 다음 두 가지 모두를 조합해서 사용할 수 있습니다.
+클라우드 공급업체의 사용량 기반 구독, NetApp 계층화 자체 라이선스 또는 두 가지의 조합을 통해 계층화 비용을 지불하세요.
 
 [role="quick-margin-list"]
-* 에서 BlueXP PAYGO 서비스를 구독하려면 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS 마켓플레이스 를 참조하십시오"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure 마켓플레이스 를 참조하십시오"^], 또는 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP 마켓플레이스"^]를 클릭하고 * 가입 * 을 클릭한 다음 화면의 지시를 따릅니다.
-* BlueXP  계층화 BYOL 라이센스를 사용하여 요금을 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing [하나를 구매해야 하는 경우 문의]을 누른 다음link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["BlueXP 디지털 지갑에서 계정에 추가하십시오"^], .
+* BlueXP PAYGO 서비스를 구독하려면  https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS 마켓플레이스 를 참조하십시오"^] ,  https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure 마켓플레이스 를 참조하십시오"^] , 또는  https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP 마켓플레이스"^] , *구독*을 선택하고 안내를 따르세요.
+* 계층형 BYOL 라이선스를 사용하여 지불하려면 mailto:ng-cloud-tiering@netapp.com?subject=Licensing[구매가 필요한 경우 문의]으로 이메일을 보내십시오. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["디지털 지갑에서 계정에 추가하세요"^] . .
 
 
 
@@ -104,7 +104,7 @@ TIP: BlueXP 계층화는 FlexVol 볼륨과 FlexGroup 볼륨을 모두 지원합�
 
 === ONTAP 클러스터 검색
 
-콜드 데이터 계층화를 시작하기 전에 BlueXP Canvas에서 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
+콜드 데이터의 계층화를 시작하려면 먼저 온프레미스 ONTAP 작업 환경을 만들어야 합니다.
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법에 대해 알아보십시오"^].
 
@@ -171,18 +171,18 @@ S3 자격 증명:: S3 호환 오브젝트 스토리지로 계층화를 설정할
 
 
 .단계
-. 사내 ONTAP 작업 환경을 선택합니다.
-. 오른쪽 패널에서 계층화 서비스에 대해 * 활성화 * 를 클릭합니다.
+. 온프레미스 ONTAP 작업 환경을 선택하세요.
+. 오른쪽 패널에서 계층화 서비스에 대해 *활성화*를 선택합니다.
 +
-image:screenshot_setup_tiering_onprem.png["온-프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 표시되는 계층화 옵션을 보여 주는 스크린샷"]
+image:screenshot_setup_tiering_onprem.png["온프레미스 ONTAP 작업 환경을 선택한 후 화면 오른쪽에 나타나는 계층화 옵션을 보여주는 스크린샷입니다."]
 
 . * 개체 스토리지 이름 정의 *: 이 개체 스토리지의 이름을 입력합니다. 이 클러스터에서 애그리게이트와 함께 사용할 수 있는 다른 오브젝트 스토리지와는 고유해야 합니다.
-. * 공급자 선택 *: * S3 호환 * 을 선택하고 * 계속 * 을 클릭합니다.
+. *공급자 선택*: *S3 호환*을 선택하고 *계속*을 선택합니다.
 . Create Object Storage * 페이지의 단계를 완료합니다.
 +
 .. * 서버 *: S3 호환 오브젝트 스토리지 서버의 FQDN, ONTAP이 서버와 HTTPS 통신에 사용해야 하는 포트, 필요한 S3 권한이 있는 계정의 액세스 키 및 암호 키를 입력합니다.
-.. * 버킷 *: 새 버킷을 추가하거나 기존 버킷을 선택하고 * 계속 * 을 클릭합니다.
-.. * 클러스터 네트워크 *: ONTAP가 오브젝트 스토리지에 연결하는 데 사용해야 하는 IPspace를 선택하고 * 계속 * 을 클릭합니다.
+.. *버킷*: 새로운 버킷을 추가하거나 기존 버킷을 선택하고 *계속*을 선택합니다.
+.. *클러스터 네트워크*: ONTAP 개체 스토리지에 연결하는 데 사용할 IP 공간을 선택하고 *계속*을 선택합니다.
 +
 올바른 IPspace를 선택하면 BlueXP 계층화를 통해 ONTAP에서 S3 호환 오브젝트 스토리지로의 연결을 설정할 수 있습니다.
 
@@ -191,18 +191,18 @@ image:screenshot_setup_tiering_onprem.png["온-프레미스 ONTAP 작업 환경�
 
 
 
-. 성공_페이지에서 지금 볼륨을 설정하려면 * 계속 * 을 클릭합니다.
-. Tier Volumes_ 페이지에서 계층화를 구성할 볼륨을 선택하고 * Continue * 를 클릭합니다.
+. _성공_ 페이지에서 *계속*을 선택하여 지금 볼륨을 설정하세요.
+. _Tier Volumes_ 페이지에서 계층화를 구성할 볼륨을 선택하고 *계속*을 선택합니다.
 +
-** 모든 볼륨을 선택하려면 제목 행(image:button_backup_all_volumes.png[""])를 클릭하고 * 볼륨 구성 * 을 클릭합니다.
-** 여러 볼륨을 선택하려면 각 볼륨에 대한 확인란을 선택합니다(image:button_backup_1_volume.png[""])를 클릭하고 * 볼륨 구성 * 을 클릭합니다.
-** 단일 볼륨을 선택하려면 행(또는)을 클릭합니다 image:screenshot_edit_icon.gif["연필 아이콘을 편집합니다"] 아이콘)을 클릭합니다.
+** 모든 볼륨을 선택하려면 제목 행의 상자를 선택하십시오. image:button_backup_all_volumes.png[""] )을 클릭하고 *볼륨 구성*을 선택합니다.
+** 여러 볼륨을 선택하려면 각 볼륨의 상자를 선택하십시오. image:button_backup_1_volume.png[""] )을 클릭하고 *볼륨 구성*을 선택합니다.
+** 단일 볼륨을 선택하려면 행을 선택하십시오(또는 image:screenshot_edit_icon.gif["연필 아이콘을 편집합니다"] 볼륨에 대한 아이콘)
 +
 image:screenshot_tiering_initial_volumes.png["단일 볼륨, 다중 볼륨 또는 모든 볼륨을 선택하는 방법 및 선택한 볼륨 수정 단추를 보여 주는 스크린샷"]
 
 
 
-. Tiering Policy_대화 상자에서 계층화 정책을 선택하고 선택한 볼륨의 냉각 날짜를 필요에 따라 조정한 다음 * Apply * 를 클릭합니다.
+. _계층화 정책_ 대화 상자에서 계층화 정책을 선택하고, 선택적으로 선택한 볼륨에 대한 냉각 일수를 조정하고 *적용*을 선택합니다.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["볼륨 계층화 정책 및 냉각 일에 대해 자세히 알아보십시오"].
 
@@ -210,9 +210,6 @@ link:concept-cloud-tiering.html#volume-tiering-policies["볼륨 계층화 정책
 image:screenshot_tiering_initial_policy_settings.png["구성 가능한 계층화 정책 설정을 보여 주는 스크린샷"]
 
 
-
-.결과
-클러스터의 볼륨에서 S3 호환 오브젝트 스토리지로 데이터 계층화를 성공적으로 설정했습니다.
 
 .다음 단계
 link:task-licensing-cloud-tiering.html["BlueXP 계층화 서비스에 가입해야 합니다"].
